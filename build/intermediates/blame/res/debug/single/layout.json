@@ -4,6 +4,10 @@
         "source": "/Users/omerrom/AndroidStudioProjects/IOIO/HelloIOIOService/src/main/res/layout/activity_ioio_ne.xml"
     },
     {
+        "merged": "/Users/omerrom/AndroidStudioProjects/IOIO/HelloIOIOService/build/intermediates/res/merged/debug/layout/activity_main2.xml",
+        "source": "/Users/omerrom/AndroidStudioProjects/IOIO/HelloIOIOService/src/main/res/layout/activity_main2.xml"
+    },
+    {
         "merged": "/Users/omerrom/AndroidStudioProjects/IOIO/HelloIOIOService/build/intermediates/res/merged/debug/layout/activity_main.xml",
         "source": "/Users/omerrom/AndroidStudioProjects/IOIO/HelloIOIOService/src/main/res/layout/activity_main.xml"
     }

@@ -58,7 +58,8 @@ containing a value of this type.
         public static final int ic_launcher=0x7f020002;
         public static final int onescreen=0x7f020003;
         public static final int screenbgnomenu=0x7f020004;
-        public static final int stringstrdecayover10=0x7f020005;
+        public static final int screenr=0x7f020005;
+        public static final int stringstrdecayover10=0x7f020006;
     }
     public static final class id {
         public static final int A=0x7f090008;
@@ -82,6 +83,7 @@ containing a value of this type.
     public static final class layout {
         public static final int activity_ioio_ne=0x7f030000;
         public static final int activity_main=0x7f030001;
+        public static final int activity_main2=0x7f030002;
     }
     public static final class raw {
         public static final int a_string=0x7f050000;

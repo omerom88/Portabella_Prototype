@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.omerrom.portabelo.MainActivity"
+    android:background="@drawable/screenr"
+    android:id="@+id/mainLayout">
+
+
+    <LinearLayout
+        android:id="@+id/E_LOW"
+        android:orientation="horizontal"
+        android:layout_width="60dp"
+        android:layout_height="fill_parent"
+        android:background="#00ffffff"
+        android:layout_marginLeft="30dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="fill_parent"
+        android:layout_width="50dp"
+        android:background="#00ffffff"
+        android:id="@+id/A"
+        android:layout_toRightOf="@+id/E_LOW"
+        android:layout_toEndOf="@+id/E_LOW">
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="fill_parent"
+        android:layout_width="50dp"
+        android:background="#00ffffff"
+        android:id="@+id/D"
+        android:layout_toRightOf="@+id/A"
+        android:layout_toEndOf="@+id/A">
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="fill_parent"
+        android:layout_width="50dp"
+        android:background="#00ffffff"
+        android:id="@+id/G"
+        android:layout_toRightOf="@+id/D"
+        android:layout_toEndOf="@+id/D">
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="fill_parent"
+        android:layout_width="50dp"
+        android:background="#00ffffff"
+        android:id="@+id/B"
+        android:layout_toRightOf="@+id/G"
+        android:layout_toEndOf="@+id/G">
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="fill_parent"
+        android:layout_width="60dp"
+        android:background="#00ffffff"
+        android:id="@+id/E_HIGH"
+        android:layout_toRightOf="@+id/B"
+        android:layout_toEndOf="@+id/B">
+    </LinearLayout>
+
+</RelativeLayout>

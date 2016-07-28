@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/omerrom/AndroidStudioProjects/IOIO/HelloIOIOService/build/intermediates/res/merged/debug/drawable/screenr.jpg",
+        "source": "/Users/omerrom/AndroidStudioProjects/IOIO/HelloIOIOService/src/main/res/drawable/screenr.jpg"
+    },
+    {
         "merged": "/Users/omerrom/AndroidStudioProjects/IOIO/HelloIOIOService/build/intermediates/res/merged/debug/drawable/screenbgnomenu.gif",
         "source": "/Users/omerrom/AndroidStudioProjects/IOIO/HelloIOIOService/src/main/res/drawable/screenbgnomenu.gif"
     },
