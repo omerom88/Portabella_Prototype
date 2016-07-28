@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HelloIOIOService.iml" filepath="$PROJECT_DIR$/HelloIOIOService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Portabelo.iml" filepath="$PROJECT_DIR$/Portabelo.iml" />
     </modules>
   </component>
 </project>
