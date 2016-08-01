@@ -13,6 +13,7 @@ import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 
@@ -40,7 +41,10 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-
+        LinearLayout[] layouts = new LinearLayout[6];
+        for (int i = 0; i < layouts.length; i++) {
+            layouts[i] = (LinearLayout) findViewById(BUTTONS[i]);
+        }
         //////////////// the gesture  /////////////////
         cordManager = CordManager.getInstance(getApplicationContext());
         Display display = getWindowManager().getDefaultDisplay();
@@ -48,30 +52,18 @@ public class MainActivity extends Activity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
             display.getSize(size);
         }
-        GestureListener.setHeight(size.y);
-        /////////////// string buttons  ///////////////
-        for (int i = 0; i < BUTTONS.length; i++) {
-            LinearLayout stringButton = (LinearLayout) findViewById(BUTTONS[i]);
-            assert stringButton != null;
-            stringButton.setTag(i);
-            stringButton.setOnTouchListener(new View.OnTouchListener() {
-                @Override
-                public boolean onTouch(View view, MotionEvent event) {
-//                    long startTime = System.currentTimeMillis();
-                    int index = (Integer) view.getTag();
-                    cordManager.cancelTask(index);
-                    cordManager.runTask(index, event);
-//                    Log.e("startTime: ", "" + (System.currentTimeMillis() - startTime));
-                    return true;
-                }
-            });
-        }
+        CordManager.setHeight(size.y);
+        /////////////// string layouts  ///////////////
+        RelativeLayout strummingLayout = (RelativeLayout) findViewById(R.id.mainLayout);
+        ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(layouts);
+        strummingLayout.setOnTouchListener(activitySwipeDetector);
 
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction(mBroadcastStringAction);
         final Intent intent = new Intent(MainActivity.this, HelloIOIOService.class);
         startService(intent);
     }
+
 
     public void onResume() {
         super.onResume();

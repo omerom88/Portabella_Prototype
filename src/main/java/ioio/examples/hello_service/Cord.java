@@ -5,7 +5,6 @@ import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.AudioTrack;
 import android.media.audiofx.Equalizer;
-import android.os.AsyncTask;
 import android.os.Build;
 import android.util.Log;
 
@@ -26,26 +25,28 @@ public class Cord {
             Log.e("RATE_ARRAY" + i + ": ", "" + RATE_ARRAY[i]);
         }
     }
-
     protected short[] sample, revSample;
     private AudioTrack audioTrack;
     private Equalizer equalizer;
-    private Task task;
     final static int DEFAULT_RATE = 44100;
     private static final int MILI_CONVERTOR = 1000;
     public static final int MAX_FREQ = 400 * MILI_CONVERTOR;
     private static final double PERCENTAGE_PART_ONE = 1;
     private static final double PERCENTAGE_PART_TWO = 0;
-    private int numOfIterations;
     private int bufferAddPerIteration = 0;
     private int partOne;//, partTwo;
     private short minEQLevel, maxEQLevel, bandNumMaxFreq;
+    private float startVolume;
+    private int eqFreq;
+
+    public int getEqFreq() {
+        return eqFreq;
+    }
 
     public Cord(Context context, int wav, int numOfIterations) {
-        this.numOfIterations = numOfIterations;
         this.partOne = (int)((double)numOfIterations * PERCENTAGE_PART_ONE);
     //        this.partTwo = (int)((double)numOfIterations * PERCENTAGE_PART_TWO);
-        Log.e("partOne", "" + partOne);
+//        Log.e("partOne", "" + partOne);
     //        Log.e("partTwo", "" + partTwo);
         int minBufferSize = AudioTrack.getMinBufferSize(DEFAULT_RATE,
                 AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
@@ -76,37 +77,22 @@ public class Cord {
         }
     }
 
-    public void runTask(float startVolume, int eqFreq) {
-        if (task != null && !task.isCancelled()) {
-            task.cancelTask(true);
-        }
-        task = new Task(startVolume, eqFreq);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-        } else {
-            task.execute();
-        }
+    public float calcVolume(int i, float pressure, int frat) {
+        return startVolume;
     }
 
-    public void checkBridgePressure() {
-        if (MainActivity.retPresure > 0.15) {
-            runTask(MainActivity.retPresure, 0);
-        }
+    public static int calcPitch(int frat) {
+//        Log.e("pitch: ", "" + (int) (DEFAULT_RATE * RATE_ARRAY[frat]));
+        return (int) (DEFAULT_RATE * RATE_ARRAY[frat]);
     }
 
-    public void cancelTask() {
-        if (task != null && !task.isCancelled()) {
-            task.cancelTask(true);
-        }
-    }
-
-    private void initEqualizer(int eqFreq) {
+    public void initEqualizer(int eqFreq) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
             for (int i = 0; i < equalizer.getNumberOfBands(); i++) {
                 if (i <= bandNumMaxFreq) {
                     double mult = getBandPrecentage(i + 1, bandNumMaxFreq + 1, eqFreq);
-                    Log.e("properties: eqFreq", "" + eqFreq);
-                    Log.e("prop: setBandLevel", "" + (short)(minEQLevel + ((maxEQLevel - minEQLevel) * mult)));
+//                    Log.e("properties: eqFreq", "" + eqFreq);
+//                    Log.e("prop: setBandLevel", "" + (short)(minEQLevel + ((maxEQLevel - minEQLevel) * mult)));
                     equalizer.setBandLevel((short) i, (short)(minEQLevel + ((maxEQLevel - minEQLevel) * mult)));
                 } else {
                     equalizer.setBandLevel((short) i, maxEQLevel);
@@ -120,60 +106,40 @@ public class Cord {
         return Math.min(2 * percentage, 1);
     }
 
-    private class Task extends AsyncTask<Void, Void, Void> {
-        float startVolume;
-        int eqFreq;
-        public Task(float startVolume, int eqFreq) {
-            this.startVolume = startVolume;
-            this.eqFreq = eqFreq;
-        }
+    public AudioTrack getAudioTrack() {
+        return audioTrack;
+    }
 
-        @Override
-        protected Void doInBackground(Void... strings) {
-            if (audioTrack.getPlayState() == AudioTrack.PLAYSTATE_PLAYING) {
-                audioTrack.stop();
-            }
-            initEqualizer(eqFreq);
-            int currIndex = 0;
-            float currVolume = startVolume;
-//            Log.e("currVolume", "" + currVolume);
-//            Log.e("currRate", "" + currRate);
-//            Log.e("music", "" + revSample.length);
-            Log.e("retPresure", "" + MainActivity.retPresure);
-            Log.e("retleftX", "" + (int)MainActivity.retleftX);
-            for (int i = 0; i < partOne; i++) {
-                audioTrack.setPlaybackRate(calcPitch((int)MainActivity.retleftX));
-//                setVolume(audioTrack, currVolume);
-                play(audioTrack, sample, currIndex, bufferAddPerIteration);
-                if (isCancelled()) {
-                    break;
-                }
-                currIndex += bufferAddPerIteration;
-                currVolume = calcVolume(i, MainActivity.retPresure, (int) MainActivity.retleftX);
-            }
-            return null;
-        }
+    public void setProperties(float startVolume, int eqFreq) {
+        this.startVolume = startVolume;
+        this.eqFreq = eqFreq;
+    }
 
-        private float calcVolume(int i, float pressure, int frat) {
-            return startVolume;
-        }
+    public int getPartOne() {
+        return partOne;
+    }
 
-        private int calcPitch(int frat) {
-            Log.e("pitch: ", "" + (int) (DEFAULT_RATE * RATE_ARRAY[frat]));
-            return (int) (DEFAULT_RATE * RATE_ARRAY[frat]);
-        }
+    public float getStartVolume() {
+        return startVolume;
+    }
 
-        private void setVolume(AudioTrack audioTrack, float volume) {
-            audioTrack.setStereoVolume(volume, volume);
-        }
-
-        public void cancelTask(boolean mayInterruptIfRunning) {
+    public void stopTrack() {
+        if (audioTrack.getPlayState() == AudioTrack.PLAYSTATE_PLAYING) {
             audioTrack.stop();
-            cancel(mayInterruptIfRunning);
         }
     }
 
-    private void play(AudioTrack audioTrack, short[] music, int start, int end) {
+    public void playIteration(int currIndex) {
+        audioTrack.setPlaybackRate(Cord.calcPitch((int)MainActivity.retleftX));
+//                setVolume(audioTrack, currVolume);
+        play(sample, currIndex, bufferAddPerIteration);
+    }
+
+    public int getBufferAddPerIteration() {
+        return bufferAddPerIteration;
+    }
+
+    public void play(short[] music, int start, int end) {
         audioTrack.play();
         int writeSize =  audioTrack.write(music, start, end);
 //        Log.e("write size: ", "" + writeSize);

@@ -12,23 +12,7 @@
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\drawable\\onescreen.jpg"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\IOIO\\HelloIOIOService\\build\\intermediates\\res\\merged\\debug\\drawable\\screenr.jpg",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\IOIO\\HelloIOIOService\\src\\main\\res\\drawable\\screenr.jpg"
-    },
-    {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\drawable\\screenbgnomenu.gif",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\drawable\\screenbgnomenu.gif"
-    },
-    {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\IOIO\\HelloIOIOService\\build\\intermediates\\res\\merged\\debug\\drawable\\stringstrdecayover10.gif",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\IOIO\\HelloIOIOService\\src\\main\\res\\drawable\\stringstrdecayover10.gif"
-    },
-    {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\IOIO\\HelloIOIOService\\build\\intermediates\\res\\merged\\debug\\drawable\\onescreen.jpg",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\IOIO\\HelloIOIOService\\src\\main\\res\\drawable\\onescreen.jpg"
-    },
-    {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\IOIO\\HelloIOIOService\\build\\intermediates\\res\\merged\\debug\\drawable\\screenbgnomenu.gif",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\IOIO\\HelloIOIOService\\src\\main\\res\\drawable\\screenbgnomenu.gif"
     }
 ]

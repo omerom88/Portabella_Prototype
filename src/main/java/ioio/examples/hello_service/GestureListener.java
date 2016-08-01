@@ -11,6 +11,7 @@ public class GestureListener extends GestureDetector.SimpleOnGestureListener {
 
     CordManager cordManager;
 
+    private static final float MIN_VELOCITY = 0.05f;
     private static final int VELOCITY_NORMALIZE_CONSTANT = 15000;
     private static final float MAX_PRESSURE = 1f;
     private static final float MIN_PRESSURE = 0.9f;
@@ -18,13 +19,20 @@ public class GestureListener extends GestureDetector.SimpleOnGestureListener {
 
     @Override
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-        Log.e("in", "onFling, index: " + e1.getSource());
-        Log.e("in", "onFling, e1.getY(): " + e1.getY());
-        Log.e("in", "onFling, e1.getPressure(): " + e1.getPressure());
+//        Log.e("in", "onFling, index: " + e1.getSource());
+//        Log.e("in", "onFling, e1.getY(): " + e1.getY());
+//        Log.e("in", "onFling, e1.getPressure(): " + e1.getPressure());
         Log.e("in", "onFling, velocityX: " + Math.abs(velocityX / VELOCITY_NORMALIZE_CONSTANT));
-        float pressure = MIN_PRESSURE + (MAX_PRESSURE - MIN_PRESSURE) * e1.getPressure();
+        float normVelocity = Math.abs(velocityX / VELOCITY_NORMALIZE_CONSTANT);
         cordManager = CordManager.getInstance(null);
-        cordManager.getTask(e1.getSource()).runTask(Math.abs(velocityX / VELOCITY_NORMALIZE_CONSTANT) * pressure, calcEqFreq(e1.getY()));
+        if (normVelocity > MIN_VELOCITY) {
+            Log.e("in", "normVelocity > MIN_VELOCITY: ");
+            float pressure = MIN_PRESSURE + (MAX_PRESSURE - MIN_PRESSURE) * e1.getPressure();
+//        cordManager.getTask(e1.getSource()).runTask(Math.abs(velocityX / VELOCITY_NORMALIZE_CONSTANT) * pressure, calcEqFreq(e1.getY()));
+            cordManager.getCord(e1.getSource()).setProperties(Math.abs(velocityX / VELOCITY_NORMALIZE_CONSTANT) * pressure, calcEqFreq(e1.getY()));
+        } else {
+            cordManager.getCord(e1.getSource()).setProperties(0, 0);
+        }
         return true;
     }
 

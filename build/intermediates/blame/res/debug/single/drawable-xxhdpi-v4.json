@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\IOIO\\HelloIOIOService\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_full_open_on_phone.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\IOIO\\HelloIOIOService\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\drawable-xxhdpi\\common_full_open_on_phone.png"
-    },
-    {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\common_full_open_on_phone.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\drawable-xxhdpi\\common_full_open_on_phone.png"
     }

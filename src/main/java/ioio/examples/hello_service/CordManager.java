@@ -1,23 +1,21 @@
 package ioio.examples.hello_service;
 
 import android.content.Context;
-import android.os.Build;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
+import android.media.AudioTrack;
+import android.util.Log;
 
 /**
  * Created by Tomer on 27/07/2016.
  */
 public class CordManager {
     private static CordManager cordManager;
-    private static Context context;
-    final static int NUM_OF_ITERATIONS = 100;
+    final static int NUM_OF_ITERATIONS = 1000;
     private static final int NUM_OF_MEITARS = 6;
     private static Cord[] cords = new Cord[NUM_OF_MEITARS];
     private static final int[] NOTES = {R.raw.e_string_low, R.raw.a_string, R.raw.d_string, R.raw.g_string,R.raw.b_string,
              R.raw.e_string_hi};
-    GestureListener gl;
-    GestureDetector gdt;
+    private static Task[] task = new Task[6];
+    private static float height;
 
     /* A private Constructor prevents any other
      * class from instantiating.
@@ -26,23 +24,14 @@ public class CordManager {
         for (int i = 0; i < NUM_OF_MEITARS; i++) {
             cords[i] = new Cord(context, NOTES[i], NUM_OF_ITERATIONS);
         }
-        gl = new GestureListener();
-        gdt = new GestureDetector(context, gl);
     }
 
     /* Static 'instance' method */
     public static CordManager getInstance(Context appContext) {
         if (cordManager == null) {
-            context = appContext;
-            cordManager = new CordManager(context);
+            cordManager = new CordManager(appContext);
         }
         return cordManager;
-    }
-
-    public void cancelTask(int index) {
-        if (cords[index] != null) {
-            cords[index].cancelTask();
-        }
     }
 
     public void cancelAllTasks() {
@@ -51,15 +40,107 @@ public class CordManager {
         }
     }
 
-    public boolean runTask(int index, MotionEvent event) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR1) {
-            event.setSource(index);
-        }
-        gdt.onTouchEvent(event);
-        return true;
+    public Cord getCord(int index) {
+        return cords[index];
     }
 
-    public Cord getTask(int index) {
-        return cords[index];
+    public static void restartTask(int index, float pressure, float velocityX, float yPos) {
+        cancelTask(index);
+        task[index] = new Task(index, pressure, velocityX, yPos);
+        task[index].start();
+    }
+
+    private static void cancelTask(int index) {
+        if (task[index] != null) {
+            try {
+                task[index].cancelTask(index);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void setHeight(float heightLayout) {
+        height = heightLayout;
+    }
+
+    public static class Task extends Thread {
+        private Cord cord;
+        private float pressure = 0f;
+        private float velocityX;
+        private final float yPos;
+        private volatile boolean running = true;
+
+        private static final float MIN_VELOCITY = 0.05f;
+        private static final int VELOCITY_NORMALIZE_CONSTANT = 15000;
+        private static final float MAX_PRESSURE = 1f;
+        private static final float MIN_PRESSURE = 0.9f;
+
+        public Task(int index, float pressure, float velocityX, float yPos) {
+            this.cord = cords[index];
+            this.pressure = pressure;
+            this.velocityX = velocityX;
+            this.yPos = yPos;
+        }
+
+        @Override
+        public void run() {
+            while (running) {
+                Log.e("in", "doInBackground");
+                cord.stopTrack();
+                if (setProperties()) {
+                    cord.initEqualizer(cord.getEqFreq());
+                    int currIndex = 0;
+                    float currVolume = cord.getStartVolume();
+//                Log.e("currVolume", "" + currVolume);
+//                Log.e("currRate", "" + currRate);
+//                Log.e("music", "" + revSample.length);
+//                Log.e("retPresure", "" + MainActivity.retPresure);
+//                Log.e("retleftX", "" + (int)MainActivity.retleftX);
+                    for (int i = 0; i < cord.getPartOne(); i++) {
+                        cord.playIteration(currIndex);
+                        if (!running) {
+                            break;
+                        }
+                        currIndex += cord.getBufferAddPerIteration();
+                        currVolume = cord.calcVolume(i, MainActivity.retPresure, (int) MainActivity.retleftX);
+                    }
+                }
+                running = false;
+            }
+        }
+
+        private boolean setProperties() {
+            float normVelocity = Math.abs(velocityX / VELOCITY_NORMALIZE_CONSTANT);
+            if (normVelocity > MIN_VELOCITY) {
+//                Log.e("in", "normVelocity > MIN_VELOCITY");
+                float normPressure = MIN_PRESSURE + (MAX_PRESSURE - MIN_PRESSURE) * pressure;
+                cord.setProperties(Math.abs(velocityX / VELOCITY_NORMALIZE_CONSTANT) * normPressure, calcEqFreq(yPos));
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        private void setVolume(AudioTrack audioTrack, float volume) {
+            audioTrack.setStereoVolume(volume, volume);
+        }
+
+        public void cancelTask(int index) throws InterruptedException {
+            cords[index].getAudioTrack().stop();
+            running = false;
+            join();
+        }
+
+        /**
+         * calculating the wanted equalizer freq using the distance of the Y axis event from
+         * the middle of the screen (reltive distance from the middle).
+         * @param currY the Y axis of the touch event.
+         * @return
+         */
+        private int calcEqFreq(float currY) {
+//        Log.e("in", "onFling, e1.getY(): " + (int) (Cord.MAX_FREQ * Math.abs((height / 2) - currY) / height));
+            return (int) (2 * Cord.MAX_FREQ * Math.abs((height / 2) - currY) / height);
+        }
     }
 }
