@@ -95,7 +95,7 @@ public class CordManager {
 //                Log.e("currVolume", "" + currVolume);
 //                Log.e("currRate", "" + currRate);
 //                Log.e("music", "" + revSample.length);
-//                Log.e("retPresure", "" + MainActivity.retPresure);
+                Log.e("retPresure", "" + MainActivity.retPresure);
 //                Log.e("retleftX", "" + (int)MainActivity.retleftX);
                     for (int i = 0; i < cord.getPartOne(); i++) {
                         cord.playIteration(currIndex);
@@ -103,7 +103,7 @@ public class CordManager {
                             break;
                         }
                         currIndex += cord.getBufferAddPerIteration();
-                        currVolume = cord.calcVolume(i, MainActivity.retPresure, (int) MainActivity.retleftX);
+                        currVolume = cord.calcVolume(currVolume, i, MainActivity.retPresure);
                     }
                 }
                 running = false;

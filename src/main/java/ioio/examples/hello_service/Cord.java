@@ -77,7 +77,8 @@ public class Cord {
         }
     }
 
-    public float calcVolume(int i, float pressure, int frat) {
+    public float calcVolume(float currVolume, int i, float pressure) {
+
         return startVolume;
     }
 
