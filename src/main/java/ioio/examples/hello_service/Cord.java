@@ -19,6 +19,9 @@ import java.nio.ByteOrder;
  */
 public class Cord {
     private static final float[] RATE_ARRAY = new float[12];
+    private static final int PRESSURE_CONST = 4000;
+    private static final float MIN_PRESSURE = 0.001f;
+
     static {
         for (int i = 0; i < RATE_ARRAY.length; i++) {
             RATE_ARRAY[i] = (float) Math.pow(2, i / (float) 12);
@@ -45,9 +48,6 @@ public class Cord {
 
     public Cord(Context context, int wav, int numOfIterations) {
         this.partOne = (int)((double)numOfIterations * PERCENTAGE_PART_ONE);
-    //        this.partTwo = (int)((double)numOfIterations * PERCENTAGE_PART_TWO);
-//        Log.e("partOne", "" + partOne);
-    //        Log.e("partTwo", "" + partTwo);
         int minBufferSize = AudioTrack.getMinBufferSize(DEFAULT_RATE,
                 AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
         this.audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, DEFAULT_RATE,
@@ -77,9 +77,20 @@ public class Cord {
         }
     }
 
-    public float calcVolume(float currVolume, int i, float pressure) {
+    public float calcVolume(float currVolume, float pressure, boolean withIOIO) {
+        if (withIOIO) {
+            if (pressure == 0.0) {
+                pressure = MIN_PRESSURE;
+            }
+            currVolume -= 1 / (PRESSURE_CONST * getPressureLog(pressure));
+            return currVolume;
+        } else {
+            return currVolume;
+        }
+    }
 
-        return startVolume;
+    private float getPressureLog(float pressure) {
+        return (float) Math.log(pressure);
     }
 
     public static int calcPitch(int frat) {

@@ -6,6 +6,8 @@ import android.view.VelocityTracker;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Created by Tomer on 01/08/2016.
  */
@@ -13,7 +15,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
 
     static final String logTag = "ActivitySwipeDetector";
     private static LinearLayout[] layouts = new LinearLayout[6];
-    static final int MIN_DISTANCE = 100;
+    static final int MIN_DISTANCE = 10;
     private float downX, downY, upX, upY;
     private VelocityTracker mVelocityTracker = null;
 
@@ -22,7 +24,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     }
 
     public void onRightSwipe(MotionEvent event){
-        Log.i(logTag, "RightToLeftSwipe!");
+//        Log.i(logTag, "RightToLeftSwipe!");
         mVelocityTracker.computeCurrentVelocity(1000);
         float velocityX = mVelocityTracker.getXVelocity();
         int start = getStringByPosition(downX);
@@ -37,17 +39,42 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
         } else if (end > getMiddleOfLayout(layouts[end])) {
             end++;
         }
-//        Log.i("start: ", start + "!");
-//        Log.i("end: ", end + "!");
         for (int i = start; i >= end; i--) {
-            Log.i(logTag, " start of restartTask - " + i);
+            try {
+                TimeUnit.MILLISECONDS.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             CordManager.restartTask(i, event.getPressure(), velocityX, event.getY());
-            Log.i(logTag, " end of restartTask - " + i);
         }
     }
 
     public void onLeftSwipe(MotionEvent event){
         Log.i(logTag, "LeftToRightSwipe!");
+        mVelocityTracker.computeCurrentVelocity(1000);
+        float velocityX = mVelocityTracker.getXVelocity();
+        int start = getStringByPosition(downX);
+        int end = getStringByPosition(upX);
+        if (end == -1) {
+            end = layouts.length - 1;
+        } else if (end < getMiddleOfLayout(layouts[end])) {
+            end--;
+        }
+        if (start == -1) {
+            start = 0;
+        } else if (start > getMiddleOfLayout(layouts[start])) {
+            start++;
+        }
+//        Log.e("start", "" + start);
+//        Log.e("end", "" + end);
+        for (int i = start; i <= end; i++) {
+            try {
+                TimeUnit.MILLISECONDS.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            CordManager.restartTask(i, event.getPressure(), velocityX, event.getY());
+        }
     }
 
     public void onDownSwipe(MotionEvent event){
@@ -130,7 +157,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
 //            Log.e("right: ", "" + layouts[i].getRight());
 //            Log.e("left: ", "" + layouts[i].getLeft());
             if (x >= layouts[i].getLeft() && x <= layouts[i].getRight()) {
-                Log.e("i: ", "" + i);
+//                Log.e("i: ", "" + i);
                 return i;
             }
         }

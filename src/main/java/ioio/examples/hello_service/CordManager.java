@@ -23,6 +23,8 @@ public class CordManager {
     private CordManager(Context context){
         for (int i = 0; i < NUM_OF_MEITARS; i++) {
             cords[i] = new Cord(context, NOTES[i], NUM_OF_ITERATIONS);
+            task[i] = new Task(i);
+            task[i].start();
         }
     }
 
@@ -46,8 +48,9 @@ public class CordManager {
 
     public static void restartTask(int index, float pressure, float velocityX, float yPos) {
         cancelTask(index);
-        task[index] = new Task(index, pressure, velocityX, yPos);
-        task[index].start();
+//        task[index] = new Task(index, pressure, velocityX, yPos);
+//        task[index].start();
+        task[index].setAndStart(pressure, velocityX, yPos);
     }
 
     private static void cancelTask(int index) {
@@ -68,13 +71,19 @@ public class CordManager {
         private Cord cord;
         private float pressure = 0f;
         private float velocityX;
-        private final float yPos;
+        private float yPos;
         private volatile boolean running = true;
+        private volatile boolean new_task = false;
 
-        private static final float MIN_VELOCITY = 0.05f;
+        private static final float MIN_VELOCITY = 0;
         private static final int VELOCITY_NORMALIZE_CONSTANT = 15000;
         private static final float MAX_PRESSURE = 1f;
         private static final float MIN_PRESSURE = 0.9f;
+
+        public Task(int index) {
+            this.cord = cords[index];
+            running = true;
+        }
 
         public Task(int index, float pressure, float velocityX, float yPos) {
             this.cord = cords[index];
@@ -85,29 +94,45 @@ public class CordManager {
 
         @Override
         public void run() {
-            while (running) {
-                Log.e("in", "doInBackground");
-                cord.stopTrack();
-                if (setProperties()) {
-                    cord.initEqualizer(cord.getEqFreq());
+            while (true) {
+                if (running) {
+                    new_task = false;
+                    cord.stopTrack();
                     int currIndex = 0;
-                    float currVolume = cord.getStartVolume();
-//                Log.e("currVolume", "" + currVolume);
-//                Log.e("currRate", "" + currRate);
-//                Log.e("music", "" + revSample.length);
-                Log.e("retPresure", "" + MainActivity.retPresure);
-//                Log.e("retleftX", "" + (int)MainActivity.retleftX);
-                    for (int i = 0; i < cord.getPartOne(); i++) {
-                        cord.playIteration(currIndex);
-                        if (!running) {
-                            break;
+//                    Log.e("currIndex", "" + currIndex);
+                    if (setProperties()) {
+                        cord.initEqualizer(cord.getEqFreq());
+                        float currVolume = cord.getStartVolume();
+    //                Log.e("currRate", "" + currRate);
+    //                Log.e("music", "" + revSample.length);
+//                        Log.e("retPresure", "" + MainActivity.retPresure);
+    //                Log.e("retleftX", "" + (int)MainActivity.retleftX);
+                        Log.e("new_task", "" + new_task);
+                        for (int i = 0; i < cord.getPartOne(); i++) {
+                            if (!running || new_task) {
+//                                Log.e("in", "break");
+//                                Log.e("in", "break" + running);
+                                break;
+                            }
+                            cord.playIteration(currIndex);
+                            currIndex += cord.getBufferAddPerIteration();
+                            currVolume = cord.calcVolume(currVolume, MainActivity.retPresure, false);
                         }
-                        currIndex += cord.getBufferAddPerIteration();
-                        currVolume = cord.calcVolume(currVolume, i, MainActivity.retPresure);
+                    }
+//                    Log.e("in", "END OF TASK");
+                    if (!new_task) {
+                        running = false;
                     }
                 }
-                running = false;
             }
+        }
+
+        public void setAndStart(float pressure, float velocityX, float yPos) {
+            this.pressure = pressure;
+            this.velocityX = velocityX;
+            this.yPos = yPos;
+            this.running = true;
+            this.new_task = true;
         }
 
         private boolean setProperties() {
@@ -116,8 +141,10 @@ public class CordManager {
 //                Log.e("in", "normVelocity > MIN_VELOCITY");
                 float normPressure = MIN_PRESSURE + (MAX_PRESSURE - MIN_PRESSURE) * pressure;
                 cord.setProperties(Math.abs(velocityX / VELOCITY_NORMALIZE_CONSTANT) * normPressure, calcEqFreq(yPos));
+//                Log.e("true in", "setProperties");
                 return true;
             } else {
+//                Log.e("false in", "setProperties");
                 return false;
             }
         }
@@ -127,9 +154,10 @@ public class CordManager {
         }
 
         public void cancelTask(int index) throws InterruptedException {
-            cords[index].getAudioTrack().stop();
-            running = false;
-            join();
+            cords[index].stopTrack();
+            this.running = false;
+            this.new_task = false;
+//            join();
         }
 
         /**
@@ -142,5 +170,6 @@ public class CordManager {
 //        Log.e("in", "onFling, e1.getY(): " + (int) (Cord.MAX_FREQ * Math.abs((height / 2) - currY) / height));
             return (int) (2 * Cord.MAX_FREQ * Math.abs((height / 2) - currY) / height);
         }
+
     }
 }
