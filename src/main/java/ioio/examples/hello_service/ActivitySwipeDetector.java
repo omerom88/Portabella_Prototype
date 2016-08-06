@@ -24,21 +24,13 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     }
 
     public void onRightSwipe(MotionEvent event){
-//        Log.i(logTag, "RightToLeftSwipe!");
+        Log.i(logTag, "RightToLeftSwipe!");
         mVelocityTracker.computeCurrentVelocity(1000);
         float velocityX = mVelocityTracker.getXVelocity();
-        int start = getStringByPosition(downX);
-        int end = getStringByPosition(upX);
-        if (start == -1) {
-            start = layouts.length - 1;
-        } else if (start < getMiddleOfLayout(layouts[start])) {
-            start--;
-        }
-        if (end == -1) {
-            end = 0;
-        } else if (end > getMiddleOfLayout(layouts[end])) {
-            end++;
-        }
+        int start = getRightString(getStringByPosition(downX));
+        int end = getLeftString(getStringByPosition(upX));
+//        Log.e("start", "" + start);
+//        Log.e("end", "" + end);
         for (int i = start; i >= end; i--) {
             try {
                 TimeUnit.MILLISECONDS.sleep(10);
@@ -53,18 +45,8 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
         Log.i(logTag, "LeftToRightSwipe!");
         mVelocityTracker.computeCurrentVelocity(1000);
         float velocityX = mVelocityTracker.getXVelocity();
-        int start = getStringByPosition(downX);
-        int end = getStringByPosition(upX);
-        if (end == -1) {
-            end = layouts.length - 1;
-        } else if (end < getMiddleOfLayout(layouts[end])) {
-            end--;
-        }
-        if (start == -1) {
-            start = 0;
-        } else if (start > getMiddleOfLayout(layouts[start])) {
-            start++;
-        }
+        int start = getLeftString(getStringByPosition(downX));
+        int end = getRightString(getStringByPosition(upX));
 //        Log.e("start", "" + start);
 //        Log.e("end", "" + end);
         for (int i = start; i <= end; i++) {
@@ -166,5 +148,23 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
 
     private static float getMiddleOfLayout(LinearLayout layout) {
         return (layout.getRight() + layout.getLeft()) / 2;
+    }
+
+    private int getRightString(int stringByPosition) {
+        if (stringByPosition == -1) {
+            stringByPosition = layouts.length - 1;
+        } else if (stringByPosition < getMiddleOfLayout(layouts[stringByPosition])) {
+            stringByPosition--;
+        }
+        return stringByPosition;
+    }
+
+    private int getLeftString(int stringByPosition) {
+        if (stringByPosition == -1) {
+            stringByPosition = 0;
+        } else if (stringByPosition > getMiddleOfLayout(layouts[stringByPosition])) {
+            stringByPosition++;
+        }
+        return stringByPosition;
     }
 }

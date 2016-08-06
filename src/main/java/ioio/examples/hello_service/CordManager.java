@@ -107,7 +107,7 @@ public class CordManager {
     //                Log.e("music", "" + revSample.length);
 //                        Log.e("retPresure", "" + MainActivity.retPresure);
     //                Log.e("retleftX", "" + (int)MainActivity.retleftX);
-                        Log.e("new_task", "" + new_task);
+//                        Log.e("new_task", "" + new_task);
                         for (int i = 0; i < cord.getPartOne(); i++) {
                             if (!running || new_task) {
 //                                Log.e("in", "break");
