@@ -10,10 +10,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
-import android.view.MotionEvent;
-import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
 import com.google.android.gms.common.api.GoogleApiClient;
 
@@ -54,7 +51,7 @@ public class MainActivity extends Activity {
         }
         CordManager.setHeight(size.y);
         /////////////// string layouts  ///////////////
-        RelativeLayout strummingLayout = (RelativeLayout) findViewById(R.id.mainLayout);
+        LinearLayout strummingLayout = (LinearLayout) findViewById(R.id.mainLayout);
         ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(layouts);
         strummingLayout.setOnTouchListener(activitySwipeDetector);
 
