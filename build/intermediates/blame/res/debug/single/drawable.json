@@ -1,18 +1,34 @@
 [
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\drawable\\screenr.jpg",
-        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\drawable\\screenr.jpg"
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\drawable\\onescreen.jpg",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\drawable\\onescreen.jpg"
     },
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\drawable\\stringstrdecayover10.gif",
-        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\drawable\\stringstrdecayover10.gif"
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable/screenbgnomenu.gif",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable/screenbgnomenu.gif"
     },
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\drawable\\onescreen.jpg",
-        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\drawable\\onescreen.jpg"
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\drawable\\screenbgnomenu.gif",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\drawable\\screenbgnomenu.gif"
     },
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\drawable\\screenbgnomenu.gif",
-        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\drawable\\screenbgnomenu.gif"
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\drawable\\stringstrdecayover10.gif",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\drawable\\stringstrdecayover10.gif"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\drawable\\screenr.jpg",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\drawable\\screenr.jpg"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable/onescreen.jpg",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable/onescreen.jpg"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable/screenr.jpg",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable/screenr.jpg"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable/stringstrdecayover10.gif",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable/stringstrdecayover10.gif"
     }
 ]
