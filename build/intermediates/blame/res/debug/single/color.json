@@ -1,15 +1,7 @@
 [
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_light.xml",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\color\\common_signin_btn_text_light.xml"
-    },
-    {
         "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/color/common_signin_btn_text_dark.xml",
         "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/color/common_signin_btn_text_dark.xml"
-    },
-    {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\color\\common_signin_btn_text_dark.xml",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\color\\common_signin_btn_text_dark.xml"
     },
     {
         "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/color/common_signin_btn_text_light.xml",

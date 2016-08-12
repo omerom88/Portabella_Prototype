@@ -77,10 +77,10 @@ ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:26:5-42
 	android:name
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:25:15-77
-service#ioio.examples.hello_service.HelloIOIOService
+service#ioio.examples.hello_service.HelloIOIOService2
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:28:9-29:19
 	android:name
-		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:28:18-49
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:28:18-50
 activity#ioio.examples.hello_service.ioioActivity
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:30:9-59
 	android:name

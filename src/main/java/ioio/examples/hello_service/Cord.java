@@ -141,8 +141,9 @@ public class Cord {
         }
     }
 
-    public void playIteration(int currIndex) {
-        audioTrack.setPlaybackRate(Cord.calcPitch((int)MainActivity.retleftX));
+    public void playIteration(int currIndex,int curSarig) {
+        audioTrack.setPlaybackRate(Cord.calcPitch(MainActivity.retSrigim[curSarig] + 1));
+        Log.i(this.getClass().getSimpleName(), Integer.toString(MainActivity.retSrigim[curSarig] + 1));
 //                setVolume(audioTrack, currVolume);
         play(sample, currIndex, bufferAddPerIteration);
     }
