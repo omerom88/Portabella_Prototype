@@ -10,18 +10,222 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc1779d7-b31c-4469-89ef-1d797cdf58dd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-19.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-19.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/Cord.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/Cord.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/CordManager.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/CordManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/builds/debug/689431495527299/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/builds/debug/689736547194364/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/builds/debug/689786971645178/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/ActivitySwipeDetector.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/CordManager$Task.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$attr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$color.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$drawable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$id.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$integer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$raw.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$string.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$style.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$styleable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$attr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$color.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$drawable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$id.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$integer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$raw.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$string.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$style.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$styleable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/ActivitySwipeDetector.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/BuildConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/Cord.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/CordManager$Task.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/CordManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/GestureListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/GifMovieView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/HelloIOIOService$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/HelloIOIOService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/MainActivity$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/MainActivity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$attr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$color.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$drawable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$id.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$integer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$layout.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$raw.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$string.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$styleable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$xml.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/ioioActivity$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/ioioActivity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/ioioBrodcastReciver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/lib/accessory/R$xml.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/lib/accessory/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/lib/android/device/R$xml.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/lib/android/device/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/classes.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/resources.zip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/reload-dex/debug/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/reload-dex/debug/classes.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/IOIOLibCore-5.07_f349b9ecb0829f76168dfedf52e6763ed8bbfc3c/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-22.2.0_9259751784c5a13667c71b0dba261e396768a0e2/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.ytai.ioio-IOIOLibAndroid-5.07_56ebd72745ded65fc88bf2c34ca2667bd7f51b75/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.ytai.ioio-IOIOLibAndroidAccessory-5.07_623164ba9ef12aabc1207719d21d3a4b18eb364c/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.ytai.ioio-IOIOLibAndroidBluetooth-5.07_f729a4a6e5865e2f2799c02e6da753b933a9d36e/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.ytai.ioio-IOIOLibAndroidDevice-5.07_15b68d44a124704547376b2bddd6a2277c9a37dc/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.1.0_16a54bee1f68ec242d16851fa5c66f2f399609e5/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.1.0_27399342eb3f27c78b8e56e5506a9f4957599850/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_58bdccb93f1ddb71f1dfa46af90055cfc5fbe16e/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7debb125b6f99448352b4545b28b1298443c3a3b/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.2.0_51e90531c066e96adf5f431ccd8767ba8404f74e/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-22.2.0_0fb2e0cf4ff7dac01deb986e215069ed30f7240c/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$attr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$color.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$drawable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$id.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$integer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$raw.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$string.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$style.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$styleable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$attr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$color.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$drawable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$id.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$integer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$raw.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$string.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$style.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$styleable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/ActivitySwipeDetector.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/BuildConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/Cord.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/CordManager$Task.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/CordManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/GestureListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/GifMovieView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/HelloIOIOService$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/HelloIOIOService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/MainActivity$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/MainActivity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$attr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$color.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$drawable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$id.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$integer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$layout.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$raw.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$string.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$styleable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$xml.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/ioioActivity$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/ioioActivity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/ioioBrodcastReciver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/lib/accessory/R$xml.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/lib/accessory/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/lib/android/device/R$xml.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/lib/android/device/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/ioio/examples/hello_service/ActivitySwipeDetector$override.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/ioio/examples/hello_service/CordManager$Task$override.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/com/android/tools/fd/dummy/slice_0.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_1/com/android/tools/fd/dummy/slice_1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/com/android/tools/fd/dummy/slice_2.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/com/android/tools/fd/dummy/slice_3.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/ioio/lib/accessory/R$xml.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/ioio/lib/accessory/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/android/tools/fd/dummy/slice_4.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$attr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$color.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$drawable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$id.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$integer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$raw.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$string.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$style.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R$styleable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_4/com/google/android/gms/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/android/tools/fd/dummy/slice_5.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/appindexing/R$attr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/appindexing/R$color.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/appindexing/R$drawable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/appindexing/R$id.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/appindexing/R$integer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/appindexing/R$raw.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/appindexing/R$string.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/appindexing/R$style.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/appindexing/R$styleable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/com/google/android/gms/appindexing/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/ActivitySwipeDetector.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/BuildConfig.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/Cord.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/CordManager$Task.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/CordManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/GestureListener.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/GifMovieView.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/HelloIOIOService$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/HelloIOIOService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/MainActivity$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/MainActivity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$attr.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$color.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$drawable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$id.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$integer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$layout.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$raw.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$string.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$styleable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$xml.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/ioioActivity$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/ioioActivity.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/ioioBrodcastReciver.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/com/android/tools/fd/dummy/slice_6.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/ioio/lib/android/device/R$xml.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_6/ioio/lib/android/device/R.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_7/com/android/tools/fd/dummy/slice_7.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/com/android/tools/fd/dummy/slice_8.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/android/tools/fd/dummy/slice_9.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/outputs/apk/Portabelo-debug-unaligned.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/outputs/apk/Portabelo-debug.apk" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/bundles/debug/instant-run/AndroidManifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental-safeguard/debug/tag.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/coldswap.marker" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/manifest.crc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/package.marker" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/restart-changes.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/buildId.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portabelo.iml" afterPath="$PROJECT_DIR$/Portabelo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ActivitySwipeDetector.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ActivitySwipeDetector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/CordManager.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/CordManager.java" />
     </list>
     <ignored path="HelloIOIOService.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,7 +257,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ActivitySwipeDetector.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="68" selection-end-column="33" />
+              <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="68" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,7 +289,7 @@
       <file leaf-file-name="CordManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/CordManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334">
+            <state vertical-scroll-proportion="0.5765199">
               <caret line="118" column="69" selection-start-line="118" selection-start-column="69" selection-end-line="118" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -1034,6 +1238,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1065,10 +1270,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1080,48 +1281,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelloIOIOService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Portabelo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hello_service" />
+              <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1174,6 +1339,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1517,7 +1683,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3395566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1525,7 +1691,6 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6257379" sideWeight="0.50215983" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="92" y="100" width="1724" height="838" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40490082" sideWeight="0.49784017" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23570596" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1534,7 +1699,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21436228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21436228" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -1547,6 +1712,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="92" y="100" width="1724" height="838" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1576,6 +1742,47 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ActivitySwipeDetector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+          <folding>
+            <element signature="e#1456#1457#0" expanded="true" />
+            <element signature="e#1485#1486#0" expanded="true" />
+            <element signature="e#3529#3530#0" expanded="true" />
+            <element signature="e#3578#3579#0" expanded="true" />
+            <element signature="e#4798#4799#0" expanded="true" />
+            <element signature="e#4831#4832#0" expanded="true" />
+            <element signature="method#setProperties#0;class#Cord#0" expanded="false" />
+            <element signature="e#5002#5003#0" expanded="true" />
+            <element signature="e#5032#5033#0" expanded="true" />
+            <element signature="method#convertStreamToByteArray#0;class#Cord#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/CordManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setVolume#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="docComment;method#calcEqFreq#0;class#Task#0;class#CordManager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ActivitySwipeDetector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1656,13 +1863,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main2.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="28" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java">
@@ -1723,13 +1930,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main2.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="28" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java">
@@ -1782,13 +1989,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main2.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="28" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java">
@@ -1819,13 +2026,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main2.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java">
@@ -1856,13 +2063,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main2.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java">
@@ -1957,13 +2164,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main2.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.049773756">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="28" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
@@ -2023,29 +2230,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_ioio_ne.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.280543">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ActivitySwipeDetector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="68" selection-end-column="33" />
+          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="68" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2073,7 +2280,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/CordManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
+        <state vertical-scroll-proportion="0.5765199">
           <caret line="118" column="69" selection-start-line="118" selection-start-column="69" selection-end-line="118" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
