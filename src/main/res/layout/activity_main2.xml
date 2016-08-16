@@ -10,12 +10,22 @@
 
 
     <LinearLayout
+        android:id="@+id/leftMargin"
+        android:orientation="horizontal"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:background="#00ffffff"
+        android:layout_weight="0.08">
+    </LinearLayout>
+
+
+    <LinearLayout
         android:id="@+id/E_LOW"
         android:orientation="horizontal"
         android:layout_height="fill_parent"
         android:layout_width="wrap_content"
         android:background="#00ffffff"
-        android:layout_weight="0.2">
+        android:layout_weight="0.14">
     </LinearLayout>
 
     <LinearLayout
@@ -24,7 +34,7 @@
         android:layout_width="wrap_content"
         android:background="#00ffffff"
         android:id="@+id/A"
-        android:layout_weight="0.15">
+        android:layout_weight="0.14">
     </LinearLayout>
 
 
@@ -34,7 +44,7 @@
         android:layout_width="wrap_content"
         android:background="#00ffffff"
         android:id="@+id/D"
-        android:layout_weight="0.15">
+        android:layout_weight="0.14">
     </LinearLayout>
 
     <LinearLayout
@@ -43,7 +53,7 @@
         android:layout_width="wrap_content"
         android:background="#00ffffff"
         android:id="@+id/G"
-        android:layout_weight="0.15">
+        android:layout_weight="0.14">
     </LinearLayout>
 
     <LinearLayout
@@ -52,7 +62,7 @@
         android:layout_width="wrap_content"
         android:background="#00ffffff"
         android:id="@+id/B"
-        android:layout_weight="0.15">
+        android:layout_weight="0.14">
     </LinearLayout>
 
     <LinearLayout
@@ -61,7 +71,16 @@
         android:layout_width="wrap_content"
         android:background="#00ffffff"
         android:id="@+id/E_HIGH"
-        android:layout_weight="0.2">
+        android:layout_weight="0.14">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rightMargin"
+        android:orientation="horizontal"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:background="#00ffffff"
+        android:layout_weight="0.08">
     </LinearLayout>
 
 </LinearLayout>
