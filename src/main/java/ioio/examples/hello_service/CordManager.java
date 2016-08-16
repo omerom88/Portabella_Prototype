@@ -2,7 +2,6 @@ package ioio.examples.hello_service;
 
 import android.content.Context;
 import android.media.AudioTrack;
-import android.util.Log;
 
 /**
  * Created by Tomer on 27/07/2016.
@@ -80,8 +79,11 @@ public class CordManager {
         private static final float MAX_PRESSURE = 1f;
         private static final float MIN_PRESSURE = 0.9f;
 
+        private int curIndex;
+
         public Task(int index) {
             this.cord = cords[index];
+            this.curIndex = index;
             running = true;
         }
 
@@ -114,9 +116,10 @@ public class CordManager {
 //                                Log.e("in", "break" + running);
                                 break;
                             }
-                            cord.playIteration(currIndex);
+                            cord.playIteration(currIndex,this.curIndex);
                             currIndex += cord.getBufferAddPerIteration();
-                            currVolume = cord.calcVolume(currVolume, MainActivity.retPresure, false);
+
+                            currVolume = cord.calcVolume(currVolume, MainActivity.retMeitar[this.curIndex], false);
                         }
                     }
 //                    Log.e("in", "END OF TASK");

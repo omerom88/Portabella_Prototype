@@ -10,27 +10,21 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
-import android.view.MotionEvent;
-import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-
-import com.google.android.gms.common.api.GoogleApiClient;
 
 public class MainActivity extends Activity {
 
     private static final int[] BUTTONS = {R.id.E_LOW, R.id.A, R.id.D, R.id.G, R.id.B, R.id.E_HIGH};
     private static CordManager cordManager;
     private IntentFilter mIntentFilter;
+    private String LOG_TAG = null;
     public static final String mBroadcastStringAction = "com.truiton.broadcast.string";
-    public static float retPresure;
-    public static float retleftY;
-    public static float retleftX;
+    public static float[] retMeitar = {0f,0f,0f,0f,0f,0f};
+    public static int[] retSrigim = {-1,-1,-1,-1,-1,-1};
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
-    private GoogleApiClient client;
 
     @Override
     public void onStart() {
@@ -41,6 +35,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        LOG_TAG = this.getClass().getSimpleName();
         LinearLayout[] layouts = new LinearLayout[6];
         for (int i = 0; i < layouts.length; i++) {
             layouts[i] = (LinearLayout) findViewById(BUTTONS[i]);
@@ -54,13 +49,13 @@ public class MainActivity extends Activity {
         }
         CordManager.setHeight(size.y);
         /////////////// string layouts  ///////////////
-        RelativeLayout strummingLayout = (RelativeLayout) findViewById(R.id.mainLayout);
+        LinearLayout strummingLayout = (LinearLayout) findViewById(R.id.mainLayout);
         ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(layouts);
         strummingLayout.setOnTouchListener(activitySwipeDetector);
 
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction(mBroadcastStringAction);
-        final Intent intent = new Intent(MainActivity.this, HelloIOIOService.class);
+        final Intent intent = new Intent(MainActivity.this, HelloIOIOService2.class);
         startService(intent);
     }
 
@@ -73,43 +68,71 @@ public class MainActivity extends Activity {
         @Override
         public void onReceive(Context context, Intent intent) {
             if (intent.getAction().equals(mBroadcastStringAction)) {
-                float temp0 = intent.getFloatExtra("presure0", 0f);
-                float temp1 = intent.getFloatExtra("presure1", 0f);
-                float temp2 = intent.getFloatExtra("presure2", 0f);
-                float temp3 = intent.getFloatExtra("presure3", 0f);
-                float temp4 = intent.getFloatExtra("presure4", 0f);
-                float temp5 = intent.getFloatExtra("presure5", 0f);
 
-                if (temp0 != 0) {
-                    retleftX = 5;
-                    retPresure = temp0;
+                for (int i = 0; i <= 5; i++){
+                    String strM = "meitar" + Integer.toString(i);
+                    String strS = "srigim" + Integer.toString(i);
+                    retMeitar[i] = intent.getFloatExtra(strM, 0);
+                    retSrigim[i] = intent.getIntExtra(strS, -1);
                 }
 
-                else if (temp1 != 0) {
-                    retleftX = 4;
-                    retPresure = temp1;
-                }
-                else if (temp2 != 0) {
-                    retleftX = 3;
-                    retPresure = temp2;
-                }
-                else if (temp3 != 0) {
-                    retleftX = 2;
-                    retPresure = temp3;
-                }
-                else if (temp4 != 0) {
-                    retleftX = 1;
-                    retPresure = temp4;
+//                float meitar0 = intent.getFloatExtra("meitar0", 0);
+//                float meitar1 = intent.getFloatExtra("meitar1", 0);
+//                float meitar2 = intent.getFloatExtra("meitar2", 0);
+//                float meitar3 = intent.getFloatExtra("meitar3", 0);
+//                float meitar4 = intent.getFloatExtra("meitar4", 0);
+//                float meitar5 = intent.getFloatExtra("meitar5", 0);
+
+//
+//                int srigim0 = intent.getIntExtra("srigim0", 0);
+//                int srigim1 = intent.getIntExtra("srigim1", 0);
+//                int srigim2 = intent.getIntExtra("srigim2", 0);
+//                int srigim3 = intent.getIntExtra("srigim3", 0);
+//                int srigim4 = intent.getIntExtra("srigim4", 0);
+//                int srigim5 = intent.getIntExtra("srigim5", 0);
+
+
+//                if (meitar0 != 0) {
+//                    retSrigim[0] = srigim0;
+//                    retMeitar[0] = meitar0;
+////                    Log.i(LOG_TAG, "retMeitar0:   "  + Float.toString(retMeitar));
+////                    Log.i(LOG_TAG, "retSrigim0:   "  + Integer.toString(retSrigim));
 //                }
-//                else if (temp5 != 0) {
-//                    retleftX = 1;
-//                    retPresure = temp5;
-                } else {
-                    retleftX = 0;
-                    retPresure = 0;
-                }
-//                Log.e("ret: ", "" + retleftX);
-//                Log.e("retPresure: ", "" + retPresure);
+//                else {
+//                    retSrigim[0] = 0;
+//                }
+//
+//                if (meitar1 != 0) {
+//                    retSrigim[1] = srigim1;
+//                    retMeitar[1] = meitar1;
+////                    Log.i(LOG_TAG, "retMeitar1:   "  + Float.toString(retMeitar));
+////                    Log.i(LOG_TAG, "retSrigim1:   "  + Integer.toString(retSrigim));
+//                }
+//                if (meitar2 != 0) {
+//                    retSrigim[2] = srigim2;
+//                    retMeitar[2] = meitar2;
+////                    Log.i(LOG_TAG, "retMeitar2:   "  + Float.toString(retMeitar));
+////                    Log.i(LOG_TAG, "retSrigim2:   "  + Integer.toString(retSrigim));
+//                }
+//                if (meitar3 != 0) {
+//                    retSrigim[3] = srigim3;
+//                    retMeitar[3] = meitar3;
+////                    Log.i(LOG_TAG, "retMeitar3:   "  + Float.toString(retMeitar));
+////                    Log.i(LOG_TAG, "retSrigim3:   "  + Integer.toString(retSrigim));
+//                }
+//                if (meitar4 != 0) {
+//                    retSrigim[4] = srigim4;
+//                    retMeitar[4] = meitar4;
+////                    Log.i(LOG_TAG, "retMeitar4:   "  + Float.toString(retMeitar));
+////                    Log.i(LOG_TAG, "retSrigim4:   "  + Integer.toString(retSrigim));
+//                }
+//                if (meitar5 != 0) {
+//                    retSrigim[5] = srigim5;
+//                    retMeitar[5] = meitar5;
+////                    Log.i(LOG_TAG, "retMeitar5:   "  + Float.toString(retMeitar));
+////                    Log.i(LOG_TAG, "retSrigim5:   "  + Integer.toString(retSrigim));
+//                }
+//
             }
         }
     };

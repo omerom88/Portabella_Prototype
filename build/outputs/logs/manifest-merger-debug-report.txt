@@ -77,10 +77,10 @@ ADDED from C:\Users\Tomer\Workspace\Portabelo\src\main\AndroidManifest.xml:25:4-
 		ADDED from C:\Users\Tomer\Workspace\Portabelo\src\main\AndroidManifest.xml:26:5-42
 	android:name
 		ADDED from C:\Users\Tomer\Workspace\Portabelo\src\main\AndroidManifest.xml:25:15-77
-service#ioio.examples.hello_service.HelloIOIOService
+service#ioio.examples.hello_service.HelloIOIOService2
 ADDED from C:\Users\Tomer\Workspace\Portabelo\src\main\AndroidManifest.xml:28:9-29:19
 	android:name
-		ADDED from C:\Users\Tomer\Workspace\Portabelo\src\main\AndroidManifest.xml:28:18-49
+		ADDED from C:\Users\Tomer\Workspace\Portabelo\src\main\AndroidManifest.xml:28:18-50
 activity#ioio.examples.hello_service.ioioActivity
 ADDED from C:\Users\Tomer\Workspace\Portabelo\src\main\AndroidManifest.xml:30:9-59
 	android:name

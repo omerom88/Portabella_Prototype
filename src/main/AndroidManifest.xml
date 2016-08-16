@@ -25,7 +25,7 @@
 			<meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
 				android:resource="@xml/device_filter" />
 		</activity>
-        <service android:name="HelloIOIOService">
+        <service android:name="HelloIOIOService2">
         </service>
         <activity android:name=".ioioActivity"></activity>
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
