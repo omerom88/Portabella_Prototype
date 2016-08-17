@@ -2,13 +2,14 @@ package ioio.examples.hello_service;
 
 import android.content.Context;
 import android.media.AudioTrack;
+import android.util.Log;
 
 /**
  * Created by Tomer on 27/07/2016.
  */
 public class CordManager {
     private static CordManager cordManager;
-    final static int NUM_OF_ITERATIONS = 1000;
+    final static int NUM_OF_ITERATIONS = 100;
     private static final int NUM_OF_MEITARS = 6;
     private static Cord[] cords = new Cord[NUM_OF_MEITARS];
     private static final int[] NOTES = {R.raw.e_string_low, R.raw.a_string, R.raw.d_string, R.raw.g_string,R.raw.b_string,
@@ -68,6 +69,7 @@ public class CordManager {
 
     public static class Task extends Thread {
         private Cord cord;
+        private int curIndex;
         private float pressure = 0f;
         private float velocityX;
         private float yPos;
@@ -79,19 +81,11 @@ public class CordManager {
         private static final float MAX_PRESSURE = 1f;
         private static final float MIN_PRESSURE = 0.9f;
 
-        private int curIndex;
 
         public Task(int index) {
             this.cord = cords[index];
             this.curIndex = index;
             running = true;
-        }
-
-        public Task(int index, float pressure, float velocityX, float yPos) {
-            this.cord = cords[index];
-            this.pressure = pressure;
-            this.velocityX = velocityX;
-            this.yPos = yPos;
         }
 
         @Override
@@ -116,7 +110,7 @@ public class CordManager {
 //                                Log.e("in", "break" + running);
                                 break;
                             }
-                            cord.playIteration(currIndex,this.curIndex);
+                            cord.playIteration(currIndex, this.curIndex);
                             currIndex += cord.getBufferAddPerIteration();
 
                             currVolume = cord.calcVolume(currVolume, MainActivity.retMeitar[this.curIndex], false);
@@ -143,7 +137,7 @@ public class CordManager {
             if (normVelocity > MIN_VELOCITY) {
 //                Log.e("in", "normVelocity > MIN_VELOCITY");
                 float normPressure = MIN_PRESSURE + (MAX_PRESSURE - MIN_PRESSURE) * pressure;
-                cord.setProperties(Math.abs(velocityX / VELOCITY_NORMALIZE_CONSTANT) * normPressure, calcEqFreq(yPos));
+                cord.setProperties(normVelocity * normPressure, calcEqFreq(yPos));
 //                Log.e("true in", "setProperties");
                 return true;
             } else {

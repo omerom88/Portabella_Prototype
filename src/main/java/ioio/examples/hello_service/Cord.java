@@ -100,14 +100,14 @@ public class Cord {
 
     public void initEqualizer(int eqFreq) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
-            for (int i = 0; i < equalizer.getNumberOfBands(); i++) {
+            for (short i = 0; i < equalizer.getNumberOfBands(); i++) {
                 if (i <= bandNumMaxFreq) {
                     double mult = getBandPrecentage(i + 1, bandNumMaxFreq + 1, eqFreq);
 //                    Log.e("properties: eqFreq", "" + eqFreq);
 //                    Log.e("prop: setBandLevel", "" + (short)(minEQLevel + ((maxEQLevel - minEQLevel) * mult)));
-                    equalizer.setBandLevel((short) i, (short)(minEQLevel + ((maxEQLevel - minEQLevel) * mult)));
+                    equalizer.setBandLevel(i, (short)(minEQLevel + ((maxEQLevel - minEQLevel) * mult)));
                 } else {
-                    equalizer.setBandLevel((short) i, maxEQLevel);
+                    equalizer.setBandLevel(i, maxEQLevel);
                 }
             }
         }
@@ -138,14 +138,24 @@ public class Cord {
     }
 
     public void playIteration(int currIndex,int curSarig) {
+//        long startTime = System.currentTimeMillis();
         audioTrack.setPlaybackRate(Cord.calcPitch(MainActivity.retSrigim[curSarig] + 1));
 //        Log.i(this.getClass().getSimpleName(), Integer.toString(MainActivity.retSrigim[curSarig] + 1));
 //                setVolume(audioTrack, currVolume);
-        play(sample, currIndex, bufferAddPerIteration);
+        play(currIndex);
+//        Log.e("time of run: ", "" + (System.currentTimeMillis() - startTime));
     }
 
     public int getBufferAddPerIteration() {
         return bufferAddPerIteration;
+    }
+
+    private void play(int start) {
+        audioTrack.play();
+        int writeSize =  audioTrack.write(sample, start, bufferAddPerIteration);
+//        Log.e("write size: ", "" + writeSize);
+//        Log.e("start", "" + start);
+//        Log.e("end", "" + end);
     }
 
     private void play(short[] music, int start, int end) {
