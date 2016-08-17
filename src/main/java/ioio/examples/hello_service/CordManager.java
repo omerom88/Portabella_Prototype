@@ -13,7 +13,7 @@ public class CordManager {
     private static Cord[] cords = new Cord[NUM_OF_MEITARS];
     private static final int[] NOTES = {R.raw.e_string_low, R.raw.a_string, R.raw.d_string, R.raw.g_string,R.raw.b_string,
              R.raw.e_string_hi};
-    private static Task[] task = new Task[6];
+    private static Task[] tasks = new Task[6];
     private static float height;
 
     /* A private Constructor prevents any other
@@ -22,8 +22,8 @@ public class CordManager {
     private CordManager(Context context){
         for (int i = 0; i < NUM_OF_MEITARS; i++) {
             cords[i] = new Cord(context, NOTES[i], NUM_OF_ITERATIONS);
-            task[i] = new Task(i);
-            task[i].start();
+            tasks[i] = new Task(i);
+            tasks[i].start();
         }
     }
 
@@ -47,15 +47,15 @@ public class CordManager {
 
     public static void restartTask(int index, float pressure, float velocityX, float yPos) {
         cancelTask(index);
-//        task[index] = new Task(index, pressure, velocityX, yPos);
-//        task[index].start();
-        task[index].setAndStart(pressure, velocityX, yPos);
+//        tasks[index] = new Task(index, pressure, velocityX, yPos);
+//        tasks[index].start();
+        tasks[index].setAndStart(pressure, velocityX, yPos);
     }
 
     public static void cancelTask(int index) {
-        if (task[index] != null) {
+        if (tasks[index] != null) {
             try {
-                task[index].cancelTask(index);
+                tasks[index].cancelTask(index);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -174,5 +174,16 @@ public class CordManager {
             return (int) (2 * Cord.MAX_FREQ * Math.abs((height / 2) - currY) / height);
         }
 
+        public boolean isRunning() {
+            return running;
+        }
+    }
+
+    public static void pauseUnRunningTasks() {
+        for (Task task : tasks) {
+            if (!task.isRunning()) {
+                task.interrupt();
+            }
+        }
     }
 }

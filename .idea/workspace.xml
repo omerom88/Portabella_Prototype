@@ -19,123 +19,90 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc1779d7-b31c-4469-89ef-1d797cdf58dd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/HelloIOIOService2$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/HelloIOIOService2.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/Recorder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/HelloIOIOService2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/PointerTouch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Recorder.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_android_19.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/generated/mockable-android-19.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/builds/debug/689431495527299/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/builds/debug/689736547194364/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/builds/debug/689786971645178/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/IOIOLibCore-5.07_f349b9ecb0829f76168dfedf52e6763ed8bbfc3c/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-22.2.0_9259751784c5a13667c71b0dba261e396768a0e2/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.ytai.ioio-IOIOLibAndroid-5.07_56ebd72745ded65fc88bf2c34ca2667bd7f51b75/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.ytai.ioio-IOIOLibAndroidAccessory-5.07_623164ba9ef12aabc1207719d21d3a4b18eb364c/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.ytai.ioio-IOIOLibAndroidBluetooth-5.07_f729a4a6e5865e2f2799c02e6da753b933a9d36e/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.ytai.ioio-IOIOLibAndroidDevice-5.07_15b68d44a124704547376b2bddd6a2277c9a37dc/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.1.0_16a54bee1f68ec242d16851fa5c66f2f399609e5/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.1.0_27399342eb3f27c78b8e56e5506a9f4957599850/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_58bdccb93f1ddb71f1dfa46af90055cfc5fbe16e/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_7debb125b6f99448352b4545b28b1298443c3a3b/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-22.2.0_51e90531c066e96adf5f431ccd8767ba8404f74e/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-22.2.0_0fb2e0cf4ff7dac01deb986e215069ed30f7240c/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/ioio/examples/hello_service/CordManager$Task$override.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/buildId.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Portabelo_New.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/IOIOLibCore-5.07_e8f00394d32adbf78ecb90a0593c47e8946fac0d.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.android.support-support-v4-22.2.0_7f78a9a336cc2c4e264e304b31ff380e1dcafe0d.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.github.ytai.ioio-IOIOLibAndroid-5.07_ff7328c9baa27ac05781495773a5ca3b6236af5b.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.github.ytai.ioio-IOIOLibAndroidAccessory-5.07_a4fe7cb54e1b45d707b4f487da69c3db9cb6ce22.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.github.ytai.ioio-IOIOLibAndroidBluetooth-5.07_4a0c57528b2d81d8f5f8ac89a6a015e399d410d9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.github.ytai.ioio-IOIOLibAndroidDevice-5.07_7c22c43d05a200e1c4ab314aabdcef0d9485b70c.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-8.1.0_960417d63d8d4d48460a7cdc63b4dc9b46be1c7b.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-8.1.0_db5c54cc61a44a22714dedb6a6f36ab7738b35c5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/debug_5ddb0bc3aa0350a9d29e4f8aa42c52ee911cc577.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/internal_impl-22.2.0_c0f5db86859dc20fe3e5e7878ec1dabeaaac4120.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/support-annotations-22.2.0_281897238c8d02659af94915a2fd65d594600eec.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/outputs/apk/Portabelo_New-debug-unaligned.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/outputs/apk/Portabelo_New-debug.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GestureListener.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/google/android/gms/R.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/google/android/gms/R.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/com/google/android/gms/appindexing/R.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/com/google/android/gms/appindexing/R.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/ActivitySwipeDetector.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/ActivitySwipeDetector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/Cord.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/Cord.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/CordManager$Task.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/CordManager$Task.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/CordManager.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/CordManager.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GestureListener.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GestureListener.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GifMovieView.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GifMovieView.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/HelloIOIOService$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/HelloIOIOService$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/HelloIOIOService.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/HelloIOIOService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/MainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/MainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R$integer.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R$layout.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R$raw.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R$string.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R$styleable.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R$xml.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R$xml.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/ioioActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/ioioActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/ioioActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/ioioActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/ioioBrodcastReciver.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/ioioBrodcastReciver.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/lib/accessory/R.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/lib/accessory/R.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/lib/android/device/R.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/lib/android/device/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" afterPath="$PROJECT_DIR$/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/ActivitySwipeDetector.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/ActivitySwipeDetector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/Cord.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/Cord.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/CordManager$Task.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/CordManager$Task.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/CordManager.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/CordManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/MainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/MainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/ioioActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/ioioActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/ioioActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/ioioActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/classes.zip" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/classes.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/resources.zip" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/resources.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$integer.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$layout.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$raw.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$string.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$styleable.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$xml.class" afterPath="$PROJECT_DIR$/build/intermediates/incremental-verifier/debug/ioio/examples/hello_service/R$xml.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/reload-dex/debug/classes.dex" afterPath="$PROJECT_DIR$/build/intermediates/reload-dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/reload-dex/debug/classes.jar" afterPath="$PROJECT_DIR$/build/intermediates/reload-dex/debug/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/screenr.jpg" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/screenr.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/ActivitySwipeDetector.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/ActivitySwipeDetector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/Cord.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/Cord.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/CordManager$Task.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/CordManager$Task.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/CordManager.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/CordManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/MainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/MainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/ioioActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/ioioActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/ioioActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/ioioActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$integer.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$layout.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$raw.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$string.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$styleable.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$xml.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/1/5/main/ioio/examples/hello_service/R$xml.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/ioio/examples/hello_service/ActivitySwipeDetector$override.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/ioio/examples/hello_service/ActivitySwipeDetector$override.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/ActivitySwipeDetector.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/ActivitySwipeDetector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/Cord.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/Cord.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/CordManager$Task.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/CordManager$Task.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/CordManager.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/CordManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/MainActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/MainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/ioioActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/ioioActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/ioioActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/ioioActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$id.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$integer.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$layout.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$raw.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$raw.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$string.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$styleable.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$xml.class" afterPath="$PROJECT_DIR$/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_5/ioio/examples/hello_service/R$xml.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar" afterPath="$PROJECT_DIR$/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/Portabelo-debug-unaligned.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/Portabelo-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/Portabelo-debug.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/Portabelo-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/drawable/screenr.jpg" afterPath="$PROJECT_DIR$/src/main/res/drawable/screenr.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/IOIOLibAndroidAccessory_5_07.xml" afterPath="$PROJECT_DIR$/.idea/libraries/IOIOLibAndroidAccessory_5_07.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/IOIOLibAndroidBluetooth_5_07.xml" afterPath="$PROJECT_DIR$/.idea/libraries/IOIOLibAndroidBluetooth_5_07.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/IOIOLibAndroidDevice_5_07.xml" afterPath="$PROJECT_DIR$/.idea/libraries/IOIOLibAndroidDevice_5_07.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/IOIOLibAndroid_5_07.xml" afterPath="$PROJECT_DIR$/.idea/libraries/IOIOLibAndroid_5_07.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_appindexing_8_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_appindexing_8_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_22_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_22_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Portabelo.iml" afterPath="$PROJECT_DIR$/Portabelo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/r/debug/ioio/examples/hello_service/R.java" afterPath="$PROJECT_DIR$/build/generated/source/r/debug/ioio/examples/hello_service/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-af.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-af.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-am.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-am.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-ar.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-ar.json" />
@@ -226,8 +193,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/raw.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/raw.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/xml.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/xml.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/bundles/debug/instant-run/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/bundles/debug/instant-run/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" />
@@ -235,19 +200,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/manifest.crc" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/manifest.crc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/restart-changes.txt" afterPath="$PROJECT_DIR$/build/intermediates/instant-run-support/debug/restart-changes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_main2.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_main2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/build/intermediates/restart-dex/debug/build-info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ActivitySwipeDetector.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ActivitySwipeDetector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/CordManager.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/CordManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MainActivity.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ioioActivity.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ioioActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main2.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main2.xml" />
     </list>
     <ignored path="HelloIOIOService.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -278,18 +238,25 @@
       <file leaf-file-name="ActivitySwipeDetector.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ActivitySwipeDetector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4648058">
-              <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.46601942">
+              <caret line="215" column="106" selection-start-line="215" selection-start-column="106" selection-end-line="215" selection-end-column="106" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+                <element signature="method#MultiPointerTouch#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
                 <element signature="method#setVelocityTracker#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+                <element signature="method#addStrumming#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+                <element signature="method#removeStrumming#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
                 <element signature="method#equals#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
                 <element signature="method#compareTo#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
                 <element signature="method#addMovement#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+                <element signature="method#clear#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+                <element signature="method#ActivitySwipeDetector#0;class#ActivitySwipeDetector#0" expanded="false" />
                 <element signature="method#run#0;class#ActivitySwipeDetector#0" expanded="false" />
                 <element signature="method#getMeitarBorder#0;class#ActivitySwipeDetector#0" expanded="false" />
                 <element signature="class#StrummingTaskManager#0;class#ActivitySwipeDetector#0" expanded="false" />
                 <element signature="method#getMeitarBorder#0;class#StrummingTaskManager#0;class#ActivitySwipeDetector#0" expanded="false" />
+                <element signature="method#onRightSwipe#0;class#ActivitySwipeDetector#0" expanded="false" />
                 <element signature="method#onLeftSwipe#0;class#ActivitySwipeDetector#0" expanded="false" />
                 <element signature="method#onTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
                 <element signature="method#getPointer#0;class#ActivitySwipeDetector#0" expanded="false" />
@@ -301,16 +268,58 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="activity_main2.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main2.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.0923076">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CordManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/CordManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+              <caret line="183" column="36" selection-start-line="183" selection-start-column="36" selection-end-line="183" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#run#0;class#Task#0;class#CordManager#0" expanded="false" />
+                <element signature="method#CordManager#0;class#CordManager#0" expanded="false" />
+                <element signature="method#getInstance#0;class#CordManager#0" expanded="false" />
+                <element signature="method#cancelAllTasks#0;class#CordManager#0" expanded="false" />
+                <element signature="method#restartTask#0;class#CordManager#0" expanded="false" />
+                <element signature="method#cancelTask#0;class#CordManager#0" expanded="false" />
+                <element signature="class#Task#0;class#CordManager#0" expanded="false" />
+                <element signature="method#setAndStart#0;class#Task#0;class#CordManager#0" expanded="false" />
+                <element signature="method#setProperties#0;class#Task#0;class#CordManager#0" expanded="false" />
                 <element signature="method#setVolume#0;class#Task#0;class#CordManager#0" expanded="false" />
+                <element signature="method#cancelTask#0;class#Task#0;class#CordManager#0" expanded="false" />
                 <element signature="docComment;method#calcEqFreq#0;class#Task#0;class#CordManager#0" expanded="false" />
+                <element signature="method#calcEqFreq#0;class#Task#0;class#CordManager#0" expanded="false" />
+                <element signature="e#6376#6377#0" expanded="true" />
+                <element signature="e#6414#6415#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cord.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+              <folding>
+                <element signature="method#calcVolume#0;class#Cord#0" expanded="false" />
+                <element signature="method#calcPitch#0;class#Cord#0" expanded="false" />
+                <element signature="method#initEqualizer#0;class#Cord#0" expanded="false" />
+                <element signature="method#getBandPrecentage#0;class#Cord#0" expanded="false" />
+                <element signature="method#setProperties#0;class#Cord#0" expanded="false" />
+                <element signature="method#stopTrack#0;class#Cord#0" expanded="false" />
+                <element signature="method#convertStreamToByteArray#0;class#Cord#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -320,7 +329,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="152" column="23" selection-start-line="152" selection-start-column="23" selection-end-line="152" selection-end-column="23" />
+              <caret line="145" column="41" selection-start-line="145" selection-start-column="41" selection-end-line="145" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -348,6 +357,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Tomer" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -1283,18 +1297,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main2.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ioioActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/HelloIOIOService2.java" />
         <option value="$PROJECT_DIR$/local.properties" />
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Recorder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/CordManager.java" />
         <option value="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/PointerTouch.java" />
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ActivitySwipeDetectorTemp.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/activity_main2.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ActivitySwipeDetector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/CordManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java" />
       </list>
     </option>
   </component>
@@ -1781,19 +1795,40 @@
       <option name="number" value="Default" />
       <updated>1470923261532</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updated the Touch screen algorithem to be able to respond to more than 1 touch (still has a few problem).&#10;">
+      <created>1471375152156</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1471375152156</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Updated the Touch screen algorithem to be able to respond to more than 1 touch (still has a few problem).&#10;">
+      <created>1471375642036</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1471375642036</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated the Touch screen algorithem to be able to respond to more than 1 touch (still has a few problem).&#10;">
+      <created>1471375738530</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1471375738530</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3395566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21436228" sideWeight="0.50956523" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6257379" sideWeight="0.50215983" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="92" y="100" width="1724" height="838" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40956825" sideWeight="0.49784017" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23570596" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1801,11 +1836,11 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21436228" sideWeight="0.49591598" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21436228" sideWeight="0.4904348" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21436228" sideWeight="0.504084" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1815,9 +1850,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="92" y="100" width="1724" height="838" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1831,9 +1864,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated the Touch screen algorithem to be able to respond to more than 1 touch (still has a few problem).&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the Touch screen algorithem to be able to respond to more than 1 touch (still has a few problem).&#10;" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="21" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1844,9 +1881,20 @@
           <caret line="104" column="52" selection-start-line="104" selection-start-column="52" selection-end-line="104" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#CordManager#0;class#CordManager#0" expanded="false" />
+            <element signature="method#getInstance#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelAllTasks#0;class#CordManager#0" expanded="false" />
+            <element signature="method#restartTask#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelTask#0;class#CordManager#0" expanded="false" />
+            <element signature="class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#setAndStart#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#setProperties#0;class#Task#0;class#CordManager#0" expanded="false" />
             <element signature="method#setVolume#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelTask#0;class#Task#0;class#CordManager#0" expanded="false" />
             <element signature="docComment;method#calcEqFreq#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#calcEqFreq#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="e#6376#6377#0" expanded="true" />
+            <element signature="e#6414#6415#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1872,14 +1920,21 @@
           <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#MultiPointerTouch#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#setVelocityTracker#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#addStrumming#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#removeStrumming#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#equals#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#compareTo#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#addMovement#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#clear#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#ActivitySwipeDetector#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#run#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#getMeitarBorder#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="class#StrummingTaskManager#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#getMeitarBorder#0;class#StrummingTaskManager#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#onRightSwipe#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#onLeftSwipe#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#onTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#getPointer#0;class#ActivitySwipeDetector#0" expanded="false" />
@@ -1896,9 +1951,20 @@
           <caret line="46" column="87" selection-start-line="46" selection-start-column="87" selection-end-line="46" selection-end-column="87" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#CordManager#0;class#CordManager#0" expanded="false" />
+            <element signature="method#getInstance#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelAllTasks#0;class#CordManager#0" expanded="false" />
+            <element signature="method#restartTask#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelTask#0;class#CordManager#0" expanded="false" />
+            <element signature="class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#setAndStart#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#setProperties#0;class#Task#0;class#CordManager#0" expanded="false" />
             <element signature="method#setVolume#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelTask#0;class#Task#0;class#CordManager#0" expanded="false" />
             <element signature="docComment;method#calcEqFreq#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#calcEqFreq#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="e#6376#6377#0" expanded="true" />
+            <element signature="e#6414#6415#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1928,6 +1994,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1945,14 +2012,21 @@
           <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#MultiPointerTouch#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#setVelocityTracker#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#addStrumming#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#removeStrumming#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#equals#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#compareTo#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#addMovement#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#clear#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#ActivitySwipeDetector#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#run#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#getMeitarBorder#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="class#StrummingTaskManager#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#getMeitarBorder#0;class#StrummingTaskManager#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#onRightSwipe#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#onLeftSwipe#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#onTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#getPointer#0;class#ActivitySwipeDetector#0" expanded="false" />
@@ -1969,9 +2043,20 @@
           <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#CordManager#0;class#CordManager#0" expanded="false" />
+            <element signature="method#getInstance#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelAllTasks#0;class#CordManager#0" expanded="false" />
+            <element signature="method#restartTask#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelTask#0;class#CordManager#0" expanded="false" />
+            <element signature="class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#setAndStart#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#setProperties#0;class#Task#0;class#CordManager#0" expanded="false" />
             <element signature="method#setVolume#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelTask#0;class#Task#0;class#CordManager#0" expanded="false" />
             <element signature="docComment;method#calcEqFreq#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#calcEqFreq#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="e#6376#6377#0" expanded="true" />
+            <element signature="e#6414#6415#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2011,14 +2096,21 @@
           <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#MultiPointerTouch#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#setVelocityTracker#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#addStrumming#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#removeStrumming#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#equals#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#compareTo#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#addMovement#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#clear#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#ActivitySwipeDetector#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#run#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#getMeitarBorder#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="class#StrummingTaskManager#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#getMeitarBorder#0;class#StrummingTaskManager#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#onRightSwipe#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#onLeftSwipe#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#onTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#getPointer#0;class#ActivitySwipeDetector#0" expanded="false" />
@@ -2035,9 +2127,20 @@
           <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#CordManager#0;class#CordManager#0" expanded="false" />
+            <element signature="method#getInstance#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelAllTasks#0;class#CordManager#0" expanded="false" />
+            <element signature="method#restartTask#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelTask#0;class#CordManager#0" expanded="false" />
+            <element signature="class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#setAndStart#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#setProperties#0;class#Task#0;class#CordManager#0" expanded="false" />
             <element signature="method#setVolume#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelTask#0;class#Task#0;class#CordManager#0" expanded="false" />
             <element signature="docComment;method#calcEqFreq#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#calcEqFreq#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="e#6376#6377#0" expanded="true" />
+            <element signature="e#6414#6415#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2179,6 +2282,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.96844184">
           <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2252,14 +2356,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GestureListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40682787">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-19/android.jar!/java/lang/Thread.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38875306">
@@ -2277,28 +2373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.7230768">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7167019">
-          <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
-          <folding>
-            <element signature="method#setProperties#0;class#Cord#0" expanded="false" />
-            <element signature="method#convertStreamToByteArray#0;class#Cord#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/PointerTouch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2312,38 +2386,83 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="152" column="23" selection-start-line="152" selection-start-column="23" selection-end-line="152" selection-end-column="23" />
+          <caret line="145" column="41" selection-start-line="145" selection-start-column="41" selection-end-line="145" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Cord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+          <folding>
+            <element signature="method#calcVolume#0;class#Cord#0" expanded="false" />
+            <element signature="method#calcPitch#0;class#Cord#0" expanded="false" />
+            <element signature="method#initEqualizer#0;class#Cord#0" expanded="false" />
+            <element signature="method#getBandPrecentage#0;class#Cord#0" expanded="false" />
+            <element signature="method#setProperties#0;class#Cord#0" expanded="false" />
+            <element signature="method#stopTrack#0;class#Cord#0" expanded="false" />
+            <element signature="method#convertStreamToByteArray#0;class#Cord#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/CordManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <caret line="183" column="36" selection-start-line="183" selection-start-column="36" selection-end-line="183" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#CordManager#0;class#CordManager#0" expanded="false" />
+            <element signature="method#getInstance#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelAllTasks#0;class#CordManager#0" expanded="false" />
+            <element signature="method#restartTask#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelTask#0;class#CordManager#0" expanded="false" />
+            <element signature="class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#setAndStart#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#setProperties#0;class#Task#0;class#CordManager#0" expanded="false" />
             <element signature="method#setVolume#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#cancelTask#0;class#Task#0;class#CordManager#0" expanded="false" />
             <element signature="docComment;method#calcEqFreq#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="method#calcEqFreq#0;class#Task#0;class#CordManager#0" expanded="false" />
+            <element signature="e#6376#6377#0" expanded="true" />
+            <element signature="e#6414#6415#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/activity_main2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.0923076">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ActivitySwipeDetector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4648058">
-          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.46601942">
+          <caret line="215" column="106" selection-start-line="215" selection-start-column="106" selection-end-line="215" selection-end-column="106" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#MultiPointerTouch#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#setVelocityTracker#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#addStrumming#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#removeStrumming#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#equals#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#compareTo#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#addMovement#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#clear#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#ActivitySwipeDetector#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#run#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#getMeitarBorder#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="class#StrummingTaskManager#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#getMeitarBorder#0;class#StrummingTaskManager#0;class#ActivitySwipeDetector#0" expanded="false" />
+            <element signature="method#onRightSwipe#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#onLeftSwipe#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#onTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#getPointer#0;class#ActivitySwipeDetector#0" expanded="false" />

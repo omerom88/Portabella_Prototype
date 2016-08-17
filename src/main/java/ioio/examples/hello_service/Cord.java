@@ -93,7 +93,7 @@ public class Cord {
         return (float) Math.log(pressure);
     }
 
-    public static int calcPitch(int frat) {
+    private static int calcPitch(int frat) {
 //        Log.e("pitch: ", "" + (int) (DEFAULT_RATE * RATE_ARRAY[frat]));
         return (int) (DEFAULT_RATE * RATE_ARRAY[frat]);
     }
@@ -116,10 +116,6 @@ public class Cord {
     private double getBandPrecentage(int bandNum, int bandNumMaxFreq, int freq) {
         double percentage = Math.pow(((double) (bandNum) / (bandNumMaxFreq)), 2) * (1 - ((double) freq / MAX_FREQ));
         return Math.min(2 * percentage, 1);
-    }
-
-    public AudioTrack getAudioTrack() {
-        return audioTrack;
     }
 
     public void setProperties(float startVolume, int eqFreq) {
@@ -152,7 +148,7 @@ public class Cord {
         return bufferAddPerIteration;
     }
 
-    public void play(short[] music, int start, int end) {
+    private void play(short[] music, int start, int end) {
         audioTrack.play();
         int writeSize =  audioTrack.write(music, start, end);
 //        Log.e("write size: ", "" + writeSize);
@@ -160,7 +156,7 @@ public class Cord {
 //        Log.e("end", "" + end);
     }
 
-    public static byte[] convertStreamToByteArray(InputStream is) throws IOException {
+    private static byte[] convertStreamToByteArray(InputStream is) throws IOException {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final int BUFFER_SIZE = 4096;
         byte[] buff = new byte[BUFFER_SIZE];

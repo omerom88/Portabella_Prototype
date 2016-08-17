@@ -250,6 +250,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
         int maskedAction = event.getActionMasked();
         multiPointerTouch.add(new MultiPointerTouch(pointerId));
         MultiPointerTouch mpt = getPointer(pointerId);
+        CordManager.pauseUnRunningTasks();
         if (mpt != null) {
             switch (maskedAction) {
                 case MotionEvent.ACTION_DOWN:
@@ -334,4 +335,5 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     private static float getMiddleOfLayout(LinearLayout layout) {
         return (layout.getRight() + layout.getLeft()) / 2;
     }
+
 }
