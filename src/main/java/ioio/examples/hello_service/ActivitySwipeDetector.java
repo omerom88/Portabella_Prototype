@@ -75,12 +75,12 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                     velocityTracker.computeCurrentVelocity(500);
                     pointerList.addLast(new PointerTouch(layout, velocityTracker.getXVelocity(), pressure, y));
                     run();
-//                    if (!isStrumming) {
-////                        StrummingTaskManager stm = new StrummingTaskManager(this);
-////                        stm.start();
-////                        run(this);
-//                        isStrumming = true;
-//                    }
+                    if (!isStrumming) {
+//                        StrummingTaskManager stm = new StrummingTaskManager(this);
+//                        stm.start();
+//                        run(this);
+                        isStrumming = true;
+                    }
                 }
             }
         }
@@ -111,7 +111,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                 }
                 this.removeStrumming();
             }
-//            this.isStrumming = false;
+            this.isStrumming = false;
         }
 
         private int getMeitarBorder(int layoutId) {
