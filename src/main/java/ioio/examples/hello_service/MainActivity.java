@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
         CordManager.setHeight(size.y);
         /////////////// string layouts  ///////////////
         LinearLayout strummingLayout = (LinearLayout) findViewById(R.id.mainLayout);
-        ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(layouts);
+        ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(layouts, this);
         strummingLayout.setOnTouchListener(activitySwipeDetector);
 
         mIntentFilter = new IntentFilter();

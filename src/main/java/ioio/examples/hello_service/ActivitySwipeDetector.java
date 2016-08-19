@@ -19,10 +19,15 @@ import java.util.concurrent.TimeUnit;
 public class ActivitySwipeDetector implements View.OnTouchListener {
 
     private static final String logTag = "ActivitySwipeDetector";
+    private static MainActivity mainActivity;
     private static LinearLayout[] layouts = new LinearLayout[6];
     private static final int MIN_DISTANCE = 10;
     private SortedSet<MultiPointerTouch> multiPointerTouch;
 
+    /**
+     * This inner class represent a Pointer on the screen. each pointer has a unique id and contains
+     * a list of layout that the user moved his finger on.
+     */
     private class MultiPointerTouch implements Comparable<MultiPointerTouch> {
         private int id;
         private LinkedList<PointerTouch> pointerList;
@@ -38,10 +43,6 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
             return id;
         }
 
-        public VelocityTracker getVelocityTracker() {
-            return velocityTracker;
-        }
-
         public void setVelocityTracker(VelocityTracker velocityTracker) {
             this.velocityTracker = velocityTracker;
         }
@@ -50,6 +51,13 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
             velocityTracker.clear();
         }
 
+        /**
+         * add a new Strumming to the pointer, and start the strumming action (if not started yet).
+         * if if LayoutId == -1, than the pointer makes a new strumming.
+         * @param layout The layout that the event took place.
+         * @param pressure the pressure of the pointer on the screen.
+         * @param y The y coordinate of the pointer.
+         */
         public void addStrumming(int layout, float pressure, float y) {
 //            Log.e("addStrumming, layout: ", "" + layout);
 //            Log.e("addStrumming, vel: ", "" + velocityTracker);
@@ -66,14 +74,49 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                 if (pointerList.getLast().getLayoutId() != layout) {
                     velocityTracker.computeCurrentVelocity(500);
                     pointerList.addLast(new PointerTouch(layout, velocityTracker.getXVelocity(), pressure, y));
-                    if (!isStrumming) {
-                        StrummingTaskManager stm = new StrummingTaskManager(this);
-                        stm.start();
-//                        run(this);
-                        isStrumming = true;
-                    }
+                    run();
+//                    if (!isStrumming) {
+////                        StrummingTaskManager stm = new StrummingTaskManager(this);
+////                        stm.start();
+////                        run(this);
+//                        isStrumming = true;
+//                    }
                 }
             }
+        }
+
+        public void run() {
+            LinkedList<PointerTouch> list = this.getPointerList();
+            while (list.size() > 1) {
+                PointerTouch second = list.get(1);
+                int firstLayoutId = list.getFirst().getLayoutId();
+                int secondLayoutId = second.getLayoutId();
+                if (firstLayoutId != -1) {
+                    if (secondLayoutId == -1) {
+                        this.removeStrumming();
+                    } else if (firstLayoutId < secondLayoutId &&(((firstLayoutId + secondLayoutId) % 4 == 1)
+                            || (firstLayoutId + 1 < secondLayoutId))) {
+                        int start = getMeitarBorder(firstLayoutId);
+                        int end = getMeitarBorder(secondLayoutId);
+                        long startTime = System.currentTimeMillis();
+                        onLeftSwipe(second.getVelocity(), second.getPressure(), second.getY(), start, end);
+                        Log.e("time of run: ", "" + (System.currentTimeMillis() - startTime));
+                    } else if ((firstLayoutId + secondLayoutId) % 4 == 1 || firstLayoutId > secondLayoutId + 1) {
+//                            Log.e("first: ", "" + firstLayoutId);
+//                            Log.e("second: ", "" + secondLayoutId);
+                        int start = getMeitarBorder(firstLayoutId);
+                        int end = getMeitarBorder(secondLayoutId);
+                        onRightSwipe(second.getVelocity(), second.getPressure(), second.getY(), start, end);
+                    }
+                }
+                this.removeStrumming();
+            }
+//            this.isStrumming = false;
+        }
+
+        private int getMeitarBorder(int layoutId) {
+            int meitar = layoutId / 2;
+            return layoutId % 2 == 1 ? ++meitar : meitar;
         }
 
         public void removeStrumming() {
@@ -122,8 +165,9 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
         }
     }
 
-    public ActivitySwipeDetector(LinearLayout[] layouts){
+    public ActivitySwipeDetector(LinearLayout[] layouts, MainActivity mainActivity){
         ActivitySwipeDetector.layouts = layouts;
+        ActivitySwipeDetector.mainActivity = mainActivity;
         this.multiPointerTouch = new TreeSet<MultiPointerTouch>();
     }
 
@@ -148,7 +192,9 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                             || (firstLayoutId + 1 < secondLayoutId))) {
                             int start = getMeitarBorder(firstLayoutId);
                             int end = getMeitarBorder(secondLayoutId);
+                            long startTime = System.currentTimeMillis();
                             onLeftSwipe(second.getVelocity(), second.getPressure(), second.getY(), start, end);
+                            Log.e("time of run: ", "" + (System.currentTimeMillis() - startTime));
                     } else if ((firstLayoutId + secondLayoutId) % 4 == 1 || firstLayoutId > secondLayoutId + 1) {
 //                            Log.e("first: ", "" + firstLayoutId);
 //                            Log.e("second: ", "" + secondLayoutId);
@@ -196,59 +242,63 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
 
     public boolean onTouch(View v, MotionEvent event) {
         // get pointer index from the event object
-        int pointerIndex = event.getActionIndex();
+//        int pointerIndex = event.getActionIndex();
 
         // get pointer ID
-        int pointerId = event.getPointerId(pointerIndex);
+        int pointerId = event.getPointerId(event.getActionIndex());
 
         // get masked (not specific to a pointer) action
-        int maskedAction = event.getActionMasked();
-        multiPointerTouch.add(new MultiPointerTouch(pointerId));
-        MultiPointerTouch mpt = getPointer(pointerId);
+//        int maskedAction = event.getActionMasked();
         CordManager.pauseUnRunningTasks();
-        if (mpt != null) {
-            switch (maskedAction) {
-                case MotionEvent.ACTION_DOWN:
-                case MotionEvent.ACTION_POINTER_DOWN: {
-                    Log.e("ACTION_POINTER_DOWN", "ACTION_POINTER_DOWN");
+        switch (event.getActionMasked()) {
+            case MotionEvent.ACTION_DOWN:
+            case MotionEvent.ACTION_POINTER_DOWN: {
+                Log.e("ACTION_POINTER_DOWN", "ACTION_POINTER_DOWN");
+                multiPointerTouch.add(new MultiPointerTouch(pointerId));
+                MultiPointerTouch mpt = getPointer(pointerId);
+                if (mpt != null) {
                     float downX = event.getX(pointerId);
 //                    Log.e("getLayoutId(): ", "" + computeLayout(downX));
                     mpt.addStrumming(computeLayout(downX), event.getPressure(pointerId), event.getY(pointerId));
-                    return true;
                 }
-                case MotionEvent.ACTION_MOVE: {
-                    Log.e("ACTION_MOVE", "ACTION_MOVE");
-                    for (int i = 0; i < event.getPointerCount(); i++) {
-                        mpt = getPointer(i);
-                        if (mpt != null) {
-                            float downX = event.getX(i);
-                            mpt.addMovement(event);
+                return true;
+            }
+            case MotionEvent.ACTION_MOVE: {
+                Log.e("ACTION_MOVE", "ACTION_MOVE");
+                for (int i = 0; i < event.getPointerCount(); i++) {
+                    MultiPointerTouch mpt = getPointer(i);
+                    if (mpt != null) {
+                        float downX = event.getX(i);
+                        mpt.addMovement(event);
 //                            Log.e("getLayoutId(): ", "" + computeLayout(downX) + " " + i);
-                            mpt.addStrumming(computeLayout(downX), event.getPressure(i), event.getY(i));
-                        } else {
-                            multiPointerTouch.add(new MultiPointerTouch(i));
-                        }
+                        mpt.addStrumming(computeLayout(downX), event.getPressure(i), event.getY(i));
+                    } else {
+                        multiPointerTouch.add(new MultiPointerTouch(i));
                     }
-                    return true;
                 }
-
-                case MotionEvent.ACTION_UP:
-                case MotionEvent.ACTION_POINTER_UP: {
-                    Log.e("ACTION_UP", "ACTION_UP");
+                return true;
+            }
+            case MotionEvent.ACTION_POINTER_UP: {
+                Log.e("ACTION_POINTER_UP", "ACTION_POINTER_UP");
 //                    mpt.clear();
-                    mpt.addStrumming(-1, 0 , 0);
-                    return true;
+                MultiPointerTouch mpt = getPointer(pointerId);
+                if (mpt != null) {
+                    mpt.addStrumming(-1, 0, 0);
                 }
+                return true;
+            }
 
-                case MotionEvent.ACTION_CANCEL: {
-                    for (MultiPointerTouch element : multiPointerTouch) {
+            case MotionEvent.ACTION_UP:
+            case MotionEvent.ACTION_CANCEL: {
+                Log.e("ACTION: ", "ACTION_CANCEL \\ ACTION_UP");
+                for (MultiPointerTouch element : multiPointerTouch) {
 //                        element.clear();
-                        element.addStrumming(-1, 0 , 0);
-                    }
-                    return true;
+                    element.addStrumming(-1, 0 , 0);
                 }
+                return true;
             }
         }
+        Toast.makeText(mainActivity, "new action: " + event.getActionMasked(), Toast.LENGTH_SHORT).show();
         return false;
     }
 
