@@ -1,0 +1,3 @@
+CHANGED,C:\Users\Tomer\Workspace\Portabelo\build\intermediates\transforms\instantRun\debug\folders\1\5\main\ioio\examples\hello_service\ActivitySwipeDetector$MultiPointerTouch.class
+CHANGED,C:\Users\Tomer\Workspace\Portabelo\build\intermediates\transforms\instantRun\debug\folders\1\5\main\ioio\examples\hello_service\ActivitySwipeDetector.class
+CHANGED,C:\Users\Tomer\Workspace\Portabelo\build\intermediates\transforms\instantRun\debug\folders\1\5\main\ioio\examples\hello_service\ActivitySwipeDetector$StrummingTaskManager.class

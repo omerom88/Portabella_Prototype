@@ -53,13 +53,15 @@ containing a value of this type.
         public static final int common_signin_btn_text_light=0x7f07000b;
     }
     public static final class drawable {
-        public static final int common_full_open_on_phone=0x7f020000;
-        public static final int common_ic_googleplayservices=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int onescreen=0x7f020003;
-        public static final int screenbgnomenu=0x7f020004;
-        public static final int screenr=0x7f020005;
-        public static final int stringstrdecayover10=0x7f020006;
+        public static final int close=0x7f020000;
+        public static final int close1=0x7f020001;
+        public static final int common_full_open_on_phone=0x7f020002;
+        public static final int common_ic_googleplayservices=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int onescreen=0x7f020005;
+        public static final int screenbgnomenu=0x7f020006;
+        public static final int screenr=0x7f020007;
+        public static final int stringstrdecayover10=0x7f020008;
     }
     public static final class id {
         public static final int A=0x7f090008;
@@ -67,12 +69,17 @@ containing a value of this type.
         public static final int D=0x7f090009;
         public static final int E_HIGH=0x7f09000c;
         public static final int E_LOW=0x7f090007;
+        public static final int EffeButton=0x7f090012;
         public static final int G=0x7f09000a;
+        public static final int InstrumentButton=0x7f090011;
         public static final int adjust_height=0x7f090000;
         public static final int adjust_width=0x7f090001;
+        public static final int leftMargin=0x7f09000e;
         public static final int mainLayout=0x7f090006;
         public static final int none=0x7f090002;
         public static final int outerScreen=0x7f09000d;
+        public static final int rightMargin=0x7f09000f;
+        public static final int settinButton=0x7f090010;
         public static final int textView4=0x7f090004;
         public static final int textView5=0x7f090005;
         public static final int textView6=0x7f090003;
@@ -84,6 +91,7 @@ containing a value of this type.
         public static final int activity_ioio_ne=0x7f030000;
         public static final int activity_main=0x7f030001;
         public static final int activity_main2=0x7f030002;
+        public static final int activity_menu=0x7f030003;
     }
     public static final class raw {
         public static final int a_string=0x7f050000;

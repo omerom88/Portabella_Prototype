@@ -54,7 +54,7 @@ public class CordManager {
         task[index].setAndStart(pressure, velocityX, yPos);
     }
 
-    private static void cancelTask(int index) {
+    public static void cancelTask(int index) {
         if (task[index] != null) {
             try {
                 task[index].cancelTask(index);

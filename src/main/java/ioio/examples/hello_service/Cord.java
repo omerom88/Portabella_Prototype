@@ -143,8 +143,8 @@ public class Cord {
     public void playIteration(int currIndex,int curSarig, float currVolume) {
         audioTrack.setPlaybackRate(Cord.calcPitch(MainActivity.retSrigim[curSarig] + 1));
 //        Log.i(this.getClass().getSimpleName(), Integer.toString(MainActivity.retSrigim[curSarig] + 1));
-//        Log.i(this.getClass().getSimpleName(),Float.toString(currVolume));
         audioTrack.setStereoVolume(currVolume, currVolume);
+//                setVolume(audioTrack, currVolume);
         play(sample, currIndex, bufferAddPerIteration);
     }
 
