@@ -10,6 +10,8 @@ public class CordManager {
     private static CordManager cordManager;
     final static int NUM_OF_ITERATIONS = 1000;
     private static final int NUM_OF_MEITARS = 6;
+    private static final int MAX_BRIDG_PRESSURE = 1000;
+    private static final int MIN_BRIDG_PRESSURE = 0;
     private static Cord[] cords = new Cord[NUM_OF_MEITARS];
     private static final int[] NOTES = {R.raw.e_string_low, R.raw.a_string, R.raw.d_string, R.raw.g_string,R.raw.b_string,
              R.raw.e_string_hi};
@@ -73,9 +75,10 @@ public class CordManager {
         private float yPos;
         private volatile boolean running = true;
         private volatile boolean new_task = false;
+        public int counter = 0;
 
         private static final float MIN_VELOCITY = 0;
-        private static final int VELOCITY_NORMALIZE_CONSTANT = 15000;
+        private static final int VELOCITY_NORMALIZE_CONSTANT = 10000;
         private static final float MAX_PRESSURE = 1f;
         private static final float MIN_PRESSURE = 0.9f;
 
@@ -101,34 +104,55 @@ public class CordManager {
                     new_task = false;
                     cord.stopTrack();
                     int currIndex = 0;
-//                    Log.e("currIndex", "" + currIndex);
                     if (setProperties()) {
                         cord.initEqualizer(cord.getEqFreq());
                         float currVolume = cord.getStartVolume();
-    //                Log.e("currRate", "" + currRate);
-    //                Log.e("music", "" + revSample.length);
-//                        Log.e("retPresure", "" + MainActivity.retPresure);
-    //                Log.e("retleftX", "" + (int)MainActivity.retleftX);
-//                        Log.e("new_task", "" + new_task);
+
                         for (int i = 0; i < cord.getPartOne(); i++) {
                             if (!running || new_task) {
-//                                Log.e("in", "break");
-//                                Log.e("in", "break" + running);
                                 break;
                             }
-                            cord.playIteration(currIndex,this.curIndex);
-                            currIndex += cord.getBufferAddPerIteration();
 
-                            currVolume = cord.calcVolume(currVolume, MainActivity.retMeitar[this.curIndex], false);
+                            cord.playIteration(currIndex, this.curIndex, currVolume);
+                            currIndex += cord.getBufferAddPerIteration();
+                            currVolume = cord.calcVolume(currVolume, MainActivity.retMeitar[this.curIndex], true);
+                            float presh = MainActivity.retMeitar[this.curIndex];
+                            if (!BridgPressure(presh)){
+                                break;
+                            }
+
                         }
                     }
-//                    Log.e("in", "END OF TASK");
                     if (!new_task) {
                         running = false;
                     }
                 }
             }
         }
+
+        public Boolean BridgPressure(float presh){
+
+            if (presh == 0.0){
+                presh = 1000;
+            }
+            else if (presh < 0.3){
+                presh = 8;
+            }
+            else{
+//                Log.e("presh_before:        ", Float.toString(presh));
+                presh = (float)(((MAX_BRIDG_PRESSURE - MIN_BRIDG_PRESSURE) * (presh - 0.08) / (0.5 - 0.08)) + MIN_BRIDG_PRESSURE);
+//                Log.e("presh:  ", Float.toString(presh));
+            }
+
+            if (counter > presh){
+                counter = 0;
+                //currVolume = 0;
+                return false;
+            }
+            counter++;
+            return true;
+        }
+
 
         public void setAndStart(float pressure, float velocityX, float yPos) {
             this.pressure = pressure;

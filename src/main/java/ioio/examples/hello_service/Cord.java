@@ -18,7 +18,7 @@ import java.nio.ByteOrder;
  * Created by omerrom on 12/07/16.
  */
 public class Cord {
-    private static final float[] RATE_ARRAY = new float[12];
+    private static final float[] RATE_ARRAY = new float[13];
     private static final int PRESSURE_CONST = 4000;
     private static final float MIN_PRESSURE = 0.001f;
 
@@ -82,11 +82,10 @@ public class Cord {
             if (pressure == 0.0) {
                 pressure = MIN_PRESSURE;
             }
-            currVolume -= 1 / (PRESSURE_CONST * getPressureLog(pressure));
-            return currVolume;
-        } else {
-            return currVolume;
+            currVolume -= ((float)1/40000);//(400 * getPressureLog(pressure)));
+//            Log.e("vol: ",Float.toString(currVolume));
         }
+        return currVolume;
     }
 
     private float getPressureLog(float pressure) {
@@ -141,10 +140,11 @@ public class Cord {
         }
     }
 
-    public void playIteration(int currIndex,int curSarig) {
+    public void playIteration(int currIndex,int curSarig, float currVolume) {
         audioTrack.setPlaybackRate(Cord.calcPitch(MainActivity.retSrigim[curSarig] + 1));
-        Log.i(this.getClass().getSimpleName(), Integer.toString(MainActivity.retSrigim[curSarig] + 1));
-//                setVolume(audioTrack, currVolume);
+//        Log.i(this.getClass().getSimpleName(), Integer.toString(MainActivity.retSrigim[curSarig] + 1));
+//        Log.i(this.getClass().getSimpleName(),Float.toString(currVolume));
+        audioTrack.setStereoVolume(currVolume, currVolume);
         play(sample, currIndex, bufferAddPerIteration);
     }
 
