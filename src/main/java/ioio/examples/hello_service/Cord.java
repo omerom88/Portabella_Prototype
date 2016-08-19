@@ -82,11 +82,10 @@ public class Cord {
             if (pressure == 0.0) {
                 pressure = MIN_PRESSURE;
             }
-            currVolume -= 1 / (PRESSURE_CONST * getPressureLog(pressure));
-            return currVolume;
-        } else {
-            return currVolume;
+            currVolume -= ((float)1/40000);//(400 * getPressureLog(pressure)));
+//            Log.e("vol: ",Float.toString(currVolume));
         }
+        return currVolume;
     }
 
     private float getPressureLog(float pressure) {
@@ -137,12 +136,12 @@ public class Cord {
         }
     }
 
-    public void playIteration(int currIndex,int curSarig) {
+    public void playIteration(int currIndex,int curSarig, float currVolume) {
         audioTrack.setPlaybackRate(Cord.calcPitch(MainActivity.retSrigim[curSarig] + 1));
 //        Log.i(this.getClass().getSimpleName(), Integer.toString(MainActivity.retSrigim[curSarig] + 1));
+        audioTrack.setStereoVolume(currVolume, currVolume);
 //                setVolume(audioTrack, currVolume);
         play(currIndex);
-//        Log.e("time of run: ", "" + (System.currentTimeMillis() - startTime));
     }
 
     public int getBufferAddPerIteration() {
