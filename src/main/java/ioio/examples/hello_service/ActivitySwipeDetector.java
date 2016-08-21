@@ -11,12 +11,19 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 import java.util.concurrent.TimeUnit;
 
+import ioio.examples.hello_service.CordManager;
+import ioio.examples.hello_service.PointerTouch;
+
 /**
+ * This class represent the multitouch listener of the Guitar's activity.
  * Created by Tomer on 13/08/2016.
  */
 public class ActivitySwipeDetector implements View.OnTouchListener {
 
-    private static LinearLayout[] layouts = new LinearLayout[6];
+    // there are 6 meitars on the guitar. every layout is devide to 2, where the meitar is in
+    // the middle of every layout, and a strumming is preformed when the user make a gusture from
+    // the one side of the layout to the second one (left to right or right to left).
+    private static LinearLayout[] mietarsLayouts = new LinearLayout[6];
     private SortedSet<MultiPointerTouch> multiPointerTouch;
 
     /**
@@ -75,6 +82,11 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
             }
         }
 
+        /**
+         * runs the strumming action from the pointerList (plays all the meitars that is between
+         * the first two mietarsLayouts in the pointerList). runs until there is no more
+         * than 1 layout in the list.
+         */
         public void run() {
             LinkedList<PointerTouch> list = this.getPointerList();
             while (list.size() > 1) {
@@ -83,13 +95,16 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                 int secondLayoutId = second.getLayoutId();
                 if (firstLayoutId != -1) {
                     if (secondLayoutId == -1) {
+                        // new strumming.
                         this.removeStrumming();
                     } else if (firstLayoutId < secondLayoutId &&(((firstLayoutId + secondLayoutId) % 4 == 1)
                             || (firstLayoutId + 1 < secondLayoutId))) {
+                        // Left swipe.
                         int start = getMeitarBorder(firstLayoutId);
                         int end = getMeitarBorder(secondLayoutId);
                         onLeftSwipe(second.getVelocity(), second.getPressure(), second.getY(), start, end);
                     } else if ((firstLayoutId + secondLayoutId) % 4 == 1 || firstLayoutId > secondLayoutId + 1) {
+                        // Right swipe.
                         int start = getMeitarBorder(firstLayoutId);
                         int end = getMeitarBorder(secondLayoutId);
                         onRightSwipe(second.getVelocity(), second.getPressure(), second.getY(), start, end);
@@ -100,6 +115,9 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
             this.isStrumming = false;
         }
 
+        /**
+         * returns the proper meitar according to the given layoutId.
+         */
         private int getMeitarBorder(int layoutId) {
             int meitar = layoutId / 2;
             return layoutId % 2 == 1 ? ++meitar : meitar;
@@ -143,33 +161,51 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
         }
     }
 
-    public ActivitySwipeDetector(LinearLayout[] layouts){
-        ActivitySwipeDetector.layouts = layouts;
+    /**
+     * Constructor.
+     */
+    public ActivitySwipeDetector(LinearLayout[] mietarsLayouts){
+        ActivitySwipeDetector.mietarsLayouts = mietarsLayouts;
         this.multiPointerTouch = new TreeSet<MultiPointerTouch>();
     }
 
+    /**
+     * Makes a strumming from left to right on the start to end meitar's
+     */
     private static void onRightSwipe(float velocity, float pressure, float y, int start, int end) {
         for (int i = start - 1; i >= end; i--) {
-            try {
-                TimeUnit.MILLISECONDS.sleep(10);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            CordManager.restartTask(i, pressure, velocity, y);
+            playMeitar(i, pressure, velocity, y);
         }
     }
 
+    /**
+     * Makes a strumming from right to left on the start to end meitar's
+     */
     private static void onLeftSwipe(float velocity, float pressure, float y, int start, int end) {
         for (int i = start; i < end; i++) {
-            try {
-                TimeUnit.MILLISECONDS.sleep(10);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            CordManager.restartTask(i, pressure, velocity, y);
+            playMeitar(i, pressure, velocity, y);
         }
     }
 
+    /**
+     * plays the meitar with the given index and with the given params.
+     */
+    private static void playMeitar(int index, float velocity, float pressure, float y) {
+        try {
+            TimeUnit.MILLISECONDS.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        CordManager.restartTask(index, pressure, velocity, y);
+    }
+
+    /**
+     * react to a user gusture on the screen.
+     * on ACTION_DOWN\ACTION_POINTER_DOWN: start a new strumming for the pointer with the given pointerId.
+     * on ACTION_MOVE: update all the location of all the pointers that are on the screen.
+     * on ACTION_POINTER_UP: start a new strumming for the pointer with the given pointerId.
+     * on ACTION_UP\ACTION_CANCEL: start a new strumming for all pointers.
+     */
     public boolean onTouch(View v, MotionEvent event) {
         // get pointer ID
         int pointerId = event.getPointerId(event.getActionIndex());
@@ -222,6 +258,9 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
         return false;
     }
 
+    /**
+     * returns the proper MultiPointerTouch with the given id.
+     */
     private MultiPointerTouch getPointer(int id) {
         for (MultiPointerTouch element : multiPointerTouch) {
             if (element.getId() == id) {
@@ -231,30 +270,39 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
         return null;
     }
 
+    /**
+     * returns the proper layout (out of 12 mietarsLayouts) from the given position x.
+     */
     private static int computeLayout(float x) {
         int meitar = getMeitarByPosition(x);
         int tempMeitar = meitar;
         meitar *= 2;
-        if (x > getMiddleOfLayout(layouts[tempMeitar])) {
+        if (x > getMiddleOfLayout(mietarsLayouts[tempMeitar])) {
             meitar++;
         }
         return meitar;
     }
 
+    /**
+     * returns the proper meitar's number, by the given position.
+     */
     private static int getMeitarByPosition(float x) {
-        for (int i = 0; i < layouts.length; i++) {
-            if (x >= layouts[i].getLeft() && x <= layouts[i].getRight()) {
+        for (int i = 0; i < mietarsLayouts.length; i++) {
+            if (x >= mietarsLayouts[i].getLeft() && x <= mietarsLayouts[i].getRight()) {
                 return i;
             }
         }
-        if (x >= layouts[layouts.length - 1].getRight()) {
-            return layouts.length - 1;
+        if (x >= mietarsLayouts[mietarsLayouts.length - 1].getRight()) {
+            return mietarsLayouts.length - 1;
         } else
             return 0;
     }
 
-    private static float getMiddleOfLayout(LinearLayout layout) {
-        return (layout.getRight() + layout.getLeft()) / 2;
+    /**
+     * returns the position of the middle of the given meitar
+     */
+    private static float getMiddleOfLayout(LinearLayout meitar) {
+        return (meitar.getRight() + meitar.getLeft()) / 2;
     }
 
 }

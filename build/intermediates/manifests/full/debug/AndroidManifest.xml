@@ -51,11 +51,6 @@
                 android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
                 android:resource="@xml/device_filter" />
         </activity>
-
-        <service android:name="ioio.examples.hello_service.HelloIOIOService2" >
-        </service>
-
-        <activity android:name="ioio.examples.hello_service.ioioActivity" />
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -63,6 +58,12 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <service android:name="ioio.examples.hello_service.HelloIOIOService2" >
+        </service>
+
+        <activity android:name="ioio.examples.hello_service.ioioActivity" />
+        <activity android:name="ioio.examples.hello_service.GuitarActivity" />
     </application>
 
 </manifest>

@@ -862,8 +862,8 @@
                     "startLine": 48,
                     "startColumn": 4,
                     "startOffset": 5719,
-                    "endColumn": 39,
-                    "endOffset": 5754
+                    "endColumn": 62,
+                    "endOffset": 5777
                 },
                 "from": {
                     "file": "C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\values\\strings.xml",
@@ -871,8 +871,27 @@
                         "startLine": 4,
                         "startColumn": 4,
                         "startOffset": 160,
+                        "endColumn": 62,
+                        "endOffset": 218
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 5782,
+                    "endColumn": 39,
+                    "endOffset": 5817
+                },
+                "from": {
+                    "file": "C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 224,
                         "endColumn": 40,
-                        "endOffset": 196
+                        "endOffset": 260
                     }
                 }
             }

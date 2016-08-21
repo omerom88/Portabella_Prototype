@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.guitar_layout);
         LOG_TAG = this.getClass().getSimpleName();
         LinearLayout[] layouts = new LinearLayout[6];
         for (int i = 0; i < layouts.length; i++) {
@@ -53,7 +53,7 @@ public class MainActivity extends Activity {
         CordManager.setHeight(size.y);
 
         /////////////// string layouts  ///////////////
-        LinearLayout strummingLayout = (LinearLayout) findViewById(R.id.mainLayout);
+        LinearLayout strummingLayout = (LinearLayout) findViewById(R.id.guitarLayout);
         ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(layouts);
         strummingLayout.setOnTouchListener(activitySwipeDetector);
 

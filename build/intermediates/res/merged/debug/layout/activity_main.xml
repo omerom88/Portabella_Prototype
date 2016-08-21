@@ -8,74 +8,10 @@
     android:id="@+id/mainLayout">
 
 
-    <LinearLayout
-        android:id="@+id/E_LOW"
-        android:orientation="horizontal"
-        android:background="@android:drawable/bottom_bar"
-        android:layout_width="60dp"
-        android:layout_marginLeft="30dp"
-        android:layout_height="fill_parent">
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="fill_parent"
-        android:layout_width="60dp"
-        android:layout_marginLeft="30dp"
-        android:background="@android:drawable/bottom_bar"
-        android:id="@+id/A"
-        android:layout_toRightOf="@+id/E_LOW"
-        android:layout_toEndOf="@+id/E_LOW">
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="fill_parent"
-        android:layout_width="60dp"
-        android:layout_marginLeft="30dp"
-        android:background="@android:drawable/bottom_bar"
-        android:id="@+id/D"
-        android:layout_toRightOf="@+id/A"
-        android:layout_toEndOf="@+id/A">
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="fill_parent"
-        android:layout_width="60dp"
-        android:layout_marginLeft="30dp"
-        android:background="@android:drawable/bottom_bar"
-        android:id="@+id/G"
-        android:layout_toRightOf="@+id/D"
-        android:layout_toEndOf="@+id/D">
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="fill_parent"
-        android:layout_width="25dp"
-        android:layout_marginLeft="40dp"
-        android:background="@android:drawable/bottom_bar"
-        android:id="@+id/B"
-        android:layout_toRightOf="@+id/G"
-        android:layout_toEndOf="@+id/G">
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_height="fill_parent"
-        android:layout_width="25dp"
-        android:layout_marginLeft="40dp"
-        android:background="@android:drawable/bottom_bar"
-        android:id="@+id/E_HIGH"
-        android:layout_toRightOf="@+id/B"
-        android:layout_toEndOf="@+id/B">
-    </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="invisible"
-        android:id="@+id/outerScreen"
-        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/playButtonText"
+        android:id="@+id/playButton"
+        android:onClick="playGuitar" />
 </RelativeLayout>

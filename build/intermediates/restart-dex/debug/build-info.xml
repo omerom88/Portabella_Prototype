@@ -4,27 +4,27 @@
     api-level="19"
     density="xxhdpi"
     format="7"
-    timestamp="130682745104104"
+    timestamp="135847146122098"
     token="-1000210423676394033" >
 
     <task
         name="javac"
-        duration="653" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="18" />
+        duration="0" />
     <task
         name="verifier"
-        duration="5" />
+        duration="0" />
 
     <artifact
         location="C:\Users\Tomer\Workspace\Portabelo\build\outputs\apk\Portabelo-debug.apk"
         type="MAIN" />
 
-    <build timestamp="130682745104104" >
+    <build timestamp="135847146122098" >
         <artifact
             location="C:\Users\Tomer\Workspace\Portabelo\build\outputs\apk\Portabelo-debug.apk"
             type="MAIN" />

@@ -28,7 +28,6 @@ public class Cord {
             Log.e("RATE_ARRAY" + i + ": ", "" + RATE_ARRAY[i]);
         }
     }
-
     protected short[] sample, revSample;
     private AudioTrack audioTrack;
     private Equalizer equalizer;
@@ -140,7 +139,7 @@ public class Cord {
     public void playIteration(int currIndex,int curSarig, float currVolume) {
         audioTrack.setPlaybackRate(Cord.calcPitch(MainActivity.retSrigim[curSarig] + 1));
 //        Log.i(this.getClass().getSimpleName(), Integer.toString(MainActivity.retSrigim[curSarig] + 1));
-        audioTrack.setStereoVolume(currVolume, currVolume);
+//        audioTrack.setStereoVolume(currVolume, currVolume);
 //                setVolume(audioTrack, currVolume);
         play(currIndex);
     }
@@ -152,11 +151,17 @@ public class Cord {
     private void play(int start) {
         audioTrack.play();
         int writeSize =  audioTrack.write(sample, start, bufferAddPerIteration);
+//        Log.e("write size: ", "" + writeSize);
+//        Log.e("start", "" + start);
+//        Log.e("end", "" + end);
     }
 
     private void play(short[] music, int start, int end) {
         audioTrack.play();
         int writeSize =  audioTrack.write(music, start, end);
+//        Log.e("write size: ", "" + writeSize);
+//        Log.e("start", "" + start);
+//        Log.e("end", "" + end);
     }
 
     private static byte[] convertStreamToByteArray(InputStream is) throws IOException {

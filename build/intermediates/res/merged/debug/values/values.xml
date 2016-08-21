@@ -46,5 +46,6 @@
     <string name="common_google_play_services_updating_title">Google Play services are updating</string>
     <string name="common_open_on_phone">Open on phone</string>
     <string name="hello">Hello World!</string>
+    <string name="playButtonText">Play Some Guitar!!!</string>
     <string name="string_description"/>
 </resources>
