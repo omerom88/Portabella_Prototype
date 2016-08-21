@@ -1,4 +1,4 @@
-package ioio.examples.hello_service;
+package ioio.examples.hello_service.GuitarActivity;
 
 import android.content.Context;
 import android.media.AudioFormat;
@@ -13,6 +13,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+
+import ioio.examples.hello_service.MainActivity;
 
 /**
  * Created by omerrom on 12/07/16.
@@ -151,17 +153,11 @@ public class Cord {
     private void play(int start) {
         audioTrack.play();
         int writeSize =  audioTrack.write(sample, start, bufferAddPerIteration);
-//        Log.e("write size: ", "" + writeSize);
-//        Log.e("start", "" + start);
-//        Log.e("end", "" + end);
     }
 
     private void play(short[] music, int start, int end) {
         audioTrack.play();
         int writeSize =  audioTrack.write(music, start, end);
-//        Log.e("write size: ", "" + writeSize);
-//        Log.e("start", "" + start);
-//        Log.e("end", "" + end);
     }
 
     private static byte[] convertStreamToByteArray(InputStream is) throws IOException {

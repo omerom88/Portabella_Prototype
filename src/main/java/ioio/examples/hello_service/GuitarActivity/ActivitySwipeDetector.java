@@ -1,4 +1,4 @@
-package ioio.examples.hello_service;
+package ioio.examples.hello_service.GuitarActivity;
 
 import android.util.Log;
 import android.view.MotionEvent;
@@ -10,9 +10,6 @@ import java.util.LinkedList;
 import java.util.SortedSet;
 import java.util.TreeSet;
 import java.util.concurrent.TimeUnit;
-
-import ioio.examples.hello_service.CordManager;
-import ioio.examples.hello_service.PointerTouch;
 
 /**
  * This class represent the multitouch listener of the Guitar's activity.

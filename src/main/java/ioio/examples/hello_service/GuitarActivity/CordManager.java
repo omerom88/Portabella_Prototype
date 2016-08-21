@@ -1,8 +1,10 @@
-package ioio.examples.hello_service;
+package ioio.examples.hello_service.GuitarActivity;
 
 import android.content.Context;
 import android.media.AudioTrack;
-import android.util.Log;
+
+import ioio.examples.hello_service.MainActivity;
+import ioio.examples.hello_service.R;
 
 /**
  * Created by Tomer on 27/07/2016.

@@ -8,12 +8,15 @@
 		<uses-library android:name="com.android.future.usb.accessory"
 			android:required="false" />
 
-		<activity android:label="@string/app_name" android:name="MainActivity"
-			android:launchMode="singleTask">
+		<activity android:label="@string/app_name" android:name=".MainActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
+		</activity>
+
+		<activity android:label="@string/app_name" android:name=".GuitarActivity.GuitarActivity"
+			android:launchMode="singleTask">
 			<intent-filter>
 				<action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
 			</intent-filter>
@@ -25,13 +28,14 @@
 			<meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
 				android:resource="@xml/device_filter" />
 		</activity>
+		<!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+		<meta-data
+			android:name="com.google.android.gms.version"
+			android:value="@integer/google_play_services_version" />
         <service android:name="HelloIOIOService2">
         </service>
-        <activity android:name=".ioioActivity"></activity>
-        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+        <activity android:name=".ioioActivity"/>
+
     </application>
 </manifest>

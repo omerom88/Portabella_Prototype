@@ -1,4 +1,4 @@
-package ioio.examples.hello_service;
+package ioio.examples.hello_service.GuitarActivity;
 
 /**
  * This class represent a Pointer Touch on the screen, with all it's details such as pressure, velocity etc.
