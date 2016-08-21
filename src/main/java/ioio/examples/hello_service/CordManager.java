@@ -2,14 +2,13 @@ package ioio.examples.hello_service;
 
 import android.content.Context;
 import android.media.AudioTrack;
-import android.util.Log;
 
 /**
  * Created by Tomer on 27/07/2016.
  */
 public class CordManager {
     private static CordManager cordManager;
-    final static int NUM_OF_ITERATIONS = 1000;
+    final static int NUM_OF_ITERATIONS = 100;
     private static final int NUM_OF_MEITARS = 6;
     private static final int MAX_BRIDG_PRESSURE = 1000;
     private static final int MIN_BRIDG_PRESSURE = 0;
@@ -44,14 +43,8 @@ public class CordManager {
         }
     }
 
-    public Cord getCord(int index) {
-        return cords[index];
-    }
-
     public static void restartTask(int index, float pressure, float velocityX, float yPos) {
         cancelTask(index);
-//        tasks[index] = new Task(index, pressure, velocityX, yPos);
-//        tasks[index].start();
         tasks[index].setAndStart(pressure, velocityX, yPos);
     }
 
@@ -101,12 +94,10 @@ public class CordManager {
                     if (setProperties()) {
                         cord.initEqualizer(cord.getEqFreq());
                         float currVolume = cord.getStartVolume();
-
                         for (int i = 0; i < cord.getPartOne(); i++) {
                             if (!running || new_task) {
                                 break;
                             }
-
                             cord.playIteration(currIndex, this.curIndex, currVolume);
                             currIndex += cord.getBufferAddPerIteration();
                             currVolume = cord.calcVolume(currVolume, MainActivity.retMeitar[this.curIndex], true);
@@ -114,7 +105,6 @@ public class CordManager {
                             if (!BridgPressure(presh)){
                                 break;
                             }
-
                         }
                     }
                     if (!new_task) {
@@ -158,13 +148,10 @@ public class CordManager {
         private boolean setProperties() {
             float normVelocity = Math.abs(velocityX / VELOCITY_NORMALIZE_CONSTANT);
             if (normVelocity > MIN_VELOCITY) {
-//                Log.e("in", "normVelocity > MIN_VELOCITY");
                 float normPressure = MIN_PRESSURE + (MAX_PRESSURE - MIN_PRESSURE) * pressure;
                 cord.setProperties(normVelocity * normPressure, calcEqFreq(yPos));
-//                Log.e("true in", "setProperties");
                 return true;
             } else {
-//                Log.e("false in", "setProperties");
                 return false;
             }
         }
@@ -177,7 +164,6 @@ public class CordManager {
             cords[index].stopTrack();
             this.running = false;
             this.new_task = false;
-//            join();
         }
 
         /**
@@ -187,7 +173,6 @@ public class CordManager {
          * @return
          */
         private int calcEqFreq(float currY) {
-//        Log.e("in", "onFling, e1.getY(): " + (int) (Cord.MAX_FREQ * Math.abs((height / 2) - currY) / height));
             return (int) (2 * Cord.MAX_FREQ * Math.abs((height / 2) - currY) / height);
         }
 

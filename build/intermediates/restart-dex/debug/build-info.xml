@@ -1,41 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="23"
-    density="420dpi"
+    abi="armeabi-v7a,armeabi"
+    api-level="19"
+    density="xxhdpi"
     format="7"
-    timestamp="259632339461001"
-    token="-1000210423676394033"
-    verifier="METHOD_DELETED" >
+    timestamp="130682745104104"
+    token="-1000210423676394033" >
 
     <task
         name="javac"
-        duration="1437" />
+        duration="653" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1126" />
+        duration="18" />
     <task
         name="verifier"
-        duration="8" />
+        duration="5" />
 
     <artifact
-        location="C:\Users\Tomer\Workspace\Portabelo\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
-        type="DEX" />
+        location="C:\Users\Tomer\Workspace\Portabelo\build\outputs\apk\Portabelo-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="258716461755866" >
+    <build timestamp="130682745104104" >
         <artifact
             location="C:\Users\Tomer\Workspace\Portabelo\build\outputs\apk\Portabelo-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="259632339461001"
-        verifier="METHOD_DELETED" >
-        <artifact
-            location="C:\Users\Tomer\Workspace\Portabelo\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>

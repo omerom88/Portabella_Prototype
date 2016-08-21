@@ -18,7 +18,7 @@ import java.nio.ByteOrder;
  * Created by omerrom on 12/07/16.
  */
 public class Cord {
-    private static final float[] RATE_ARRAY = new float[12];
+    private static final float[] RATE_ARRAY = new float[13];
     private static final int PRESSURE_CONST = 4000;
     private static final float MIN_PRESSURE = 0.001f;
 
@@ -28,6 +28,7 @@ public class Cord {
             Log.e("RATE_ARRAY" + i + ": ", "" + RATE_ARRAY[i]);
         }
     }
+
     protected short[] sample, revSample;
     private AudioTrack audioTrack;
     private Equalizer equalizer;
@@ -151,17 +152,11 @@ public class Cord {
     private void play(int start) {
         audioTrack.play();
         int writeSize =  audioTrack.write(sample, start, bufferAddPerIteration);
-//        Log.e("write size: ", "" + writeSize);
-//        Log.e("start", "" + start);
-//        Log.e("end", "" + end);
     }
 
     private void play(short[] music, int start, int end) {
         audioTrack.play();
         int writeSize =  audioTrack.write(music, start, end);
-//        Log.e("write size: ", "" + writeSize);
-//        Log.e("start", "" + start);
-//        Log.e("end", "" + end);
     }
 
     private static byte[] convertStreamToByteArray(InputStream is) throws IOException {

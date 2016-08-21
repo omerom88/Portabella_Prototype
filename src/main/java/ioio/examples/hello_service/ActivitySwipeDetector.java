@@ -1,12 +1,10 @@
 package ioio.examples.hello_service;
 
-import android.app.Activity;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import java.util.LinkedList;
 import java.util.SortedSet;
@@ -18,10 +16,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class ActivitySwipeDetector implements View.OnTouchListener {
 
-    private static final String logTag = "ActivitySwipeDetector";
-    private static MainActivity mainActivity;
     private static LinearLayout[] layouts = new LinearLayout[6];
-    private static final int MIN_DISTANCE = 10;
     private SortedSet<MultiPointerTouch> multiPointerTouch;
 
     /**
@@ -59,8 +54,6 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
          * @param y The y coordinate of the pointer.
          */
         public void addStrumming(int layout, float pressure, float y) {
-//            Log.e("addStrumming, layout: ", "" + layout);
-//            Log.e("addStrumming, vel: ", "" + velocityTracker);
             if (pointerList.size() == 0) {
                 if (velocityTracker == null) {
                     // Retrieve a new VelocityTracker object to watch the velocity of a motion.
@@ -76,9 +69,6 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                     pointerList.addLast(new PointerTouch(layout, velocityTracker.getXVelocity(), pressure, y));
                     run();
                     if (!isStrumming) {
-//                        StrummingTaskManager stm = new StrummingTaskManager(this);
-//                        stm.start();
-//                        run(this);
                         isStrumming = true;
                     }
                 }
@@ -98,12 +88,8 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                             || (firstLayoutId + 1 < secondLayoutId))) {
                         int start = getMeitarBorder(firstLayoutId);
                         int end = getMeitarBorder(secondLayoutId);
-                        long startTime = System.currentTimeMillis();
                         onLeftSwipe(second.getVelocity(), second.getPressure(), second.getY(), start, end);
-                        Log.e("time of run: ", "" + (System.currentTimeMillis() - startTime));
                     } else if ((firstLayoutId + secondLayoutId) % 4 == 1 || firstLayoutId > secondLayoutId + 1) {
-//                            Log.e("first: ", "" + firstLayoutId);
-//                            Log.e("second: ", "" + secondLayoutId);
                         int start = getMeitarBorder(firstLayoutId);
                         int end = getMeitarBorder(secondLayoutId);
                         onRightSwipe(second.getVelocity(), second.getPressure(), second.getY(), start, end);
@@ -120,7 +106,6 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
         }
 
         public void removeStrumming() {
-//            Log.e("removeStrumming, size: ", "" + pointerList.size());
             if (pointerList.size() > 1) {
                 pointerList.removeFirst();
             }
@@ -153,71 +138,17 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
             velocityTracker.addMovement(event);
         }
 
-        public void clear() {
-            if (pointerList != null) {
-                Log.e("pointerList.clear(): ", "" + id);
-                pointerList.clear();
-            }
-        }
-
         public LinkedList<PointerTouch> getPointerList() {
             return pointerList;
         }
     }
 
-    public ActivitySwipeDetector(LinearLayout[] layouts, MainActivity mainActivity){
+    public ActivitySwipeDetector(LinearLayout[] layouts){
         ActivitySwipeDetector.layouts = layouts;
-        ActivitySwipeDetector.mainActivity = mainActivity;
         this.multiPointerTouch = new TreeSet<MultiPointerTouch>();
     }
 
-    private static class StrummingTaskManager extends Thread {
-        MultiPointerTouch mtp;
-
-        public StrummingTaskManager(MultiPointerTouch mtp) {
-            this.mtp = mtp;
-        }
-
-        @Override
-        public void run() {
-            LinkedList<PointerTouch> list = mtp.getPointerList();
-            while (list.size() > 1) {
-                PointerTouch second = list.get(1);
-                int firstLayoutId = list.getFirst().getLayoutId();
-                int secondLayoutId = second.getLayoutId();
-                if (firstLayoutId != -1) {
-                    if (secondLayoutId == -1) {
-                        mtp.removeStrumming();
-                    } else if (firstLayoutId < secondLayoutId &&(((firstLayoutId + secondLayoutId) % 4 == 1)
-                            || (firstLayoutId + 1 < secondLayoutId))) {
-                            int start = getMeitarBorder(firstLayoutId);
-                            int end = getMeitarBorder(secondLayoutId);
-                            long startTime = System.currentTimeMillis();
-                            onLeftSwipe(second.getVelocity(), second.getPressure(), second.getY(), start, end);
-                            Log.e("time of run: ", "" + (System.currentTimeMillis() - startTime));
-                    } else if ((firstLayoutId + secondLayoutId) % 4 == 1 || firstLayoutId > secondLayoutId + 1) {
-//                            Log.e("first: ", "" + firstLayoutId);
-//                            Log.e("second: ", "" + secondLayoutId);
-                            int start = getMeitarBorder(firstLayoutId);
-                            int end = getMeitarBorder(secondLayoutId);
-                            onRightSwipe(second.getVelocity(), second.getPressure(), second.getY(), start, end);
-                    }
-                }
-                mtp.removeStrumming();
-            }
-            mtp.isStrumming = false;
-        }
-
-        private int getMeitarBorder(int layoutId) {
-            int meitar = layoutId / 2;
-            return layoutId % 2 == 1 ? ++meitar : meitar;
-        }
-    }
-
     private static void onRightSwipe(float velocity, float pressure, float y, int start, int end) {
-//        Log.i(logTag, "RightToLeftSwipe!");
-//        Log.e("start", "" + start);
-//        Log.e("end", "" + end);
         for (int i = start - 1; i >= end; i--) {
             try {
                 TimeUnit.MILLISECONDS.sleep(10);
@@ -229,7 +160,6 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     }
 
     private static void onLeftSwipe(float velocity, float pressure, float y, int start, int end) {
-//        Log.i(logTag, "LeftToRightSwipe!");
         for (int i = start; i < end; i++) {
             try {
                 TimeUnit.MILLISECONDS.sleep(10);
@@ -241,14 +171,9 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     }
 
     public boolean onTouch(View v, MotionEvent event) {
-        // get pointer index from the event object
-//        int pointerIndex = event.getActionIndex();
-
         // get pointer ID
         int pointerId = event.getPointerId(event.getActionIndex());
 
-        // get masked (not specific to a pointer) action
-//        int maskedAction = event.getActionMasked();
         CordManager.pauseUnRunningTasks();
         switch (event.getActionMasked()) {
             case MotionEvent.ACTION_DOWN:
@@ -256,9 +181,8 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                 Log.e("ACTION_POINTER_DOWN", "ACTION_POINTER_DOWN");
                 multiPointerTouch.add(new MultiPointerTouch(pointerId));
                 MultiPointerTouch mpt = getPointer(pointerId);
-                if (mpt != null) {
+                if (mpt != null && pointerId < event.getPointerCount()) {
                     float downX = event.getX(pointerId);
-//                    Log.e("getLayoutId(): ", "" + computeLayout(downX));
                     mpt.addStrumming(computeLayout(downX), event.getPressure(pointerId), event.getY(pointerId));
                 }
                 return true;
@@ -270,7 +194,6 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                     if (mpt != null) {
                         float downX = event.getX(i);
                         mpt.addMovement(event);
-//                            Log.e("getLayoutId(): ", "" + computeLayout(downX) + " " + i);
                         mpt.addStrumming(computeLayout(downX), event.getPressure(i), event.getY(i));
                     } else {
                         multiPointerTouch.add(new MultiPointerTouch(i));
@@ -280,7 +203,6 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
             }
             case MotionEvent.ACTION_POINTER_UP: {
                 Log.e("ACTION_POINTER_UP", "ACTION_POINTER_UP");
-//                    mpt.clear();
                 MultiPointerTouch mpt = getPointer(pointerId);
                 if (mpt != null) {
                     mpt.addStrumming(-1, 0, 0);
@@ -292,13 +214,11 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
             case MotionEvent.ACTION_CANCEL: {
                 Log.e("ACTION: ", "ACTION_CANCEL \\ ACTION_UP");
                 for (MultiPointerTouch element : multiPointerTouch) {
-//                        element.clear();
                     element.addStrumming(-1, 0 , 0);
                 }
                 return true;
             }
         }
-        Toast.makeText(mainActivity, "new action: " + event.getActionMasked(), Toast.LENGTH_SHORT).show();
         return false;
     }
 
@@ -323,11 +243,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
 
     private static int getMeitarByPosition(float x) {
         for (int i = 0; i < layouts.length; i++) {
-//            Log.e("x: ", "" + x);
-//            Log.e("right: ", "" + layouts[i].getRight());
-//            Log.e("left: ", "" + layouts[i].getLeft());
             if (x >= layouts[i].getLeft() && x <= layouts[i].getRight()) {
-//                Log.e("i: ", "" + i);
                 return i;
             }
         }

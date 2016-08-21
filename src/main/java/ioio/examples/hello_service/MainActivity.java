@@ -21,6 +21,9 @@ public class MainActivity extends Activity {
     public static final String mBroadcastStringAction = "com.truiton.broadcast.string";
     public static float[] retMeitar = {0f,0f,0f,0f,0f,0f};
     public static int[] retSrigim = {-1,-1,-1,-1,-1,-1};
+    public static float retVelBridge = 0f;
+
+
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -48,10 +51,12 @@ public class MainActivity extends Activity {
             display.getSize(size);
         }
         CordManager.setHeight(size.y);
+
         /////////////// string layouts  ///////////////
         LinearLayout strummingLayout = (LinearLayout) findViewById(R.id.mainLayout);
-        ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(layouts, this);
+        ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(layouts);
         strummingLayout.setOnTouchListener(activitySwipeDetector);
+
 
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction(mBroadcastStringAction);
@@ -60,11 +65,9 @@ public class MainActivity extends Activity {
     }
 
 
-    public void onResume() {
-        super.onResume();
-        registerReceiver(mReceiver, mIntentFilter);
-    }
+
     private BroadcastReceiver mReceiver = new BroadcastReceiver() {
+        int[] lastSarig = {-1,-1,-1,-1,-1,-1};
         @Override
         public void onReceive(Context context, Intent intent) {
             if (intent.getAction().equals(mBroadcastStringAction)) {
@@ -72,76 +75,30 @@ public class MainActivity extends Activity {
                 for (int i = 0; i <= 5; i++){
                     String strM = "meitar" + Integer.toString(i);
                     String strS = "srigim" + Integer.toString(i);
+                    String strB = "Velbridge" + Integer.toString(i);
                     retMeitar[i] = intent.getFloatExtra(strM, 0);
                     retSrigim[i] = intent.getIntExtra(strS, -1);
+                    retVelBridge = intent.getFloatExtra(strB, 0);
+                    Log.e("____retVel____", Float.toString(retVelBridge));
+                    if (retVelBridge != 0f & lastSarig[i] != retSrigim[i]){
+                        CordManager.restartTask(i, 1, retVelBridge*10000, retSrigim[i]);
+                    }
+                    lastSarig[i] = retSrigim[i];
                 }
-
-//                float meitar0 = intent.getFloatExtra("meitar0", 0);
-//                float meitar1 = intent.getFloatExtra("meitar1", 0);
-//                float meitar2 = intent.getFloatExtra("meitar2", 0);
-//                float meitar3 = intent.getFloatExtra("meitar3", 0);
-//                float meitar4 = intent.getFloatExtra("meitar4", 0);
-//                float meitar5 = intent.getFloatExtra("meitar5", 0);
-
-//
-//                int srigim0 = intent.getIntExtra("srigim0", 0);
-//                int srigim1 = intent.getIntExtra("srigim1", 0);
-//                int srigim2 = intent.getIntExtra("srigim2", 0);
-//                int srigim3 = intent.getIntExtra("srigim3", 0);
-//                int srigim4 = intent.getIntExtra("srigim4", 0);
-//                int srigim5 = intent.getIntExtra("srigim5", 0);
-
-
-//                if (meitar0 != 0) {
-//                    retSrigim[0] = srigim0;
-//                    retMeitar[0] = meitar0;
-////                    Log.i(LOG_TAG, "retMeitar0:   "  + Float.toString(retMeitar));
-////                    Log.i(LOG_TAG, "retSrigim0:   "  + Integer.toString(retSrigim));
-//                }
-//                else {
-//                    retSrigim[0] = 0;
-//                }
-//
-//                if (meitar1 != 0) {
-//                    retSrigim[1] = srigim1;
-//                    retMeitar[1] = meitar1;
-////                    Log.i(LOG_TAG, "retMeitar1:   "  + Float.toString(retMeitar));
-////                    Log.i(LOG_TAG, "retSrigim1:   "  + Integer.toString(retSrigim));
-//                }
-//                if (meitar2 != 0) {
-//                    retSrigim[2] = srigim2;
-//                    retMeitar[2] = meitar2;
-////                    Log.i(LOG_TAG, "retMeitar2:   "  + Float.toString(retMeitar));
-////                    Log.i(LOG_TAG, "retSrigim2:   "  + Integer.toString(retSrigim));
-//                }
-//                if (meitar3 != 0) {
-//                    retSrigim[3] = srigim3;
-//                    retMeitar[3] = meitar3;
-////                    Log.i(LOG_TAG, "retMeitar3:   "  + Float.toString(retMeitar));
-////                    Log.i(LOG_TAG, "retSrigim3:   "  + Integer.toString(retSrigim));
-//                }
-//                if (meitar4 != 0) {
-//                    retSrigim[4] = srigim4;
-//                    retMeitar[4] = meitar4;
-////                    Log.i(LOG_TAG, "retMeitar4:   "  + Float.toString(retMeitar));
-////                    Log.i(LOG_TAG, "retSrigim4:   "  + Integer.toString(retSrigim));
-//                }
-//                if (meitar5 != 0) {
-//                    retSrigim[5] = srigim5;
-//                    retMeitar[5] = meitar5;
-////                    Log.i(LOG_TAG, "retMeitar5:   "  + Float.toString(retMeitar));
-////                    Log.i(LOG_TAG, "retSrigim5:   "  + Integer.toString(retSrigim));
-//                }
-//
             }
         }
     };
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        registerReceiver(mReceiver, mIntentFilter);
+    }
 
     @Override
     protected void onPause() {
         super.onPause();
-        CordManager.pauseUnRunningTasks();
+        cordManager.cancelAllTasks();
         unregisterReceiver(mReceiver);
         Log.d("", "The onPause() event");
     }
