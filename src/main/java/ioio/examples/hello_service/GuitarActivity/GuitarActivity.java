@@ -46,8 +46,8 @@ public class GuitarActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.guitar_layout);
         LOG_TAG = this.getClass().getSimpleName();
-        LinearLayout[] layouts = new LinearLayout[6];
-        for (int i = 0; i < layouts.length; i++) {
+        LinearLayout[] layouts = new LinearLayout[CordManager.NUM_OF_MEITARS];
+            for (int i = 0; i < layouts.length; i++) {
             layouts[i] = (LinearLayout) findViewById(BUTTONS[i]);
         }
         //////////////// the gesture  /////////////////
@@ -87,7 +87,7 @@ public class GuitarActivity extends Activity {
                     retMeitar[i] = intent.getFloatExtra(strM, 0);
                     retSrigim[i] = intent.getIntExtra(strS, -1);
                     retVelBridge = intent.getFloatExtra(strB, 0);
-                    Log.e("____retVel____", Float.toString(retVelBridge));
+//                    Log.e("____retVel____", Float.toString(retVelBridge));
                     if (retVelBridge != 0f & lastSarig[i] != retSrigim[i]){
                         CordManager.restartTask(i, 1, retVelBridge*10000, retSrigim[i]);
                     }

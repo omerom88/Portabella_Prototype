@@ -2,6 +2,7 @@
 <resources>
     <string name="hello">Hello World!</string>
     <string name="app_name">HelloIOIOService</string>
+    <string name="guitar_activity">GuitarActivity</string>
     <string name="playButtonText">Play Some Guitar!!!</string>
     <string name="string_description" />
 </resources>

@@ -6,6 +6,7 @@ import android.util.Log;
 
 import java.util.ArrayList;
 
+import ioio.examples.hello_service.GuitarActivity.CordManager;
 import ioio.lib.api.AnalogInput;
 import ioio.lib.api.DigitalOutput;
 import ioio.lib.api.exception.ConnectionLostException;
@@ -21,13 +22,35 @@ import ioio.lib.util.android.IOIOService;
 public class HelloIOIOService2 extends IOIOService {
     private String LOG_TAG = null;
 
-    private int[] AnalogPinsArry = {31,32,33,34,35,36,37,38,39,40,41,42};
-    private int[] DigitalsPinsArry = {22,21,20,19,18,17,16,15,14,13,12,11};
+    private int[] analogPinsArry = {31,32,33,34,35,36,37,38,39,40,41,42};
+    private int[] digitalsPinsArry = {22,21,20,19,18,17,16,15,14,13,12,11};
 
-    private AnalogInput[] AnalogInputObjects = new AnalogInput[12];
-    private DigitalOutput[] DigitalOutputObjects = new DigitalOutput[12];
+    private AnalogInput[] analogInputObjects = new AnalogInput[12];
+    private DigitalOutput[] digitalOutputObjects = new DigitalOutput[12];
 
     private float[] SensorValue = new float[12];
+    private PressureBuffer[] pressureBuffer;
+
+    private class PressureBuffer {
+        private boolean valueReturned = true;
+        private float lastValue = 0f;
+
+        public boolean isValueReturned() {
+            return valueReturned;
+        }
+
+        public void setValueReturned(boolean valueReturned) {
+            this.valueReturned = valueReturned;
+        }
+
+        public float getLastValue() {
+            return lastValue;
+        }
+
+        public void setLastValue(float lastValue) {
+            this.lastValue = lastValue;
+        }
+    }
 
     @Override
     public void onCreate() {
@@ -39,22 +62,23 @@ public class HelloIOIOService2 extends IOIOService {
     @Override
     protected IOIOLooper createIOIOLooper() {
         return new BaseIOIOLooper() {
-
-            ArrayList<Float>[] z = (ArrayList<Float>[])new ArrayList[6];
             public  int lastX = -1;
-            public float lastPress = 0f;
+//            public float lastPress = 0f;
 
             @Override
             protected void setup() throws ConnectionLostException,
                     InterruptedException {
 
-
+                pressureBuffer = new PressureBuffer[CordManager.NUM_OF_MEITARS];
+                for(int i = 0; i < CordManager.NUM_OF_MEITARS; i++) {
+                    pressureBuffer[i] = new PressureBuffer();
+                }
                 for (int k = 11; k >= 0; k--){
-                    DigitalOutputObjects[k] = ioio_.openDigitalOutput(DigitalsPinsArry[k]);
+                    digitalOutputObjects[k] = ioio_.openDigitalOutput(digitalsPinsArry[k]);
                 }
 
                 for (int j = 0; j < 12; j++){
-                    AnalogInputObjects[j] = ioio_.openAnalogInput(AnalogPinsArry[j]);
+                    analogInputObjects[j] = ioio_.openAnalogInput(analogPinsArry[j]);
                 }
 
 //                for(int i = 0; i <= 5; i++){
@@ -68,38 +92,52 @@ public class HelloIOIOService2 extends IOIOService {
 
                 Intent broadcastIntent = new Intent();
                 // i - x, n - y
-                for (int i = 0; i <= 11; i++){
-                    DigitalOutputObjects[i].write(true);
+                for (int i = 0; i <= 11; i++) {
+                    digitalOutputObjects[i].write(true);
 
-                    for (int n = 11; n >= 0; n--){
-                        SensorValue[n] = AnalogInputObjects[n].read();
-                        if(SensorValue[n] > 0.065 & n >= 0 & n <= 5){
+                    for (int n = 11; n >= 0; n--) {
+                        SensorValue[n] = analogInputObjects[n].read();
+                        if (n >= 0 && n <= 5) {
+                            if (SensorValue[n] > 0.08) {
 //                            String msg = "n: " + n + "  i: " + i + "    sen:   " + SensorValue[n];
-//                            Log.e("SensorValue:         ",Float.toString(SensorValue[n]));
-                            broadcastIntent.putExtra("meitar" + n, SensorValue[n]);
-                            broadcastIntent.putExtra("srigim" + n, i);
-                            broadcastIntent.putExtra("Velbridge" + n, playBridge2(SensorValue[n]));
+                                Log.e("SensorValue:         ", i + "");
+                                broadcastIntent.putExtra("meitar" + n, SensorValue[n]);
+                                broadcastIntent.putExtra("srigim" + n, i);
+                                broadcastIntent.putExtra("Velbridge" + n, playBridge2(pressureBuffer[n], SensorValue[n]));
+                            } else {
+                                playBridge2(pressureBuffer[n], 0);
+                            }
+                            pressureBuffer[n].setLastValue(SensorValue[n]);
                         }
                         Thread.sleep(1);
                         SensorValue[n] = 0;
                     }
-                    DigitalOutputObjects[i].write(false);
+                    digitalOutputObjects[i].write(false);
                 }
                 broadcastIntent.setAction(MainActivity.mBroadcastStringAction);
                 sendBroadcast(broadcastIntent);
 
             }
-            public float playBridge2(float press){
-                Log.e("p", "press:  " + press +"    lastPress:  "+ lastPress);
-                if (press > lastPress + 0.1){
-                    lastPress = press;
+            public float playBridge2(PressureBuffer buffer, float press){
+//                Log.e("p", "press:  " + press +"    lastPress:  "+ lastPress);
+//                if (press > lastPress + 0.1){
+//                    lastPress = press;
+//                    return press;
+//                }
+//                else{
+//                    lastPress = press;
+//                    return 0;
+//                }
+                if (!buffer.isValueReturned() && press == 0) {
+                    Log.e("1", "press:  " + press);
+                    buffer.setValueReturned(true);
+                }
+                else if (press > 0.3 + buffer.getLastValue() && buffer.isValueReturned()) {
+                    Log.e("2", "press:  " + press);
+                    buffer.setValueReturned(false);
                     return press;
                 }
-                else{
-                    lastPress = press;
-                    return 0;
-                }
-
+                return 0;
             }
 
 

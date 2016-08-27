@@ -14,22 +14,12 @@ import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
-import ioio.examples.hello_service.MainActivity;
-
 /**
  * Created by omerrom on 12/07/16.
  */
-public class Cord {
-    private static final float[] RATE_ARRAY = new float[13];
-    private static final int PRESSURE_CONST = 4000;
-    private static final float MIN_PRESSURE = 0.001f;
-
-    static {
-        for (int i = 0; i < RATE_ARRAY.length; i++) {
-            RATE_ARRAY[i] = (float) Math.pow(2, i / (float) 12);
-            Log.e("RATE_ARRAY" + i + ": ", "" + RATE_ARRAY[i]);
-        }
-    }
+public class Cord implements Runnable {
+    private Task task;
+    private int index;
     protected short[] sample, revSample;
     private AudioTrack audioTrack;
     private Equalizer equalizer;
@@ -41,14 +31,21 @@ public class Cord {
     private int bufferAddPerIteration = 0;
     private int partOne;//, partTwo;
     private short minEQLevel, maxEQLevel, bandNumMaxFreq;
-    private float startVolume;
-    private int eqFreq;
 
-    public int getEqFreq() {
-        return eqFreq;
+    private static final float[] RATE_ARRAY = new float[13];
+    private static final int PRESSURE_CONST = 4000;
+    private static final float MIN_PRESSURE = 0.001f;
+
+    static {
+        for (int i = 0; i < RATE_ARRAY.length; i++) {
+            RATE_ARRAY[i] = (float) Math.pow(2, i / (float) 12);
+            Log.e("RATE_ARRAY" + i + ": ", "" + RATE_ARRAY[i]);
+        }
     }
 
-    public Cord(Context context, int wav, int numOfIterations) {
+    public Cord(int index, Context context, int wav, int numOfIterations) {
+        this.task = new Task();
+        this.index = index;
         this.partOne = (int)((double)numOfIterations * PERCENTAGE_PART_ONE);
         int minBufferSize = AudioTrack.getMinBufferSize(DEFAULT_RATE,
                 AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
@@ -119,17 +116,8 @@ public class Cord {
         return Math.min(2 * percentage, 1);
     }
 
-    public void setProperties(float startVolume, int eqFreq) {
-        this.startVolume = startVolume;
-        this.eqFreq = eqFreq;
-    }
-
     public int getPartOne() {
         return partOne;
-    }
-
-    public float getStartVolume() {
-        return startVolume;
     }
 
     public void stopTrack() {
@@ -138,10 +126,10 @@ public class Cord {
         }
     }
 
-    public void playIteration(int currIndex,int curSarig, float currVolume) {
-        audioTrack.setPlaybackRate(Cord.calcPitch(MainActivity.retSrigim[curSarig] + 1));
-//        Log.i(this.getClass().getSimpleName(), Integer.toString(MainActivity.retSrigim[curSarig] + 1));
-//        audioTrack.setStereoVolume(currVolume, currVolume);
+    public void playIteration(int currIndex, int curSarig, float currVolume) {
+        audioTrack.setPlaybackRate(Cord.calcPitch(GuitarActivity.retSrigim[curSarig] + 1));
+//        Log.i(this.getClass().getSimpleName(), Integer.toString(GuitarActivity.retSrigim[curSarig] + 1));
+        audioTrack.setStereoVolume(10*currVolume, 10*currVolume);
 //                setVolume(audioTrack, currVolume);
         play(currIndex);
     }
@@ -169,5 +157,172 @@ public class Cord {
             baos.write(buff, 0, i);
         }
         return baos.toByteArray();
+    }
+
+    public void pauseTask() {
+        if (task != null) {
+            try {
+                task.pauseTask();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    synchronized void resume(float pressure, float velocityX, float yPos) {
+        task.setAndStart(pressure, velocityX, yPos);
+    }
+
+    @Override
+    public void run() {
+        task.start();
+    }
+
+    public class Task extends Thread {
+        private float pressure = 0f;
+        private float velocityX;
+        private float yPos;
+        private volatile boolean running = true;
+        private volatile boolean new_task = false;
+        private float startVolume;
+        private int eqFreq;
+        public int counter = 0;
+
+        private static final float MIN_VELOCITY = 0;
+        private static final int VELOCITY_NORMALIZE_CONSTANT = 10000;
+        private static final float MAX_PRESSURE = 1f;
+        private static final float MIN_PRESSURE = 0.7f;
+        private static final int MAX_BRIDG_PRESSURE = 1000;
+        private static final int MIN_BRIDG_PRESSURE = 0;
+
+
+        public Task() {
+            running = true;
+        }
+
+        @Override
+        public void run() {
+            while(true) {
+                synchronized(this) {
+                    while(!running) {
+                        try {
+                            wait(500);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+                if (running) {
+                    new_task = false;
+                    stopTrack();
+                    int currIndex = 0;
+                    if (setProperties()) {
+                        initEqualizer(eqFreq);
+                        float currVolume = startVolume;
+//                        Log.e("getStartVolume: ", "" + currVolume);
+                        for (int i = 0; i < getPartOne(); i++) {
+                            if (!running || new_task) {
+                                break;
+                            }
+
+                            playIteration(currIndex, index, currVolume);
+                            currIndex += getBufferAddPerIteration();
+                            currVolume = calcVolume(currVolume, GuitarActivity.retMeitar[index], true);
+                            float presh = GuitarActivity.retMeitar[index];
+
+//                            Log.e("presh_before:        ", presh + "");
+                            if (!BridgPressure(presh)) {
+                                break;
+                            }
+
+                        }
+                    }
+                    if (!new_task) {
+                        running = false;
+                    }
+                }
+            }
+        }
+
+        public Boolean BridgPressure(float presh){
+//            Log.e("presh_before:        ", presh + "");
+
+            if (presh == 0.0){
+                presh = 1000;
+            }
+            else if (presh < 0.3){
+                presh = 8;
+            }
+            else{
+                presh = (float)(((MAX_BRIDG_PRESSURE - MIN_BRIDG_PRESSURE) * (presh - 0.08) / (0.5 - 0.08)) + MIN_BRIDG_PRESSURE);
+//                Log.e("presh:  ", Float.toString(presh));
+            }
+
+            if (counter > presh){
+                counter = 0;
+                //currVolume = 0;
+                return false;
+            }
+            counter++;
+            return true;
+        }
+
+        public void setAndStart(float pressure, float velocityX, float yPos) {
+            this.pressure = pressure;
+            this.velocityX = velocityX;
+            this.yPos = yPos;
+            this.new_task = true;
+            resumeThread();
+        }
+
+        private boolean setProperties() {
+            float normVelocity = Math.abs(velocityX / VELOCITY_NORMALIZE_CONSTANT);
+            if (normVelocity > MIN_VELOCITY) {
+//                Log.e("pressure", "" + pressure);
+                float normPressure = MIN_PRESSURE + (MAX_PRESSURE - MIN_PRESSURE) * pressure;
+//                Log.e("normPressure", "" + normPressure);
+                this.startVolume = normVelocity * normPressure;
+                this.eqFreq = calcEqFreq(yPos);
+//                Log.e("true in", "setProperties");
+                return true;
+            } else {
+//                Log.e("false in", "setProperties");
+                return false;
+            }
+        }
+
+        private void setVolume(AudioTrack audioTrack, float volume) {
+            audioTrack.setStereoVolume(volume, volume);
+        }
+
+        public void pauseTask() throws InterruptedException {
+            stopTrack();
+            this.running = false;
+            this.new_task = false;
+        }
+
+        /**
+         * calculating the wanted equalizer freq using the distance of the Y axis event from
+         * the middle of the screen (reltive distance from the middle).
+         * @param currY the Y axis of the touch event.
+         * @return
+         */
+        private int calcEqFreq(float currY) {
+//        Log.e("in", "onFling, e1.getY(): " + (int) (Cord.MAX_FREQ * Math.abs((height / 2) - currY) / height));
+            return (int) (2 * Cord.MAX_FREQ * Math.abs((CordManager.getHeight() / 2) - currY) / CordManager.getHeight());
+        }
+
+        public boolean isRunning() {
+            return running;
+        }
+
+        synchronized void resumeThread() {
+            running = true;
+            notify();
+        }
+
+        public void setRunning(boolean running) {
+            this.running = running;
+        }
     }
 }

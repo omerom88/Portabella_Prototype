@@ -20,7 +20,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     // there are 6 meitars on the guitar. every layout is devide to 2, where the meitar is in
     // the middle of every layout, and a strumming is preformed when the user make a gusture from
     // the one side of the layout to the second one (left to right or right to left).
-    private static LinearLayout[] mietarsLayouts = new LinearLayout[6];
+    private static LinearLayout[] mietarsLayouts = new LinearLayout[CordManager.NUM_OF_MEITARS];
     private SortedSet<MultiPointerTouch> multiPointerTouch;
 
     /**
@@ -71,7 +71,9 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                 if (pointerList.getLast().getLayoutId() != layout) {
                     velocityTracker.computeCurrentVelocity(500);
                     pointerList.addLast(new PointerTouch(layout, velocityTracker.getXVelocity(), pressure, y));
+                    long startTime = System.currentTimeMillis();
                     run();
+                    Log.e("time for onRightSwipe: ", "" + (System.currentTimeMillis() - startTime));
                     if (!isStrumming) {
                         isStrumming = true;
                     }
@@ -187,7 +189,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     /**
      * plays the meitar with the given index and with the given params.
      */
-    private static void playMeitar(int index, float velocity, float pressure, float y) {
+    private static void playMeitar(int index, float pressure, float velocity, float y) {
         try {
             TimeUnit.MILLISECONDS.sleep(10);
         } catch (InterruptedException e) {
@@ -207,11 +209,11 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
         // get pointer ID
         int pointerId = event.getPointerId(event.getActionIndex());
 
-        CordManager.pauseUnRunningTasks();
+//        CordManager.pauseUnRunningTasks();
         switch (event.getActionMasked()) {
             case MotionEvent.ACTION_DOWN:
             case MotionEvent.ACTION_POINTER_DOWN: {
-                Log.e("ACTION_POINTER_DOWN", "ACTION_POINTER_DOWN");
+//                Log.e("ACTION_POINTER_DOWN", "ACTION_POINTER_DOWN");
                 multiPointerTouch.add(new MultiPointerTouch(pointerId));
                 MultiPointerTouch mpt = getPointer(pointerId);
                 if (mpt != null && pointerId < event.getPointerCount()) {
@@ -221,7 +223,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                 return true;
             }
             case MotionEvent.ACTION_MOVE: {
-                Log.e("ACTION_MOVE", "ACTION_MOVE");
+//                Log.e("ACTION_MOVE", "ACTION_MOVE");
                 for (int i = 0; i < event.getPointerCount(); i++) {
                     MultiPointerTouch mpt = getPointer(i);
                     if (mpt != null) {
@@ -235,7 +237,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                 return true;
             }
             case MotionEvent.ACTION_POINTER_UP: {
-                Log.e("ACTION_POINTER_UP", "ACTION_POINTER_UP");
+//                Log.e("ACTION_POINTER_UP", "ACTION_POINTER_UP");
                 MultiPointerTouch mpt = getPointer(pointerId);
                 if (mpt != null) {
                     mpt.addStrumming(-1, 0, 0);
@@ -245,7 +247,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
 
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL: {
-                Log.e("ACTION: ", "ACTION_CANCEL \\ ACTION_UP");
+//                Log.e("ACTION: ", "ACTION_CANCEL \\ ACTION_UP");
                 for (MultiPointerTouch element : multiPointerTouch) {
                     element.addStrumming(-1, 0 , 0);
                 }

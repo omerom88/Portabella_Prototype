@@ -13,13 +13,7 @@ import ioio.examples.hello_service.GuitarActivity.GuitarActivity;
 public class MainActivity extends Activity {
 
     private static final int[] BUTTONS = {R.id.E_LOW, R.id.A, R.id.D, R.id.G, R.id.B, R.id.E_HIGH};
-    private static CordManager cordManager;
-    private IntentFilter mIntentFilter;
-    private String LOG_TAG = null;
     public static final String mBroadcastStringAction = "com.truiton.broadcast.string";
-    public static float[] retMeitar = {0f,0f,0f,0f,0f,0f};
-    public static int[] retSrigim = {-1,-1,-1,-1,-1,-1};
-    public static float retVelBridge = 0f;
 
 
     /**
