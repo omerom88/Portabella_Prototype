@@ -11,7 +11,7 @@ buildscript {
 }
 
 android {
-  buildToolsVersion "23.0.2"
+  buildToolsVersion "23.0.3"
   compileSdkVersion 19
 }
 
@@ -27,5 +27,7 @@ repositories {
 }
 
 dependencies {
-  compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+  compile 'com.google.android.gms:play-services-appindexing:9.2.1'
+  compile 'com.jakewharton:butterknife:6.0.0'
+  compile project(path: ':menuLibrary')
 }

@@ -22,6 +22,7 @@
         android:required="false" />
 
     <application
+        android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <uses-library
@@ -31,11 +32,24 @@
         <activity
             android:name="ioio.examples.hello_service.MainActivity"
             android:label="@string/app_name"
-            android:launchMode="singleTask" >
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ioio.examples.hello_service.GuitarActivity.GuitarActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            
+            <intent-filter>
+                
+                <action android:name="android.intent.action.GUITAR_ACTIVITY" />
+                
+                <category android:name="android.intent.category.DEFAULT" />
+            
             </intent-filter>
             <intent-filter>
                 <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
@@ -63,7 +77,16 @@
         </service>
 
         <activity android:name="ioio.examples.hello_service.ioioActivity" />
-        <activity android:name="ioio.examples.hello_service.GuitarActivity" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.google.firebase.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
     </application>
 
 </manifest>
