@@ -7,17 +7,17 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 105,
-                    "endColumn": 197,
-                    "endOffset": 298
+                    "endColumn": 268,
+                    "endOffset": 369
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 499,
-                        "endColumn": 201,
-                        "endOffset": 696
+                        "startOffset": 329,
+                        "endColumn": 268,
+                        "endOffset": 593
                     }
                 }
             },
@@ -25,593 +25,18 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 303,
-                    "endColumn": 190,
-                    "endOffset": 489
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 2663,
-                        "endColumn": 194,
-                        "endOffset": 2853
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 4,
-                    "startColumn": 4,
-                    "startOffset": 494,
-                    "endColumn": 114,
-                    "endOffset": 604
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 2350,
-                        "endColumn": 114,
-                        "endOffset": 2460
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 609,
-                    "endColumn": 280,
-                    "endOffset": 885
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 30,
-                        "startColumn": 4,
-                        "startOffset": 4619,
-                        "endColumn": 284,
-                        "endOffset": 4899
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 890,
+                    "startOffset": 374,
                     "endColumn": 133,
-                    "endOffset": 1019
+                    "endOffset": 503
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 2079,
-                        "endColumn": 133,
-                        "endOffset": 2208
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 1024,
-                    "endColumn": 187,
-                    "endOffset": 1207
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1887,
-                        "endColumn": 191,
-                        "endOffset": 2074
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 1212,
-                    "endColumn": 131,
-                    "endOffset": 1339
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1755,
-                        "endColumn": 131,
-                        "endOffset": 1882
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 1344,
-                    "endColumn": 172,
-                    "endOffset": 1512
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 875,
-                        "endColumn": 176,
-                        "endOffset": 1047
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 1517,
-                    "endColumn": 133,
-                    "endOffset": 1646
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 1621,
-                        "endColumn": 133,
-                        "endOffset": 1750
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 11,
-                    "startColumn": 4,
-                    "startOffset": 1651,
-                    "endColumn": 214,
-                    "endOffset": 1861
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 1183,
-                        "endColumn": 218,
-                        "endOffset": 1397
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 12,
-                    "startColumn": 4,
-                    "startOffset": 1866,
-                    "endColumn": 214,
-                    "endOffset": 2076
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 1402,
-                        "endColumn": 218,
-                        "endOffset": 1616
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 13,
-                    "startColumn": 4,
-                    "startOffset": 2081,
-                    "endColumn": 130,
-                    "endOffset": 2207
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 1052,
-                        "endColumn": 130,
-                        "endOffset": 1178
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 14,
-                    "startColumn": 4,
-                    "startOffset": 2212,
-                    "endColumn": 187,
-                    "endOffset": 2395
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 24,
-                        "startColumn": 4,
-                        "startOffset": 3661,
-                        "endColumn": 187,
-                        "endOffset": 3844
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 2400,
-                    "endColumn": 123,
-                    "endOffset": 2519
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 3537,
-                        "endColumn": 123,
-                        "endOffset": 3656
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 2524,
-                    "endColumn": 173,
-                    "endOffset": 2693
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 701,
-                        "endColumn": 173,
-                        "endOffset": 870
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 2698,
-                    "endColumn": 185,
-                    "endOffset": 2879
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 3351,
-                        "endColumn": 185,
-                        "endOffset": 3532
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 2884,
-                    "endColumn": 120,
-                    "endOffset": 3000
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 21,
-                        "startColumn": 4,
-                        "startOffset": 3230,
-                        "endColumn": 120,
-                        "endOffset": 3346
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 19,
-                    "startColumn": 4,
-                    "startOffset": 3005,
-                    "endColumn": 188,
-                    "endOffset": 3189
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 310,
-                        "endColumn": 188,
-                        "endOffset": 494
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 20,
-                    "startColumn": 4,
-                    "startOffset": 3194,
-                    "endColumn": 139,
-                    "endOffset": 3329
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 170,
-                        "endColumn": 139,
-                        "endOffset": 305
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 21,
-                    "startColumn": 4,
-                    "startOffset": 3334,
-                    "endColumn": 200,
-                    "endOffset": 3530
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 32,
-                        "startColumn": 4,
-                        "startOffset": 5053,
-                        "endColumn": 200,
-                        "endOffset": 5249
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 22,
-                    "startColumn": 4,
-                    "startOffset": 3535,
-                    "endColumn": 148,
-                    "endOffset": 3679
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 31,
-                        "startColumn": 4,
-                        "startOffset": 4904,
-                        "endColumn": 148,
-                        "endOffset": 5048
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 23,
-                    "startColumn": 4,
-                    "startOffset": 3684,
-                    "endColumn": 159,
-                    "endOffset": 3839
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 3849,
-                        "endColumn": 159,
-                        "endOffset": 4004
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 24,
-                    "startColumn": 4,
-                    "startOffset": 3844,
-                    "endColumn": 273,
-                    "endOffset": 4113
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 4136,
-                        "endColumn": 277,
-                        "endOffset": 4409
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 25,
-                    "startColumn": 4,
-                    "startOffset": 4118,
-                    "endColumn": 126,
-                    "endOffset": 4240
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 4009,
-                        "endColumn": 126,
-                        "endOffset": 4131
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 26,
-                    "startColumn": 4,
-                    "startOffset": 4245,
-                    "endColumn": 110,
-                    "endOffset": 4351
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 28,
-                        "startColumn": 4,
-                        "startOffset": 4414,
-                        "endColumn": 110,
-                        "endOffset": 4520
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 27,
-                    "startColumn": 4,
-                    "startOffset": 4356,
-                    "endColumn": 193,
-                    "endOffset": 4545
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 2465,
-                        "endColumn": 197,
-                        "endOffset": 2658
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 28,
-                    "startColumn": 4,
-                    "startOffset": 4550,
-                    "endColumn": 136,
-                    "endOffset": 4682
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 2213,
-                        "endColumn": 136,
-                        "endOffset": 2345
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 29,
-                    "startColumn": 4,
-                    "startOffset": 4687,
-                    "endColumn": 227,
-                    "endOffset": 4910
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 2998,
-                        "endColumn": 231,
-                        "endOffset": 3225
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 30,
-                    "startColumn": 4,
-                    "startOffset": 4915,
-                    "endColumn": 139,
-                    "endOffset": 5050
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 2858,
-                        "endColumn": 139,
-                        "endOffset": 2993
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 31,
-                    "startColumn": 4,
-                    "startOffset": 5055,
-                    "endColumn": 93,
-                    "endOffset": 5144
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-ca/common_strings.xml",
-                    "position": {
-                        "startLine": 29,
-                        "startColumn": 4,
-                        "startOffset": 4525,
-                        "endColumn": 93,
-                        "endOffset": 4614
-                    }
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\values-ca\\values-ca.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 105,
-                    "endColumn": 197,
-                    "endOffset": 298
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 499,
-                        "endColumn": 201,
-                        "endOffset": 696
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 3,
-                    "startColumn": 4,
-                    "startOffset": 303,
-                    "endColumn": 190,
-                    "endOffset": 489
-                },
-                "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 2663,
-                        "endColumn": 194,
-                        "endOffset": 2853
+                        "startOffset": 598,
+                        "endColumn": 133,
+                        "endOffset": 727
                     }
                 }
             },
@@ -619,18 +44,18 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 494,
-                    "endColumn": 114,
-                    "endOffset": 604
+                    "startOffset": 508,
+                    "endColumn": 187,
+                    "endOffset": 691
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 2350,
-                        "endColumn": 114,
-                        "endOffset": 2460
+                        "startOffset": 732,
+                        "endColumn": 187,
+                        "endOffset": 915
                     }
                 }
             },
@@ -638,18 +63,18 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 609,
-                    "endColumn": 280,
-                    "endOffset": 885
+                    "startOffset": 696,
+                    "endColumn": 132,
+                    "endOffset": 824
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 30,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 4619,
-                        "endColumn": 284,
-                        "endOffset": 4899
+                        "startOffset": 920,
+                        "endColumn": 132,
+                        "endOffset": 1048
                     }
                 }
             },
@@ -657,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 890,
+                    "startOffset": 829,
                     "endColumn": 133,
-                    "endOffset": 1019
+                    "endOffset": 958
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 2079,
+                        "startOffset": 1053,
                         "endColumn": 133,
-                        "endOffset": 2208
+                        "endOffset": 1182
                     }
                 }
             },
@@ -676,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 1024,
-                    "endColumn": 187,
-                    "endOffset": 1207
+                    "startOffset": 963,
+                    "endColumn": 214,
+                    "endOffset": 1173
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 1887,
-                        "endColumn": 191,
-                        "endOffset": 2074
+                        "startOffset": 1187,
+                        "endColumn": 214,
+                        "endOffset": 1397
                     }
                 }
             },
@@ -695,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 1212,
-                    "endColumn": 131,
-                    "endOffset": 1339
+                    "startOffset": 1178,
+                    "endColumn": 215,
+                    "endOffset": 1389
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 1755,
-                        "endColumn": 131,
-                        "endOffset": 1882
+                        "startOffset": 1402,
+                        "endColumn": 215,
+                        "endOffset": 1613
                     }
                 }
             },
@@ -714,18 +139,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 1344,
-                    "endColumn": 172,
-                    "endOffset": 1512
+                    "startOffset": 1394,
+                    "endColumn": 132,
+                    "endOffset": 1522
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 875,
-                        "endColumn": 176,
-                        "endOffset": 1047
+                        "startOffset": 1618,
+                        "endColumn": 132,
+                        "endOffset": 1746
                     }
                 }
             },
@@ -733,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 1517,
-                    "endColumn": 133,
-                    "endOffset": 1646
+                    "startOffset": 1527,
+                    "endColumn": 186,
+                    "endOffset": 1709
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1621,
-                        "endColumn": 133,
-                        "endOffset": 1750
+                        "startOffset": 1751,
+                        "endColumn": 186,
+                        "endOffset": 1933
                     }
                 }
             },
@@ -752,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1651,
-                    "endColumn": 214,
-                    "endOffset": 1861
+                    "startOffset": 1714,
+                    "endColumn": 123,
+                    "endOffset": 1833
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1183,
-                        "endColumn": 218,
-                        "endOffset": 1397
+                        "startOffset": 1938,
+                        "endColumn": 123,
+                        "endOffset": 2057
                     }
                 }
             },
@@ -771,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1866,
-                    "endColumn": 214,
-                    "endOffset": 2076
+                    "startOffset": 1838,
+                    "endColumn": 176,
+                    "endOffset": 2010
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1402,
-                        "endColumn": 218,
-                        "endOffset": 1616
+                        "startOffset": 2062,
+                        "endColumn": 176,
+                        "endOffset": 2234
                     }
                 }
             },
@@ -790,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 2081,
-                    "endColumn": 130,
-                    "endOffset": 2207
+                    "startOffset": 2015,
+                    "endColumn": 120,
+                    "endOffset": 2131
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1052,
-                        "endColumn": 130,
-                        "endOffset": 1178
+                        "startOffset": 2239,
+                        "endColumn": 120,
+                        "endOffset": 2355
                     }
                 }
             },
@@ -809,18 +234,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 2212,
-                    "endColumn": 187,
-                    "endOffset": 2395
+                    "startOffset": 2136,
+                    "endColumn": 138,
+                    "endOffset": 2270
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 24,
+                        "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 3661,
-                        "endColumn": 187,
-                        "endOffset": 3844
+                        "startOffset": 2360,
+                        "endColumn": 138,
+                        "endOffset": 2494
                     }
                 }
             },
@@ -828,18 +253,18 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 2400,
-                    "endColumn": 123,
-                    "endOffset": 2519
+                    "startOffset": 2275,
+                    "endColumn": 177,
+                    "endOffset": 2448
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 23,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 3537,
-                        "endColumn": 123,
-                        "endOffset": 3656
+                        "startOffset": 2499,
+                        "endColumn": 177,
+                        "endOffset": 2672
                     }
                 }
             },
@@ -847,18 +272,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 2524,
-                    "endColumn": 173,
-                    "endOffset": 2693
+                    "startOffset": 2453,
+                    "endColumn": 154,
+                    "endOffset": 2603
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 701,
-                        "endColumn": 173,
-                        "endOffset": 870
+                        "startOffset": 2677,
+                        "endColumn": 154,
+                        "endOffset": 2827
                     }
                 }
             },
@@ -866,18 +291,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 2698,
-                    "endColumn": 185,
-                    "endOffset": 2879
+                    "startOffset": 2608,
+                    "endColumn": 164,
+                    "endOffset": 2768
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 3351,
-                        "endColumn": 185,
-                        "endOffset": 3532
+                        "startOffset": 2832,
+                        "endColumn": 164,
+                        "endOffset": 2992
                     }
                 }
             },
@@ -885,18 +310,18 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 2884,
-                    "endColumn": 120,
-                    "endOffset": 3000
+                    "startOffset": 2773,
+                    "endColumn": 128,
+                    "endOffset": 2897
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 3230,
-                        "endColumn": 120,
-                        "endOffset": 3346
+                        "startOffset": 2997,
+                        "endColumn": 128,
+                        "endOffset": 3121
                     }
                 }
             },
@@ -904,18 +329,18 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 3005,
-                    "endColumn": 188,
-                    "endOffset": 3189
+                    "startOffset": 2902,
+                    "endColumn": 200,
+                    "endOffset": 3098
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 310,
-                        "endColumn": 188,
-                        "endOffset": 494
+                        "startOffset": 3126,
+                        "endColumn": 200,
+                        "endOffset": 3322
                     }
                 }
             },
@@ -923,18 +348,18 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 3194,
-                    "endColumn": 139,
-                    "endOffset": 3329
+                    "startOffset": 3103,
+                    "endColumn": 148,
+                    "endOffset": 3247
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 170,
-                        "endColumn": 139,
-                        "endOffset": 305
+                        "startOffset": 3327,
+                        "endColumn": 148,
+                        "endOffset": 3471
                     }
                 }
             },
@@ -942,18 +367,18 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 3334,
-                    "endColumn": 200,
-                    "endOffset": 3530
+                    "startOffset": 3252,
+                    "endColumn": 253,
+                    "endOffset": 3501
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 32,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 5053,
-                        "endColumn": 200,
-                        "endOffset": 5249
+                        "startOffset": 330,
+                        "endColumn": 253,
+                        "endOffset": 579
                     }
                 }
             },
@@ -961,18 +386,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 3535,
-                    "endColumn": 148,
-                    "endOffset": 3679
+                    "startOffset": 3506,
+                    "endColumn": 262,
+                    "endOffset": 3764
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 31,
+                        "startLine": 23,
                         "startColumn": 4,
-                        "startOffset": 4904,
-                        "endColumn": 148,
-                        "endOffset": 5048
+                        "startOffset": 3476,
+                        "endColumn": 262,
+                        "endOffset": 3734
                     }
                 }
             },
@@ -980,18 +405,18 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 3684,
-                    "endColumn": 159,
-                    "endOffset": 3839
+                    "startOffset": 3769,
+                    "endColumn": 125,
+                    "endOffset": 3890
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 25,
+                        "startLine": 24,
                         "startColumn": 4,
-                        "startOffset": 3849,
-                        "endColumn": 159,
-                        "endOffset": 4004
+                        "startOffset": 3739,
+                        "endColumn": 125,
+                        "endOffset": 3860
                     }
                 }
             },
@@ -999,18 +424,18 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 3844,
-                    "endColumn": 273,
-                    "endOffset": 4113
+                    "startOffset": 3895,
+                    "endColumn": 110,
+                    "endOffset": 4001
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 27,
+                        "startLine": 25,
                         "startColumn": 4,
-                        "startOffset": 4136,
-                        "endColumn": 277,
-                        "endOffset": 4409
+                        "startOffset": 3865,
+                        "endColumn": 110,
+                        "endOffset": 3971
                     }
                 }
             },
@@ -1018,18 +443,18 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 4118,
-                    "endColumn": 126,
-                    "endOffset": 4240
+                    "startOffset": 4006,
+                    "endColumn": 193,
+                    "endOffset": 4195
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 4009,
-                        "endColumn": 126,
-                        "endOffset": 4131
+                        "startOffset": 3976,
+                        "endColumn": 193,
+                        "endOffset": 4165
                     }
                 }
             },
@@ -1037,18 +462,18 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 4245,
-                    "endColumn": 110,
-                    "endOffset": 4351
+                    "startOffset": 4200,
+                    "endColumn": 136,
+                    "endOffset": 4332
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 28,
+                        "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 4414,
-                        "endColumn": 110,
-                        "endOffset": 4520
+                        "startOffset": 4170,
+                        "endColumn": 136,
+                        "endOffset": 4302
                     }
                 }
             },
@@ -1056,18 +481,18 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 4356,
-                    "endColumn": 193,
-                    "endOffset": 4545
+                    "startOffset": 4337,
+                    "endColumn": 227,
+                    "endOffset": 4560
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 17,
+                        "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 2465,
-                        "endColumn": 197,
-                        "endOffset": 2658
+                        "startOffset": 4307,
+                        "endColumn": 227,
+                        "endOffset": 4530
                     }
                 }
             },
@@ -1075,18 +500,18 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 4550,
-                    "endColumn": 136,
-                    "endOffset": 4682
+                    "startOffset": 4565,
+                    "endColumn": 140,
+                    "endOffset": 4701
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 29,
                         "startColumn": 4,
-                        "startOffset": 2213,
-                        "endColumn": 136,
-                        "endOffset": 2345
+                        "startOffset": 4535,
+                        "endColumn": 140,
+                        "endOffset": 4671
                     }
                 }
             },
@@ -1094,18 +519,18 @@
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 4687,
-                    "endColumn": 227,
-                    "endOffset": 4910
+                    "startOffset": 4706,
+                    "endColumn": 190,
+                    "endOffset": 4892
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 2998,
-                        "endColumn": 231,
-                        "endOffset": 3225
+                        "startOffset": 4676,
+                        "endColumn": 190,
+                        "endOffset": 4862
                     }
                 }
             },
@@ -1113,18 +538,18 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 4915,
-                    "endColumn": 139,
-                    "endOffset": 5050
+                    "startOffset": 4897,
+                    "endColumn": 94,
+                    "endOffset": 4987
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 19,
+                        "startLine": 31,
                         "startColumn": 4,
-                        "startOffset": 2858,
-                        "endColumn": 139,
-                        "endOffset": 2993
+                        "startOffset": 4867,
+                        "endColumn": 94,
+                        "endOffset": 4957
                     }
                 }
             },
@@ -1132,18 +557,37 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 5055,
-                    "endColumn": 93,
-                    "endOffset": 5144
+                    "startOffset": 4992,
+                    "endColumn": 97,
+                    "endOffset": 5085
                 },
                 "from": {
-                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\8.1.0\\res\\values-ca\\common_strings.xml",
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
                     "position": {
-                        "startLine": 29,
+                        "startLine": 32,
                         "startColumn": 4,
-                        "startOffset": 4525,
-                        "endColumn": 93,
-                        "endOffset": 4614
+                        "startOffset": 4962,
+                        "endColumn": 97,
+                        "endOffset": 5055
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 5090,
+                    "endColumn": 115,
+                    "endOffset": 5201
+                },
+                "from": {
+                    "file": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 5060,
+                        "endColumn": 115,
+                        "endOffset": 5171
                     }
                 }
             }

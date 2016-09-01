@@ -15,16 +15,53 @@ ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/
 		INJECTED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml
 uses-sdk
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:5:2-40
-MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:22.2.0] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-appindexing:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.1/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-tasks:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.firebase:firebase-common:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-tasks:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:21:5-23:54
+MERGED from [com.google.android.gms:play-services-tasks:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:21:5-23:54
+MERGED from [Portabelo_New:menuLibrary:unspecified] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/Portabelo_New/menuLibrary/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:21:5-23:54
+	android:targetSdkVersion
+		ADDED from [Portabelo_New:menuLibrary:unspecified] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/Portabelo_New/menuLibrary/unspecified/AndroidManifest.xml:9:9-38
 	android:minSdkVersion
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:5:12-37
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:23:9-51
 application
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:6:2-46:19
-MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:22.2.0] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.1/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-tasks:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.google.firebase:firebase-common:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/AndroidManifest.xml:5:5-12:19
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-tasks:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-tasks:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:8:3-35
 	android:allowBackup
@@ -99,7 +136,12 @@ ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:34:15-77
 meta-data#com.google.android.gms.version
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:39:3-41:60
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml:21:9-23:69
 	android:name
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:40:4-49
 	android:value
@@ -141,3 +183,21 @@ ADDED from [com.github.ytai.ioio:IOIOLibAndroidDevice:5.07] /Users/omerrom/Andro
 		ADDED from [com.github.ytai.ioio:IOIOLibAndroidDevice:5.07] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidDevice/5.07/AndroidManifest.xml:9:9-33
 	android:name
 		ADDED from [com.github.ytai.ioio:IOIOLibAndroidDevice:5.07] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidDevice/5.07/AndroidManifest.xml:8:9-49
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/AndroidManifest.xml:20:9-22:45
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/AndroidManifest.xml:21:19-78
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/AndroidManifest.xml:22:19-43
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/AndroidManifest.xml:20:19-85
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/AndroidManifest.xml:7:9-11:39
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/AndroidManifest.xml:10:13-37
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/AndroidManifest.xml:8:13-72
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/AndroidManifest.xml:11:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:9.2.1] /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/AndroidManifest.xml:9:13-58

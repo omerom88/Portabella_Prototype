@@ -16,7 +16,17 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int circleCrop=0x7f010002;
+        public static final int allowShortcuts=0x7f01000f;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int behindOffset=0x7f010029;
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -24,7 +34,140 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int imageAspectRatio=0x7f010001;
+        public static final int behindScrollScale=0x7f01002b;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int behindWidth=0x7f01002a;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>standard</code></td><td>0</td><td></td></tr>
+<tr><td><code>wide</code></td><td>1</td><td></td></tr>
+<tr><td><code>icon_only</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int buttonSize=0x7f010023;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int circleCrop=0x7f01001a;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>dark</code></td><td>0</td><td></td></tr>
+<tr><td><code>light</code></td><td>1</td><td></td></tr>
+<tr><td><code>auto</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int colorScheme=0x7f010024;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int contentProviderUri=0x7f010002;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int corpusId=0x7f010000;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int corpusVersion=0x7f010001;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int defaultIntentAction=0x7f01000c;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int defaultIntentActivity=0x7f01000e;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int defaultIntentData=0x7f01000d;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fadeDegree=0x7f010031;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int fadeEnabled=0x7f010030;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>match_global_nicknames</code></td><td>1</td><td></td></tr>
+<tr><td><code>demote_common_words</code></td><td>2</td><td></td></tr>
+<tr><td><code>demote_rfc822_hostnames</code></td><td>3</td><td></td></tr>
+<tr><td><code>omnibox_url_section</code></td><td>4</td><td></td></tr>
+<tr><td><code>omnibox_title_section</code></td><td>5</td><td></td></tr>
+<tr><td><code>index_entity_types</code></td><td>6</td><td></td></tr>
+</table>
+         */
+        public static final int featureType=0x7f010022;
+        /** <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int imageAspectRatio=0x7f010019;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -36,57 +179,427 @@ containing a value of this type.
 <tr><td><code>adjust_height</code></td><td>2</td><td></td></tr>
 </table>
          */
-        public static final int imageAspectRatioAdjust=0x7f010000;
+        public static final int imageAspectRatioAdjust=0x7f010018;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int indexPrefixes=0x7f01001f;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int inputEnabled=0x7f010012;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left</code></td><td>0</td><td></td></tr>
+<tr><td><code>right</code></td><td>1</td><td></td></tr>
+</table>
+         */
+        public static final int mode=0x7f010026;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int noIndex=0x7f01001d;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int paramName=0x7f010007;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int paramValue=0x7f010008;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int perAccountTemplate=0x7f010006;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int schemaOrgProperty=0x7f010021;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int schemaOrgType=0x7f010004;
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+         */
+        public static final int scopeUris=0x7f010025;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int searchEnabled=0x7f010009;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int searchLabel=0x7f01000a;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int sectionContent=0x7f010011;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>plain</code></td><td>0</td><td></td></tr>
+<tr><td><code>html</code></td><td>1</td><td></td></tr>
+<tr><td><code>rfc822</code></td><td>2</td><td></td></tr>
+<tr><td><code>url</code></td><td>3</td><td></td></tr>
+</table>
+         */
+        public static final int sectionFormat=0x7f01001c;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int sectionId=0x7f01001b;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>text1</code></td><td>0</td><td></td></tr>
+<tr><td><code>text2</code></td><td>1</td><td></td></tr>
+<tr><td><code>icon_uri</code></td><td>2</td><td></td></tr>
+<tr><td><code>intent_action</code></td><td>3</td><td></td></tr>
+<tr><td><code>intent_data</code></td><td>4</td><td></td></tr>
+<tr><td><code>intent_data_id</code></td><td>5</td><td></td></tr>
+<tr><td><code>intent_extra_data</code></td><td>6</td><td></td></tr>
+<tr><td><code>large_icon_uri</code></td><td>7</td><td></td></tr>
+<tr><td><code>intent_activity</code></td><td>8</td><td></td></tr>
+<tr><td><code>thing_proto</code></td><td>9</td><td></td></tr>
+</table>
+         */
+        public static final int sectionType=0x7f010010;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int sectionWeight=0x7f01001e;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int selectorDrawable=0x7f010033;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int selectorEnabled=0x7f010032;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int semanticallySearchable=0x7f010005;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int settingsDescription=0x7f01000b;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int shadowDrawable=0x7f01002e;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int shadowWidth=0x7f01002f;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>email</code></td><td>0</td><td></td></tr>
+<tr><td><code>contact</code></td><td>1</td><td></td></tr>
+<tr><td><code>instant_message</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int sourceClass=0x7f010013;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int subsectionSeparator=0x7f010020;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int toAddressesSection=0x7f010017;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>margin</code></td><td>0</td><td></td></tr>
+<tr><td><code>fullscreen</code></td><td>1</td><td></td></tr>
+<tr><td><code>none</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int touchModeAbove=0x7f01002c;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>margin</code></td><td>0</td><td></td></tr>
+<tr><td><code>fullscreen</code></td><td>1</td><td></td></tr>
+<tr><td><code>none</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int touchModeBehind=0x7f01002d;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int trimmable=0x7f010003;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int userInputSection=0x7f010015;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int userInputTag=0x7f010014;
+        /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int userInputValue=0x7f010016;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int viewAbove=0x7f010027;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int viewBehind=0x7f010028;
     }
     public static final class color {
-        public static final int common_action_bar_splitter=0x7f070000;
-        public static final int common_signin_btn_dark_text_default=0x7f070001;
-        public static final int common_signin_btn_dark_text_disabled=0x7f070002;
-        public static final int common_signin_btn_dark_text_focused=0x7f070003;
-        public static final int common_signin_btn_dark_text_pressed=0x7f070004;
-        public static final int common_signin_btn_default_background=0x7f070005;
-        public static final int common_signin_btn_light_text_default=0x7f070006;
-        public static final int common_signin_btn_light_text_disabled=0x7f070007;
-        public static final int common_signin_btn_light_text_focused=0x7f070008;
-        public static final int common_signin_btn_light_text_pressed=0x7f070009;
-        public static final int common_signin_btn_text_dark=0x7f07000a;
-        public static final int common_signin_btn_text_light=0x7f07000b;
+        public static final int common_google_signin_btn_text_dark=0x7f070010;
+        public static final int common_google_signin_btn_text_dark_default=0x7f070000;
+        public static final int common_google_signin_btn_text_dark_disabled=0x7f070001;
+        public static final int common_google_signin_btn_text_dark_focused=0x7f070002;
+        public static final int common_google_signin_btn_text_dark_pressed=0x7f070003;
+        public static final int common_google_signin_btn_text_light=0x7f070011;
+        public static final int common_google_signin_btn_text_light_default=0x7f070004;
+        public static final int common_google_signin_btn_text_light_disabled=0x7f070005;
+        public static final int common_google_signin_btn_text_light_focused=0x7f070006;
+        public static final int common_google_signin_btn_text_light_pressed=0x7f070007;
+        public static final int common_plus_signin_btn_text_dark=0x7f070012;
+        public static final int common_plus_signin_btn_text_dark_default=0x7f070008;
+        public static final int common_plus_signin_btn_text_dark_disabled=0x7f070009;
+        public static final int common_plus_signin_btn_text_dark_focused=0x7f07000a;
+        public static final int common_plus_signin_btn_text_dark_pressed=0x7f07000b;
+        public static final int common_plus_signin_btn_text_light=0x7f070013;
+        public static final int common_plus_signin_btn_text_light_default=0x7f07000c;
+        public static final int common_plus_signin_btn_text_light_disabled=0x7f07000d;
+        public static final int common_plus_signin_btn_text_light_focused=0x7f07000e;
+        public static final int common_plus_signin_btn_text_light_pressed=0x7f07000f;
     }
     public static final class drawable {
         public static final int common_full_open_on_phone=0x7f020000;
-        public static final int common_ic_googleplayservices=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int onescreen=0x7f020003;
-        public static final int screenbgnomenu=0x7f020004;
-        public static final int screenr=0x7f020005;
-        public static final int stringstrdecayover10=0x7f020006;
+        public static final int common_google_signin_btn_icon_dark=0x7f020001;
+        public static final int common_google_signin_btn_icon_dark_disabled=0x7f020002;
+        public static final int common_google_signin_btn_icon_dark_focused=0x7f020003;
+        public static final int common_google_signin_btn_icon_dark_normal=0x7f020004;
+        public static final int common_google_signin_btn_icon_dark_pressed=0x7f020005;
+        public static final int common_google_signin_btn_icon_light=0x7f020006;
+        public static final int common_google_signin_btn_icon_light_disabled=0x7f020007;
+        public static final int common_google_signin_btn_icon_light_focused=0x7f020008;
+        public static final int common_google_signin_btn_icon_light_normal=0x7f020009;
+        public static final int common_google_signin_btn_icon_light_pressed=0x7f02000a;
+        public static final int common_google_signin_btn_text_dark=0x7f02000b;
+        public static final int common_google_signin_btn_text_dark_disabled=0x7f02000c;
+        public static final int common_google_signin_btn_text_dark_focused=0x7f02000d;
+        public static final int common_google_signin_btn_text_dark_normal=0x7f02000e;
+        public static final int common_google_signin_btn_text_dark_pressed=0x7f02000f;
+        public static final int common_google_signin_btn_text_light=0x7f020010;
+        public static final int common_google_signin_btn_text_light_disabled=0x7f020011;
+        public static final int common_google_signin_btn_text_light_focused=0x7f020012;
+        public static final int common_google_signin_btn_text_light_normal=0x7f020013;
+        public static final int common_google_signin_btn_text_light_pressed=0x7f020014;
+        public static final int common_ic_googleplayservices=0x7f020015;
+        public static final int common_plus_signin_btn_icon_dark=0x7f020016;
+        public static final int common_plus_signin_btn_icon_dark_disabled=0x7f020017;
+        public static final int common_plus_signin_btn_icon_dark_focused=0x7f020018;
+        public static final int common_plus_signin_btn_icon_dark_normal=0x7f020019;
+        public static final int common_plus_signin_btn_icon_dark_pressed=0x7f02001a;
+        public static final int common_plus_signin_btn_icon_light=0x7f02001b;
+        public static final int common_plus_signin_btn_icon_light_disabled=0x7f02001c;
+        public static final int common_plus_signin_btn_icon_light_focused=0x7f02001d;
+        public static final int common_plus_signin_btn_icon_light_normal=0x7f02001e;
+        public static final int common_plus_signin_btn_icon_light_pressed=0x7f02001f;
+        public static final int common_plus_signin_btn_text_dark=0x7f020020;
+        public static final int common_plus_signin_btn_text_dark_disabled=0x7f020021;
+        public static final int common_plus_signin_btn_text_dark_focused=0x7f020022;
+        public static final int common_plus_signin_btn_text_dark_normal=0x7f020023;
+        public static final int common_plus_signin_btn_text_dark_pressed=0x7f020024;
+        public static final int common_plus_signin_btn_text_light=0x7f020025;
+        public static final int common_plus_signin_btn_text_light_disabled=0x7f020026;
+        public static final int common_plus_signin_btn_text_light_focused=0x7f020027;
+        public static final int common_plus_signin_btn_text_light_normal=0x7f020028;
+        public static final int common_plus_signin_btn_text_light_pressed=0x7f020029;
+        public static final int ic_launcher=0x7f02002a;
+        public static final int onescreen=0x7f02002b;
+        public static final int screenbgnomenu=0x7f02002c;
+        public static final int screenr=0x7f02002d;
+        public static final int stringstrdecayover10=0x7f02002e;
     }
     public static final class id {
-        public static final int A=0x7f09000b;
-        public static final int B=0x7f09000e;
-        public static final int D=0x7f09000c;
-        public static final int E_HIGH=0x7f09000f;
-        public static final int E_LOW=0x7f09000a;
-        public static final int G=0x7f09000d;
-        public static final int adjust_height=0x7f090000;
-        public static final int adjust_width=0x7f090001;
-        public static final int guitarLayout=0x7f090008;
-        public static final int leftMargin=0x7f090009;
-        public static final int mainLayout=0x7f090006;
-        public static final int none=0x7f090002;
-        public static final int playButton=0x7f090007;
-        public static final int rightMargin=0x7f090010;
-        public static final int textView4=0x7f090004;
-        public static final int textView5=0x7f090005;
-        public static final int textView6=0x7f090003;
+        public static final int A=0x7f08002d;
+        public static final int B=0x7f080030;
+        public static final int D=0x7f08002e;
+        public static final int E_HIGH=0x7f080031;
+        public static final int E_LOW=0x7f08002c;
+        public static final int G=0x7f08002f;
+        public static final int adjust_height=0x7f08000e;
+        public static final int adjust_width=0x7f08000f;
+        public static final int auto=0x7f08001e;
+        public static final int contact=0x7f08000b;
+        public static final int dark=0x7f08001f;
+        public static final int demote_common_words=0x7f080015;
+        public static final int demote_rfc822_hostnames=0x7f080016;
+        public static final int email=0x7f08000c;
+        public static final int fullscreen=0x7f080023;
+        public static final int guitarLayout=0x7f08002a;
+        public static final int html=0x7f080011;
+        public static final int icon_only=0x7f08001b;
+        public static final int icon_uri=0x7f080001;
+        public static final int index_entity_types=0x7f080017;
+        public static final int instant_message=0x7f08000d;
+        public static final int intent_action=0x7f080002;
+        public static final int intent_activity=0x7f080003;
+        public static final int intent_data=0x7f080004;
+        public static final int intent_data_id=0x7f080005;
+        public static final int intent_extra_data=0x7f080006;
+        public static final int large_icon_uri=0x7f080007;
+        public static final int left=0x7f080021;
+        public static final int leftMargin=0x7f08002b;
+        public static final int light=0x7f080020;
+        public static final int mainLayout=0x7f080028;
+        public static final int margin=0x7f080024;
+        public static final int match_global_nicknames=0x7f080018;
+        public static final int none=0x7f080010;
+        public static final int omnibox_title_section=0x7f080019;
+        public static final int omnibox_url_section=0x7f08001a;
+        public static final int plain=0x7f080012;
+        public static final int playButton=0x7f080029;
+        public static final int rfc822=0x7f080013;
+        public static final int right=0x7f080022;
+        public static final int rightMargin=0x7f080032;
+        public static final int selected_view=0x7f080000;
+        public static final int slidingmenumain=0x7f080033;
+        public static final int standard=0x7f08001c;
+        public static final int text1=0x7f080008;
+        public static final int text2=0x7f080009;
+        public static final int textView4=0x7f080026;
+        public static final int textView5=0x7f080027;
+        public static final int textView6=0x7f080025;
+        public static final int thing_proto=0x7f08000a;
+        public static final int url=0x7f080014;
+        public static final int wide=0x7f08001d;
     }
     public static final class integer {
-        public static final int google_play_services_version=0x7f080000;
+        public static final int google_play_services_version=0x7f090000;
     }
     public static final class layout {
         public static final int activity_ioio_ne=0x7f030000;
         public static final int activity_main=0x7f030001;
         public static final int guitar_layout=0x7f030002;
+        public static final int slidingmenumain=0x7f030003;
     }
     public static final class raw {
         public static final int a_string=0x7f050000;
@@ -98,49 +611,521 @@ containing a value of this type.
         public static final int stringstrdecayover10=0x7f050006;
     }
     public static final class string {
-        public static final int app_name=0x7f06001e;
-        public static final int auth_google_play_services_client_facebook_display_name=0x7f06001f;
-        public static final int auth_google_play_services_client_google_display_name=0x7f060020;
-        public static final int common_android_wear_notification_needs_update_text=0x7f060000;
-        public static final int common_android_wear_update_text=0x7f060001;
-        public static final int common_android_wear_update_title=0x7f060002;
-        public static final int common_google_play_services_api_unavailable_text=0x7f060003;
-        public static final int common_google_play_services_enable_button=0x7f060004;
-        public static final int common_google_play_services_enable_text=0x7f060005;
-        public static final int common_google_play_services_enable_title=0x7f060006;
-        public static final int common_google_play_services_error_notification_requested_by_msg=0x7f060007;
-        public static final int common_google_play_services_install_button=0x7f060008;
-        public static final int common_google_play_services_install_text_phone=0x7f060009;
-        public static final int common_google_play_services_install_text_tablet=0x7f06000a;
-        public static final int common_google_play_services_install_title=0x7f06000b;
-        public static final int common_google_play_services_invalid_account_text=0x7f06000c;
-        public static final int common_google_play_services_invalid_account_title=0x7f06000d;
-        public static final int common_google_play_services_needs_enabling_title=0x7f06000e;
-        public static final int common_google_play_services_network_error_text=0x7f06000f;
-        public static final int common_google_play_services_network_error_title=0x7f060010;
-        public static final int common_google_play_services_notification_needs_update_title=0x7f060011;
-        public static final int common_google_play_services_notification_ticker=0x7f060012;
-        public static final int common_google_play_services_sign_in_failed_text=0x7f060013;
-        public static final int common_google_play_services_sign_in_failed_title=0x7f060014;
-        public static final int common_google_play_services_unknown_issue=0x7f060015;
-        public static final int common_google_play_services_unsupported_text=0x7f060016;
-        public static final int common_google_play_services_unsupported_title=0x7f060017;
-        public static final int common_google_play_services_update_button=0x7f060018;
-        public static final int common_google_play_services_update_text=0x7f060019;
-        public static final int common_google_play_services_update_title=0x7f06001a;
-        public static final int common_google_play_services_updating_text=0x7f06001b;
-        public static final int common_google_play_services_updating_title=0x7f06001c;
-        public static final int common_open_on_phone=0x7f06001d;
-        public static final int guitar_activity=0x7f060021;
-        public static final int hello=0x7f060022;
-        public static final int playButtonText=0x7f060023;
-        public static final int string_description=0x7f060024;
+        public static final int app_name=0x7f06001f;
+        public static final int common_google_play_services_api_unavailable_text=0x7f060000;
+        public static final int common_google_play_services_enable_button=0x7f060001;
+        public static final int common_google_play_services_enable_text=0x7f060002;
+        public static final int common_google_play_services_enable_title=0x7f060003;
+        public static final int common_google_play_services_install_button=0x7f060004;
+        public static final int common_google_play_services_install_text_phone=0x7f060005;
+        public static final int common_google_play_services_install_text_tablet=0x7f060006;
+        public static final int common_google_play_services_install_title=0x7f060007;
+        public static final int common_google_play_services_invalid_account_text=0x7f060008;
+        public static final int common_google_play_services_invalid_account_title=0x7f060009;
+        public static final int common_google_play_services_network_error_text=0x7f06000a;
+        public static final int common_google_play_services_network_error_title=0x7f06000b;
+        public static final int common_google_play_services_notification_ticker=0x7f06000c;
+        public static final int common_google_play_services_resolution_required_text=0x7f06000d;
+        public static final int common_google_play_services_resolution_required_title=0x7f06000e;
+        public static final int common_google_play_services_restricted_profile_text=0x7f06000f;
+        public static final int common_google_play_services_restricted_profile_title=0x7f060010;
+        public static final int common_google_play_services_sign_in_failed_text=0x7f060011;
+        public static final int common_google_play_services_sign_in_failed_title=0x7f060012;
+        public static final int common_google_play_services_unknown_issue=0x7f060013;
+        public static final int common_google_play_services_unsupported_text=0x7f060014;
+        public static final int common_google_play_services_unsupported_title=0x7f060015;
+        public static final int common_google_play_services_update_button=0x7f060016;
+        public static final int common_google_play_services_update_text=0x7f060017;
+        public static final int common_google_play_services_update_title=0x7f060018;
+        public static final int common_google_play_services_updating_text=0x7f060019;
+        public static final int common_google_play_services_updating_title=0x7f06001a;
+        public static final int common_google_play_services_wear_update_text=0x7f06001b;
+        public static final int common_open_on_phone=0x7f06001c;
+        public static final int common_signin_button_text=0x7f06001d;
+        public static final int common_signin_button_text_long=0x7f06001e;
+        public static final int guitar_activity=0x7f060020;
+        public static final int hello=0x7f060021;
+        public static final int playButtonText=0x7f060022;
+        public static final int string_description=0x7f060023;
     }
     public static final class xml {
         public static final int accessory_filter=0x7f040000;
         public static final int device_filter=0x7f040001;
     }
     public static final class styleable {
+        /** Attributes that can be used with a AppDataSearch.
+         */
+        public static final int[] AppDataSearch = {
+            
+        };
+        /** Attributes that can be used with a Corpus.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Corpus_contentProviderUri ioio.examples.hello_service:contentProviderUri}</code></td><td></td></tr>
+           <tr><td><code>{@link #Corpus_corpusId ioio.examples.hello_service:corpusId}</code></td><td></td></tr>
+           <tr><td><code>{@link #Corpus_corpusVersion ioio.examples.hello_service:corpusVersion}</code></td><td></td></tr>
+           <tr><td><code>{@link #Corpus_perAccountTemplate ioio.examples.hello_service:perAccountTemplate}</code></td><td></td></tr>
+           <tr><td><code>{@link #Corpus_schemaOrgType ioio.examples.hello_service:schemaOrgType}</code></td><td></td></tr>
+           <tr><td><code>{@link #Corpus_semanticallySearchable ioio.examples.hello_service:semanticallySearchable}</code></td><td></td></tr>
+           <tr><td><code>{@link #Corpus_trimmable ioio.examples.hello_service:trimmable}</code></td><td></td></tr>
+           </table>
+           @see #Corpus_contentProviderUri
+           @see #Corpus_corpusId
+           @see #Corpus_corpusVersion
+           @see #Corpus_perAccountTemplate
+           @see #Corpus_schemaOrgType
+           @see #Corpus_semanticallySearchable
+           @see #Corpus_trimmable
+         */
+        public static final int[] Corpus = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004, 0x7f010005, 0x7f010006
+        };
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#contentProviderUri}
+          attribute's value can be found in the {@link #Corpus} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:contentProviderUri
+        */
+        public static final int Corpus_contentProviderUri = 2;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#corpusId}
+          attribute's value can be found in the {@link #Corpus} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:corpusId
+        */
+        public static final int Corpus_corpusId = 0;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#corpusVersion}
+          attribute's value can be found in the {@link #Corpus} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:corpusVersion
+        */
+        public static final int Corpus_corpusVersion = 1;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#perAccountTemplate}
+          attribute's value can be found in the {@link #Corpus} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:perAccountTemplate
+        */
+        public static final int Corpus_perAccountTemplate = 6;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#schemaOrgType}
+          attribute's value can be found in the {@link #Corpus} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:schemaOrgType
+        */
+        public static final int Corpus_schemaOrgType = 4;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#semanticallySearchable}
+          attribute's value can be found in the {@link #Corpus} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:semanticallySearchable
+        */
+        public static final int Corpus_semanticallySearchable = 5;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#trimmable}
+          attribute's value can be found in the {@link #Corpus} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:trimmable
+        */
+        public static final int Corpus_trimmable = 3;
+        /** Attributes that can be used with a FeatureParam.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #FeatureParam_paramName ioio.examples.hello_service:paramName}</code></td><td></td></tr>
+           <tr><td><code>{@link #FeatureParam_paramValue ioio.examples.hello_service:paramValue}</code></td><td></td></tr>
+           </table>
+           @see #FeatureParam_paramName
+           @see #FeatureParam_paramValue
+         */
+        public static final int[] FeatureParam = {
+            0x7f010007, 0x7f010008
+        };
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#paramName}
+          attribute's value can be found in the {@link #FeatureParam} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:paramName
+        */
+        public static final int FeatureParam_paramName = 0;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#paramValue}
+          attribute's value can be found in the {@link #FeatureParam} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:paramValue
+        */
+        public static final int FeatureParam_paramValue = 1;
+        /** Attributes that can be used with a GlobalSearch.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #GlobalSearch_defaultIntentAction ioio.examples.hello_service:defaultIntentAction}</code></td><td></td></tr>
+           <tr><td><code>{@link #GlobalSearch_defaultIntentActivity ioio.examples.hello_service:defaultIntentActivity}</code></td><td></td></tr>
+           <tr><td><code>{@link #GlobalSearch_defaultIntentData ioio.examples.hello_service:defaultIntentData}</code></td><td></td></tr>
+           <tr><td><code>{@link #GlobalSearch_searchEnabled ioio.examples.hello_service:searchEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #GlobalSearch_searchLabel ioio.examples.hello_service:searchLabel}</code></td><td></td></tr>
+           <tr><td><code>{@link #GlobalSearch_settingsDescription ioio.examples.hello_service:settingsDescription}</code></td><td></td></tr>
+           </table>
+           @see #GlobalSearch_defaultIntentAction
+           @see #GlobalSearch_defaultIntentActivity
+           @see #GlobalSearch_defaultIntentData
+           @see #GlobalSearch_searchEnabled
+           @see #GlobalSearch_searchLabel
+           @see #GlobalSearch_settingsDescription
+         */
+        public static final int[] GlobalSearch = {
+            0x7f010009, 0x7f01000a, 0x7f01000b, 0x7f01000c,
+            0x7f01000d, 0x7f01000e
+        };
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#defaultIntentAction}
+          attribute's value can be found in the {@link #GlobalSearch} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:defaultIntentAction
+        */
+        public static final int GlobalSearch_defaultIntentAction = 3;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#defaultIntentActivity}
+          attribute's value can be found in the {@link #GlobalSearch} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:defaultIntentActivity
+        */
+        public static final int GlobalSearch_defaultIntentActivity = 5;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#defaultIntentData}
+          attribute's value can be found in the {@link #GlobalSearch} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:defaultIntentData
+        */
+        public static final int GlobalSearch_defaultIntentData = 4;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#searchEnabled}
+          attribute's value can be found in the {@link #GlobalSearch} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:searchEnabled
+        */
+        public static final int GlobalSearch_searchEnabled = 0;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#searchLabel}
+          attribute's value can be found in the {@link #GlobalSearch} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:searchLabel
+        */
+        public static final int GlobalSearch_searchLabel = 1;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#settingsDescription}
+          attribute's value can be found in the {@link #GlobalSearch} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:settingsDescription
+        */
+        public static final int GlobalSearch_settingsDescription = 2;
+        /** Attributes that can be used with a GlobalSearchCorpus.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #GlobalSearchCorpus_allowShortcuts ioio.examples.hello_service:allowShortcuts}</code></td><td></td></tr>
+           </table>
+           @see #GlobalSearchCorpus_allowShortcuts
+         */
+        public static final int[] GlobalSearchCorpus = {
+            0x7f01000f
+        };
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#allowShortcuts}
+          attribute's value can be found in the {@link #GlobalSearchCorpus} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:allowShortcuts
+        */
+        public static final int GlobalSearchCorpus_allowShortcuts = 0;
+        /** Attributes that can be used with a GlobalSearchSection.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #GlobalSearchSection_sectionContent ioio.examples.hello_service:sectionContent}</code></td><td></td></tr>
+           <tr><td><code>{@link #GlobalSearchSection_sectionType ioio.examples.hello_service:sectionType}</code></td><td></td></tr>
+           </table>
+           @see #GlobalSearchSection_sectionContent
+           @see #GlobalSearchSection_sectionType
+         */
+        public static final int[] GlobalSearchSection = {
+            0x7f010010, 0x7f010011
+        };
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#sectionContent}
+          attribute's value can be found in the {@link #GlobalSearchSection} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:sectionContent
+        */
+        public static final int GlobalSearchSection_sectionContent = 1;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#sectionType}
+          attribute's value can be found in the {@link #GlobalSearchSection} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>text1</code></td><td>0</td><td></td></tr>
+<tr><td><code>text2</code></td><td>1</td><td></td></tr>
+<tr><td><code>icon_uri</code></td><td>2</td><td></td></tr>
+<tr><td><code>intent_action</code></td><td>3</td><td></td></tr>
+<tr><td><code>intent_data</code></td><td>4</td><td></td></tr>
+<tr><td><code>intent_data_id</code></td><td>5</td><td></td></tr>
+<tr><td><code>intent_extra_data</code></td><td>6</td><td></td></tr>
+<tr><td><code>large_icon_uri</code></td><td>7</td><td></td></tr>
+<tr><td><code>intent_activity</code></td><td>8</td><td></td></tr>
+<tr><td><code>thing_proto</code></td><td>9</td><td></td></tr>
+</table>
+          @attr name ioio.examples.hello_service:sectionType
+        */
+        public static final int GlobalSearchSection_sectionType = 0;
+        /** Attributes that can be used with a IMECorpus.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #IMECorpus_inputEnabled ioio.examples.hello_service:inputEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #IMECorpus_sourceClass ioio.examples.hello_service:sourceClass}</code></td><td></td></tr>
+           <tr><td><code>{@link #IMECorpus_toAddressesSection ioio.examples.hello_service:toAddressesSection}</code></td><td></td></tr>
+           <tr><td><code>{@link #IMECorpus_userInputSection ioio.examples.hello_service:userInputSection}</code></td><td></td></tr>
+           <tr><td><code>{@link #IMECorpus_userInputTag ioio.examples.hello_service:userInputTag}</code></td><td></td></tr>
+           <tr><td><code>{@link #IMECorpus_userInputValue ioio.examples.hello_service:userInputValue}</code></td><td></td></tr>
+           </table>
+           @see #IMECorpus_inputEnabled
+           @see #IMECorpus_sourceClass
+           @see #IMECorpus_toAddressesSection
+           @see #IMECorpus_userInputSection
+           @see #IMECorpus_userInputTag
+           @see #IMECorpus_userInputValue
+         */
+        public static final int[] IMECorpus = {
+            0x7f010012, 0x7f010013, 0x7f010014, 0x7f010015,
+            0x7f010016, 0x7f010017
+        };
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#inputEnabled}
+          attribute's value can be found in the {@link #IMECorpus} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:inputEnabled
+        */
+        public static final int IMECorpus_inputEnabled = 0;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#sourceClass}
+          attribute's value can be found in the {@link #IMECorpus} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>email</code></td><td>0</td><td></td></tr>
+<tr><td><code>contact</code></td><td>1</td><td></td></tr>
+<tr><td><code>instant_message</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name ioio.examples.hello_service:sourceClass
+        */
+        public static final int IMECorpus_sourceClass = 1;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#toAddressesSection}
+          attribute's value can be found in the {@link #IMECorpus} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:toAddressesSection
+        */
+        public static final int IMECorpus_toAddressesSection = 5;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#userInputSection}
+          attribute's value can be found in the {@link #IMECorpus} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:userInputSection
+        */
+        public static final int IMECorpus_userInputSection = 3;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#userInputTag}
+          attribute's value can be found in the {@link #IMECorpus} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:userInputTag
+        */
+        public static final int IMECorpus_userInputTag = 2;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#userInputValue}
+          attribute's value can be found in the {@link #IMECorpus} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:userInputValue
+        */
+        public static final int IMECorpus_userInputValue = 4;
         /** Attributes that can be used with a LoadingImageView.
            <p>Includes the following attributes:</p>
            <table>
@@ -156,7 +1141,7 @@ containing a value of this type.
            @see #LoadingImageView_imageAspectRatioAdjust
          */
         public static final int[] LoadingImageView = {
-            0x7f010000, 0x7f010001, 0x7f010002
+            0x7f010018, 0x7f010019, 0x7f01001a
         };
         /**
           <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#circleCrop}
@@ -204,5 +1189,475 @@ containing a value of this type.
           @attr name ioio.examples.hello_service:imageAspectRatioAdjust
         */
         public static final int LoadingImageView_imageAspectRatioAdjust = 0;
+        /** Attributes that can be used with a Section.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Section_indexPrefixes ioio.examples.hello_service:indexPrefixes}</code></td><td></td></tr>
+           <tr><td><code>{@link #Section_noIndex ioio.examples.hello_service:noIndex}</code></td><td></td></tr>
+           <tr><td><code>{@link #Section_schemaOrgProperty ioio.examples.hello_service:schemaOrgProperty}</code></td><td></td></tr>
+           <tr><td><code>{@link #Section_sectionFormat ioio.examples.hello_service:sectionFormat}</code></td><td></td></tr>
+           <tr><td><code>{@link #Section_sectionId ioio.examples.hello_service:sectionId}</code></td><td></td></tr>
+           <tr><td><code>{@link #Section_sectionWeight ioio.examples.hello_service:sectionWeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #Section_subsectionSeparator ioio.examples.hello_service:subsectionSeparator}</code></td><td></td></tr>
+           </table>
+           @see #Section_indexPrefixes
+           @see #Section_noIndex
+           @see #Section_schemaOrgProperty
+           @see #Section_sectionFormat
+           @see #Section_sectionId
+           @see #Section_sectionWeight
+           @see #Section_subsectionSeparator
+         */
+        public static final int[] Section = {
+            0x7f01001b, 0x7f01001c, 0x7f01001d, 0x7f01001e,
+            0x7f01001f, 0x7f010020, 0x7f010021
+        };
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#indexPrefixes}
+          attribute's value can be found in the {@link #Section} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:indexPrefixes
+        */
+        public static final int Section_indexPrefixes = 4;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#noIndex}
+          attribute's value can be found in the {@link #Section} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:noIndex
+        */
+        public static final int Section_noIndex = 2;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#schemaOrgProperty}
+          attribute's value can be found in the {@link #Section} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:schemaOrgProperty
+        */
+        public static final int Section_schemaOrgProperty = 6;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#sectionFormat}
+          attribute's value can be found in the {@link #Section} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>plain</code></td><td>0</td><td></td></tr>
+<tr><td><code>html</code></td><td>1</td><td></td></tr>
+<tr><td><code>rfc822</code></td><td>2</td><td></td></tr>
+<tr><td><code>url</code></td><td>3</td><td></td></tr>
+</table>
+          @attr name ioio.examples.hello_service:sectionFormat
+        */
+        public static final int Section_sectionFormat = 1;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#sectionId}
+          attribute's value can be found in the {@link #Section} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:sectionId
+        */
+        public static final int Section_sectionId = 0;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#sectionWeight}
+          attribute's value can be found in the {@link #Section} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:sectionWeight
+        */
+        public static final int Section_sectionWeight = 3;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#subsectionSeparator}
+          attribute's value can be found in the {@link #Section} array.
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:subsectionSeparator
+        */
+        public static final int Section_subsectionSeparator = 5;
+        /** Attributes that can be used with a SectionFeature.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SectionFeature_featureType ioio.examples.hello_service:featureType}</code></td><td></td></tr>
+           </table>
+           @see #SectionFeature_featureType
+         */
+        public static final int[] SectionFeature = {
+            0x7f010022
+        };
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#featureType}
+          attribute's value can be found in the {@link #SectionFeature} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>match_global_nicknames</code></td><td>1</td><td></td></tr>
+<tr><td><code>demote_common_words</code></td><td>2</td><td></td></tr>
+<tr><td><code>demote_rfc822_hostnames</code></td><td>3</td><td></td></tr>
+<tr><td><code>omnibox_url_section</code></td><td>4</td><td></td></tr>
+<tr><td><code>omnibox_title_section</code></td><td>5</td><td></td></tr>
+<tr><td><code>index_entity_types</code></td><td>6</td><td></td></tr>
+</table>
+          @attr name ioio.examples.hello_service:featureType
+        */
+        public static final int SectionFeature_featureType = 0;
+        /** Attributes that can be used with a SignInButton.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SignInButton_buttonSize ioio.examples.hello_service:buttonSize}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_colorScheme ioio.examples.hello_service:colorScheme}</code></td><td></td></tr>
+           <tr><td><code>{@link #SignInButton_scopeUris ioio.examples.hello_service:scopeUris}</code></td><td></td></tr>
+           </table>
+           @see #SignInButton_buttonSize
+           @see #SignInButton_colorScheme
+           @see #SignInButton_scopeUris
+         */
+        public static final int[] SignInButton = {
+            0x7f010023, 0x7f010024, 0x7f010025
+        };
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#buttonSize}
+          attribute's value can be found in the {@link #SignInButton} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>standard</code></td><td>0</td><td></td></tr>
+<tr><td><code>wide</code></td><td>1</td><td></td></tr>
+<tr><td><code>icon_only</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name ioio.examples.hello_service:buttonSize
+        */
+        public static final int SignInButton_buttonSize = 0;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#colorScheme}
+          attribute's value can be found in the {@link #SignInButton} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>dark</code></td><td>0</td><td></td></tr>
+<tr><td><code>light</code></td><td>1</td><td></td></tr>
+<tr><td><code>auto</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name ioio.examples.hello_service:colorScheme
+        */
+        public static final int SignInButton_colorScheme = 1;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#scopeUris}
+          attribute's value can be found in the {@link #SignInButton} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+          @attr name ioio.examples.hello_service:scopeUris
+        */
+        public static final int SignInButton_scopeUris = 2;
+        /** Attributes that can be used with a SlidingMenu.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SlidingMenu_behindOffset ioio.examples.hello_service:behindOffset}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_behindScrollScale ioio.examples.hello_service:behindScrollScale}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_behindWidth ioio.examples.hello_service:behindWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_fadeDegree ioio.examples.hello_service:fadeDegree}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_fadeEnabled ioio.examples.hello_service:fadeEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_mode ioio.examples.hello_service:mode}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_selectorDrawable ioio.examples.hello_service:selectorDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_selectorEnabled ioio.examples.hello_service:selectorEnabled}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_shadowDrawable ioio.examples.hello_service:shadowDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_shadowWidth ioio.examples.hello_service:shadowWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_touchModeAbove ioio.examples.hello_service:touchModeAbove}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_touchModeBehind ioio.examples.hello_service:touchModeBehind}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_viewAbove ioio.examples.hello_service:viewAbove}</code></td><td></td></tr>
+           <tr><td><code>{@link #SlidingMenu_viewBehind ioio.examples.hello_service:viewBehind}</code></td><td></td></tr>
+           </table>
+           @see #SlidingMenu_behindOffset
+           @see #SlidingMenu_behindScrollScale
+           @see #SlidingMenu_behindWidth
+           @see #SlidingMenu_fadeDegree
+           @see #SlidingMenu_fadeEnabled
+           @see #SlidingMenu_mode
+           @see #SlidingMenu_selectorDrawable
+           @see #SlidingMenu_selectorEnabled
+           @see #SlidingMenu_shadowDrawable
+           @see #SlidingMenu_shadowWidth
+           @see #SlidingMenu_touchModeAbove
+           @see #SlidingMenu_touchModeBehind
+           @see #SlidingMenu_viewAbove
+           @see #SlidingMenu_viewBehind
+         */
+        public static final int[] SlidingMenu = {
+            0x7f010026, 0x7f010027, 0x7f010028, 0x7f010029,
+            0x7f01002a, 0x7f01002b, 0x7f01002c, 0x7f01002d,
+            0x7f01002e, 0x7f01002f, 0x7f010030, 0x7f010031,
+            0x7f010032, 0x7f010033
+        };
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#behindOffset}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:behindOffset
+        */
+        public static final int SlidingMenu_behindOffset = 3;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#behindScrollScale}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:behindScrollScale
+        */
+        public static final int SlidingMenu_behindScrollScale = 5;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#behindWidth}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:behindWidth
+        */
+        public static final int SlidingMenu_behindWidth = 4;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#fadeDegree}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a floating point value, such as "<code>1.2</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:fadeDegree
+        */
+        public static final int SlidingMenu_fadeDegree = 11;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#fadeEnabled}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:fadeEnabled
+        */
+        public static final int SlidingMenu_fadeEnabled = 10;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#mode}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>left</code></td><td>0</td><td></td></tr>
+<tr><td><code>right</code></td><td>1</td><td></td></tr>
+</table>
+          @attr name ioio.examples.hello_service:mode
+        */
+        public static final int SlidingMenu_mode = 0;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#selectorDrawable}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name ioio.examples.hello_service:selectorDrawable
+        */
+        public static final int SlidingMenu_selectorDrawable = 13;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#selectorEnabled}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:selectorEnabled
+        */
+        public static final int SlidingMenu_selectorEnabled = 12;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#shadowDrawable}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name ioio.examples.hello_service:shadowDrawable
+        */
+        public static final int SlidingMenu_shadowDrawable = 8;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#shadowWidth}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name ioio.examples.hello_service:shadowWidth
+        */
+        public static final int SlidingMenu_shadowWidth = 9;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#touchModeAbove}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>margin</code></td><td>0</td><td></td></tr>
+<tr><td><code>fullscreen</code></td><td>1</td><td></td></tr>
+<tr><td><code>none</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name ioio.examples.hello_service:touchModeAbove
+        */
+        public static final int SlidingMenu_touchModeAbove = 6;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#touchModeBehind}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>margin</code></td><td>0</td><td></td></tr>
+<tr><td><code>fullscreen</code></td><td>1</td><td></td></tr>
+<tr><td><code>none</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name ioio.examples.hello_service:touchModeBehind
+        */
+        public static final int SlidingMenu_touchModeBehind = 7;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#viewAbove}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name ioio.examples.hello_service:viewAbove
+        */
+        public static final int SlidingMenu_viewAbove = 1;
+        /**
+          <p>This symbol is the offset where the {@link ioio.examples.hello_service.R.attr#viewBehind}
+          attribute's value can be found in the {@link #SlidingMenu} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name ioio.examples.hello_service:viewBehind
+        */
+        public static final int SlidingMenu_viewBehind = 2;
     };
 }

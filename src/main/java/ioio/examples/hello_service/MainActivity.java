@@ -2,19 +2,19 @@ package ioio.examples.hello_service;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import ioio.examples.hello_service.GuitarActivity.CordManager;
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+
 import ioio.examples.hello_service.GuitarActivity.GuitarActivity;
 
 public class MainActivity extends Activity {
 
     private static final int[] BUTTONS = {R.id.E_LOW, R.id.A, R.id.D, R.id.G, R.id.B, R.id.E_HIGH};
     public static final String mBroadcastStringAction = "com.truiton.broadcast.string";
-
+    SlidingMenu s;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
