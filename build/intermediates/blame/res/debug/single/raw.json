@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/a_string.wav",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/a_string.wav"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/e_string_hi.wav",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/e_string_hi.wav"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/stringstrdecayover10.gif",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/stringstrdecayover10.gif"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/b_string.wav",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/b_string.wav"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/d_string.wav",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/d_string.wav"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/e_string_low.wav",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/e_string_low.wav"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/g_string.wav",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/g_string.wav"
+    }
+]
