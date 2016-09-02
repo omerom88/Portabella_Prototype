@@ -1,10 +1,18 @@
 [
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/xml/device_filter.xml",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidDevice/5.07/res/xml/device_filter.xml"
+        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\xml\\accessory_filter.xml",
+        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.github.ytai.ioio\\IOIOLibAndroidAccessory\\5.07\\res\\xml\\accessory_filter.xml"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/xml/accessory_filter.xml",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidAccessory/5.07/res/xml/accessory_filter.xml"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\xml\\accessory_filter.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.github.ytai.ioio\\IOIOLibAndroidAccessory\\5.07\\res\\xml\\accessory_filter.xml"
+    },
+    {
+        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\xml\\device_filter.xml",
+        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.github.ytai.ioio\\IOIOLibAndroidDevice\\5.07\\res\\xml\\device_filter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\xml\\device_filter.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\exploded-aar\\com.github.ytai.ioio\\IOIOLibAndroidDevice\\5.07\\res\\xml\\device_filter.xml"
     }
 ]
