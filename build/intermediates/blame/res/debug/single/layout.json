@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\layout\\activity_record.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\layout\\activity_record.xml"
+    },
+    {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo\\build\\intermediates\\res\\merged\\debug\\layout\\guitar_layout.xml",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo\\src\\main\\res\\layout\\guitar_layout.xml"
     },

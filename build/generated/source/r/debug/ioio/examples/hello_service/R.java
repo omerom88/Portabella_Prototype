@@ -541,14 +541,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int stringstrdecayover10=0x7f020030;
     }
     public static final class id {
-        public static final int A=0x7f080030;
-        public static final int B=0x7f080033;
-        public static final int D=0x7f080031;
-        public static final int E_HIGH=0x7f080034;
-        public static final int E_LOW=0x7f08002f;
-        public static final int EffeButton=0x7f08002c;
-        public static final int G=0x7f080032;
-        public static final int InstrumentButton=0x7f08002b;
+        public static final int A=0x7f080036;
+        public static final int B=0x7f080039;
+        public static final int D=0x7f080037;
+        public static final int E_HIGH=0x7f08003a;
+        public static final int E_LOW=0x7f080035;
+        public static final int EffeButton=0x7f08002d;
+        public static final int G=0x7f080038;
+        public static final int InstrumentButton=0x7f08002c;
         public static final int adjust_height=0x7f08000e;
         public static final int adjust_width=0x7f08000f;
         public static final int auto=0x7f08001e;
@@ -558,7 +558,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int demote_rfc822_hostnames=0x7f080016;
         public static final int email=0x7f08000c;
         public static final int fullscreen=0x7f080023;
-        public static final int guitarLayout=0x7f08002d;
+        public static final int guitarLayout=0x7f080033;
         public static final int html=0x7f080011;
         public static final int icon_only=0x7f08001b;
         public static final int icon_uri=0x7f080001;
@@ -571,29 +571,35 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int intent_extra_data=0x7f080006;
         public static final int large_icon_uri=0x7f080007;
         public static final int left=0x7f080021;
-        public static final int leftMargin=0x7f08002e;
+        public static final int leftMargin=0x7f080034;
         public static final int light=0x7f080020;
+        public static final int loopNumText=0x7f080032;
         public static final int mainLayout=0x7f080028;
         public static final int margin=0x7f080024;
         public static final int match_global_nicknames=0x7f080018;
         public static final int none=0x7f080010;
         public static final int omnibox_title_section=0x7f080019;
         public static final int omnibox_url_section=0x7f08001a;
+        public static final int pauseButton=0x7f08002f;
         public static final int plain=0x7f080012;
         public static final int playButton=0x7f080029;
+        public static final int recordButton=0x7f08002a;
         public static final int rfc822=0x7f080013;
         public static final int right=0x7f080022;
-        public static final int rightMargin=0x7f080035;
+        public static final int rightMargin=0x7f08003b;
         public static final int selected_view=0x7f080000;
-        public static final int settinButton=0x7f08002a;
-        public static final int slidingmenumain=0x7f080036;
+        public static final int settinButton=0x7f08002b;
+        public static final int slidingmenumain=0x7f08003c;
         public static final int standard=0x7f08001c;
+        public static final int startButton=0x7f08002e;
+        public static final int stopButton=0x7f080030;
         public static final int text1=0x7f080008;
         public static final int text2=0x7f080009;
         public static final int textView4=0x7f080026;
         public static final int textView5=0x7f080027;
         public static final int textView6=0x7f080025;
         public static final int thing_proto=0x7f08000a;
+        public static final int timeText=0x7f080031;
         public static final int url=0x7f080014;
         public static final int wide=0x7f08001d;
     }
@@ -604,8 +610,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int activity_ioio_ne=0x7f030000;
         public static final int activity_main=0x7f030001;
         public static final int activity_menu=0x7f030002;
-        public static final int guitar_layout=0x7f030003;
-        public static final int slidingmenumain=0x7f030004;
+        public static final int activity_record=0x7f030003;
+        public static final int guitar_layout=0x7f030004;
+        public static final int slidingmenumain=0x7f030005;
     }
     public static final class raw {
         public static final int a_string=0x7f050000;

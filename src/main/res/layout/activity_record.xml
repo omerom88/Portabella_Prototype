@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:weightSum="1">
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/startButton"
+        android:text="start"
+        android:layout_weight="0.34"
+        android:onClick="start"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/pauseButton"
+        android:text="pause"
+        android:layout_weight="0.34"
+        android:onClick="pause"/>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/stopButton"
+        android:text="stop"
+        android:layout_weight="0.32"
+        android:onClick="stop"/>
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:id="@+id/timeText"
+        android:text="60"
+        android:layout_weight="0.32"/>
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:id="@+id/loopNumText"
+        android:text="2"
+        android:layout_weight="0.32"/>
+
+</LinearLayout>

@@ -11,6 +11,10 @@ buildscript {
 }
 
 android {
+
+  defaultConfig {
+    applicationId "ioio.examples.hello_service"
+  }
   buildToolsVersion "23.0.3"
   compileSdkVersion 19
 }
