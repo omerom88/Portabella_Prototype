@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Portabelo.iml" filepath="$PROJECT_DIR$/Portabelo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/SlidingMenu/library/menuLibrary.iml" filepath="$PROJECT_DIR$/libs/SlidingMenu/library/menuLibrary.iml" />
+    </modules>
+  </component>
+</project>
