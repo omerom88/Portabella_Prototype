@@ -51,7 +51,7 @@ public class GuitarActivity extends Activity {
             layouts[i] = (LinearLayout) findViewById(BUTTONS[i]);
         }
         //////////////// the gesture  /////////////////
-        cordManager = CordManager.getInstance(getApplicationContext());
+        CordManager.init(getApplicationContext());
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
@@ -106,7 +106,7 @@ public class GuitarActivity extends Activity {
     @Override
     protected void onPause() {
         super.onPause();
-        cordManager.cancelAllTasks();
+        CordManager.cancelAllTasks();
         unregisterReceiver(mReceiver);
         Log.d("", "The onPause() event");
     }

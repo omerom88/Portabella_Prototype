@@ -14,4 +14,14 @@
         android:text="@string/playButtonText"
         android:id="@+id/playButton"
         android:onClick="playGuitar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10sp"
+        android:text="go to record activity"
+        android:id="@+id/recordButton"
+        android:onClick="startRecActivity"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/playButton" />
 </RelativeLayout>
