@@ -536,18 +536,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int common_plus_signin_btn_text_light_pressed=0x7f02002b;
         public static final int ic_launcher=0x7f02002c;
         public static final int onescreen=0x7f02002d;
-        public static final int screenbgnomenu=0x7f02002e;
-        public static final int screenr=0x7f02002f;
-        public static final int stringstrdecayover10=0x7f020030;
+        public static final int rec=0x7f02002e;
+        public static final int roundbutton=0x7f02002f;
+        public static final int roundbuttonred=0x7f020030;
+        public static final int screenbgnomenu=0x7f020031;
+        public static final int screenr=0x7f020032;
+        public static final int screenr2=0x7f020033;
+        public static final int stringstrdecayover10=0x7f020034;
     }
     public static final class id {
         public static final int A=0x7f080036;
-        public static final int B=0x7f080039;
+        public static final int B=0x7f08003a;
         public static final int D=0x7f080037;
-        public static final int E_HIGH=0x7f08003a;
+        public static final int E_HIGH=0x7f08003b;
         public static final int E_LOW=0x7f080035;
         public static final int EffeButton=0x7f08002d;
-        public static final int G=0x7f080038;
+        public static final int G=0x7f080039;
         public static final int InstrumentButton=0x7f08002c;
         public static final int adjust_height=0x7f08000e;
         public static final int adjust_width=0x7f08000f;
@@ -583,13 +587,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int pauseButton=0x7f08002f;
         public static final int plain=0x7f080012;
         public static final int playButton=0x7f080029;
+        public static final int recButton=0x7f080038;
         public static final int recordButton=0x7f08002a;
         public static final int rfc822=0x7f080013;
         public static final int right=0x7f080022;
-        public static final int rightMargin=0x7f08003b;
+        public static final int rightMargin=0x7f08003c;
         public static final int selected_view=0x7f080000;
         public static final int settinButton=0x7f08002b;
-        public static final int slidingmenumain=0x7f08003c;
+        public static final int slidingmenumain=0x7f08003d;
         public static final int standard=0x7f08001c;
         public static final int startButton=0x7f08002e;
         public static final int stopButton=0x7f080030;

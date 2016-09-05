@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/screenr"
+    android:background="@drawable/screenr2"
     android:id="@+id/guitarLayout"
     android:baselineAligned="false">
 
@@ -43,6 +43,12 @@
         android:layout_weight="0.14">
     </LinearLayout>
 
+    <Button
+        android:layout_width="34dp"
+        android:layout_height="29dp"
+        android:id="@+id/recButton"
+        android:background="@drawable/roundbutton" />
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_height="fill_parent"
@@ -50,6 +56,7 @@
         android:background="#00ffffff"
         android:id="@+id/G"
         android:layout_weight="0.14">
+
     </LinearLayout>
 
     <LinearLayout

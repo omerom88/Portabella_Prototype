@@ -6,15 +6,22 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.graphics.Point;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
+import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
+
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 import ioio.examples.hello_service.HelloIOIOService2;
 import ioio.examples.hello_service.R;
+import ioio.examples.hello_service.Recording.Record;
 
 /**
  * Created by Tomer on 21/08/2016.
@@ -29,6 +36,7 @@ public class GuitarActivity extends Activity {
     public static float[] retMeitar = {0f,0f,0f,0f,0f,0f};
     public static int[] retSrigim = {-1,-1,-1,-1,-1,-1};
     public static float retVelBridge = 0f;
+    public static int clickCounter = 0;
 
 
     /**
@@ -65,14 +73,48 @@ public class GuitarActivity extends Activity {
         ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(layouts);
         strummingLayout.setOnTouchListener(activitySwipeDetector);
 
+        ///////// menu ////////
+        SlidingMenu menu = new SlidingMenu(this);
+        menu.setMode(SlidingMenu.LEFT);
+        menu.setFadeDegree(0.35f);
+        menu.setBackgroundColor(Color.RED);
+        menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
 
+        //////// record button /////////
+        final Record record = Record.getInstance(this);
+        final Button recBut = (Button)findViewById(R.id.recButton);
+        recBut.setOnClickListener(new RadioButton.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickCounter++;
+                if (clickCounter % 2 == 1){
+                    Log.e(" ", "first click");
+                    recBut.setBackgroundResource(R.drawable.roundbuttonred);
+                    //odd case - recording
+                    record.start(); //think of how to do it if the duration and stuff are defined in rec menu
+                }
+                else{
+                    Log.e(" ", "second click");
+                    recBut.setBackgroundResource(R.drawable.roundbutton);
+                    //even case - finish recording
+                    finishRec();
+                }
+            }
+        });
+
+
+        //////// start ioio activity //////////
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction(mBroadcastStringAction);
         final Intent intent = new Intent(GuitarActivity.this, HelloIOIOService2.class);
         startService(intent);
     }
 
-
+    private void finishRec(){
+        //open the box that said what to do with it - save listen or share
+        //to see how we can rich this function in case record time is done
+        //to decide what heppend when the rec is done - default and user choice in the menu
+    }
 
     private BroadcastReceiver mReceiver = new BroadcastReceiver() {
         int[] lastSarig = {-1,-1,-1,-1,-1,-1};
