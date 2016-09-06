@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.graphics.Point;
 import android.os.Build;
 import android.os.Bundle;
@@ -74,11 +73,26 @@ public class GuitarActivity extends Activity {
         strummingLayout.setOnTouchListener(activitySwipeDetector);
 
         ///////// menu ////////
-        SlidingMenu menu = new SlidingMenu(this);
+        final SlidingMenu menu = new SlidingMenu(this);
         menu.setMode(SlidingMenu.LEFT);
+        menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
+        menu.setFadeEnabled(true);
         menu.setFadeDegree(0.35f);
-        menu.setBackgroundColor(Color.RED);
         menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
+        menu.setMenu(R.layout.activity_menu2);
+        menu.setBehindWidth(500);
+        menu.setOnOpenListener(new SlidingMenu.OnOpenListener() {
+            @Override
+            public void onOpen() {
+                Button setBut = (Button)findViewById(R.id.settinButton);
+                setBut.setOnClickListener(new Button.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        menu.toggle();
+                    }
+                });
+            }
+        });
 
         //////// record button /////////
         final Record record = Record.getInstance(this);
