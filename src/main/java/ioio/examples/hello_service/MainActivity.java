@@ -16,6 +16,7 @@ public class MainActivity extends Activity {
     private static final int[] BUTTONS = {R.id.E_LOW, R.id.A, R.id.D, R.id.G, R.id.B, R.id.E_HIGH};
     public static final String mBroadcastStringAction = "com.truiton.broadcast.string";
     SlidingMenu s;
+    int loadingMoveCounter = 0;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -31,7 +32,60 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    };
+
+        Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
+        startActivity(intent);
+//        final ImageView mImageViewMoving = (ImageView) findViewById(R.id.imageview_animated_moving);
+//        mImageViewMoving.setVisibility(View.INVISIBLE);
+//        final ImageView mImageViewOpening = (ImageView) findViewById(R.id.imageview_animated_opening);
+//        AnimationDrawable animationDrawableOpen = (AnimationDrawable)mImageViewOpening.getBackground();
+//        AnimationDrawable animationDrawableMove = (AnimationDrawable)mImageViewMoving.getBackground();
+//        animationDrawableOpen.start();
+//        checkIfAnimationOpenDone(animationDrawableOpen, animationDrawableMove, mImageViewMoving);
+
+    }
+//    private void checkIfAnimationOpenDone(AnimationDrawable anim, final AnimationDrawable animationDrawableMove, final ImageView mImageViewMoving){
+//        final AnimationDrawable a = anim;
+////        final AnimationDrawable b = animationDrawableMove;
+//        int timeBetweenChecks = 300;
+//        Handler h = new Handler();
+//        h.postDelayed(new Runnable() {
+//            public void run() {
+//                if (a.getCurrent() != a.getFrame(a.getNumberOfFrames() - 1)) {
+//                    checkIfAnimationOpenDone(a, animationDrawableMove, mImageViewMoving);
+//                } else {
+////                    Toast.makeText(getApplicationContext(), "ANIMATION DONE!", Toast.LENGTH_SHORT).show();
+//                    mImageViewMoving.setVisibility(View.VISIBLE);
+//                    animationDrawableMove.start();
+//                    checkIfAnimationMoveDone(animationDrawableMove);
+//                }
+//            }
+//        }, timeBetweenChecks);
+//    }
+////    private void getOutOfit(){
+////        while (loadingMoveCounter)
+////    }
+//
+//    private void checkIfAnimationMoveDone(AnimationDrawable anim){
+//
+//        final AnimationDrawable a = anim;
+//        int timeBetweenChecks = 300;
+//        Handler h = new Handler();
+//        h.postDelayed(new Runnable(){
+//            public void run(){
+////                Toast.makeText(getApplicationContext(), "COUNTER: " + loadingMoveCounter, Toast.LENGTH_SHORT).show();
+//                if (a.getCurrent() != a.getFrame(a.getNumberOfFrames() - 1)){
+//                    checkIfAnimationMoveDone(a);
+//                } else{
+//                    Intent intent = new Intent(MainActivity.this, GuitarActivity.class);
+//                    startActivity(intent);
+//                }
+//            }
+//        }, timeBetweenChecks);
+//    }
+
+
+
 
     public void playGuitar(View view) {
         Intent intent = new Intent(this, GuitarActivity.class);

@@ -12,8 +12,8 @@ public class CordManager {
     final static int NUM_OF_ITERATIONS = 100;
     public static final int NUM_OF_MEITARS = 6;
     public static Cord[] cords = new Cord[NUM_OF_MEITARS];
-    private static final int[] NOTES = {R.raw.e_string_low, R.raw.a_string, R.raw.d_string, R.raw.g_string,R.raw.b_string,
-            R.raw.e_string_hi};
+    private static final int[] NOTES = {R.raw.elowstring, R.raw.astring, R.raw.dstring, R.raw.gstring,R.raw.bstring,
+            R.raw.ehighstring};
     private static float height;
 
     /* A private Constructor prevents any other

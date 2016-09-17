@@ -2,10 +2,16 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/screenr2"
+    android:background="@drawable/baseplayscreen1"
     android:id="@+id/guitarLayout"
     android:baselineAligned="false">
 
+    <ImageView
+        android:id="@+id/imageview_animated_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/animation_list_filling"
+        />
 
     <LinearLayout
         android:id="@+id/leftMargin"
@@ -43,11 +49,7 @@
         android:layout_weight="0.14">
     </LinearLayout>
 
-    <Button
-        android:layout_width="34dp"
-        android:layout_height="29dp"
-        android:id="@+id/recButton"
-        android:background="@drawable/roundbutton" />
+
 
     <LinearLayout
         android:orientation="horizontal"
@@ -86,4 +88,26 @@
         android:layout_weight="0.08">
     </LinearLayout>
 
+
+
 </LinearLayout>
+
+<!--<Button-->
+<!--android:layout_width="34dp"-->
+<!--android:layout_height="29dp"-->
+<!--android:id="@+id/recButton"-->
+<!--android:background="@drawable/roundbutton" />-->
+
+<!--<ImageView-->
+<!--android:id="@+id/imageview_animation_list_filling"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:background="@drawable/animation_list_filling"-->
+    <!--/>-->
+
+<!--<ImageView-->
+<!--android:id="@+id/imageview_animation_list_emptying"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:background="@drawable/animation_list_emptying"-->
+    <!--/>-->

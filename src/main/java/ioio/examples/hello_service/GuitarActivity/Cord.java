@@ -23,7 +23,7 @@ public class Cord implements Runnable {
     protected short[] sample, revSample;
     private AudioTrack audioTrack;
     private Equalizer equalizer;
-    final static int DEFAULT_RATE = 44100;
+    final static int DEFAULT_RATE = 88200;
     private static final int MILI_CONVERTOR = 1000;
     public static final int MAX_FREQ = 400 * MILI_CONVERTOR;
     private static final double PERCENTAGE_PART_ONE = 1;

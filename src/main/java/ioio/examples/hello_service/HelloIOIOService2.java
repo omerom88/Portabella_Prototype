@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
 
-import java.util.ArrayList;
-
 import ioio.examples.hello_service.GuitarActivity.CordManager;
 import ioio.lib.api.AnalogInput;
 import ioio.lib.api.DigitalOutput;
@@ -22,8 +20,8 @@ import ioio.lib.util.android.IOIOService;
 public class HelloIOIOService2 extends IOIOService {
     private String LOG_TAG = null;
 
-    private int[] analogPinsArry = {31,32,33,34,35,36,37,38,39,40,41,42};
-    private int[] digitalsPinsArry = {22,21,20,19,18,17,16,15,14,13,12,11};
+    private int[] analogPinsArry = {31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42};
+    private int[] digitalsPinsArry = {16, 15, 14, 13, 12, 11}; //{22, 21, 20, 19, 18, 17,
 
     private AnalogInput[] analogInputObjects = new AnalogInput[12];
     private DigitalOutput[] digitalOutputObjects = new DigitalOutput[12];
@@ -62,7 +60,7 @@ public class HelloIOIOService2 extends IOIOService {
     @Override
     protected IOIOLooper createIOIOLooper() {
         return new BaseIOIOLooper() {
-            public  int lastX = -1;
+            public int lastX = -1;
 //            public float lastPress = 0f;
 
             @Override
@@ -70,14 +68,14 @@ public class HelloIOIOService2 extends IOIOService {
                     InterruptedException {
 
                 pressureBuffer = new PressureBuffer[CordManager.NUM_OF_MEITARS];
-                for(int i = 0; i < CordManager.NUM_OF_MEITARS; i++) {
+                for (int i = 0; i < CordManager.NUM_OF_MEITARS; i++) {
                     pressureBuffer[i] = new PressureBuffer();
                 }
-                for (int k = 11; k >= 0; k--){
+                for (int k = 5; k >= 0; k--) {
                     digitalOutputObjects[k] = ioio_.openDigitalOutput(digitalsPinsArry[k]);
                 }
 
-                for (int j = 0; j < 12; j++){
+                for (int j = 0; j <= 11; j++) {
                     analogInputObjects[j] = ioio_.openAnalogInput(analogPinsArry[j]);
                 }
 
@@ -92,23 +90,23 @@ public class HelloIOIOService2 extends IOIOService {
 
                 Intent broadcastIntent = new Intent();
                 // i - x, n - y
-                for (int i = 0; i <= 11; i++) {
+                for (int i = 0; i <= 5; i++) {
                     digitalOutputObjects[i].write(true);
 
                     for (int n = 11; n >= 0; n--) {
                         SensorValue[n] = analogInputObjects[n].read();
-                        if (n >= 0 && n <= 5) {
-                            if (SensorValue[n] > 0.08) {
-//                            String msg = "n: " + n + "  i: " + i + "    sen:   " + SensorValue[n];
-                                Log.e("SensorValue:         ", i + "");
-                                broadcastIntent.putExtra("meitar" + n, SensorValue[n]);
-                                broadcastIntent.putExtra("srigim" + n, i);
-                                broadcastIntent.putExtra("Velbridge" + n, playBridge2(pressureBuffer[n], SensorValue[n]));
-                            } else {
-                                playBridge2(pressureBuffer[n], 0);
-                            }
-                            pressureBuffer[n].setLastValue(SensorValue[n]);
+//                        if (i >= 0 && i <= 5) {
+                        if (SensorValue[n] > 0.01) {
+                            //                            String msg = "n: " + n + "  i: " + i + "    sen:   " + SensorValue[n];
+                            Log.e("Meitar: ", i + "  sarig :" + n + " ---" + SensorValue[n]);
+                            broadcastIntent.putExtra("meitar" + i, SensorValue[n]);
+                            broadcastIntent.putExtra("srigim" + i, n);
+                            broadcastIntent.putExtra("Velbridge" + i, playBridge2(pressureBuffer[i], SensorValue[n]));
+                        } else {
+                            playBridge2(pressureBuffer[i], 0);
                         }
+                        pressureBuffer[i].setLastValue(SensorValue[n]);
+//                        }
                         Thread.sleep(1);
                         SensorValue[n] = 0;
                     }
@@ -118,7 +116,8 @@ public class HelloIOIOService2 extends IOIOService {
                 sendBroadcast(broadcastIntent);
 
             }
-            public float playBridge2(PressureBuffer buffer, float press){
+
+            public float playBridge2(PressureBuffer buffer, float press) {
 //                Log.e("p", "press:  " + press +"    lastPress:  "+ lastPress);
 //                if (press > lastPress + 0.1){
 //                    lastPress = press;
@@ -131,8 +130,7 @@ public class HelloIOIOService2 extends IOIOService {
                 if (!buffer.isValueReturned() && press == 0) {
                     Log.e("1", "press:  " + press);
                     buffer.setValueReturned(true);
-                }
-                else if (press > 0.3 + buffer.getLastValue() && buffer.isValueReturned()) {
+                } else if (press > 0.3 + buffer.getLastValue() && buffer.isValueReturned()) {
                     Log.e("2", "press:  " + press);
                     buffer.setValueReturned(false);
                     return press;
