@@ -38,8 +38,10 @@ public class GuitarActivity extends Activity {
     public static int clickCounter = 0;
     static public boolean animationFleg = false;
     static public LinearLayout baseGuitarLayout;
+    public static AnimationDrawable animationDrawableRec;
+    public static AnimationDrawable animationDrawableMenu;
 
-
+    public static int[] NOTES = {R.raw.estringlow,R.raw.astring,R.raw.dstring,R.raw.gstring,R.raw.bstring,R.raw.estringhi};
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -63,7 +65,7 @@ public class GuitarActivity extends Activity {
             layouts[i] = (LinearLayout) findViewById(BUTTONS[i]);
         }
         //////////////// the gesture  /////////////////
-        CordManager.init(getApplicationContext());
+        CordManager.init(getApplicationContext(), NOTES);
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
@@ -80,21 +82,21 @@ public class GuitarActivity extends Activity {
 
         // rec button animation
         final ImageView mImageViewRecording = (ImageView) findViewById(R.id.imageview_animated_recording);
-        final AnimationDrawable animationDrawableRec = (AnimationDrawable)mImageViewRecording.getBackground();
+        animationDrawableRec = (AnimationDrawable)mImageViewRecording.getBackground();
         mImageViewRecording.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getActionMasked()) {
                     case MotionEvent.ACTION_DOWN: {
                         animationDrawableRec.start();
-                        checkIfAnimationDone(animationDrawableRec);
+//                        checkIfAnimationDone(animationDrawableRec);
                         return true;
                     }
                     case MotionEvent.ACTION_UP: {
-                        if (animationFleg) {
-                            animationFleg = false;
+//                        if (animationFleg) {
+//                            animationFleg = false;
                             Log.e("START RECORDING", "!!");
-                        }
+//                        }
                         //TODO: when leave button
                     }
                     return false;
@@ -106,22 +108,23 @@ public class GuitarActivity extends Activity {
 
         // menu button animation
         final ImageView mImageViewMenu = (ImageView) findViewById(R.id.imageview_animated_menu);
-        final AnimationDrawable animationDrawableMenu = (AnimationDrawable)mImageViewMenu.getBackground();
+        animationDrawableMenu = (AnimationDrawable)mImageViewMenu.getBackground();
         mImageViewMenu.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getActionMasked()) {
                     case MotionEvent.ACTION_DOWN: {
                         animationDrawableMenu.start();
-                        checkIfAnimationDone(animationDrawableMenu);
+//                        checkIfAnimationDone(animationDrawableMenu);
                         return true;
                     }
                     case MotionEvent.ACTION_UP: {
-                        if (animationFleg) {
-                            animationFleg = false;
+//                        if (animationFleg) {
+//                            animationFleg = false;
                             Intent intent = new Intent(GuitarActivity.this, MenuActivityGif.class);
-                            startActivity(intent);
-                        }
+                            int res = 2;
+                            startActivityForResult(intent, res);
+//                        }
                         return true;
                     }
                 }
@@ -183,9 +186,17 @@ public class GuitarActivity extends Activity {
     };
 
     @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(resultCode==2){
+        }
+    }
+
+    @Override
     public void onResume() {
         super.onResume();
         registerReceiver(mReceiver, mIntentFilter);
+        animationDrawableMenu.setVisible(false, true);
+        animationDrawableRec.setVisible(false,true);
     }
 
     @Override

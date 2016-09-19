@@ -38,7 +38,8 @@ public class MenuActivityGif extends Activity {
                     }
                     case MotionEvent.ACTION_UP:{
                         Intent intent = new Intent(MenuActivityGif.this, ChooseTheme.class);
-                        startActivity(intent);
+                        int res = 2;
+                        startActivityForResult(intent,res);
                         finish();
                         ////////    TODO: open a fregment with themes!!
 
@@ -82,7 +83,7 @@ public class MenuActivityGif extends Activity {
                             e.printStackTrace();
                         }
                     }
-                    case MotionEvent.ACTION_UP:{
+                    case MotionEvent.ACTION_UP: {
 //                        Intent intent = new Intent(MenuActivityGif.this, ChooseTheme.class);
 //                        startActivity(intent);
 
@@ -93,10 +94,22 @@ public class MenuActivityGif extends Activity {
 
         });
     }
+
     @Override
-    protected void onStop()
-    {
-        finish();
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if(resultCode==2){
+            finish();
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        setResult(2);
         super.onStop();
+    }
+    @Override
+    protected void onDestroy() {
+        setResult(2);
+        super.onDestroy();
     }
 }

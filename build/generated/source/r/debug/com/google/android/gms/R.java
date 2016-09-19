@@ -119,7 +119,7 @@ public final class R {
 		public static final int adjust_height = 0x7f08000e;
 		public static final int adjust_width = 0x7f08000f;
 		public static final int auto = 0x7f08001e;
-		public static final int button = 0x7f080042;
+		public static final int button = 0x7f080043;
 		public static final int contact = 0x7f08000b;
 		public static final int dark = 0x7f08001f;
 		public static final int demote_common_words = 0x7f080015;

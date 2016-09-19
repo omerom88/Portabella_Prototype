@@ -15,19 +15,29 @@ import ioio.examples.hello_service.GuitarActivity.GuitarActivity;
  */
 public class LoadingActivity extends Activity
 {
+    public AnimationDrawable animationDrawableOpen;
+    public AnimationDrawable animationDrawableMove;
+    public ImageView mImageViewMoving;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading);
 
-        final ImageView mImageViewMoving = (ImageView) findViewById(R.id.imageview_animated_moving);
+        mImageViewMoving = (ImageView) findViewById(R.id.imageview_animated_moving);
         mImageViewMoving.setVisibility(View.INVISIBLE);
         final ImageView mImageViewOpening = (ImageView) findViewById(R.id.imageview_animated_opening);
-        AnimationDrawable animationDrawableOpen = (AnimationDrawable)mImageViewOpening.getBackground();
-        AnimationDrawable animationDrawableMove = (AnimationDrawable)mImageViewMoving.getBackground();
+        animationDrawableOpen = (AnimationDrawable)mImageViewOpening.getBackground();
+        animationDrawableMove = (AnimationDrawable)mImageViewMoving.getBackground();
+
+    }
+
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
         animationDrawableOpen.start();
         checkIfAnimationOpenDone(animationDrawableOpen, animationDrawableMove, mImageViewMoving);
-
     }
 
     private void checkIfAnimationOpenDone(AnimationDrawable anim, final AnimationDrawable animationDrawableMove, final ImageView mImageViewMoving){
@@ -68,6 +78,12 @@ public class LoadingActivity extends Activity
                 }
             }
         }, timeBetweenChecks);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        onStart();
     }
 
 }
