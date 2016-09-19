@@ -33,7 +33,7 @@ public class LoadingActivity extends Activity
     private void checkIfAnimationOpenDone(AnimationDrawable anim, final AnimationDrawable animationDrawableMove, final ImageView mImageViewMoving){
         final AnimationDrawable a = anim;
 //        final AnimationDrawable b = animationDrawableMove;
-        int timeBetweenChecks = 1000;
+        int timeBetweenChecks = 300;
         Handler h = new Handler();
         h.postDelayed(new Runnable() {
             public void run() {
@@ -59,10 +59,10 @@ public class LoadingActivity extends Activity
         Handler h = new Handler();
         h.postDelayed(new Runnable() {
             public void run() {
-//                Toast.makeText(getApplicationContext(), "COUNTER: " + loadingMoveCounter, Toast.LENGTH_SHORT).show();
                 if (a.getCurrent() != a.getFrame(a.getNumberOfFrames() - 1)) {
                     checkIfAnimationMoveDone(a);
                 } else {
+//                    Toast.makeText(getApplicationContext(), "ANIMATION DONE!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoadingActivity.this, GuitarActivity.class);
                     startActivity(intent);
                 }

@@ -3,35 +3,35 @@
     android:oneshot="true">
 
     <item
-        android:duration="100"
+        android:duration="2000"
         android:drawable="@drawable/screenloadingup00000"/>
 
     <item
-        android:duration="100"
+        android:duration="50"
         android:drawable="@drawable/screenloadingup00001"/>
 
     <item
-        android:duration="100"
+        android:duration="50"
         android:drawable="@drawable/screenloadingup00002"/>
 
     <item
-        android:duration="100"
+        android:duration="50"
         android:drawable="@drawable/screenloadingup00003"/>
 
     <item
-        android:duration="100"
+        android:duration="50"
         android:drawable="@drawable/screenloadingup00004"/>
 
     <item
-        android:duration="100"
+        android:duration="50"
         android:drawable="@drawable/screenloadingup00005"/>
 
     <item
-        android:duration="100"
+        android:duration="50"
         android:drawable="@drawable/screenloadingup00006"/>
 
     <item
-        android:duration="100"
+        android:duration="50"
         android:drawable="@drawable/screenloadingup00007"/>
 
 

@@ -21,7 +21,7 @@ public class HelloIOIOService2 extends IOIOService {
     private String LOG_TAG = null;
 
     private int[] analogPinsArry = {31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42};
-    private int[] digitalsPinsArry = {16, 15, 14, 13, 12, 11}; //{22, 21, 20, 19, 18, 17,
+    private int[] digitalsPinsArry = {11, 13, 10, 7, 4, 14}; //{22, 21, 20, 19, 18, 17,
 
     private AnalogInput[] analogInputObjects = new AnalogInput[12];
     private DigitalOutput[] digitalOutputObjects = new DigitalOutput[12];
@@ -93,17 +93,18 @@ public class HelloIOIOService2 extends IOIOService {
                 for (int i = 0; i <= 5; i++) {
                     digitalOutputObjects[i].write(true);
 
-                    for (int n = 11; n >= 0; n--) {
+                    for (int n = 0; n <= 11; n++) {
                         SensorValue[n] = analogInputObjects[n].read();
 //                        if (i >= 0 && i <= 5) {
-                        if (SensorValue[n] > 0.01) {
+                        if (SensorValue[n] > 0.08) {
+                            SensorValue[n] = SensorValue[n] + (float)(i*0.04);
                             //                            String msg = "n: " + n + "  i: " + i + "    sen:   " + SensorValue[n];
                             Log.e("Meitar: ", i + "  sarig :" + n + " ---" + SensorValue[n]);
                             broadcastIntent.putExtra("meitar" + i, SensorValue[n]);
                             broadcastIntent.putExtra("srigim" + i, n);
                             broadcastIntent.putExtra("Velbridge" + i, playBridge2(pressureBuffer[i], SensorValue[n]));
                         } else {
-                            playBridge2(pressureBuffer[i], 0);
+                            //playBridge2(pressureBuffer[i], 0);
                         }
                         pressureBuffer[i].setLastValue(SensorValue[n]);
 //                        }
@@ -118,78 +119,16 @@ public class HelloIOIOService2 extends IOIOService {
             }
 
             public float playBridge2(PressureBuffer buffer, float press) {
-//                Log.e("p", "press:  " + press +"    lastPress:  "+ lastPress);
-//                if (press > lastPress + 0.1){
-//                    lastPress = press;
-//                    return press;
-//                }
-//                else{
-//                    lastPress = press;
-//                    return 0;
-//                }
                 if (!buffer.isValueReturned() && press == 0) {
                     Log.e("1", "press:  " + press);
                     buffer.setValueReturned(true);
-                } else if (press > 0.3 + buffer.getLastValue() && buffer.isValueReturned()) {
+                } else if (press > 0.2 + buffer.getLastValue() && buffer.isValueReturned()) {
                     Log.e("2", "press:  " + press);
                     buffer.setValueReturned(false);
                     return press;
                 }
                 return 0;
             }
-
-
-//            public float playBridge(int meitar, int sarig, float pressure) {
-//                int counter = 0;
-//
-//                // if the pressure is in the same x and y collact the z
-//                if (lastX == sarig) {
-//                    if (lastPress > pressure + 0.00001) {
-//                        lastPress = 0f;
-////                        Log.e("big press","2");
-//                        lastX = -1;
-//                        return 1f;
-//                    }
-//                    if (lastPress > pressure + 0.0001) {
-////                        Log.e("small press","3");
-//                        counter++;
-//                    } else {
-////                        Log.e("not enough press","4");
-//                        counter = 0;
-//                    }
-//
-//                    if (counter == 5) {
-////                        Log.e("counter at 5","5");
-//                        lastPress = 0f;
-//                        lastX = -1;
-//                        return pressure;
-//                    }
-//                    lastPress = pressure;
-//                    lastX = sarig;
-//                }
-//                else {
-////                    Log.e("different sarig","6");
-//                    lastPress = 0f;
-//                    lastX = sarig;
-//                }
-//                Log.e("r","counter: "+Integer.toString(counter)+" lastPress: "+Float.toString(lastPress) +
-//                " press: " + Float.toString(pressure) + " lastX: " + Integer.toString(lastX)+ " sarig: " + Integer.toString(sarig));
-//                return 0;
-//            }
-
-//                // if z have 5 values check the time
-//                if (z[meitar].size() == 5) {
-//                    velo = 0f;
-//                    for (int i=1;i<=4;i++){
-//                        velo += z[meitar].indexOf(i);
-//                    }
-//                    velo = (float)velo / 5;
-//                }
-//                velo = (float)(velo / 0.5);
-//                return (velo);
-//                }
-//                return 0f; //stam
-//            }
         };
 
     }

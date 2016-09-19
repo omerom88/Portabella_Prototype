@@ -1,6 +1,6 @@
 package ioio.examples.hello_service.GuitarActivity;
 
-import android.util.Log;
+import android.content.Context;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
@@ -22,6 +22,8 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     // the one side of the layout to the second one (left to right or right to left).
     private static LinearLayout[] mietarsLayouts = new LinearLayout[CordManager.NUM_OF_MEITARS];
     private SortedSet<MultiPointerTouch> multiPointerTouch;
+    float downXmenu, downYmenu, upXmenu, upYmenu;
+    private Context context;
 
     /**
      * This inner class represent a Pointer on the screen. each pointer has a unique id and contains
@@ -73,7 +75,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                     pointerList.addLast(new PointerTouch(layout, velocityTracker.getXVelocity(), pressure, y));
                     long startTime = System.currentTimeMillis();
                     run();
-                    Log.e("time for onRightSwipe: ", "" + (System.currentTimeMillis() - startTime));
+//                    Log.e("time for onRightSwipe: ", "" + (System.currentTimeMillis() - startTime));
                     if (!isStrumming) {
                         isStrumming = true;
                     }
@@ -163,8 +165,9 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     /**
      * Constructor.
      */
-    public ActivitySwipeDetector(LinearLayout[] mietarsLayouts){
+    public ActivitySwipeDetector(LinearLayout[] mietarsLayouts, Context context){
         ActivitySwipeDetector.mietarsLayouts = mietarsLayouts;
+        this.context = context;
         this.multiPointerTouch = new TreeSet<MultiPointerTouch>();
     }
 
@@ -212,6 +215,8 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
 //        CordManager.pauseUnRunningTasks();
         switch (event.getActionMasked()) {
             case MotionEvent.ACTION_DOWN:
+//                downXmenu = event.getX();
+//                downYmenu = event.getY();
             case MotionEvent.ACTION_POINTER_DOWN: {
 //                Log.e("ACTION_POINTER_DOWN", "ACTION_POINTER_DOWN");
                 multiPointerTouch.add(new MultiPointerTouch(pointerId));
@@ -246,6 +251,18 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
             }
 
             case MotionEvent.ACTION_UP:
+//                upXmenu = event.getX();
+//                upYmenu = event.getY();
+////                Log.e("downX", downXmenu + "");
+////                Log.e("downY", downYmenu + "");
+////                Log.e("upX", upXmenu + "");
+////                Log.e("upY", upYmenu + "");
+//                if (Math.abs(downXmenu - upXmenu) < 5 && (downYmenu - upYmenu) < 300 && (downYmenu - upYmenu) > 100)
+//                {
+//                    Intent intent  = new Intent(this.context, MenuActivityGif.class);
+//                    context.startActivity(intent);
+//                    return true;
+//                }
             case MotionEvent.ACTION_CANCEL: {
 //                Log.e("ACTION: ", "ACTION_CANCEL \\ ACTION_UP");
                 for (MultiPointerTouch element : multiPointerTouch) {

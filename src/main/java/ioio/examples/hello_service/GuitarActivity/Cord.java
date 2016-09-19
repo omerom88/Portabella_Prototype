@@ -23,7 +23,7 @@ public class Cord implements Runnable {
     protected short[] sample, revSample;
     private AudioTrack audioTrack;
     private Equalizer equalizer;
-    final static int DEFAULT_RATE = 88200;
+    final static int DEFAULT_RATE = 44100;
     private static final int MILI_CONVERTOR = 1000;
     public static final int MAX_FREQ = 400 * MILI_CONVERTOR;
     private static final double PERCENTAGE_PART_ONE = 1;
@@ -48,9 +48,9 @@ public class Cord implements Runnable {
         this.index = index;
         this.partOne = (int)((double)numOfIterations * PERCENTAGE_PART_ONE);
         int minBufferSize = AudioTrack.getMinBufferSize(DEFAULT_RATE,
-                AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT);
+                AudioFormat.CHANNEL_OUT_STEREO, AudioFormat.ENCODING_PCM_16BIT);
         this.audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, DEFAULT_RATE,
-                AudioFormat.CHANNEL_OUT_MONO, AudioFormat.ENCODING_PCM_16BIT, minBufferSize,
+                AudioFormat.CHANNEL_OUT_STEREO, AudioFormat.ENCODING_PCM_16BIT, minBufferSize,
                 AudioTrack.MODE_STREAM);
         InputStream in1 = context.getResources().openRawResource(wav);
         byte[] array = new byte[0];
@@ -231,7 +231,7 @@ public class Cord implements Runnable {
                             float presh = GuitarActivity.retMeitar[index];
 
 //                            Log.e("presh_before:        ", presh + "");
-                            if (!BridgPressure(presh)) {
+                            if (!BridgPressure(presh, index)) {
                                 break;
                             }
 
@@ -244,17 +244,24 @@ public class Cord implements Runnable {
             }
         }
 
-        public Boolean BridgPressure(float presh){
+        public Boolean BridgPressure(float presh, int index){
 //            Log.e("presh_before:        ", presh + "");
 
             if (presh == 0.0){
                 presh = 1000;
             }
-            else if (presh < 0.3){
+            else if (presh < 0.1){
                 presh = 8;
             }
             else{
-                presh = (float)(((MAX_BRIDG_PRESSURE - MIN_BRIDG_PRESSURE) * (presh - 0.08) / (0.5 - 0.08)) + MIN_BRIDG_PRESSURE);
+//                Log.e("INDEX",index + "");
+                if (index == 100)
+                {
+                    presh = (float)(((MAX_BRIDG_PRESSURE - MIN_BRIDG_PRESSURE) * (presh - 0.01) / (0.4 - 0.01)) + MIN_BRIDG_PRESSURE);
+                }
+                else {
+                    presh = (float) (((MAX_BRIDG_PRESSURE - MIN_BRIDG_PRESSURE) * (presh - 0.01) / (0.6 - 0.01)) + MIN_BRIDG_PRESSURE);
+                }
 //                Log.e("presh:  ", Float.toString(presh));
             }
 

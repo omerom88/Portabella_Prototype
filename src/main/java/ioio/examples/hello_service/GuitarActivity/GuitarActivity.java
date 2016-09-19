@@ -10,6 +10,7 @@ import android.graphics.Point;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Display;
 import android.view.MotionEvent;
@@ -20,7 +21,6 @@ import android.widget.LinearLayout;
 import ioio.examples.hello_service.HelloIOIOService2;
 import ioio.examples.hello_service.MenuActivityGif;
 import ioio.examples.hello_service.R;
-import ioio.examples.hello_service.Recording.Record;
 
 /**
  * Created by Tomer on 21/08/2016.
@@ -36,6 +36,8 @@ public class GuitarActivity extends Activity {
     public static int[] retSrigim = {-1,-1,-1,-1,-1,-1};
     public static float retVelBridge = 0f;
     public static int clickCounter = 0;
+    static public boolean animationFleg = false;
+    static public LinearLayout baseGuitarLayout;
 
 
     /**
@@ -53,6 +55,7 @@ public class GuitarActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.guitar_layout);
 
+        baseGuitarLayout = (LinearLayout) findViewById(R.id.guitarLayout);
 
         LOG_TAG = this.getClass().getSimpleName();
         LinearLayout[] layouts = new LinearLayout[CordManager.NUM_OF_MEITARS];
@@ -70,91 +73,62 @@ public class GuitarActivity extends Activity {
             CordManager.setHeight(Resources.getSystem().getDisplayMetrics().heightPixels);
         }
         /////////////// string layouts  ///////////////
-        LinearLayout strummingLayout = (LinearLayout) findViewById(R.id.guitarLayout);
-        ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(layouts);
-        strummingLayout.setOnTouchListener(activitySwipeDetector);
 
-//        ///////// menu ////////
-//        final SlidingMenu menu = new SlidingMenu(this);
-//        menu.setMode(SlidingMenu.LEFT);
-//        menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
-//        menu.setFadeEnabled(true);
-//        menu.setFadeDegree(0.35f);
-//        menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
-//        menu.setMenu(R.layout.activity_menu2);
-//        menu.setBehindWidth(500);
-//        menu.setOnOpenListener(new SlidingMenu.OnOpenListener() {
-//            @Override
-//            public void onOpen() {
-//                Button setBut = (Button)findViewById(R.id.settinButton);
-//                setBut.setOnClickListener(new Button.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        menu.toggle();
-//                    }
-//                });
-//            }
-//        });
-        final ImageView mImageViewSelector = (ImageView) findViewById(R.id.imageview_animated_selector);
-//        mImageViewSelector.setOnTouchListener(new View.OnTouchListener() {
-//            @Override
-//            public boolean onTouch(View v, MotionEvent event) {
-//                ((AnimationDrawable) mImageViewSelector.getBackground()).start();
-//                return false;
-//            }
-//
-//        });
+        ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(layouts, this);
+        baseGuitarLayout.setOnTouchListener(activitySwipeDetector);
 
-        mImageViewSelector.setOnLongClickListener(new View.OnLongClickListener() {
+
+        // rec button animation
+        final ImageView mImageViewRecording = (ImageView) findViewById(R.id.imageview_animated_recording);
+        final AnimationDrawable animationDrawableRec = (AnimationDrawable)mImageViewRecording.getBackground();
+        mImageViewRecording.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public boolean onLongClick(View v) {
-                Log.e("!!!!!!!!!!!!!", " --------");
-                AnimationDrawable anim = (AnimationDrawable) mImageViewSelector.getBackground();
-                anim.start();
-//                while (anim.isRunning()) {}
-//                final Intent intent = new Intent(GuitarActivity.this, MenuActivityGif.class);
-//                startActivity(intent);
-                try {
-                    Thread.sleep(5);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                v.setOnTouchListener(new View.OnTouchListener() {
-                    @Override
-                    public boolean onTouch(View v, MotionEvent event) {
-                        Log.e("finish:", "--");
-                        final Intent intent = new Intent(GuitarActivity.this, MenuActivityGif.class);
-                        startActivity(intent);
-                        return false;
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getActionMasked()) {
+                    case MotionEvent.ACTION_DOWN: {
+                        animationDrawableRec.start();
+                        checkIfAnimationDone(animationDrawableRec);
+                        return true;
                     }
-                });
-
-
+                    case MotionEvent.ACTION_UP: {
+                        if (animationFleg) {
+                            animationFleg = false;
+                            Log.e("START RECORDING", "!!");
+                        }
+                        //TODO: when leave button
+                    }
+                    return false;
+                }
                 return false;
             }
         });
 
-        //////// record button /////////
-        final Record record = Record.getInstance(this);
-//        final Button recBut = (Button)findViewById(R.id.recButton);
-//        recBut.setOnClickListener(new RadioButton.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                clickCounter++;
-//                if (clickCounter % 2 == 1){
-//                    Log.e(" ", "first click");
-//                    recBut.setBackgroundResource(R.drawable.roundbuttonred);
-//                    //odd case - recording
-//                    record.start(); //think of how to do it if the duration and stuff are defined in rec menu
-//                }
-//                else{
-//                    Log.e(" ", "second click");
-//                    recBut.setBackgroundResource(R.drawable.roundbutton);
-//                    //even case - finish recording
-//                    finishRec();
-//                }
-//            }
-//        });
+
+        // menu button animation
+        final ImageView mImageViewMenu = (ImageView) findViewById(R.id.imageview_animated_menu);
+        final AnimationDrawable animationDrawableMenu = (AnimationDrawable)mImageViewMenu.getBackground();
+        mImageViewMenu.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getActionMasked()) {
+                    case MotionEvent.ACTION_DOWN: {
+                        animationDrawableMenu.start();
+                        checkIfAnimationDone(animationDrawableMenu);
+                        return true;
+                    }
+                    case MotionEvent.ACTION_UP: {
+                        if (animationFleg) {
+                            animationFleg = false;
+                            Intent intent = new Intent(GuitarActivity.this, MenuActivityGif.class);
+                            startActivity(intent);
+                        }
+                        return true;
+                    }
+                }
+                return false;
+            }
+        });
+
 
 
         //////// start ioio activity //////////
@@ -162,6 +136,21 @@ public class GuitarActivity extends Activity {
         mIntentFilter.addAction(mBroadcastStringAction);
         final Intent intent = new Intent(GuitarActivity.this, HelloIOIOService2.class);
         startService(intent);
+    }
+
+    private void checkIfAnimationDone(AnimationDrawable anim){
+        final AnimationDrawable a = anim;
+        int timeBetweenChecks = 300;
+        Handler h = new Handler();
+        h.postDelayed(new Runnable() {
+            public void run() {
+                if (a.getCurrent() != a.getFrame(a.getNumberOfFrames() - 1)) {
+                    checkIfAnimationDone(a);
+                } else {
+                    animationFleg = true;
+                }
+            }
+        }, timeBetweenChecks);
     }
 
     private void finishRec(){
@@ -224,3 +213,26 @@ public class GuitarActivity extends Activity {
         Log.d("", "The onDestroy() event");
     }
 }
+
+//        ///////// menu ////////
+
+//        final SlidingMenu menu = new SlidingMenu(this);
+//        menu.setMode(SlidingMenu.LEFT);
+//        menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
+//        menu.setFadeEnabled(true);
+//        menu.setFadeDegree(0.35f);
+//        menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
+//        menu.setMenu(R.layout.activity_menu2);
+//        menu.setBehindWidth(500);
+//        menu.setOnOpenListener(new SlidingMenu.OnOpenListener() {
+//            @Override
+//            public void onOpen() {
+//                Button setBut = (Button)findViewById(R.id.settinButton);
+//                setBut.setOnClickListener(new Button.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        menu.toggle();
+//                    }
+//                });
+//            }
+//        });
