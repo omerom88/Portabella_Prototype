@@ -1,10 +1,214 @@
 [
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\round_button.xml",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\src\\main\\res\\drawable-v21\\round_button.xml"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\recstart00006.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\recstart00006.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\animation_list_filling_rec.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\animation_list_filling_rec.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\thememenu001.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\thememenu001.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\animation_list_filling_moving.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\animation_list_filling_moving.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingloop00002.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingloop00002.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingup00005.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingup00005.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingloop00003.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingloop00003.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\recstart00005.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\recstart00005.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\recstart00001.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\recstart00001.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\thememenu002.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\thememenu002.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\animation_list_emptying.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\animation_list_emptying.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\menuscreen00.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\menuscreen00.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\animation_list_filling.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\animation_list_filling.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\buttonmenu00004.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\buttonmenu00004.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\guitarscreenblues.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\guitarscreenblues.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\buttonmenu00007.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\buttonmenu00007.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\buttonmenu00002.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\buttonmenu00002.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\thememenu003.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\thememenu003.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\thememenu000.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\thememenu000.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\baseplayscreen1.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\baseplayscreen1.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\round_button.xml",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\round_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingup00004.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingup00004.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\recstart00000.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\recstart00000.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingup00001.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingup00001.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\recstart00003.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\recstart00003.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\animation_list_emptying_open.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\animation_list_emptying_open.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\buttonmenu00000.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\buttonmenu00000.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingup00007.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingup00007.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingloop00005.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingloop00005.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\menuscreencolor03.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\menuscreencolor03.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\buttonmenu00005.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\buttonmenu00005.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingup00002.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingup00002.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingloop00000.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingloop00000.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\buttonmenu00001.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\buttonmenu00001.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\animation_list_filling_menu.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\animation_list_filling_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingloop00006.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingloop00006.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingup00000.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingup00000.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingloop00001.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingloop00001.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingup00006.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingup00006.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingloop00007.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingloop00007.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingup00003.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingup00003.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\screenloadingloop00004.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\screenloadingloop00004.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\menuscreensettings02.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\menuscreensettings02.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\recstart00002.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\recstart00002.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\guitarscreenroll.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\guitarscreenroll.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\recstart00004.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\recstart00004.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\recstart00007.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\recstart00007.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\menuscreenrecording01.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\menuscreenrecording01.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\guitarscreenbase.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\guitarscreenbase.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\recstart00000_a.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\recstart00000_a.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\animation_list_filling_open.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\animation_list_filling_open.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\buttonmenu00006.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\buttonmenu00006.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\buttonmenu00003.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-v21\\buttonmenu00003.png"
     }
 ]

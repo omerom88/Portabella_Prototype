@@ -3,9 +3,6 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <devices>
-          <device id="Uri 1" />
-        </devices>
         <target>android-23</target>
       </config>
     </shared>
@@ -33,41 +30,98 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9c13109-8298-418c-9eec-9e4f501294ff" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Portabelo_New.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/classes/androidTest/debug/ioio/examples/hello_service/test/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/Portabelo_New/menuLibrary/unspecified/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/Portabelo_New/menuLibrary/unspecified/R.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/Portabelo_New/menuLibrary/unspecified/aapt/AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/Portabelo_New/menuLibrary/unspecified/jars/classes.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/Portabelo_New/menuLibrary/unspecified/res/layout/slidingmenumain.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/Portabelo_New/menuLibrary/unspecified/res/values/values.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/incremental-safeguard/androidTest/debug/tag.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/IOIOLibCore-5.07_e8f00394d32adbf78ecb90a0593c47e8946fac0d.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/Portabelo_New-menuLibrary-unspecified_b96c3d8f99e9afac49addd1ada0b9f487dd9fb9f.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/butterknife-6.0.0_504c707576880d782a463d7cb59ea2bf58a270ed.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.1.1_4f4919cc904fb1b9d40dd090bb9688140b59091e.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.github.ytai.ioio-IOIOLibAndroid-5.07_ff7328c9baa27ac05781495773a5ca3b6236af5b.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.github.ytai.ioio-IOIOLibAndroidAccessory-5.07_a4fe7cb54e1b45d707b4f487da69c3db9cb6ce22.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.github.ytai.ioio-IOIOLibAndroidBluetooth-5.07_4a0c57528b2d81d8f5f8ac89a6a015e399d410d9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.github.ytai.ioio-IOIOLibAndroidDevice-5.07_7c22c43d05a200e1c4ab314aabdcef0d9485b70c.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-9.2.1_1bea5e51f841743985931bf715795670f184100b.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.2.1_36ceba9b2a90b8306d20aa9b5bfaae64ac346cce.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.2.1_cfb8754329bb22ad0e2670ffb896a56bd0801a1a.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.2.1_f54603fc6b8d7a36ec2b3c4a8caf46c688c76f31.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.2.1_757edde14fa4b25d9720190fe1024a52e584a17b.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/debug_5ddb0bc3aa0350a9d29e4f8aa42c52ee911cc577.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/internal_impl-24.1.1_3d31358230cf51bea774f4323f147003c5e8587a.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/pre-dexed/debug/support-annotations-24.1.1_9b21e021b0a2dababd5ffb19730045080bb6fddf.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/outputs/apk/Portabelo_New-debug-unaligned.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/outputs/apk/Portabelo_New-debug.apk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/CanvasTransformerBuilder$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/CanvasTransformerBuilder$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/CanvasTransformerBuilder$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/CanvasTransformerBuilder$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/CanvasTransformerBuilder$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/CanvasTransformerBuilder$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/CanvasTransformerBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/CustomViewAbove$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/CustomViewAbove$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/CustomViewAbove$OnPageChangeListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/CustomViewAbove$SimpleOnPageChangeListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/CustomViewAbove.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/CustomViewBehind.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/MenuInterface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/SlidingMenu$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/SlidingMenu$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/SlidingMenu$CanvasTransformer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/SlidingMenu$OnCloseListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/SlidingMenu$OnClosedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/SlidingMenu$OnOpenListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/SlidingMenu$OnOpenedListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/SlidingMenu$SavedState$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/SlidingMenu$SavedState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/SlidingMenu.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/app/SlidingActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/app/SlidingActivityBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/app/SlidingActivityHelper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/app/SlidingActivityHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/app/SlidingFragmentActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/app/SlidingListActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/classes.jar_et4ny41ioun97aytiqqa1k5qh/com/jeremyfeinstein/slidingmenu/lib/app/SlidingPreferenceActivity.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileReleaseJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/ChooseTheme$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/ChooseTheme$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/ChooseTheme$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/ChooseTheme$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/ChooseTheme$3.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/ChooseTheme$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/ChooseTheme.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/ChooseTheme.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/ChooseThemeFreg.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/ChooseThemeFreg.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/Cord$Task.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/Cord$Task.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/Cord.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/Cord.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/CordManager.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/CordManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$4.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/PlayingGuitarBuffer$PlayingSegment.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/PlayingGuitarBuffer$PlayingSegment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/PlayingGuitarBuffer.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/PlayingGuitarBuffer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/MenuActivityGif$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/MenuActivityGif$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/MenuActivityGif$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/MenuActivityGif$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/MenuActivityGif$3.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/MenuActivityGif$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/MenuActivityGif.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/MenuActivityGif.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/Recording/Record.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/Recording/Record.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/Recording/RecordActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/Recording/RecordActivity.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/bundles/debug/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/res/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/outputs/aar/menuLibrary-debug.aar" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/outputs/aar/menuLibrary-debug.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/outputs/aar/menuLibrary-release.aar" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/outputs/aar/menuLibrary-release.aar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileReleaseJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/IOIOLibAndroidAccessory_5_07.xml" afterPath="$PROJECT_DIR$/.idea/libraries/IOIOLibAndroidAccessory_5_07.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/IOIOLibAndroid_5_07.xml" afterPath="$PROJECT_DIR$/.idea/libraries/IOIOLibAndroid_5_07.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/firebase_common_9_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_common_9_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_base_9_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_base_9_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_24_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_24_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_24_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_24_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/buildConfig/androidTest/debug/ioio/examples/hello_service/test/BuildConfig.java" afterPath="$PROJECT_DIR$/build/generated/source/buildConfig/androidTest/debug/ioio/examples/hello_service/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/buildConfig/debug/ioio/examples/hello_service/BuildConfig.java" afterPath="$PROJECT_DIR$/build/generated/source/buildConfig/debug/ioio/examples/hello_service/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/build/generated/source/r/debug/com/google/android/gms/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/r/debug/com/jeremyfeinstein/slidingmenu/lib/R.java" afterPath="$PROJECT_DIR$/build/generated/source/r/debug/com/jeremyfeinstein/slidingmenu/lib/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/r/debug/ioio/lib/accessory/R.java" afterPath="$PROJECT_DIR$/build/generated/source/r/debug/ioio/lib/accessory/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/source/r/debug/ioio/lib/android/device/R.java" afterPath="$PROJECT_DIR$/build/generated/source/r/debug/ioio/lib/android/device/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-af.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-af.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-am.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-am.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-ar.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/multi/values-ar.json" />
@@ -158,379 +212,28 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/layout.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/raw.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/raw.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/xml.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/xml.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/MediaMetadataCompat.aidl" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/MediaMetadataCompat.aidl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/RatingCompat.aidl" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/RatingCompat.aidl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/session/MediaSessionCompat.aidl" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/session/MediaSessionCompat.aidl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/session/ParcelableVolumeInfo.aidl" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/session/ParcelableVolumeInfo.aidl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/session/PlaybackStateCompat.aidl" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/session/PlaybackStateCompat.aidl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/os/ResultReceiver.aidl" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/os/ResultReceiver.aidl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/proguard.txt" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/proguard.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroid/5.07/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroid/5.07/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroid/5.07/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroid/5.07/aapt/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidAccessory/5.07/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidAccessory/5.07/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidAccessory/5.07/R.txt" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidAccessory/5.07/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidAccessory/5.07/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidAccessory/5.07/aapt/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidAccessory/5.07/res/xml/accessory_filter.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidAccessory/5.07/res/xml/accessory_filter.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidBluetooth/5.07/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidBluetooth/5.07/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidBluetooth/5.07/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidBluetooth/5.07/aapt/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidDevice/5.07/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidDevice/5.07/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidDevice/5.07/R.txt" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidDevice/5.07/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidDevice/5.07/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidDevice/5.07/aapt/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidDevice/5.07/res/xml/device_filter.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidDevice/5.07/res/xml/device_filter.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.1/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.1/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.1/proguard.txt" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.1/proguard.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.1/res/values/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.1/res/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/proguard.txt" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/proguard.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/color/common_google_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/color/common_google_signin_btn_text_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/color/common_google_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/color/common_google_signin_btn_text_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/color/common_plus_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/color/common_plus_signin_btn_text_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/color/common_plus_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/color/common_plus_signin_btn_text_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_google_signin_btn_icon_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_google_signin_btn_icon_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_google_signin_btn_icon_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_google_signin_btn_icon_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_google_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_google_signin_btn_text_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_google_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_google_signin_btn_text_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_plus_signin_btn_icon_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_plus_signin_btn_icon_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_plus_signin_btn_icon_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_plus_signin_btn_icon_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_plus_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_plus_signin_btn_text_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_plus_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_plus_signin_btn_text_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-af/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-af/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-am/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-am/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ar/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ar/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-az/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-az/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-be/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-be/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-bg/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-bg/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-bn/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-bn/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-bs/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-bs/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ca/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-cs/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-cs/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-da/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-da/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-de/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-de/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-el/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-el/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-en-rGB/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-en-rGB/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-es-rUS/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-es-rUS/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-es/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-es/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-et/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-et/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-eu/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-eu/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-fa/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-fa/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-fi/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-fi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-fr-rCA/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-fr-rCA/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-fr/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-fr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-gl/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-gl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-gu/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-gu/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-hi/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-hi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-hr/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-hr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-hu/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-hu/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-hy/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-hy/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-in/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-in/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-is/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-is/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-it/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-it/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-iw/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-iw/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ja/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ja/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ka/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ka/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-kk/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-kk/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-km/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-km/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-kn/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-kn/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ko/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ko/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ky/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ky/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-lo/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-lo/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-lt/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-lt/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-lv/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-lv/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-mk/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-mk/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ml/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ml/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-mn/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-mn/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-mr/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-mr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ms/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ms/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-my/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-my/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-nb/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-nb/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ne/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ne/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-nl/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-nl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pa/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pl/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pt-rBR/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pt-rBR/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pt-rPT/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-pt-rPT/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ro/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ro/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ru/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ru/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-si/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-si/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-sk/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-sk/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-sl/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-sl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-sq/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-sq/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-sr/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-sr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-sv/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-sv/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-sw/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-sw/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ta/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ta/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-te/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-te/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-th/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-th/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-tl/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-tl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-tr/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-tr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-uk/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-uk/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ur/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-ur/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-uz/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-uz/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-vi/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-vi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-zh-rCN/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-zh-rCN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-zh-rHK/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-zh-rHK/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-zh-rTW/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-zh-rTW/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-zu/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values-zu/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/R.txt" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/proguard.txt" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/proguard.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-af/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-af/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-am/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-am/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ar/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ar/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-az/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-az/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-be/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-be/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-bg/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-bg/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-bn/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-bn/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-bs/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-bs/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ca/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ca/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-cs/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-cs/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-da/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-da/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-de/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-de/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-el/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-el/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-en-rGB/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-en-rGB/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-es-rUS/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-es-rUS/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-es/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-es/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-et/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-et/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-eu/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-eu/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-fa/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-fa/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-fi/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-fi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-fr-rCA/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-fr-rCA/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-fr/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-fr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-gl/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-gl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-gu/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-gu/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-hi/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-hi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-hr/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-hr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-hu/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-hu/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-hy/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-hy/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-in/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-in/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-is/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-is/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-it/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-it/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-iw/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-iw/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ja/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ja/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ka/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ka/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-kk/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-kk/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-km/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-km/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-kn/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-kn/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ko/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ko/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ky/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ky/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-lo/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-lo/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-lt/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-lt/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-lv/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-lv/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-mk/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-mk/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ml/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ml/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-mn/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-mn/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-mr/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-mr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ms/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ms/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-my/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-my/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-nb/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-nb/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ne/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ne/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-nl/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-nl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-pa/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-pa/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-pl/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-pl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-pt-rBR/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-pt-rBR/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-pt-rPT/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-pt-rPT/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ro/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ro/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ru/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ru/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-si/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-si/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-sk/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-sk/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-sl/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-sl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-sq/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-sq/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-sr/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-sr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-sv/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-sv/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-sw/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-sw/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ta/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ta/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-te/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-te/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-th/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-th/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-tl/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-tl/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-tr/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-tr/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-uk/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-uk/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ur/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-ur/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-uz/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-uz/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-vi/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-vi/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-zh-rCN/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-zh-rCN/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-zh-rHK/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-zh-rHK/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-zh-rTW/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-zh-rTW/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-zu/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values-zu/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/res/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/proguard.txt" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/proguard.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/proguard.txt" afterPath="$PROJECT_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/proguard.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/color/common_plus_signin_btn_text_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_dark.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_dark.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-af/values-af.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-af/values-af.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-am/values-am.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-am/values-am.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ar/values-ar.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ar/values-ar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-az/values-az.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-az/values-az.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-be/values-be.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-be/values-be.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-bg/values-bg.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-bg/values-bg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-bn/values-bn.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-bn/values-bn.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-bs/values-bs.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-bs/values-bs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ca/values-ca.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ca/values-ca.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-cs/values-cs.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-cs/values-cs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-da/values-da.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-da/values-da.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-de/values-de.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-de/values-de.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-el/values-el.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-el/values-el.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-en-rGB/values-en-rGB.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-en-rGB/values-en-rGB.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-es-rUS/values-es-rUS.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-es-rUS/values-es-rUS.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-es/values-es.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-es/values-es.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-et/values-et.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-et/values-et.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-eu/values-eu.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-eu/values-eu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-fa/values-fa.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-fa/values-fa.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-fi/values-fi.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-fi/values-fi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-fr-rCA/values-fr-rCA.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-fr-rCA/values-fr-rCA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-fr/values-fr.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-fr/values-fr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-gl/values-gl.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-gl/values-gl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-gu/values-gu.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-gu/values-gu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-hi/values-hi.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-hi/values-hi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-hr/values-hr.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-hr/values-hr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-hu/values-hu.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-hu/values-hu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-hy/values-hy.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-hy/values-hy.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-in/values-in.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-in/values-in.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-is/values-is.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-is/values-is.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-it/values-it.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-it/values-it.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-iw/values-iw.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-iw/values-iw.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ja/values-ja.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ja/values-ja.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ka/values-ka.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ka/values-ka.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-kk/values-kk.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-kk/values-kk.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-km/values-km.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-km/values-km.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-kn/values-kn.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-kn/values-kn.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ko/values-ko.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ko/values-ko.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ky/values-ky.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ky/values-ky.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-lo/values-lo.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-lo/values-lo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-lt/values-lt.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-lt/values-lt.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-lv/values-lv.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-lv/values-lv.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-mk/values-mk.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-mk/values-mk.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ml/values-ml.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ml/values-ml.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-mn/values-mn.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-mn/values-mn.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-mr/values-mr.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-mr/values-mr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ms/values-ms.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ms/values-ms.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-my/values-my.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-my/values-my.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-nb/values-nb.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-nb/values-nb.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ne/values-ne.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ne/values-ne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-nl/values-nl.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-nl/values-nl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-pa/values-pa.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-pa/values-pa.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-pl/values-pl.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-pl/values-pl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-pt-rBR/values-pt-rBR.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-pt-rBR/values-pt-rBR.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-pt-rPT/values-pt-rPT.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-pt-rPT/values-pt-rPT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ro/values-ro.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ro/values-ro.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ru/values-ru.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ru/values-ru.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-si/values-si.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-si/values-si.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-sk/values-sk.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-sk/values-sk.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-sl/values-sl.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-sl/values-sl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-sq/values-sq.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-sq/values-sq.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-sr/values-sr.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-sr/values-sr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-sv/values-sv.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-sv/values-sv.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-sw/values-sw.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-sw/values-sw.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ta/values-ta.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ta/values-ta.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-te/values-te.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-te/values-te.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-th/values-th.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-th/values-th.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-tl/values-tl.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-tl/values-tl.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-tr/values-tr.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-tr/values-tr.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-uk/values-uk.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-uk/values-uk.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ur/values-ur.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-ur/values-ur.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-uz/values-uz.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-uz/values-uz.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-vi/values-vi.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-vi/values-vi.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-zh-rCN/values-zh-rCN.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-zh-rCN/values-zh-rCN.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-zh-rHK/values-zh-rHK.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-zh-rHK/values-zh-rHK.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-zh-rTW/values-zh-rTW.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-zh-rTW/values-zh-rTW.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-zu/values-zu.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values-zu/values-zu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/xml/accessory_filter.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/xml/accessory_filter.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/xml/device_filter.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/xml/device_filter.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/generated/source/buildConfig/androidTest/debug/com/jeremyfeinstein/slidingmenu/lib/test/BuildConfig.java" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/generated/source/buildConfig/androidTest/debug/com/jeremyfeinstein/slidingmenu/lib/test/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/generated/source/buildConfig/debug/com/jeremyfeinstein/slidingmenu/lib/BuildConfig.java" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/generated/source/buildConfig/debug/com/jeremyfeinstein/slidingmenu/lib/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/generated/source/r/androidTest/debug/com/jeremyfeinstein/slidingmenu/lib/R.java" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/generated/source/r/androidTest/debug/com/jeremyfeinstein/slidingmenu/lib/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/blame/res/androidTest/debug/multi/values.json" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/blame/res/androidTest/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/blame/res/androidTest/debug/single/layout.json" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/blame/res/androidTest/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/blame/res/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/blame/res/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/bundles/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/bundles/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/bundles/debug/aapt/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/bundles/debug/res/values/values.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/bundles/debug/res/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/MediaMetadataCompat.aidl" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/MediaMetadataCompat.aidl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/RatingCompat.aidl" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/RatingCompat.aidl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/session/MediaSessionCompat.aidl" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/session/MediaSessionCompat.aidl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/session/ParcelableVolumeInfo.aidl" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/session/ParcelableVolumeInfo.aidl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/session/PlaybackStateCompat.aidl" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/media/session/PlaybackStateCompat.aidl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/os/ResultReceiver.aidl" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/aidl/android/support/v4/os/ResultReceiver.aidl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/proguard.txt" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/proguard.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeDebugAndroidTestShaders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeReleaseAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeReleaseShaders/merger.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/mergeReleaseShaders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/packageDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/incremental/packageReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/res/merged/androidTest/debug/values/values.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/res/merged/androidTest/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/libs/SlidingMenu/library/build/intermediates/res/merged/debug/values/values.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/CustomAnimationDrawableNew.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/CustomAnimationDrawableNew.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ChooseThemeFreg.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ChooseThemeFreg.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/Cord.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/Cord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/CordManager.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/CordManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/GuitarActivity.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/GuitarActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/PlayingGuitarBuffer.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/PlayingGuitarBuffer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/chooseTheme.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/chooseTheme.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/HelloIOIOService.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/HelloIOIOService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/HelloIOIOService2.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/HelloIOIOService2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/LoadingActivity.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/LoadingActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MainActivity.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MenuActivityGif.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MenuActivityGif.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Recorder.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Recorder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Recording/Record.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Recording/Record.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Recording/RecordActivity.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Recording/RecordActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ioioActivity.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ioioActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ioioBrodcastReciver.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/ioioBrodcastReciver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/drawable-v21/round_button.xml" afterPath="$PROJECT_DIR$/src/main/res/drawable-v21/round_button.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/drawable/animation_list_emptying.xml" afterPath="$PROJECT_DIR$/src/main/res/drawable/animation_list_emptying.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/drawable/animation_list_emptying_open.xml" afterPath="$PROJECT_DIR$/src/main/res/drawable/animation_list_emptying_open.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/drawable/animation_list_filling.xml" afterPath="$PROJECT_DIR$/src/main/res/drawable/animation_list_filling.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/drawable/animation_list_filling_menu.xml" afterPath="$PROJECT_DIR$/src/main/res/drawable/animation_list_filling_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/drawable/animation_list_filling_moving.xml" afterPath="$PROJECT_DIR$/src/main/res/drawable/animation_list_filling_moving.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/drawable/animation_list_filling_open.xml" afterPath="$PROJECT_DIR$/src/main/res/drawable/animation_list_filling_open.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/drawable/animation_list_filling_rec.xml" afterPath="$PROJECT_DIR$/src/main/res/drawable/animation_list_filling_rec.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/drawable/round_button.xml" afterPath="$PROJECT_DIR$/src/main/res/drawable/round_button.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_ioio_ne.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_ioio_ne.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_loading.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_loading.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_menu.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_menu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_menu2.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_menu2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_record.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_record.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/activity_theme.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_theme.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable-v21/round_button.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable-v21/round_button.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/animation_list_emptying.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/animation_list_emptying.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/animation_list_emptying_open.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/animation_list_emptying_open.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/animation_list_filling.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/animation_list_filling.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/animation_list_filling_menu.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/animation_list_filling_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/animation_list_filling_moving.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/animation_list_filling_moving.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/animation_list_filling_open.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/animation_list_filling_open.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/animation_list_filling_rec.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/animation_list_filling_rec.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/round_button.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/drawable/round_button.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_ioio_ne.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_ioio_ne.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_loading.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_loading.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_main.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_menu.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_menu2.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_menu2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_record.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_record.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_theme.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/activity_theme.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/guitar_layout.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/guitar_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/menu_layout_gif.xml" afterPath="$PROJECT_DIR$/build/intermediates/res/merged/debug/layout/menu_layout_gif.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/guitar_layout.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/guitar_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/layout/menu_layout_gif.xml" afterPath="$PROJECT_DIR$/src/main/res/layout/menu_layout_gif.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" />
     </list>
     <ignored path="Portabelo_New.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -561,9 +264,30 @@
       <file leaf-file-name="GuitarActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/GuitarActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4206642">
-              <caret line="178" column="45" selection-start-line="178" selection-start-column="45" selection-end-line="178" selection-end-column="45" />
-              <folding />
+            <state vertical-scroll-proportion="0.58928573">
+              <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+              <folding>
+                <element signature="e#2245#2246#0" expanded="true" />
+                <element signature="e#2276#2277#0" expanded="true" />
+                <element signature="e#3770#4586#0" expanded="true" />
+                <element signature="e#4585#4586#0" expanded="true" />
+                <element signature="e#4846#5897#0" expanded="true" />
+                <element signature="e#5896#5897#0" expanded="true" />
+                <element signature="e#6376#6657#0" expanded="true" />
+                <element signature="e#6656#6657#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuActivityGif.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MenuActivityGif.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -572,9 +296,38 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ChooseTheme.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="63" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
+              <caret line="31" column="82" selection-start-line="31" selection-start-column="82" selection-end-line="31" selection-end-column="82" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="guitarscreenbase.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/drawable/guitarscreenbase.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="guitar_layout.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/layout/guitar_layout.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.7230768">
+              <caret line="11" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="baseplayscreen1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/res/drawable/baseplayscreen1.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -590,6 +343,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Tomer" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -2379,7 +2137,6 @@
         <option value="$PROJECT_DIR$/src/main/res/layout/activity_menu2.xml" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/animation_list_filling_menu.xml" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/animation_list_filling_rec.xml" />
-        <option value="$PROJECT_DIR$/src/main/res/layout/guitar_layout.xml" />
         <option value="$PROJECT_DIR$/src/main/res/layout/menu_layout_gif.xml" />
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ActivitySwipeDetector.java" />
         <option value="$PROJECT_DIR$/src/main/res/drawable/round.xml" />
@@ -2390,8 +2147,9 @@
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/LoadingActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/CordManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ChooseTheme.java" />
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/GuitarActivity.java" />
+        <option value="$PROJECT_DIR$/src/main/res/layout/guitar_layout.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ChooseTheme.java" />
       </list>
     </option>
   </component>
@@ -2480,11 +2238,119 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portabelo_New" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portabelo_New312" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portabelo_New" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portabelo_New312" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hello_service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portabelo_New" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portabelo_New312" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hello_service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Recording" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portabelo_New" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Portabelo_New312" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hello_service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GuitarActivity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2515,6 +2381,7 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="device.picker.selection" value="Nexus_5X_API_23" />
   </component>
   <component name="RunManager" selected="Android Application.Portabelo_New312">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -2763,7 +2630,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method />
     </configuration>
-    <configuration default="false" name="Portabelo_New312" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <configuration default="false" name="Portabelo_New312" type="AndroidRunConfigurationType" factoryName="Android Application" activateToolWindowBeforeRun="false">
       <module name="Portabelo_New312" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -2825,6 +2692,19 @@
       <option name="number" value="Default" />
       <updated>1474202799487</updated>
     </task>
+    <task id="LOCAL-00001" summary="another initial commit">
+      <created>1474389507641</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1474389507641</updated>
+    </task>
+    <task id="LOCAL-00002" summary="another initial commit">
+      <created>1474389666807</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1474389666807</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2837,9 +2717,10 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2882147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30805135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2860,7 +2741,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="848" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2875,6 +2755,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="another initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="another initial commit" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="2" />
@@ -2886,7 +2770,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2245#2246#0" expanded="true" />
+            <element signature="e#2276#2277#0" expanded="true" />
+            <element signature="e#3770#4586#0" expanded="true" />
+            <element signature="e#4585#4586#0" expanded="true" />
+            <element signature="e#4846#5897#0" expanded="true" />
+            <element signature="e#5896#5897#0" expanded="true" />
+            <element signature="e#6376#6657#0" expanded="true" />
+            <element signature="e#6656#6657#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2894,7 +2787,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2929,16 +2824,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="98" column="49" selection-start-line="98" selection-start-column="49" selection-end-line="98" selection-end-column="49" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ChooseThemeFreg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2979,6 +2864,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2986,6 +2872,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7407407">
           <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3004,6 +2891,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3011,6 +2899,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3025,29 +2914,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/res/layout/guitar_layout.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.9310346">
-          <caret line="94" column="24" selection-start-line="94" selection-start-column="24" selection-end-line="94" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ActivitySwipeDetector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.7777777">
           <caret line="231" column="43" selection-start-line="231" selection-start-column="43" selection-end-line="231" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ChooseTheme.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="63" selection-start-line="41" selection-start-column="63" selection-end-line="41" selection-end-column="63" />
           <folding />
         </state>
       </provider>
@@ -3076,10 +2946,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ChooseThemeFreg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24193548">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MenuActivityGif.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63903743">
-          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/guitarscreenroll.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/guitarscreenblues.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/baseplayscreen1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/drawable/guitarscreenbase.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/res/layout/guitar_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7230768">
+          <caret line="11" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ChooseTheme.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="82" selection-start-line="31" selection-start-column="82" selection-end-line="31" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -3088,9 +3007,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/GuitarActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4206642">
-          <caret line="178" column="45" selection-start-line="178" selection-start-column="45" selection-end-line="178" selection-end-column="45" />
-          <folding />
+        <state vertical-scroll-proportion="0.58928573">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding>
+            <element signature="e#2245#2246#0" expanded="true" />
+            <element signature="e#2276#2277#0" expanded="true" />
+            <element signature="e#3770#4586#0" expanded="true" />
+            <element signature="e#4585#4586#0" expanded="true" />
+            <element signature="e#4846#5897#0" expanded="true" />
+            <element signature="e#5896#5897#0" expanded="true" />
+            <element signature="e#6376#6657#0" expanded="true" />
+            <element signature="e#6656#6657#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,23 +1,35 @@
 [
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menuscreensettings02.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\menuscreensettings02.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingup00000.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingup00000.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\recstart00000_a.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\recstart00000_a.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\animation_list_filling_menu.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\animation_list_filling_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingloop00002.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingloop00002.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\recstart00004.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\recstart00004.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\baseplayscreen1.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\baseplayscreen1.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png",
@@ -28,100 +40,136 @@
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingup00001.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingup00001.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingup00007.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingup00007.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingloop00003.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingloop00003.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal.9.png"
     },
     {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\buttonmenu00007.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\buttonmenu00007.png"
+    },
+    {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_pressed.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menuscreenrecording01.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\menuscreenrecording01.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\recstart00003.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\recstart00003.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingloop00001.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingloop00001.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingloop00004.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingloop00004.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\animation_list_emptying.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\animation_list_emptying.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\thememenu000.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\thememenu000.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\recstart00006.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\recstart00006.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_normal.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_normal.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\thememenu003.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\thememenu003.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingloop00007.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingloop00007.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\guitarscreenbase.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\guitarscreenbase.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingup00002.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingup00002.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingup00005.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingup00005.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_pressed.9.png"
     },
     {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\animation_list_filling_open.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\animation_list_filling_open.xml"
+    },
+    {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_focused.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_focused.9.png"
-    },
-    {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_pressed.9.png"
-    },
-    {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png"
-    },
-    {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_focused.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\guitarscreenroll.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\guitarscreenroll.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_pressed.9.png"
-    },
-    {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\recstart00001.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\recstart00001.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\round_button.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\round_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\buttonmenu00002.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\buttonmenu00002.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\buttonmenu00005.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\buttonmenu00005.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_focused.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_focused.9.png"
-    },
-    {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_disabled.9.png",
@@ -132,28 +180,48 @@
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_focused.9.png"
     },
     {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingup00003.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingup00003.png"
+    },
+    {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\recstart00007.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\recstart00007.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingloop00005.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingloop00005.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_focused.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingloop00000.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingloop00000.png"
     },
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
-        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\guitarscreenblues.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\guitarscreenblues.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png",
-        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\recstart00002.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\recstart00002.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png",
@@ -164,72 +232,72 @@
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_focused.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_focused.9.png"
-    },
-    {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_pressed.9.png"
-    },
-    {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\thememenu002.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\thememenu002.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_ic_googleplayservices.png",
-        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_ic_googleplayservices.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\buttonmenu00004.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\buttonmenu00004.png"
     },
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
-        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingup00004.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingup00004.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menuscreen00.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\menuscreen00.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_ic_googleplayservices.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_ic_googleplayservices.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_focused.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\buttonmenu00000.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\buttonmenu00000.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingloop00006.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingloop00006.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\animation_list_filling.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\animation_list_filling.xml"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_normal.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\recstart00000.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\recstart00000.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\buttonmenu00006.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\buttonmenu00006.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_dark_focused.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\animation_list_filling_rec.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\animation_list_filling_rec.xml"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_focused.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_focused.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\buttonmenu00003.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\buttonmenu00003.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_ic_googleplayservices.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_ic_googleplayservices.png"
-    },
-    {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_disabled.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_disabled.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\animation_list_emptying_open.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\animation_list_emptying_open.xml"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png",
@@ -240,6 +308,10 @@
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_dark_disabled.9.png"
     },
     {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\buttonmenu00001.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\buttonmenu00001.png"
+    },
+    {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_focused.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_focused.9.png"
     },
@@ -248,32 +320,32 @@
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_focused.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_light_focused.9.png"
-    },
-    {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_text_light_pressed.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_light_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\recstart00005.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\recstart00005.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_text_light_pressed.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\menuscreencolor03.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\menuscreencolor03.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_focused.9.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_plus_signin_btn_icon_light_focused.9.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\thememenu001.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\thememenu001.png"
     },
     {
-        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_full_open_on_phone.png",
-        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_full_open_on_phone.png"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\animation_list_filling_moving.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\animation_list_filling_moving.xml"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-hdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\screenloadingup00006.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-hdpi\\screenloadingup00006.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\common_full_open_on_phone.png",
