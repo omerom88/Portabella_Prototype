@@ -29,7 +29,7 @@ public class ChooseTheme extends Activity {
             @Override
             public void onClick(View v) {
                 Log.e("im here", "roll");
-                changeTheme(R.drawable.guitarscreenroll, GuitarActivity.REG_NOTES);
+                changeTheme(R.drawable.guitarscreenroll, GuitarActivity.ROCK_NOTES);
                 setResult(Activity.RESULT_OK);
                 finish();
             }
