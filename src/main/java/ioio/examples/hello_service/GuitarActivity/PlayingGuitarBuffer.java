@@ -1,7 +1,11 @@
 package ioio.examples.hello_service.GuitarActivity;
 
+import android.content.Context;
+
 import java.util.LinkedList;
 import java.util.List;
+
+import ioio.examples.hello_service.Recording.AudioFormat.*;
 
 /**
  * This class will be used as a buffer for all the guitar playing of the app (mostly for recording).
@@ -10,13 +14,15 @@ import java.util.List;
 public class PlayingGuitarBuffer {
 
     private List<PlayingSegment> buffer;
+    private AudioFormat outPutAudioFormat;
 
-    PlayingGuitarBuffer() {
+    public PlayingGuitarBuffer(String fileName, String path) {
         buffer = new LinkedList<PlayingSegment>();
+        this.outPutAudioFormat = new WavFileFormat(fileName, path);
     }
 
-    public synchronized void writeToBuffer(List<Byte> byteList, int playbackRate, float volume) {
-        buffer.add(new PlayingSegment(byteList, playbackRate, volume));
+    public synchronized void writeToBuffer(short[] shortArray, int playbackRate, float volume) {
+        buffer.add(new PlayingSegment(shortArray, playbackRate, volume));
     }
 
     public synchronized List<PlayingSegment> readFromBuffer() {
@@ -25,23 +31,27 @@ public class PlayingGuitarBuffer {
         return tempBuff;
     }
 
-    private class PlayingSegment {
-        List<Byte> byteList;
+    public synchronized void writeToFile() {
+        outPutAudioFormat.writeFile(this);
+    }
+
+    public class PlayingSegment {
+        short[] shortArray;
         int playbackRate;
         float volume;
 
-        public PlayingSegment(List<Byte> byteList, int playbackRate, float volume) {
-            this.byteList = byteList;
+        public PlayingSegment(short[] shortArray, int playbackRate, float volume) {
+            this.shortArray = shortArray;
             this.playbackRate = playbackRate;
             this.volume = volume;
         }
 
-        public List<Byte> getByteList() {
-            return byteList;
+        public short[] getShortArray() {
+            return shortArray;
         }
 
-        public void setByteList(List<Byte> byteList) {
-            this.byteList = byteList;
+        public void setShortArray(short[] shortArray) {
+            this.shortArray = shortArray;
         }
 
         public int getPlaybackRate() {

@@ -41,6 +41,7 @@ public class RecordActivity extends Activity {
         } else {
             Record.getInstance(getApplicationContext()).start();
         }
+        pause.setText("Pause");
     }
 
     public void pause(View v) {

@@ -27,7 +27,6 @@ import ioio.examples.hello_service.R;
  */
 public class GuitarActivity extends Activity {
 
-    private static final int[] BUTTONS = {R.id.E_LOW, R.id.A, R.id.D, R.id.G, R.id.B, R.id.E_HIGH};
     private static CordManager cordManager;
     private IntentFilter mIntentFilter;
     private String LOG_TAG = null;
@@ -36,12 +35,18 @@ public class GuitarActivity extends Activity {
     public static int[] retSrigim = {-1,-1,-1,-1,-1,-1};
     public static float retVelBridge = 0f;
     public static int clickCounter = 0;
-    static public boolean animationFleg = false;
-    static public LinearLayout baseGuitarLayout;
+    public static boolean animationFleg = false;
+    public static LinearLayout baseGuitarLayout;
     public static AnimationDrawable animationDrawableRec;
     public static AnimationDrawable animationDrawableMenu;
 
-    public static int[] NOTES = {R.raw.estringlow,R.raw.astring,R.raw.dstring,R.raw.gstring,R.raw.bstring,R.raw.estringhi};
+    public static final int[] NOTES_LAYOUTS = {R.id.E_LOW, R.id.A, R.id.D, R.id.G, R.id.B, R.id.E_HIGH};
+    public static final int[] ROCK_NOTES = {R.raw.e_string_low, R.raw.a_string, R.raw.d_string,
+            R.raw.gstring, R.raw.b_string, R.raw.e_string_hi};
+    public static final int[] REG_NOTES = {R.raw.estringlow, R.raw.astring, R.raw.dstring,
+            R.raw.gstring, R.raw.bstring, R.raw.estringhi};
+    public static final int[] BLUES_NOTES = {R.raw.e_string_low, R.raw.a_string, R.raw.d_string,
+            R.raw.gstring, R.raw.b_string, R.raw.e_string_hi};
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -62,10 +67,10 @@ public class GuitarActivity extends Activity {
         LOG_TAG = this.getClass().getSimpleName();
         LinearLayout[] layouts = new LinearLayout[CordManager.NUM_OF_MEITARS];
             for (int i = 0; i < layouts.length; i++) {
-            layouts[i] = (LinearLayout) findViewById(BUTTONS[i]);
+            layouts[i] = (LinearLayout) findViewById(NOTES_LAYOUTS[i]);
         }
         //////////////// the gesture  /////////////////
-        CordManager.init(getApplicationContext(), NOTES);
+        CordManager.init(getApplicationContext(), REG_NOTES);
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
@@ -114,11 +119,13 @@ public class GuitarActivity extends Activity {
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getActionMasked()) {
                     case MotionEvent.ACTION_DOWN: {
+                        Log.e("mImageViewMenu: ", "ACTION_DOWN");
                         animationDrawableMenu.start();
 //                        checkIfAnimationDone(animationDrawableMenu);
                         return true;
                     }
                     case MotionEvent.ACTION_UP: {
+                            Log.e("mImageViewMenu: ", "ACTION_UP");
 //                        if (animationFleg) {
 //                            animationFleg = false;
                             Intent intent = new Intent(GuitarActivity.this, MenuActivityGif.class);
@@ -187,6 +194,7 @@ public class GuitarActivity extends Activity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
         if(resultCode==2){
         }
     }

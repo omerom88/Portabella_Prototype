@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.util.Arrays;
 
 /**
  * Created by omerrom on 12/07/16.
@@ -29,9 +30,11 @@ public class Cord implements Runnable {
     private static final double PERCENTAGE_PART_ONE = 1;
     private static final double PERCENTAGE_PART_TWO = 0;
     private int bufferAddPerIteration = 0;
-    private int partOne;//, partTwo;
+    private int partOne, numOfIterations = CordManager.NUM_OF_ITERATIONS;
     private short minEQLevel, maxEQLevel, bandNumMaxFreq;
+    private PlayingGuitarBuffer buffer;
 
+    private static Context context;
     private static final float[] RATE_ARRAY = new float[13];
     private static final int PRESSURE_CONST = 4000;
     private static final float MIN_PRESSURE = 0.001f;
@@ -44,6 +47,7 @@ public class Cord implements Runnable {
     }
 
     public Cord(int index, Context context, int wav, int numOfIterations) {
+        Cord.context = context;
         this.task = new Task();
         this.index = index;
         this.partOne = (int)((double)numOfIterations * PERCENTAGE_PART_ONE);
@@ -52,28 +56,7 @@ public class Cord implements Runnable {
         this.audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, DEFAULT_RATE,
                 AudioFormat.CHANNEL_OUT_STEREO, AudioFormat.ENCODING_PCM_16BIT, minBufferSize,
                 AudioTrack.MODE_STREAM);
-        InputStream in1 = context.getResources().openRawResource(wav);
-        byte[] array = new byte[0];
-        try {
-            array = convertStreamToByteArray(in1);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        sample = new short[array.length / 2];
-        ByteBuffer.wrap(array).order(ByteOrder.LITTLE_ENDIAN).asShortBuffer().get(sample);
-        revSample = new short[sample.length];
-        System.arraycopy(sample, 0, revSample, 0, sample.length);
-        for (int i = 0 ; i < sample.length; i++) {
-            revSample[i] = sample[sample.length - i - 1];
-        }
-        this.bufferAddPerIteration = sample.length / numOfIterations;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
-            this.equalizer = new Equalizer(0, audioTrack.getAudioSessionId());
-            this.equalizer.setEnabled(true);
-            this.minEQLevel = equalizer.getBandLevelRange()[0];
-            this.maxEQLevel = equalizer.getBandLevelRange()[1];
-            this.bandNumMaxFreq = (short) Math.max((int) equalizer.getBand(MAX_FREQ), 0);
-        }
+        setCord(wav);
     }
 
     public float calcVolume(float currVolume, float pressure, boolean withIOIO) {
@@ -127,11 +110,17 @@ public class Cord implements Runnable {
     }
 
     public void playIteration(int currIndex, int curSarig, float currVolume) {
-        audioTrack.setPlaybackRate(Cord.calcPitch(GuitarActivity.retSrigim[curSarig] + 1));
+        int playbackRate = Cord.calcPitch(GuitarActivity.retSrigim[curSarig] + 1);
+        audioTrack.setPlaybackRate(playbackRate);
 //       check the 10* ___, its something with the equlizer.
         audioTrack.setStereoVolume(10*currVolume, 10*currVolume);
 //                setVolume(audioTrack, currVolume);
         play(currIndex);
+        if (index == 0) {
+            buffer.writeToBuffer(Arrays.copyOfRange(sample, currIndex, currIndex + bufferAddPerIteration),
+                    playbackRate, currVolume);
+            buffer.writeToFile();
+        }
     }
 
     public int getBufferAddPerIteration() {
@@ -171,6 +160,34 @@ public class Cord implements Runnable {
 
     synchronized void resume(float pressure, float velocityX, float yPos) {
         task.setAndStart(pressure, velocityX, yPos);
+    }
+
+    public void setCord(int wav) {
+        InputStream in1 = context.getResources().openRawResource(wav);
+        byte[] array = new byte[0];
+        try {
+            array = convertStreamToByteArray(in1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        sample = new short[array.length / 2];
+        ByteBuffer.wrap(array).order(ByteOrder.LITTLE_ENDIAN).asShortBuffer().get(sample);
+        revSample = new short[sample.length];
+        System.arraycopy(sample, 0, revSample, 0, sample.length);
+        for (int i = 0 ; i < sample.length; i++) {
+            revSample[i] = sample[sample.length - i - 1];
+        }
+        this.bufferAddPerIteration = sample.length / numOfIterations;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
+            this.equalizer = new Equalizer(0, audioTrack.getAudioSessionId());
+            this.equalizer.setEnabled(true);
+            this.minEQLevel = equalizer.getBandLevelRange()[0];
+            this.maxEQLevel = equalizer.getBandLevelRange()[1];
+            this.bandNumMaxFreq = (short) Math.max((int) equalizer.getBand(MAX_FREQ), 0);
+        }
+        if (index == 0) {
+            buffer = new PlayingGuitarBuffer("/" + System.currentTimeMillis(), context.getFilesDir().getPath());
+        }
     }
 
     @Override

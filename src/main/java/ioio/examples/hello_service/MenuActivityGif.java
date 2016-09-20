@@ -3,6 +3,7 @@ package ioio.examples.hello_service;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -14,102 +15,61 @@ import ioio.examples.hello_service.GuitarActivity.ChooseTheme;
  */
 public class MenuActivityGif extends Activity {
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_layout_gif);
 
         final View menuView = findViewById(R.id.menu_layout);
-        Button recBut = (Button)findViewById(R.id.button);
-        Button settingBut = (Button)findViewById(R.id.button2);
-        Button themeBut = (Button)findViewById(R.id.button3);
+        Button recBut = (Button) findViewById(R.id.button);
+        Button settingBut = (Button) findViewById(R.id.button2);
+        Button themeBut = (Button) findViewById(R.id.button3);
 
-        themeBut.setOnTouchListener(new View.OnTouchListener() {
+        themeBut.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getActionMasked()) {
-                    case MotionEvent.ACTION_DOWN: {
-                        menuView.setBackground(getResources().getDrawable(R.drawable.menuscreencolor03));
-                        try {
-                            Thread.sleep(1);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                    case MotionEvent.ACTION_UP:{
-                        Intent intent = new Intent(MenuActivityGif.this, ChooseTheme.class);
-                        int res = 2;
-                        startActivityForResult(intent,res);
-                        finish();
-                        ////////    TODO: open a fregment with themes!!
-
-                    }
-                }
-            return true;
+            public void onClick(View v) {
+                menuView.setBackground(getResources().getDrawable(R.drawable.menuscreencolor03));
+                Intent intent = new Intent(MenuActivityGif.this, ChooseTheme.class);
+                Log.e("setOnTouchListener: ", "ACTION_UP");
+                int res = 2;
+                startActivityForResult(intent, res);
+                finish();
             }
-
         });
 
-        recBut.setOnTouchListener(new View.OnTouchListener() {
+        recBut.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getActionMasked()) {
-                    case MotionEvent.ACTION_DOWN: {
-                        menuView.setBackground(getResources().getDrawable(R.drawable.menuscreenrecording01));
-                        try {
-                            Thread.sleep(1);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                    case MotionEvent.ACTION_UP:{
-
-                    }
-                }
-                return true;
+            public void onClick(View v) {
+                menuView.setBackground(getResources().getDrawable(R.drawable.menuscreenrecording01));
+                Log.e("setOnClickListener: ", "recBut");
             }
-
         });
 
-        settingBut.setOnTouchListener(new View.OnTouchListener() {
+        settingBut.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getActionMasked()) {
-                    case MotionEvent.ACTION_DOWN: {
-                        menuView.setBackground(getResources().getDrawable(R.drawable.menuscreensettings02));
-                        try {
-                            Thread.sleep(1);
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                    case MotionEvent.ACTION_UP: {
-//                        Intent intent = new Intent(MenuActivityGif.this, ChooseTheme.class);
-//                        startActivity(intent);
-
-                    }
-                }
-                return true;
+            public void onClick(View v) {
+                menuView.setBackground(getResources().getDrawable(R.drawable.menuscreensettings02));
+                Log.e("setOnClickListener: ", "settingBut");
             }
-
         });
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(resultCode==2){
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.e("onActivityResult: ", "Finish");
+        if(resultCode == Activity.RESULT_OK){
+            Log.e("onActivityResult: ", "Finish");
+            setResult(Activity.RESULT_OK);
             finish();
         }
     }
 
     @Override
     protected void onStop() {
-        setResult(2);
         super.onStop();
     }
     @Override
     protected void onDestroy() {
-        setResult(2);
         super.onDestroy();
     }
 }

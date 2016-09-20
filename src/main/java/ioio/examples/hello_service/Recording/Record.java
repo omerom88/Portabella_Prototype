@@ -16,7 +16,7 @@ public class Record {
 
     private final static int SEC_TO_MILLIS = 1000;
 
-    Record(Context appContext) {
+    private Record(Context appContext) {
         Record.appContext = appContext;
     }
 

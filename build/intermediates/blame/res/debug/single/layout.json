@@ -1,42 +1,82 @@
 [
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/layout/activity_theme.xml",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/layout/activity_theme.xml"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\layout\\activity_menu2.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\layout\\activity_menu2.xml"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/layout/activity_main.xml",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/layout/activity_main.xml"
+        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\layout\\activity_loading.xml",
+        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\src\\main\\res\\layout\\activity_loading.xml"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/layout/menu_layout_gif.xml",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/layout/menu_layout_gif.xml"
+        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/layout/activity_loading.xml",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/layout/activity_loading.xml"
+        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\layout\\activity_menu.xml",
+        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\src\\main\\res\\layout\\activity_menu.xml"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/layout/activity_menu.xml",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/layout/activity_menu.xml"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\layout\\activity_record.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\layout\\activity_record.xml"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/layout/activity_menu2.xml",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/layout/activity_menu2.xml"
+        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\layout\\activity_theme.xml",
+        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\src\\main\\res\\layout\\activity_theme.xml"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/layout/activity_record.xml",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/layout/activity_record.xml"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\layout\\slidingmenumain.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\Portabelo_New312\\menuLibrary\\unspecified\\res\\layout\\slidingmenumain.xml"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/layout/slidingmenumain.xml",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/Portabelo_New/menuLibrary/unspecified/res/layout/slidingmenumain.xml"
+        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\layout\\guitar_layout.xml",
+        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\src\\main\\res\\layout\\guitar_layout.xml"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/layout/guitar_layout.xml",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/layout/guitar_layout.xml"
+        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\layout\\activity_menu2.xml",
+        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\src\\main\\res\\layout\\activity_menu2.xml"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/layout/activity_ioio_ne.xml",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/layout/activity_ioio_ne.xml"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\layout\\menu_layout_gif.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\layout\\menu_layout_gif.xml"
+    },
+    {
+        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\layout\\activity_record.xml",
+        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\src\\main\\res\\layout\\activity_record.xml"
+    },
+    {
+        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ioio_ne.xml",
+        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\src\\main\\res\\layout\\activity_ioio_ne.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\layout\\slidingmenumain.xml",
+        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\exploded-aar\\Portabelo_New\\menuLibrary\\unspecified\\res\\layout\\slidingmenumain.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\layout\\activity_theme.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\layout\\activity_theme.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\layout\\activity_loading.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\layout\\activity_loading.xml"
+    },
+    {
+        "merged": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\build\\intermediates\\res\\merged\\debug\\layout\\menu_layout_gif.xml",
+        "source": "C:\\Users\\omerrom\\AndroidStudioProjects\\Portabelo_dir\\Portabelo_New\\src\\main\\res\\layout\\menu_layout_gif.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\layout\\guitar_layout.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\layout\\guitar_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\layout\\activity_menu.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\layout\\activity_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ioio_ne.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\layout\\activity_ioio_ne.xml"
     }
 ]
