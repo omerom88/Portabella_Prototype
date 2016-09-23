@@ -117,6 +117,7 @@ public class GuitarActivity extends Activity {
                 Log.e("mImageViewMenu: ", "onClick");
                 animationDrawableMenu.start();
                 checkIfAnimationDone(animationDrawableMenu);
+                Log.e("mImageViewMenu: ", "onClick");
 //                        if (animationFleg) {
 //                            animationFleg = false;
 //                        }

@@ -39,13 +39,12 @@ public class Record {
             rec = new Record(activity);
             countDownTimer = new customCountDownTimer(new RecOptions());
             hasInit = true;
+            buffer = new PlayingGuitarBuffer[CordManager.NUM_OF_MEITARS];
         }
-        buffer = new PlayingGuitarBuffer[CordManager.NUM_OF_MEITARS];
         return rec;
     }
 
     public void addSample(int index, short[] sample) {
-        Log.e("addSample: ", "" + index);
         buffer[index] = new PlayingGuitarBuffer(index, "/" + System.currentTimeMillis(),
                 activity.getFilesDir().getPath(), sample);
     }
