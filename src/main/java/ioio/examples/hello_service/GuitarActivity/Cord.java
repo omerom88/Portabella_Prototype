@@ -24,7 +24,7 @@ public class Cord implements Runnable {
     protected short[] sample, revSample;
     private AudioTrack audioTrack;
     private Equalizer equalizer;
-    final static int DEFAULT_RATE = 44100;
+    public final static int DEFAULT_RATE = 44100;
     private static final int MILI_CONVERTOR = 1000;
     public static final int MAX_FREQ = 400 * MILI_CONVERTOR;
     private static final double PERCENTAGE_PART_ONE = 1;
@@ -32,7 +32,6 @@ public class Cord implements Runnable {
     private int bufferAddPerIteration = 0;
     private int partOne, numOfIterations = CordManager.NUM_OF_ITERATIONS;
     private short minEQLevel, maxEQLevel, bandNumMaxFreq;
-    private PlayingGuitarBuffer buffer;
 
     private static Context context;
     private static final float[] RATE_ARRAY = new float[13];
@@ -116,11 +115,17 @@ public class Cord implements Runnable {
         audioTrack.setStereoVolume(10*currVolume, 10*currVolume);
 //                setVolume(audioTrack, currVolume);
         play(currIndex);
-        if (index == 0) {
-            buffer.writeToBuffer(Arrays.copyOfRange(sample, currIndex, currIndex + bufferAddPerIteration),
-                    playbackRate, currVolume);
-            buffer.writeToFile();
+        if (CordManager.isRecording()) {
+//            Log.e("currIndex: ", "" + currIndex);
+//            Log.e("currIndex + bufferAdd: ", "" + currIndex + bufferAddPerIteration);
+            record(sample, currIndex, currIndex + bufferAddPerIteration, playbackRate, currVolume);
         }
+    }
+
+    private void record(short[] audioSample, int start, int end, int playbackRate, float currVolume) {
+        CordManager.writeToBuffer(index, Arrays.copyOfRange(audioSample, start, end), playbackRate, currVolume);
+        CordManager.writeToFile(index);
+
     }
 
     public int getBufferAddPerIteration() {
@@ -163,15 +168,8 @@ public class Cord implements Runnable {
     }
 
     public void setCord(int wav) {
-        InputStream in1 = context.getResources().openRawResource(wav);
-        byte[] array = new byte[0];
-        try {
-            array = convertStreamToByteArray(in1);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        sample = new short[array.length / 2];
-        ByteBuffer.wrap(array).order(ByteOrder.LITTLE_ENDIAN).asShortBuffer().get(sample);
+        InputStream in = context.getResources().openRawResource(wav);
+        sample = readSampleInShort(in);
         revSample = new short[sample.length];
         System.arraycopy(sample, 0, revSample, 0, sample.length);
         for (int i = 0 ; i < sample.length; i++) {
@@ -185,9 +183,18 @@ public class Cord implements Runnable {
             this.maxEQLevel = equalizer.getBandLevelRange()[1];
             this.bandNumMaxFreq = (short) Math.max((int) equalizer.getBand(MAX_FREQ), 0);
         }
-        if (index == 0) {
-            buffer = new PlayingGuitarBuffer("/" + System.currentTimeMillis(), context.getFilesDir().getPath());
+    }
+
+    public static short[] readSampleInShort(InputStream in) {
+        byte[] array = new byte[0];
+        try {
+            array = convertStreamToByteArray(in);
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+        short[] shortSample = new short[array.length / 2];
+        ByteBuffer.wrap(array).order(ByteOrder.LITTLE_ENDIAN).asShortBuffer().get(shortSample);
+        return shortSample;
     }
 
     @Override
@@ -195,15 +202,20 @@ public class Cord implements Runnable {
         task.start();
     }
 
+    public short[] getSample() {
+        return sample;
+    }
+
     public class Task extends Thread {
         private float pressure = 0f;
         private float velocityX;
         private float yPos;
-        private volatile boolean running = true;
-        private volatile boolean new_task = false;
+        private volatile boolean running;
+        private volatile boolean new_task;
         private float startVolume;
         private int eqFreq;
         public int counter = 0;
+        private long lastTimeRunMillis;
 
         private static final float MIN_VELOCITY = 0;
         private static final int VELOCITY_NORMALIZE_CONSTANT = 10000;
@@ -215,6 +227,7 @@ public class Cord implements Runnable {
 
         public Task() {
             running = true;
+            new_task = true;
         }
 
         @Override
@@ -223,7 +236,22 @@ public class Cord implements Runnable {
                 synchronized(this) {
                     while(!running) {
                         try {
-                            wait(500);
+                            if(CordManager.isRecording()) {
+                                if (!new_task) {
+                                    long nowTime = System.currentTimeMillis();
+//                                    Log.e("run(): ", "" + (int)(nowTime - lastTimeRunMillis));
+//                                    Log.e("nowTime(): ", "" + nowTime);
+//                                    Log.e("lastTimeRunMillis(): ", "" + lastTimeRunMillis);
+                                    short[] emptySound = new short[calcShortsPerTime((int)(nowTime - lastTimeRunMillis))];
+                                    record(emptySound, 0, emptySound.length, DEFAULT_RATE, 0);
+                                    lastTimeRunMillis = nowTime;
+                                } else {
+                                    new_task = false;
+                                    lastTimeRunMillis = System.currentTimeMillis();
+//                                    Log.e("!new_task: ", "" + lastTimeRunMillis);
+                                }
+                            }
+                            wait(10);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
@@ -239,6 +267,7 @@ public class Cord implements Runnable {
 //                        Log.e("getStartVolume: ", "" + currVolume);
                         for (int i = 0; i < getPartOne(); i++) {
                             if (!running || new_task) {
+                                lastTimeRunMillis = System.currentTimeMillis();
                                 break;
                             }
 
@@ -249,6 +278,7 @@ public class Cord implements Runnable {
 
 //                            Log.e("presh_before:        ", presh + "");
                             if (!BridgPressure(presh, index)) {
+                                lastTimeRunMillis = System.currentTimeMillis();
                                 break;
                             }
 
@@ -257,6 +287,7 @@ public class Cord implements Runnable {
                     if (!new_task) {
                         running = false;
                     }
+                    lastTimeRunMillis = System.currentTimeMillis();
                 }
             }
         }
@@ -322,7 +353,6 @@ public class Cord implements Runnable {
         public void pauseTask() throws InterruptedException {
             stopTrack();
             this.running = false;
-            this.new_task = false;
         }
 
         /**
@@ -336,17 +366,15 @@ public class Cord implements Runnable {
             return (int) (2 * Cord.MAX_FREQ * Math.abs((CordManager.getHeight() / 2) - currY) / CordManager.getHeight());
         }
 
-        public boolean isRunning() {
-            return running;
-        }
-
         synchronized void resumeThread() {
             running = true;
+            lastTimeRunMillis = System.currentTimeMillis();
             notify();
         }
 
-        public void setRunning(boolean running) {
-            this.running = running;
+        private int calcShortsPerTime(int timeInMillis) {
+            return CordManager.calcShortsPerTime(index, timeInMillis, sample);
         }
     }
+
 }

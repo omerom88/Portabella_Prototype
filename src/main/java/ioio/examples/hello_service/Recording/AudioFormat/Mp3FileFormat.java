@@ -188,6 +188,26 @@ public class Mp3FileFormat extends AudioFormat {
         }
     }
 
+    @Override
+    public int calcShortsPerTime(int timeInMillis, short[] wavByteArray) {
+        return 0;
+    }
+
+    @Override
+    public String getOutPutFileType() {
+        return null;
+    }
+
+    @Override
+    public void writeDataToFile(byte[] outputArray) {
+
+    }
+
+    @Override
+    public void reWriteHeaders() {
+
+    }
+
     public static void main(String[] args) {
         System.out.println("hi :)");
 

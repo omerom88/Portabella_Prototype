@@ -1,8 +1,21 @@
 package ioio.examples.hello_service.Recording;
 
-import android.content.Context;
 import android.os.CountDownTimer;
 import android.util.Log;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import ioio.examples.hello_service.GuitarActivity.Cord;
+import ioio.examples.hello_service.GuitarActivity.CordManager;
+import ioio.examples.hello_service.GuitarActivity.GuitarActivity;
+import ioio.examples.hello_service.GuitarActivity.PlayingGuitarBuffer;
+import ioio.examples.hello_service.Recording.AudioFormat.AudioFormat;
+import ioio.examples.hello_service.Recording.AudioFormat.WavFileFormat;
 
 /**
  * Created by Tomer on 02/09/2016.
@@ -10,30 +23,139 @@ import android.util.Log;
 public class Record {
 
     private static Record rec;
-    private static Context appContext;
+    private static GuitarActivity activity;
     private static boolean hasInit = false;
     private static customCountDownTimer countDownTimer;
+    private static PlayingGuitarBuffer[] buffer;
 
     private final static int SEC_TO_MILLIS = 1000;
 
-    private Record(Context appContext) {
-        Record.appContext = appContext;
+    private Record(GuitarActivity activity) {
+        Record.activity = activity;
     }
 
-    public static Record getInstance(Context appContext) {
+    public static Record getInstance(GuitarActivity activity) {
         if (!hasInit) {
-            rec = new Record(appContext);
+            rec = new Record(activity);
             countDownTimer = new customCountDownTimer(new RecOptions());
             hasInit = true;
         }
+        buffer = new PlayingGuitarBuffer[CordManager.NUM_OF_MEITARS];
         return rec;
     }
 
+    public void addSample(int index, short[] sample) {
+        Log.e("addSample: ", "" + index);
+        buffer[index] = new PlayingGuitarBuffer(index, "/" + System.currentTimeMillis(),
+                activity.getFilesDir().getPath(), sample);
+    }
+
+    public void writeToBuffer(int index, short[] shorts, int playbackRate, float currVolume) {
+        buffer[index].writeToBuffer(shorts, playbackRate, currVolume);
+    }
+
+    public void writeToFile(int index) {
+        buffer[index].writeToFile();
+    }
+
+    public int calcShortsPerTime(int index, int timeInMillis, short[] sample) {
+        return buffer[index].calcShortsPerTime(timeInMillis, sample);
+    }
+
+    public void cancel() {
+        for (PlayingGuitarBuffer pgb : buffer) {
+            pgb.readFromBuffer();
+            pgb.deleteFile();
+        }
+    }
+
+    public void saveFile(String fileName) {
+        try {
+            List<ArrayList<Short>> tempSamples = new ArrayList<ArrayList<Short>>();
+            int maxSize = 0;
+            short[] shortArray = new short[1];
+            for (int i = 0; i < CordManager.NUM_OF_MEITARS; i++) {
+                shortArray = Cord.readSampleInShort(new FileInputStream(buffer[i].getOutPutFile()));
+                ArrayList<Short> shorts = new ArrayList<Short>();
+                for (short value : shortArray) {
+                    shorts.add(value);
+                }
+                tempSamples.add(shorts);
+                Log.e("outputArray size: ", "" + shorts.size());
+                if (maxSize < shorts.size()) {
+                    maxSize = shorts.size();
+                }
+            }
+
+
+//            File outputFile = createNewFile(fileName);
+//            OutputStream out = new FileOutputStream(outputFile);
+            short[] output = new short[maxSize];
+            for(int j = 0; j < output.length; j++){
+                output[j] = mixSounds(getColumn(tempSamples, j));
+            }
+            Log.e("outputArray size: ", "" + output.length);
+            byte[] outputArray = WavFileFormat.shortArrayToBytesArray(output, 1);
+            String path = activity.getFilesDir().getPath();
+            AudioFormat outPutAudioFormat = new WavFileFormat(fileName, path, shortArray);
+            outPutAudioFormat.writeDataToFile(outputArray);
+            outPutAudioFormat.reWriteHeaders();
+            Log.e("outputArray size: ", "" + outputArray.length);
+//            out.write(outputArray);
+//            out.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static short[] getColumn(List<ArrayList<Short>> array, int index){
+        short[] column = new short[array.size()]; // Here I assume a rectangular 2D array!
+        for(int i = 0; i < column.length; i++){
+            ArrayList<Short> list = array.get(i);
+            if (list.size() > index) {
+                column[i] = list.get(index);
+            }
+        }
+        return column;
+    }
+
+    private short mixSounds(short[] shortFromAllSamples) {
+        float newSample = 0.0f;
+        for(int i = 0; i < shortFromAllSamples.length; i++){
+            newSample += (shortFromAllSamples[i] / 32768.0f);
+        }
+        newSample *= 0.8;
+        // reduce the volume a bit:
+        // hard clipping
+        if (newSample > 1.0f) {
+            newSample = 1.0f;
+        }
+        if (newSample < -1.0f) {
+            newSample = -1.0f;
+        }
+        return (short)(newSample * 32768.0f);
+    }
+
+    private File createNewFile(String fileName) {
+        File outputFile = null;
+        try {
+            String filePath = activity.getFilesDir().getPath();
+            outputFile = new File(filePath + "/" + fileName + buffer[0].getOutPutFileType());
+            if (outputFile.exists() && !outputFile.isDirectory()) {
+                outputFile.delete();
+            }
+            outputFile.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return outputFile;
+    }
+
     private static class RecOptions {
-        private long duration = DEFAULT_DUARTION; // duration of the record in millis.
+        private long duration = DEFAULT_DURATION; // duration of the record in millis.
         private int numOfLoops = DEFAULT_NUM_OF_LOOPS;
 
-        public static final long DEFAULT_DUARTION = 60 * 1000;
+        public static final long DEFAULT_DURATION = 5 * 1000;
         public static final int DEFAULT_NUM_OF_LOOPS = 1;
 
         public RecOptions() {
@@ -62,6 +184,7 @@ public class Record {
     }
 
     public boolean start(long duration, int numOfLoops){
+        Log.e("onStart: ", "" + duration);
         if (hasInit) {
             countDownTimer = new customCountDownTimer(duration * SEC_TO_MILLIS,
                     new RecOptions(duration * SEC_TO_MILLIS, numOfLoops));
@@ -73,7 +196,7 @@ public class Record {
     }
 
     public boolean start(){
-        return start(RecOptions.DEFAULT_DUARTION, RecOptions.DEFAULT_NUM_OF_LOOPS);
+        return start(RecOptions.DEFAULT_DURATION, RecOptions.DEFAULT_NUM_OF_LOOPS);
     }
 
     public boolean resume() {
@@ -137,6 +260,7 @@ public class Record {
             } else {
                 Log.e("onFinish: ", "Finished :)");
                 countDownTimer.setRecording(false);
+                activity.openSaveFileDialog();
             }
         }
 
@@ -177,4 +301,5 @@ public class Record {
             isRecording = recording;
         }
     }
+
 }

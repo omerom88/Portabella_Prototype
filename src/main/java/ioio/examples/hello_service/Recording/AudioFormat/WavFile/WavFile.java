@@ -10,6 +10,8 @@ package ioio.examples.hello_service.Recording.AudioFormat.WavFile;// Wav file IO
 
 import java.io.*;
 
+import ioio.examples.hello_service.GuitarActivity.PlayingGuitarBuffer;
+
 public class WavFile
 {
 	private enum IOState {READING, WRITING, CLOSED};

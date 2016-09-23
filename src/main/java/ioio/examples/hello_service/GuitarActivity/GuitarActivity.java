@@ -1,8 +1,10 @@
 package ioio.examples.hello_service.GuitarActivity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Resources;
@@ -11,10 +13,12 @@ import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.InputType;
 import android.util.Log;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -27,9 +31,9 @@ import ioio.examples.hello_service.R;
  */
 public class GuitarActivity extends Activity {
 
-    private static CordManager cordManager;
     private IntentFilter mIntentFilter;
     private String LOG_TAG = null;
+    private static String fileName;
     public static final String mBroadcastStringAction = "com.truiton.broadcast.string";
     public static float[] retMeitar = {0f,0f,0f,0f,0f,0f};
     public static int[] retSrigim = {-1,-1,-1,-1,-1,-1};
@@ -37,7 +41,7 @@ public class GuitarActivity extends Activity {
     public static int clickCounter = 0;
     public static boolean animationFleg = false;
     public static LinearLayout baseGuitarLayout;
-    public static AnimationDrawable animationDrawableRec;
+    public static AnimationDrawable animationDrawableStartRec;
     public static AnimationDrawable animationDrawableMenu;
 
     public static final int[] NOTES_LAYOUTS = {R.id.E_LOW, R.id.A, R.id.D, R.id.G, R.id.B, R.id.E_HIGH};
@@ -70,7 +74,7 @@ public class GuitarActivity extends Activity {
             layouts[i] = (LinearLayout) findViewById(NOTES_LAYOUTS[i]);
         }
         //////////////// the gesture  /////////////////
-        CordManager.init(getApplicationContext(), REG_NOTES);
+        CordManager.init(this, getApplicationContext(), REG_NOTES);
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
@@ -87,26 +91,19 @@ public class GuitarActivity extends Activity {
 
         // rec button animation
         final ImageView mImageViewRecording = (ImageView) findViewById(R.id.imageview_animated_recording);
-        animationDrawableRec = (AnimationDrawable)mImageViewRecording.getBackground();
-        mImageViewRecording.setOnTouchListener(new View.OnTouchListener() {
+        animationDrawableStartRec = (AnimationDrawable)mImageViewRecording.getBackground();
+        mImageViewRecording.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getActionMasked()) {
-                    case MotionEvent.ACTION_DOWN: {
-                        animationDrawableRec.start();
-//                        checkIfAnimationDone(animationDrawableRec);
-                        return true;
-                    }
-                    case MotionEvent.ACTION_UP: {
-//                        if (animationFleg) {
-//                            animationFleg = false;
-                            Log.e("START RECORDING", "!!");
-//                        }
-                        //TODO: when leave button
-                    }
-                    return false;
+            public void onClick(View v) {
+                if (!CordManager.isRecording()) {
+                    animationDrawableStartRec.start();
+                    CordManager.startRecording();
+                    Log.e("onClick: ", "startRecording11111");
+                } else {
+                    Log.e("onClick: ", "stopRecording");
+                    CordManager.stopRecording();
+                    openSaveFileDialog();
                 }
-                return false;
             }
         });
 
@@ -114,28 +111,19 @@ public class GuitarActivity extends Activity {
         // menu button animation
         final ImageView mImageViewMenu = (ImageView) findViewById(R.id.imageview_animated_menu);
         animationDrawableMenu = (AnimationDrawable)mImageViewMenu.getBackground();
-        mImageViewMenu.setOnTouchListener(new View.OnTouchListener() {
+        mImageViewMenu.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getActionMasked()) {
-                    case MotionEvent.ACTION_DOWN: {
-                        Log.e("mImageViewMenu: ", "ACTION_DOWN");
-                        animationDrawableMenu.start();
-//                        checkIfAnimationDone(animationDrawableMenu);
-                        return true;
-                    }
-                    case MotionEvent.ACTION_UP: {
-                            Log.e("mImageViewMenu: ", "ACTION_UP");
+            public void onClick(View v) {
+                Log.e("mImageViewMenu: ", "onClick");
+                animationDrawableMenu.start();
+                checkIfAnimationDone(animationDrawableMenu);
 //                        if (animationFleg) {
 //                            animationFleg = false;
-                            Intent intent = new Intent(GuitarActivity.this, MenuActivityGif.class);
-                            int res = 2;
-                            startActivityForResult(intent, res);
 //                        }
-                        return true;
-                    }
-                }
-                return false;
+                animationDrawableMenu.isRunning();
+                Intent intent = new Intent(GuitarActivity.this, MenuActivityGif.class);
+                int res = 2;
+                startActivityForResult(intent, res);
             }
         });
 
@@ -146,6 +134,36 @@ public class GuitarActivity extends Activity {
         mIntentFilter.addAction(mBroadcastStringAction);
         final Intent intent = new Intent(GuitarActivity.this, HelloIOIOService2.class);
         startService(intent);
+    }
+
+    public void openSaveFileDialog() {
+        CordManager.cancelAllTasks();
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Title");
+
+        // Set up the input
+        final EditText input = new EditText(this);
+        // Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
+        input.setInputType(InputType.TYPE_CLASS_TEXT);
+        builder.setView(input);
+
+        // Set up the buttons
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                fileName = input.getText().toString();
+                CordManager.saveFile(fileName);
+            }
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                CordManager.cancelRecord();
+                dialog.cancel();
+            }
+        });
+
+        builder.show();
     }
 
     private void checkIfAnimationDone(AnimationDrawable anim){
@@ -204,7 +222,7 @@ public class GuitarActivity extends Activity {
         super.onResume();
         registerReceiver(mReceiver, mIntentFilter);
         animationDrawableMenu.setVisible(false, true);
-        animationDrawableRec.setVisible(false,true);
+        animationDrawableStartRec.setVisible(false,true);
     }
 
     @Override

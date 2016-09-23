@@ -1,13 +1,10 @@
 package ioio.examples.hello_service.GuitarActivity;
 
 import android.app.Activity;
-import android.content.BroadcastReceiver;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 
 import ioio.examples.hello_service.R;
 
@@ -20,7 +17,6 @@ public class ChooseTheme extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_theme);
-
         Button rollTheme = (Button)findViewById(R.id.rollBut);
         Button bluesTheme = (Button)findViewById(R.id.bluesBut);
         Button calmTheme = (Button)findViewById(R.id.calmBut);
@@ -29,7 +25,7 @@ public class ChooseTheme extends Activity {
             @Override
             public void onClick(View v) {
                 Log.e("im here", "roll");
-                changeTheme(R.drawable.guitarscreenroll, GuitarActivity.REG_NOTES);
+                changeTheme(R.drawable.guitarscreenroll, GuitarActivity.ROCK_NOTES);
                 setResult(Activity.RESULT_OK);
                 finish();
             }

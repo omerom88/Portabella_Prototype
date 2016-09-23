@@ -1,6 +1,7 @@
 package ioio.examples.hello_service.GuitarActivity;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
@@ -73,7 +74,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                 if (pointerList.getLast().getLayoutId() != layout) {
                     velocityTracker.computeCurrentVelocity(500);
                     pointerList.addLast(new PointerTouch(layout, velocityTracker.getXVelocity(), pressure, y));
-                    long startTime = System.currentTimeMillis();
+//                    long startTime = System.currentTimeMillis();
                     run();
 //                    Log.e("time for onRightSwipe: ", "" + (System.currentTimeMillis() - startTime));
                     if (!isStrumming) {
@@ -194,7 +195,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
      */
     private static void playMeitar(int index, float pressure, float velocity, float y) {
         try {
-            TimeUnit.MILLISECONDS.sleep(10);
+            TimeUnit.MILLISECONDS.sleep(5);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

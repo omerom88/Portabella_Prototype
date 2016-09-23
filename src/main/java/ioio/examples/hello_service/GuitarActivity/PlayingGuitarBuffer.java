@@ -1,7 +1,8 @@
 package ioio.examples.hello_service.GuitarActivity;
 
-import android.content.Context;
+import android.util.Log;
 
+import java.io.File;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -16,9 +17,9 @@ public class PlayingGuitarBuffer {
     private List<PlayingSegment> buffer;
     private AudioFormat outPutAudioFormat;
 
-    public PlayingGuitarBuffer(String fileName, String path) {
+    public PlayingGuitarBuffer(int index, String fileName, String path, short[] sample) {
         buffer = new LinkedList<PlayingSegment>();
-        this.outPutAudioFormat = new WavFileFormat(fileName, path);
+        this.outPutAudioFormat = new WavFileFormat(fileName + "_" + index, path, sample);
     }
 
     public synchronized void writeToBuffer(short[] shortArray, int playbackRate, float volume) {
@@ -33,6 +34,22 @@ public class PlayingGuitarBuffer {
 
     public synchronized void writeToFile() {
         outPutAudioFormat.writeFile(this);
+    }
+
+    public int calcShortsPerTime(int timeInMillis, short[] sample) {
+        return outPutAudioFormat.calcShortsPerTime(timeInMillis, sample);
+    }
+
+    public void deleteFile() {
+        outPutAudioFormat.deleteTempFile();
+    }
+
+    public File getOutPutFile() {
+        return outPutAudioFormat.getFile();
+    }
+
+    public String getOutPutFileType() {
+        return outPutAudioFormat.getOutPutFileType();
     }
 
     public class PlayingSegment {

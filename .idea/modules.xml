@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Portabelo_New312.iml" filepath="$PROJECT_DIR$/Portabelo_New312.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/SlidingMenu/library/menuLibrary.iml" filepath="$PROJECT_DIR$/libs/SlidingMenu/library/menuLibrary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libs/SlidingMenu/library/menuLibrary.iml" filepath="$PROJECT_DIR$/libs/SlidingMenu/library/menuLibrary.iml" />
     </modules>
   </component>
 </project>

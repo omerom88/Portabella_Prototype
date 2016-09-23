@@ -34,6 +34,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
+//        Intent intent = new Intent(MainActivity.this, GuitarActivity.class);
         startActivity(intent);
 //        final ImageView mImageViewMoving = (ImageView) findViewById(R.id.imageview_animated_moving);
 //        mImageViewMoving.setVisibility(View.INVISIBLE);
