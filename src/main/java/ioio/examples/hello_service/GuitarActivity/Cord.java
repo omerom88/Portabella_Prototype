@@ -116,7 +116,7 @@ public class Cord implements Runnable {
         int playbackRate = Cord.calcPitch(GuitarActivity.retSrigim[curSarig] + 1);
         audioTrack.setPlaybackRate(playbackRate);
 //       check the 10* ___, its something with the equlizer.
-        audioTrack.setStereoVolume(10*currVolume, 10*currVolume);
+        audioTrack.setStereoVolume(currVolume, currVolume);
 //                setVolume(audioTrack, currVolume);
         play(currIndex);
         if (CordManager.isRecording()) {
@@ -306,7 +306,7 @@ public class Cord implements Runnable {
                                 break;
                             }
 
-                            playIteration(currIndex, index, currVolume);
+                            playIteration(currIndex, index, currVolume * 10);
                             currIndex += getBufferAddPerIteration();
                             currVolume = calcVolume(currVolume, GuitarActivity.retMeitar[index], true);
                             float presh = GuitarActivity.retMeitar[index];

@@ -24,7 +24,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     private static LinearLayout[] mietarsLayouts = new LinearLayout[CordManager.NUM_OF_MEITARS];
     private SortedSet<MultiPointerTouch> multiPointerTouch;
 //    float downXmenu, downYmenu, upXmenu, upYmenu;
-    private Context context;
+//    private Context context;
 
     /**
      * This inner class represent a Pointer on the screen. each pointer has a unique id and contains
@@ -163,7 +163,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
      */
     public ActivitySwipeDetector(LinearLayout[] mietarsLayouts, Context context){
         ActivitySwipeDetector.mietarsLayouts = mietarsLayouts;
-        this.context = context;
+//        this.context = context;
         this.multiPointerTouch = new TreeSet<MultiPointerTouch>();
     }
 

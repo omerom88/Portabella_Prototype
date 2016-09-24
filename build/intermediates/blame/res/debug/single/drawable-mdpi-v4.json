@@ -324,12 +324,12 @@
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-mdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\menuscreencolor03.png",
-        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-mdpi\\menuscreencolor03.png"
-    },
-    {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\animation_list_filling_menu.xml",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-mdpi\\animation_list_filling_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\menuscreencolor03.png",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable-mdpi\\menuscreencolor03.png"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\buttonmenu00003.png",
