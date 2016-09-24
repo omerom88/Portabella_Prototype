@@ -33,19 +33,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_menuLibrary_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/ActivitySwipeDetector.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/ActivitySwipeDetector.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/Cord$Task.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/Cord$Task.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/Cord.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/Cord.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/CordManager.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/CordManager.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$1.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$2.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$3.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$4.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/GuitarActivity/GuitarActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/MainActivity.class" afterPath="$PROJECT_DIR$/build/intermediates/classes/debug/ioio/examples/hello_service/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug-androidTest.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/Portabelo_New312-debug-unaligned.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/Portabelo_New312-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/outputs/apk/Portabelo_New312-debug.apk" afterPath="$PROJECT_DIR$/build/outputs/apk/Portabelo_New312-debug.apk" />
@@ -54,12 +46,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-hdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" afterPath="$PROJECT_DIR$/build/intermediates/blame/res/debug/single/drawable-mdpi-v4.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ActivitySwipeDetector.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ActivitySwipeDetector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/Cord.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/Cord.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/GuitarActivity.java" afterPath="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/GuitarActivity.java" />
     </list>
     <ignored path="Portabelo_New.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,50 +76,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="GuitarActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GuitarActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/GuitarActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.66522676">
+              <caret line="227" column="62" selection-start-line="227" selection-start-column="62" selection-end-line="228" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3877#4516#0" expanded="true" />
-                <element signature="e#4515#4516#0" expanded="true" />
-                <element signature="e#4776#5472#0" expanded="true" />
-                <element signature="e#5471#5472#0" expanded="true" />
-                <element signature="e#6330#6648#0" expanded="true" />
-                <element signature="e#6647#6648#0" expanded="true" />
-                <element signature="e#6695#6926#0" expanded="true" />
-                <element signature="e#6925#6926#0" expanded="true" />
-                <element signature="e#7221#7566#0" expanded="true" />
-                <element signature="e#7565#7566#0" expanded="true" />
-                <element signature="e#7609#7796#0" expanded="true" />
-                <element signature="e#7795#7796#0" expanded="true" />
-                <element signature="e#8029#8633#0" expanded="true" />
-                <element signature="e#8632#8633#0" expanded="true" />
-                <element signature="e#10902#10903#0" expanded="true" />
-                <element signature="e#10932#10933#0" expanded="true" />
+                <element signature="e#3925#5383#0" expanded="true" />
+                <element signature="e#5382#5383#0" expanded="true" />
+                <element signature="e#5663#6866#0" expanded="true" />
+                <element signature="e#6865#6866#0" expanded="true" />
+                <element signature="e#7407#7408#0" expanded="true" />
+                <element signature="e#7457#7458#0" expanded="true" />
+                <element signature="e#7919#7920#0" expanded="true" />
+                <element signature="e#7966#7967#0" expanded="true" />
+                <element signature="e#8420#8421#0" expanded="true" />
+                <element signature="e#8480#8481#0" expanded="true" />
+                <element signature="e#8633#9181#0" expanded="true" />
+                <element signature="e#9180#9181#0" expanded="true" />
+                <element signature="method#openSaveFileDialog#0;class#GuitarActivity#0" expanded="false" />
+                <element signature="e#9921#10239#0" expanded="true" />
+                <element signature="e#10238#10239#0" expanded="true" />
+                <element signature="e#10286#10517#0" expanded="true" />
+                <element signature="e#10516#10517#0" expanded="true" />
+                <element signature="method#openPlaySongDialog#0;class#GuitarActivity#0" expanded="false" />
+                <element signature="e#10812#11157#0" expanded="true" />
+                <element signature="e#11156#11157#0" expanded="true" />
+                <element signature="e#11200#11387#0" expanded="true" />
+                <element signature="e#11386#11387#0" expanded="true" />
+                <element signature="method#finishRec#0;class#GuitarActivity#0" expanded="false" />
+                <element signature="class#11747:12779" expanded="false" />
+                <element signature="method#onResume#0;class#GuitarActivity#0" expanded="false" />
+                <element signature="method#onPause#0;class#GuitarActivity#0" expanded="false" />
+                <element signature="docComment;method#onStop#0;class#GuitarActivity#0" expanded="false" />
+                <element signature="docComment;method#onDestroy#0;class#GuitarActivity#0" expanded="false" />
+                <element signature="method#onDestroy#0;class#GuitarActivity#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuActivityGif.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MenuActivityGif.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="77" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -165,11 +147,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActivitySwipeDetector.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ActivitySwipeDetector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ActivitySwipeDetector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53333336">
-              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
               <folding>
                 <element signature="docComment;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
                 <element signature="class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
@@ -188,11 +170,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/CordManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
+              <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
               <folding>
                 <element signature="e#1088#1089#0" expanded="true" />
                 <element signature="e#1117#1118#0" expanded="true" />
-                <element signature="method#startRecording#0;class#CordManager#0" expanded="false" />
                 <element signature="method#calcShortsPerTime#0;class#CordManager#0" expanded="false" />
                 <element signature="method#writeToBuffer#0;class#CordManager#0" expanded="false" />
               </folding>
@@ -204,16 +185,19 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Recording/Record.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+              <caret line="187" column="21" selection-start-line="187" selection-start-column="21" selection-end-line="187" selection-end-column="21" />
               <folding>
                 <element signature="method#getInstance#0;class#Record#0" expanded="false" />
+                <element signature="method#addSample#0;class#Record#0" expanded="false" />
                 <element signature="method#writeToBuffer#0;class#Record#0" expanded="false" />
-                <element signature="e#1872#1873#0" expanded="true" />
-                <element signature="e#1915#1916#0" expanded="true" />
                 <element signature="method#calcShortsPerTime#0;class#Record#0" expanded="false" />
+                <element signature="method#cancel#0;class#Record#0" expanded="false" />
+                <element signature="method#saveFile#0;class#Record#0" expanded="false" />
                 <element signature="method#getColumn#0;class#Record#0" expanded="false" />
                 <element signature="method#mixSounds#0;class#Record#0" expanded="false" />
                 <element signature="class#RecOptions#0;class#Record#0" expanded="false" />
+                <element signature="method#start#0;class#Record#0" expanded="false" />
+                <element signature="method#start#1;class#Record#0" expanded="false" />
                 <element signature="method#resume#0;class#Record#0" expanded="false" />
                 <element signature="method#pause#0;class#Record#0" expanded="false" />
                 <element signature="method#stop#0;class#Record#0" expanded="false" />
@@ -2056,9 +2040,9 @@
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Recording/RecordPlayerActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/CordManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/GuitarActivity.java" />
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ActivitySwipeDetector.java" />
         <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/Cord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/GuitarActivity.java" />
       </list>
     </option>
   </component>
@@ -2649,7 +2633,13 @@
       <option name="project" value="LOCAL" />
       <updated>1474727044522</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="improved the latency of the sound.">
+      <created>1474727780111</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1474727780111</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2663,7 +2653,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46907818" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2672,7 +2662,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67327887" sideWeight="0.5021436" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="152" y="350" width="1738" height="848" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3838973" sideWeight="0.49785638" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42123687" sideWeight="0.49785638" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21936989" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2681,7 +2671,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2636656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2636656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2716,7 +2706,9 @@
     <MESSAGE value="added the apk file of this push." />
     <MESSAGE value="added a player for the recording." />
     <MESSAGE value="added resources." />
-    <option name="LAST_COMMIT_MESSAGE" value="added resources." />
+    <MESSAGE value="improved the latency of the sound." />
+    <MESSAGE value="Changed the properties of the animation of the buttons in the GuitarActivity." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the properties of the animation of the buttons in the GuitarActivity." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3036,17 +3028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-19/android.jar!/android/graphics/drawable/AnimationDrawable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38209608">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding>
-            <element signature="e#784#785#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Recording/AudioFormat/AudioFormat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3101,61 +3082,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Recording/Record.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
-          <folding>
-            <element signature="method#getInstance#0;class#Record#0" expanded="false" />
-            <element signature="method#writeToBuffer#0;class#Record#0" expanded="false" />
-            <element signature="e#1872#1873#0" expanded="true" />
-            <element signature="e#1915#1916#0" expanded="true" />
-            <element signature="method#calcShortsPerTime#0;class#Record#0" expanded="false" />
-            <element signature="method#getColumn#0;class#Record#0" expanded="false" />
-            <element signature="method#mixSounds#0;class#Record#0" expanded="false" />
-            <element signature="class#RecOptions#0;class#Record#0" expanded="false" />
-            <element signature="method#resume#0;class#Record#0" expanded="false" />
-            <element signature="method#pause#0;class#Record#0" expanded="false" />
-            <element signature="method#stop#0;class#Record#0" expanded="false" />
-            <element signature="class#customCountDownTimer#0;class#Record#0" expanded="false" />
-            <element signature="method#customCountDownTimer#1;class#customCountDownTimer#0;class#Record#0" expanded="false" />
-            <element signature="method#resume#0;class#customCountDownTimer#0;class#Record#0" expanded="false" />
-            <element signature="method#pause#0;class#customCountDownTimer#0;class#Record#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Recording/RecordPlayerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="155" column="27" selection-start-line="155" selection-start-column="27" selection-end-line="155" selection-end-column="27" />
           <folding>
             <element signature="method#onCreate#0;class#RecordPlayerActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/CordManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
-          <folding>
-            <element signature="e#1088#1089#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-            <element signature="method#startRecording#0;class#CordManager#0" expanded="false" />
-            <element signature="method#calcShortsPerTime#0;class#CordManager#0" expanded="false" />
-            <element signature="method#writeToBuffer#0;class#CordManager#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-19/android.jar!/android/graphics/drawable/DrawableContainer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3941019">
-          <caret line="119" column="19" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
-          <folding>
-            <element signature="e#3019#3020#0" expanded="true" />
-            <element signature="e#3070#3071#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3173,48 +3105,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MenuActivityGif.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ChooseThemeFreg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/GuitarActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3877#4516#0" expanded="true" />
-            <element signature="e#4515#4516#0" expanded="true" />
-            <element signature="e#4776#5472#0" expanded="true" />
-            <element signature="e#5471#5472#0" expanded="true" />
-            <element signature="e#6330#6648#0" expanded="true" />
-            <element signature="e#6647#6648#0" expanded="true" />
-            <element signature="e#6695#6926#0" expanded="true" />
-            <element signature="e#6925#6926#0" expanded="true" />
-            <element signature="e#7221#7566#0" expanded="true" />
-            <element signature="e#7565#7566#0" expanded="true" />
-            <element signature="e#7609#7796#0" expanded="true" />
-            <element signature="e#7795#7796#0" expanded="true" />
-            <element signature="e#8029#8633#0" expanded="true" />
-            <element signature="e#8632#8633#0" expanded="true" />
-            <element signature="e#10902#10903#0" expanded="true" />
-            <element signature="e#10932#10933#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3246,18 +3136,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="77" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ActivitySwipeDetector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53333336">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="52" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
           <folding>
             <element signature="docComment;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
@@ -3267,6 +3149,131 @@
             <element signature="method#getMeitarBorder#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="method#removeStrumming#0;class#MultiPointerTouch#0;class#ActivitySwipeDetector#0" expanded="false" />
             <element signature="docComment;method#ActivitySwipeDetector#0;class#ActivitySwipeDetector#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.3471339">
+          <caret line="84" column="31" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/Recording/Record.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="187" column="21" selection-start-line="187" selection-start-column="21" selection-end-line="187" selection-end-column="21" />
+          <folding>
+            <element signature="method#getInstance#0;class#Record#0" expanded="false" />
+            <element signature="method#addSample#0;class#Record#0" expanded="false" />
+            <element signature="method#writeToBuffer#0;class#Record#0" expanded="false" />
+            <element signature="method#calcShortsPerTime#0;class#Record#0" expanded="false" />
+            <element signature="method#cancel#0;class#Record#0" expanded="false" />
+            <element signature="method#saveFile#0;class#Record#0" expanded="false" />
+            <element signature="method#getColumn#0;class#Record#0" expanded="false" />
+            <element signature="method#mixSounds#0;class#Record#0" expanded="false" />
+            <element signature="class#RecOptions#0;class#Record#0" expanded="false" />
+            <element signature="method#start#0;class#Record#0" expanded="false" />
+            <element signature="method#start#1;class#Record#0" expanded="false" />
+            <element signature="method#resume#0;class#Record#0" expanded="false" />
+            <element signature="method#pause#0;class#Record#0" expanded="false" />
+            <element signature="method#stop#0;class#Record#0" expanded="false" />
+            <element signature="class#customCountDownTimer#0;class#Record#0" expanded="false" />
+            <element signature="method#customCountDownTimer#1;class#customCountDownTimer#0;class#Record#0" expanded="false" />
+            <element signature="method#resume#0;class#customCountDownTimer#0;class#Record#0" expanded="false" />
+            <element signature="method#pause#0;class#customCountDownTimer#0;class#Record#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/CordManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="33" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+          <folding>
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="method#calcShortsPerTime#0;class#CordManager#0" expanded="false" />
+            <element signature="method#writeToBuffer#0;class#CordManager#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-19/android.jar!/android/graphics/drawable/AnimationDrawable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38016528">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding>
+            <element signature="e#946#947#0" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-19/android.jar!/android/graphics/drawable/DrawableContainer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33471075">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="121" selection-end-column="5" />
+          <folding>
+            <element signature="e#3019#3020#0" expanded="true" />
+            <element signature="e#3070#3071#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/ChooseThemeFreg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5226782">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/MenuActivityGif.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33261338">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ioio/examples/hello_service/GuitarActivity/GuitarActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66522676">
+          <caret line="227" column="62" selection-start-line="227" selection-start-column="62" selection-end-line="228" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3925#5383#0" expanded="true" />
+            <element signature="e#5382#5383#0" expanded="true" />
+            <element signature="e#5663#6866#0" expanded="true" />
+            <element signature="e#6865#6866#0" expanded="true" />
+            <element signature="e#7407#7408#0" expanded="true" />
+            <element signature="e#7457#7458#0" expanded="true" />
+            <element signature="e#7919#7920#0" expanded="true" />
+            <element signature="e#7966#7967#0" expanded="true" />
+            <element signature="e#8420#8421#0" expanded="true" />
+            <element signature="e#8480#8481#0" expanded="true" />
+            <element signature="e#8633#9181#0" expanded="true" />
+            <element signature="e#9180#9181#0" expanded="true" />
+            <element signature="method#openSaveFileDialog#0;class#GuitarActivity#0" expanded="false" />
+            <element signature="e#9921#10239#0" expanded="true" />
+            <element signature="e#10238#10239#0" expanded="true" />
+            <element signature="e#10286#10517#0" expanded="true" />
+            <element signature="e#10516#10517#0" expanded="true" />
+            <element signature="method#openPlaySongDialog#0;class#GuitarActivity#0" expanded="false" />
+            <element signature="e#10812#11157#0" expanded="true" />
+            <element signature="e#11156#11157#0" expanded="true" />
+            <element signature="e#11200#11387#0" expanded="true" />
+            <element signature="e#11386#11387#0" expanded="true" />
+            <element signature="method#finishRec#0;class#GuitarActivity#0" expanded="false" />
+            <element signature="class#11747:12779" expanded="false" />
+            <element signature="method#onResume#0;class#GuitarActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#GuitarActivity#0" expanded="false" />
+            <element signature="docComment;method#onStop#0;class#GuitarActivity#0" expanded="false" />
+            <element signature="docComment;method#onDestroy#0;class#GuitarActivity#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#GuitarActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>

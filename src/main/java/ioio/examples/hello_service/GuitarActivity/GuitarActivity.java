@@ -16,6 +16,7 @@ import android.os.Handler;
 import android.text.InputType;
 import android.util.Log;
 import android.view.Display;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -33,16 +34,17 @@ import ioio.examples.hello_service.Recording.RecordPlayerActivity;
  */
 public class GuitarActivity extends Activity {
 
+    public static float[] retMeitar = {0f,0f,0f,0f,0f,0f};
+    public static int[] retSrigim = {-1,-1,-1,-1,-1,-1};
+    public static LinearLayout baseGuitarLayout;
+    public static File recordOutput;
+
     private IntentFilter mIntentFilter;
     private String LOG_TAG = null;
     private static String fileName;
     private static final String mBroadcastStringAction = "com.truiton.broadcast.string";
-    public static float[] retMeitar = {0f,0f,0f,0f,0f,0f};
-    public static int[] retSrigim = {-1,-1,-1,-1,-1,-1};
-    public static LinearLayout baseGuitarLayout;
-    private static AnimationDrawable animationDrawableStartRec;
-    private static AnimationDrawable animationDrawableMenu;
-    public static File recordOutput;
+    private static AnimationClass animationDrawableStartRec;
+    private static AnimationClass animationDrawableMenu;
 
     public static final int[] NOTES_LAYOUTS = {R.id.E_LOW, R.id.A, R.id.D, R.id.G, R.id.B, R.id.E_HIGH};
     public static final int[] ROCK_NOTES = {R.raw.e_string_low, R.raw.a_string, R.raw.d_string,
@@ -90,52 +92,150 @@ public class GuitarActivity extends Activity {
 
         // rec button animation
         final ImageView mImageViewRecording = (ImageView) findViewById(R.id.imageview_animated_recording);
-        animationDrawableStartRec = (AnimationDrawable)mImageViewRecording.getBackground();
-        mImageViewRecording.setOnClickListener(new View.OnClickListener() {
+        animationDrawableStartRec = new AnimationClass((AnimationDrawable)mImageViewRecording.getBackground());
+        mImageViewRecording.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
-                if (!CordManager.isRecording()) {
-                    Log.e("onClick: ", "startRecording");
-                    animationDrawableStartRec.start();
-                    CordManager.startRecording();
-                } else {
-                    Log.e("onClick: ", "stopRecording");
-                    animationDrawableStartRec.stop();
-                    animationDrawableStartRec.selectDrawable(0);
-                    CordManager.stopRecording();
-                    openSaveFileDialog();
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getActionMasked()) {
+                    case MotionEvent.ACTION_DOWN: {
+                        Log.e("START ACTION_DOWN", "!!");
+                        if (!CordManager.isRecording()) {
+                            animationDrawableStartRec.start();
+                            animationDrawableStartRec.checkIfAnimationDone();
+                            return true;
+                        }
+                    }
+                    case MotionEvent.ACTION_UP: {
+                        if (!CordManager.isRecording()) {
+                            if (animationDrawableStartRec.isAnimationFlag()) {
+                                animationDrawableStartRec.setAnimationFlag(false);
+                                CordManager.startRecording();
+                            } else {
+                                animationDrawableStartRec.restartAnimation();
+                            }
+                        } else {
+                            animationDrawableStartRec.restartAnimation();
+                            CordManager.stopRecording();
+                            openSaveFileDialog();
+                        }
+                        //TODO: when leave button
+                    }
+                    return false;
                 }
+                return false;
             }
         });
 
 
         // menu button animation
         final ImageView mImageViewMenu = (ImageView) findViewById(R.id.imageview_animated_menu);
-        animationDrawableMenu = (AnimationDrawable)mImageViewMenu.getBackground();
-        mImageViewMenu.setOnClickListener(new View.OnClickListener() {
+        animationDrawableMenu = new AnimationClass((AnimationDrawable)mImageViewMenu.getBackground());
+        mImageViewMenu.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
-                Log.e("mImageViewMenu: ", "onClick");
-                Log.e("mImageViewMenu: ", "" + CordManager.isRecording());
-                CordManager.pauseAllTasks();
-                animationDrawableMenu.setVisible(false, true);
-                animationDrawableMenu.start();
-                if (CordManager.isRecording()) {
-                    Log.e("mImageViewMenu: ", "cancelRecord");
-                    CordManager.cancelRecord();
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getActionMasked()) {
+                    case MotionEvent.ACTION_DOWN: {
+                        Log.e("START ACTION_DOWN", "!!");
+                        animationDrawableMenu.start();
+                        animationDrawableMenu.checkIfAnimationDone();
+                        return true;
+                    }
+                    case MotionEvent.ACTION_UP: {
+                        Log.e("START ACTION_UP", "!!");
+                        if (animationDrawableMenu.isAnimationFlag()) {
+                            Log.e("START isAnimationFlag", "!!");
+                            animationDrawableMenu.setAnimationFlag(false);
+                            Intent intent = new Intent(GuitarActivity.this, MenuActivityGif.class);
+                            int res = 2;
+                            startActivityForResult(intent, res);
+                        }
+                        animationDrawableMenu.restartAnimation();
+                    }
+                    return false;
                 }
-                checkIfAnimationDone(animationDrawableMenu);
-                Log.e("mImageViewMenu123: ", "onClick");
+                return false;
             }
         });
-
-
 
         //////// start ioio activity //////////
         mIntentFilter = new IntentFilter();
         mIntentFilter.addAction(mBroadcastStringAction);
         final Intent intent = new Intent(GuitarActivity.this, HelloIOIOService2.class);
         startService(intent);
+    }
+
+    private class AnimationClass extends AnimationDrawable {
+        private boolean animationFlag = false;
+        private boolean animationRunning = false;
+        private AnimationDrawable animation;
+
+        public AnimationClass(AnimationDrawable animation) {
+            this.animation = animation;
+        }
+
+        public boolean isAnimationFlag() {
+            return animationFlag;
+        }
+
+        public void setAnimationFlag(boolean animationFlag) {
+            this.animationFlag = animationFlag;
+        }
+
+        public AnimationDrawable getAnimation() {
+            return animation;
+        }
+
+        public void setAnimation(AnimationDrawable animation) {
+            this.animation = animation;
+        }
+
+        public boolean isAnimationRunning() {
+            return animationRunning;
+        }
+
+        public void setAnimationRunning(boolean animationRunning) {
+            this.animationRunning = animationRunning;
+        }
+
+        @Override
+        public void start() {
+            animation.start();
+            animationRunning = true;
+        }
+
+        @Override
+        public void stop() {
+            animation.stop();
+            animationRunning = false;
+        }
+
+        @Override
+        public boolean selectDrawable(int idx) {
+            return animation.selectDrawable(idx);
+        }
+
+        public void checkIfAnimationDone(){
+            int timeBetweenChecks = 300;
+            Handler h = new Handler();
+            h.postDelayed(new Runnable() {
+                public void run() {
+                    if (animation.getCurrent() != animation.getFrame(animation.getNumberOfFrames() - 1)) {
+                        Log.e("checkIfAnimationDone", "not done");
+                        if (isAnimationRunning()) {
+                            checkIfAnimationDone();
+                        }
+                    } else {
+                        Log.e("checkIfAnimationDone", "done");
+                        animationFlag = true;
+                    }
+                }
+            }, timeBetweenChecks);
+        }
+
+        public void restartAnimation() {
+            animation.selectDrawable(0);
+            animation.stop();
+        }
     }
 
     public void openSaveFileDialog() {
@@ -190,25 +290,6 @@ public class GuitarActivity extends Activity {
         builder.show();
     }
 
-    private void checkIfAnimationDone(AnimationDrawable anim){
-        final AnimationDrawable a = anim;
-        int timeBetweenChecks = 300;
-        Handler h = new Handler();
-        h.postDelayed(new Runnable() {
-            public void run() {
-                if (a.getCurrent() != a.getFrame(a.getNumberOfFrames() - 1)) {
-                    Log.e("checkIfAnimationDone", "not done");
-                    checkIfAnimationDone(a);
-                } else {
-                    Log.e("checkIfAnimationDone", "done");
-                    animationDrawableMenu.selectDrawable(0);
-                    Intent intent = new Intent(GuitarActivity.this, MenuActivityGif.class);
-                    int res = 2;
-                    startActivityForResult(intent, res);
-                }
-            }
-        }, timeBetweenChecks);
-    }
 
     private void finishRec(){
         //open the box that said what to do with it - save listen or share
