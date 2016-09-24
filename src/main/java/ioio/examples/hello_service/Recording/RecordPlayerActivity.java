@@ -29,6 +29,7 @@ public class RecordPlayerActivity extends Activity {
     private Handler myHandler = new Handler();
     private SeekBar seekbar;
     private TextView tx1,tx2,tx3;
+    private boolean mediaPlayerInit = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,7 @@ public class RecordPlayerActivity extends Activity {
             mediaPlayer.setDataSource(fis.getFD());
             Log.e("getFD: ", fis.getFD() + "");
             mediaPlayer.prepare();
+            mediaPlayerInit = true;
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -73,30 +75,32 @@ public class RecordPlayerActivity extends Activity {
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (mediaPlayerInit) {
 //                Toast.makeText(getApplicationContext(), "Playing sound",Toast.LENGTH_SHORT).show();
-                mediaPlayer.start();
+                    mediaPlayer.start();
 
-                finalTime = mediaPlayer.getDuration();
-                startTime = mediaPlayer.getCurrentPosition();
-                seekbar.setMax((int) finalTime);
+                    finalTime = mediaPlayer.getDuration();
+                    startTime = mediaPlayer.getCurrentPosition();
+                    seekbar.setMax((int) finalTime);
 
-                tx2.setText(String.format("%d min, %d sec",
-                        TimeUnit.MILLISECONDS.toMinutes((long) finalTime),
-                        TimeUnit.MILLISECONDS.toSeconds((long) finalTime) -
-                                TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes((long) finalTime)))
-                );
+                    tx2.setText(String.format("%d min, %d sec",
+                            TimeUnit.MILLISECONDS.toMinutes((long) finalTime),
+                            TimeUnit.MILLISECONDS.toSeconds((long) finalTime) -
+                                    TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes((long) finalTime)))
+                    );
 
-                tx1.setText(String.format("%d min, %d sec",
-                        TimeUnit.MILLISECONDS.toMinutes((long) startTime),
-                        TimeUnit.MILLISECONDS.toSeconds((long) startTime) -
-                                TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes((long) startTime)))
-                );
+                    tx1.setText(String.format("%d min, %d sec",
+                            TimeUnit.MILLISECONDS.toMinutes((long) startTime),
+                            TimeUnit.MILLISECONDS.toSeconds((long) startTime) -
+                                    TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes((long) startTime)))
+                    );
 
-                seekbar.setProgress((int)startTime);
-                myHandler.postDelayed(UpdateSongTime, 100);
-                stopButton.setEnabled(true);
-                pauseButton.setEnabled(true);
-                playButton.setEnabled(false);
+                    seekbar.setProgress((int) startTime);
+                    myHandler.postDelayed(UpdateSongTime, 100);
+                    stopButton.setEnabled(true);
+                    pauseButton.setEnabled(true);
+                    playButton.setEnabled(false);
+                }
             }
         });
 
@@ -104,44 +108,51 @@ public class RecordPlayerActivity extends Activity {
             @Override
             public void onClick(View v) {
 //                Toast.makeText(getApplicationContext(), "Pausing sound",Toast.LENGTH_SHORT).show();
-                mediaPlayer.pause();
-                pauseButton.setEnabled(false);
-                playButton.setEnabled(true);
+                if (mediaPlayerInit) {
+                    mediaPlayer.pause();
+                    pauseButton.setEnabled(false);
+                    playButton.setEnabled(true);
+                }
             }
         });
 
         stopButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (mediaPlayerInit) {
 //                Toast.makeText(getApplicationContext(), "Stopping sound",Toast.LENGTH_SHORT).show();
-                stopButton.setEnabled(false);
-                pauseButton.setEnabled(false);
-                playButton.setEnabled(true);
-                mediaPlayer.pause();
-                mediaPlayer.seekTo(0);
-                seekbar.setProgress(0);
+                    stopButton.setEnabled(false);
+                    pauseButton.setEnabled(false);
+                    playButton.setEnabled(true);
+                    mediaPlayer.pause();
+                    mediaPlayer.seekTo(0);
+                    seekbar.setProgress(0);
+                }
             }
         });
     }
 
     private Runnable UpdateSongTime = new Runnable() {
         public void run() {
-            startTime = mediaPlayer.getCurrentPosition();
-            tx1.setText(String.format("%d min, %d sec",
+            if (mediaPlayerInit) {
+                startTime = mediaPlayer.getCurrentPosition();
+                tx1.setText(String.format("%d min, %d sec",
 
-                    TimeUnit.MILLISECONDS.toMinutes((long) startTime),
-                    TimeUnit.MILLISECONDS.toSeconds((long) startTime) -
-                            TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.
-                                    toMinutes((long) startTime)))
-            );
-            seekbar.setProgress((int)startTime);
-            myHandler.postDelayed(this, 100);
+                        TimeUnit.MILLISECONDS.toMinutes((long) startTime),
+                        TimeUnit.MILLISECONDS.toSeconds((long) startTime) -
+                                TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.
+                                        toMinutes((long) startTime)))
+                );
+                seekbar.setProgress((int) startTime);
+                myHandler.postDelayed(this, 100);
+            }
         }
     };
 
     @Override
     public void onBackPressed()
     {
+        mediaPlayerInit = false;
         mediaPlayer.stop();
         mediaPlayer.release();
         setResult(2);

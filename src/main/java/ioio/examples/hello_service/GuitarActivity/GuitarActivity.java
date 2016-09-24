@@ -16,10 +16,7 @@ import android.os.Handler;
 import android.text.InputType;
 import android.util.Log;
 import android.view.Display;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -29,7 +26,6 @@ import java.io.File;
 import ioio.examples.hello_service.HelloIOIOService2;
 import ioio.examples.hello_service.MenuActivityGif;
 import ioio.examples.hello_service.R;
-import ioio.examples.hello_service.Recording.Record;
 import ioio.examples.hello_service.Recording.RecordPlayerActivity;
 
 /**
@@ -121,7 +117,8 @@ public class GuitarActivity extends Activity {
             public void onClick(View v) {
                 Log.e("mImageViewMenu: ", "onClick");
                 Log.e("mImageViewMenu: ", "" + CordManager.isRecording());
-                CordManager.cancelAllTasks();
+                CordManager.pauseAllTasks();
+                animationDrawableMenu.setVisible(false, true);
                 animationDrawableMenu.start();
                 if (CordManager.isRecording()) {
                     Log.e("mImageViewMenu: ", "cancelRecord");
@@ -142,7 +139,7 @@ public class GuitarActivity extends Activity {
     }
 
     public void openSaveFileDialog() {
-        CordManager.cancelAllTasks();
+        CordManager.pauseAllTasks();
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("How would you like to name your new recording?");
 
@@ -190,9 +187,7 @@ public class GuitarActivity extends Activity {
                 dialog.cancel();
             }
         });
-
         builder.show();
-
     }
 
     private void checkIfAnimationDone(AnimationDrawable anim){
@@ -202,8 +197,10 @@ public class GuitarActivity extends Activity {
         h.postDelayed(new Runnable() {
             public void run() {
                 if (a.getCurrent() != a.getFrame(a.getNumberOfFrames() - 1)) {
+                    Log.e("checkIfAnimationDone", "not done");
                     checkIfAnimationDone(a);
                 } else {
+                    Log.e("checkIfAnimationDone", "done");
                     animationDrawableMenu.selectDrawable(0);
                     Intent intent = new Intent(GuitarActivity.this, MenuActivityGif.class);
                     int res = 2;
@@ -261,7 +258,7 @@ public class GuitarActivity extends Activity {
     @Override
     protected void onPause() {
         super.onPause();
-        CordManager.cancelAllTasks();
+        CordManager.pauseAllTasks();
         unregisterReceiver(mReceiver);
         Log.d("", "The onPause() event");
     }

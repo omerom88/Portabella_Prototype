@@ -1,8 +1,6 @@
 package ioio.examples.hello_service.GuitarActivity;
 
-import android.app.Activity;
 import android.content.Context;
-import android.util.Log;
 
 import java.io.File;
 
@@ -38,21 +36,17 @@ public class CordManager {
         return height;
     }
 
-    public static void cancelAllTasks() {
+    public static void pauseAllTasks() {
         for (int i = 0; i < NUM_OF_MEITARS; i++) {
-            cancelTask(i);
+            if (cords[i] != null) {
+                cords[i].pauseTask();
+            }
         }
     }
 
     public static void restartTask(int index, float pressure, float velocityX, float yPos) {
         cords[index].pauseTask();
         cords[index].resume(pressure, velocityX, yPos);
-    }
-
-    public static void cancelTask(int index) {
-        if (cords[index] != null) {
-            cords[index].pauseTask();
-        }
     }
 
     public static void setHeight(float heightLayout) {
@@ -103,5 +97,19 @@ public class CordManager {
 
     public static File saveFile(String fileName) {
         return record.saveFile(fileName);
+    }
+
+    public static void restartAllTasks() {
+        for (int i = 0; i < NUM_OF_MEITARS; i++) {
+            if (cords[i].isInit()) {
+                cords[i].restartTask();
+            }
+        }
+    }
+
+    public static void cancelAllTasks() {
+        for (int i = 0; i < NUM_OF_MEITARS; i++) {
+            cords[i].cancelTask();
+        }
     }
 }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+
+    <item
+        android:duration="70"
+        android:drawable="@drawable/buttonmenu00000"/>
+
+    <item
+        android:duration="70"
+        android:drawable="@drawable/buttonmenu00001"/>
+
+    <item
+        android:duration="70"
+        android:drawable="@drawable/buttonmenu00002"/>
+
+    <item
+        android:duration="70"
+        android:drawable="@drawable/buttonmenu00003"/>
+
+    <item
+        android:duration="70"
+        android:drawable="@drawable/buttonmenu00004"/>
+
+    <item
+        android:duration="70"
+        android:drawable="@drawable/buttonmenu00005"/>
+
+    <item
+        android:duration="70"
+        android:drawable="@drawable/buttonmenu00006"/>
+
+    <item
+        android:duration="70"
+        android:drawable="@drawable/buttonmenu00007"/>
+
+
+</animation-list>

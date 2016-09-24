@@ -33,8 +33,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
-        Intent intent = new Intent(MainActivity.this, GuitarActivity.class);
+        Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
+//        Intent intent = new Intent(MainActivity.this, GuitarActivity.class);
         startActivity(intent);
 //        final ImageView mImageViewMoving = (ImageView) findViewById(R.id.imageview_animated_moving);
 //        mImageViewMoving.setVisibility(View.INVISIBLE);
@@ -108,7 +108,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onPause() {
         super.onPause();
-//        cordManager.cancelAllTasks();
+//        cordManager.pauseAllTasks();
 //        unregisterReceiver(mReceiver);
         Log.d("", "The onPause() event");
     }

@@ -31,6 +31,7 @@ public class Cord implements Runnable {
     private int bufferAddPerIteration = 0;
     private int partOne, numOfIterations = CordManager.NUM_OF_ITERATIONS;
     private short minEQLevel, maxEQLevel, bandNumMaxFreq;
+    private boolean init;
 
     private static Context context;
     private static final float[] RATE_ARRAY = new float[13];
@@ -44,6 +45,7 @@ public class Cord implements Runnable {
             Log.e("RATE_ARRAY" + i + ": ", "" + RATE_ARRAY[i]);
         }
     }
+
 
     public Cord(int index, Context context, int wav, int numOfIterations) {
         Cord.context = context;
@@ -105,7 +107,8 @@ public class Cord implements Runnable {
 
     public void stopTrack() {
         if (audioTrack.getPlayState() == AudioTrack.PLAYSTATE_PLAYING) {
-            audioTrack.stop();
+//            audioTrack.stop();
+            setVolume(0);
         }
     }
 
@@ -128,12 +131,10 @@ public class Cord implements Runnable {
     }
 
     private void play(int start) {
-        audioTrack.play();
         int writeSize =  audioTrack.write(sample, start, bufferAddPerIteration);
     }
 
     private void play(short[] music, int start, int end) {
-        audioTrack.play();
         int writeSize =  audioTrack.write(music, start, end);
     }
 
@@ -185,6 +186,7 @@ public class Cord implements Runnable {
             this.maxEQLevel = equalizer.getBandLevelRange()[1];
             this.bandNumMaxFreq = (short) Math.max((int) equalizer.getBand(MAX_FREQ), 0);
         }
+        init = true;
     }
 
     public static short[] readSampleInShort(InputStream in, boolean removeHeaders) {
@@ -211,11 +213,28 @@ public class Cord implements Runnable {
         return sample;
     }
 
+    public void cancelTask() {
+        try {
+            task.cancelTask();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void restartTask() {
+        task.restartThread();
+    }
+
+    public boolean isInit() {
+        return init;
+    }
+
     public class Task extends Thread {
         private float pressure = 0f;
         private float velocityX;
         private float yPos;
         private volatile boolean running;
+        private volatile boolean playing;
         private volatile boolean new_task;
         private float startVolume;
         private int eqFreq;
@@ -232,14 +251,16 @@ public class Cord implements Runnable {
 
         public Task() {
             running = true;
+            playing = true;
             new_task = true;
         }
 
         @Override
         public void run() {
-            while(true) {
+            while(running) {
+                audioTrack.play();
                 synchronized(this) {
-                    while(!running) {
+                    while(!playing) {
                         try {
                             if(CordManager.isRecording()) {
 //                                if (!new_task) {
@@ -271,7 +292,7 @@ public class Cord implements Runnable {
                         }
                     }
                 }
-                if (running) {
+                if (playing) {
                     new_task = false;
                     stopTrack();
                     int currIndex = 0;
@@ -280,7 +301,7 @@ public class Cord implements Runnable {
                         float currVolume = startVolume;
 //                        Log.e("getStartVolume: ", "" + currVolume);
                         for (int i = 0; i < getPartOne(); i++) {
-                            if (!running || new_task) {
+                            if (!playing || new_task) {
                                 lastTimeRunMillis = System.currentTimeMillis();
                                 break;
                             }
@@ -299,10 +320,15 @@ public class Cord implements Runnable {
                         }
                     }
                     if (!new_task) {
-                        running = false;
+                        playing = false;
                     }
                     lastTimeRunMillis = System.currentTimeMillis();
                 }
+            }
+            try {
+                wait(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
 
@@ -360,12 +386,13 @@ public class Cord implements Runnable {
             }
         }
 
-        private void setVolume(AudioTrack audioTrack, float volume) {
-            audioTrack.setStereoVolume(volume, volume);
-        }
-
         public void pauseTask() throws InterruptedException {
             stopTrack();
+            this.playing = false;
+        }
+
+        public void cancelTask() throws InterruptedException {
+            pauseTask();
             this.running = false;
         }
 
@@ -381,14 +408,23 @@ public class Cord implements Runnable {
         }
 
         synchronized void resumeThread() {
-            running = true;
+            playing = true;
             lastTimeRunMillis = System.currentTimeMillis();
+            notify();
+        }
+
+        private void restartThread() {
+            running = true;
             notify();
         }
 
         private int calcShortsPerTime(int timeInMillis) {
             return CordManager.calcShortsPerTime(index, timeInMillis, sample);
         }
+    }
+
+    private void setVolume(float volume) {
+        audioTrack.setStereoVolume(volume, volume);
     }
 
     private class RecordCord implements Runnable {
