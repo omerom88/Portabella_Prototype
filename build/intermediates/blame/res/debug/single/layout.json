@@ -4,12 +4,12 @@
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\layout\\activity_menu2.xml"
     },
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\layout\\activity_record.xml",
-        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\layout\\activity_record.xml"
-    },
-    {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\layout\\slidingmenumain.xml",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\Portabelo_New312\\menuLibrary\\unspecified\\res\\layout\\slidingmenumain.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\layout\\activity_record_player.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\layout\\activity_record_player.xml"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\layout\\menu_layout_gif.xml",

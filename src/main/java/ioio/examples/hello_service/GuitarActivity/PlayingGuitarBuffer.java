@@ -16,6 +16,9 @@ public class PlayingGuitarBuffer {
 
     private List<PlayingSegment> buffer;
     private AudioFormat outPutAudioFormat;
+    private int bufferSize;
+
+    private static final int WRITING_THRESHOLD = 100000;
 
     public PlayingGuitarBuffer(int index, String fileName, String path, short[] sample) {
         buffer = new LinkedList<PlayingSegment>();
@@ -24,16 +27,20 @@ public class PlayingGuitarBuffer {
 
     public synchronized void writeToBuffer(short[] shortArray, int playbackRate, float volume) {
         buffer.add(new PlayingSegment(shortArray, playbackRate, volume));
+        bufferSize += (shortArray.length * 2);
     }
 
     public synchronized List<PlayingSegment> readFromBuffer() {
         List<PlayingSegment> tempBuff = new LinkedList<PlayingSegment>(buffer);
         buffer.clear();
+        bufferSize = 0;
         return tempBuff;
     }
 
     public synchronized void writeToFile() {
-        outPutAudioFormat.writeFile(this);
+        if (bufferSize > WRITING_THRESHOLD){
+            outPutAudioFormat.writeFile(this);
+        }
     }
 
     public int calcShortsPerTime(int timeInMillis, short[] sample) {
@@ -50,6 +57,10 @@ public class PlayingGuitarBuffer {
 
     public String getOutPutFileType() {
         return outPutAudioFormat.getOutPutFileType();
+    }
+
+    public int getBufferSize() {
+        return bufferSize;
     }
 
     public class PlayingSegment {

@@ -60,12 +60,12 @@
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable\\screenloadingloop00003.png"
     },
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
-        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable\\buttonmenu00004.png",
         "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\src\\main\\res\\drawable\\buttonmenu00004.png"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_New312\\build\\intermediates\\res\\merged\\debug\\drawable\\buttonmenu00001.png",

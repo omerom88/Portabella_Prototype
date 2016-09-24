@@ -41,8 +41,7 @@ public class WavFileFormat extends AudioFormat {
     // write out the wav file
     public WavFileFormat(String fileName, String path, short[] sample) {
         try {
-//            Log.e("WavFileFormat", "in WavFileFormat");
-            file = new File(path + "/" + fileName + WAV);
+            file = createNewFile(path + "/" + fileName + WAV);
             outFile = new RandomAccessFile(file, "rw");
             outFile.write(new byte[HEADER_SIZE]);
             writeHeaders(sample);
@@ -51,6 +50,21 @@ public class WavFileFormat extends AudioFormat {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+    }
+
+
+    private File createNewFile(String fileName) {
+        File outputFile = null;
+        try {
+            outputFile = new File(fileName);
+            if (outputFile.exists() && !outputFile.isDirectory()) {
+                outputFile.delete();
+            }
+            outputFile.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return outputFile;
     }
 
     // ===========================
@@ -128,12 +142,6 @@ public class WavFileFormat extends AudioFormat {
         List<PlayingGuitarBuffer.PlayingSegment> segList = buffer.readFromBuffer();
         for (PlayingGuitarBuffer.PlayingSegment seg : segList) {
             byte[] bytes = shortArrayToBytesArray(seg.getShortArray(), seg.getVolume());
-            if (!removedHeadersFromBuffer) {
-                byte[] tempBytes = bytes.clone();
-                bytes = new byte[tempBytes.length - HEADER_SIZE];
-                System.arraycopy(tempBytes, HEADER_SIZE, bytes, 0, tempBytes.length - HEADER_SIZE);
-                removedHeadersFromBuffer = true;
-            }
             writeDataToFile(bytes);
         }
         reWriteHeaders();

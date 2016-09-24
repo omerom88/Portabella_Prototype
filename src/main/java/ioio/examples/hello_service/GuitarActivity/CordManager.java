@@ -2,6 +2,9 @@ package ioio.examples.hello_service.GuitarActivity;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
+
+import java.io.File;
 
 import ioio.examples.hello_service.Recording.Record;
 
@@ -10,7 +13,7 @@ import ioio.examples.hello_service.Recording.Record;
  */
 public class CordManager {
 
-    public final static int NUM_OF_ITERATIONS = 100;
+    public final static int NUM_OF_ITERATIONS = 50;
     public static final int NUM_OF_MEITARS = 6;
     public static Cord[] cords = new Cord[NUM_OF_MEITARS];
 //    public static int[] REG_NOTES = {0,0,0,0,0,0};
@@ -64,7 +67,8 @@ public class CordManager {
 
     public static void startRecording() {
         for (int i = 0; i < NUM_OF_MEITARS; i++) {
-                record.addSample(i, getSample(i));
+            record.addSample(i, getSample(i));
+            cords[i].resume(0, 0, 0);
         }
         Record.getInstance(guitarActivity).start();
     }
@@ -97,7 +101,7 @@ public class CordManager {
         record.cancel();
     }
 
-    public static void saveFile(String fileName) {
-        record.saveFile(fileName);
+    public static File saveFile(String fileName) {
+        return record.saveFile(fileName);
     }
 }

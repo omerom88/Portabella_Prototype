@@ -9,7 +9,7 @@ import android.view.View;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 import ioio.examples.hello_service.GuitarActivity.GuitarActivity;
-import ioio.examples.hello_service.Recording.RecordActivity;
+import ioio.examples.hello_service.Recording.RecordPlayerActivity;
 
 public class MainActivity extends Activity {
 
@@ -33,8 +33,8 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
-//        Intent intent = new Intent(MainActivity.this, GuitarActivity.class);
+//        Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
+        Intent intent = new Intent(MainActivity.this, GuitarActivity.class);
         startActivity(intent);
 //        final ImageView mImageViewMoving = (ImageView) findViewById(R.id.imageview_animated_moving);
 //        mImageViewMoving.setVisibility(View.INVISIBLE);
@@ -94,7 +94,7 @@ public class MainActivity extends Activity {
     }
 
     public void startRecActivity(View view) {
-        Intent intent = new Intent(this, RecordActivity.class);
+        Intent intent = new Intent(this, RecordPlayerActivity.class);
         startActivity(intent);
     }
 

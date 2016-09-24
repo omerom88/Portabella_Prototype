@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -20,9 +19,9 @@ public class MenuActivityGif extends Activity {
         setContentView(R.layout.menu_layout_gif);
 
         final View menuView = findViewById(R.id.menu_layout);
-        Button recBut = (Button) findViewById(R.id.button);
-        Button settingBut = (Button) findViewById(R.id.button2);
-        Button themeBut = (Button) findViewById(R.id.button3);
+        Button recBut = (Button) findViewById(R.id.stop);
+        Button settingBut = (Button) findViewById(R.id.pauseButton);
+        Button themeBut = (Button) findViewById(R.id.playButton);
 
         themeBut.setOnClickListener(new View.OnClickListener() {
             @Override

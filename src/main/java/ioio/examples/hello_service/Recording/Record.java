@@ -62,19 +62,22 @@ public class Record {
     }
 
     public void cancel() {
+        Log.e("Record: ", "cancel");
         for (PlayingGuitarBuffer pgb : buffer) {
             pgb.readFromBuffer();
             pgb.deleteFile();
         }
+        countDownTimer.cancelRec();
     }
 
-    public void saveFile(String fileName) {
+    public File saveFile(String fileName) {
+        AudioFormat outPutAudioFormat = null;
         try {
             List<ArrayList<Short>> tempSamples = new ArrayList<ArrayList<Short>>();
             int maxSize = 0;
             short[] shortArray = new short[1];
             for (int i = 0; i < CordManager.NUM_OF_MEITARS; i++) {
-                shortArray = Cord.readSampleInShort(new FileInputStream(buffer[i].getOutPutFile()));
+                shortArray = Cord.readSampleInShort(new FileInputStream(buffer[i].getOutPutFile()), false);
                 ArrayList<Short> shorts = new ArrayList<Short>();
                 for (short value : shortArray) {
                     shorts.add(value);
@@ -96,15 +99,17 @@ public class Record {
             Log.e("outputArray size: ", "" + output.length);
             byte[] outputArray = WavFileFormat.shortArrayToBytesArray(output, 1);
             String path = activity.getFilesDir().getPath();
-            AudioFormat outPutAudioFormat = new WavFileFormat(fileName, path, shortArray);
+            outPutAudioFormat = new WavFileFormat(fileName, path, shortArray);
             outPutAudioFormat.writeDataToFile(outputArray);
             outPutAudioFormat.reWriteHeaders();
             Log.e("outputArray size: ", "" + outputArray.length);
+            cancel();
 //            out.write(outputArray);
 //            out.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        return outPutAudioFormat != null ? outPutAudioFormat.getFile() : null;
     }
 
     public static short[] getColumn(List<ArrayList<Short>> array, int index){
@@ -135,26 +140,11 @@ public class Record {
         return (short)(newSample * 32768.0f);
     }
 
-    private File createNewFile(String fileName) {
-        File outputFile = null;
-        try {
-            String filePath = activity.getFilesDir().getPath();
-            outputFile = new File(filePath + "/" + fileName + buffer[0].getOutPutFileType());
-            if (outputFile.exists() && !outputFile.isDirectory()) {
-                outputFile.delete();
-            }
-            outputFile.createNewFile();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return outputFile;
-    }
-
     private static class RecOptions {
         private long duration = DEFAULT_DURATION; // duration of the record in millis.
         private int numOfLoops = DEFAULT_NUM_OF_LOOPS;
 
-        public static final long DEFAULT_DURATION = 5 * 1000;
+        public static final long DEFAULT_DURATION = 60 * 60 * 1000;
         public static final int DEFAULT_NUM_OF_LOOPS = 1;
 
         public RecOptions() {
@@ -188,6 +178,7 @@ public class Record {
             countDownTimer = new customCountDownTimer(duration * SEC_TO_MILLIS,
                     new RecOptions(duration * SEC_TO_MILLIS, numOfLoops));
             countDownTimer.start();
+            Log.e("onStart: ", "setRecording");
             countDownTimer.setRecording(true);
             return true;
         }
