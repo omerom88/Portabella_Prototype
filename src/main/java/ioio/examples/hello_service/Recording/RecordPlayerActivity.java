@@ -7,7 +7,6 @@ import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.SeekBar;
 import android.widget.TextView;
 
 import java.io.File;
@@ -27,7 +26,6 @@ public class RecordPlayerActivity extends Activity {
     private double startTime = 0;
     private double finalTime = 0;
     private Handler myHandler = new Handler();
-    private SeekBar seekbar;
     private TextView tx1,tx2,tx3;
     private boolean mediaPlayerInit = false;
 
@@ -67,8 +65,6 @@ public class RecordPlayerActivity extends Activity {
         }
 
 
-        seekbar = (SeekBar)findViewById(R.id.seekBar);
-        seekbar.setClickable(false);
         stopButton.setEnabled(false);
         pauseButton.setEnabled(false);
 
@@ -81,7 +77,6 @@ public class RecordPlayerActivity extends Activity {
 
                     finalTime = mediaPlayer.getDuration();
                     startTime = mediaPlayer.getCurrentPosition();
-                    seekbar.setMax((int) finalTime);
 
                     tx2.setText(String.format("%d min, %d sec",
                             TimeUnit.MILLISECONDS.toMinutes((long) finalTime),
@@ -95,7 +90,6 @@ public class RecordPlayerActivity extends Activity {
                                     TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes((long) startTime)))
                     );
 
-                    seekbar.setProgress((int) startTime);
                     myHandler.postDelayed(UpdateSongTime, 100);
                     stopButton.setEnabled(true);
                     pauseButton.setEnabled(true);
@@ -126,7 +120,6 @@ public class RecordPlayerActivity extends Activity {
                     playButton.setEnabled(true);
                     mediaPlayer.pause();
                     mediaPlayer.seekTo(0);
-                    seekbar.setProgress(0);
                 }
             }
         });
@@ -143,7 +136,6 @@ public class RecordPlayerActivity extends Activity {
                                 TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.
                                         toMinutes((long) startTime)))
                 );
-                seekbar.setProgress((int) startTime);
                 myHandler.postDelayed(this, 100);
             }
         }

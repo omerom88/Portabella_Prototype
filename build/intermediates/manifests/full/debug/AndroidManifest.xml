@@ -50,6 +50,12 @@
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
         </activity>
         <activity
+            android:name="ioio.examples.hello_service.settingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
             android:name="ioio.examples.hello_service.MetronomActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape"

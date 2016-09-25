@@ -49,7 +49,7 @@ public class ChooseTheme extends Activity {
 
     }
 
-    static public void changeTheme(int drawable, int[] notes) {
+    private void changeTheme(int drawable, int[] notes) {
         GuitarActivity.baseGuitarLayout.setBackground(getResources().getDrawable(drawable));
         CordManager.setNewCords(notes);
     }

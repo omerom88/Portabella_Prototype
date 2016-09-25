@@ -68,6 +68,10 @@
         "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable/guitarscreenblues.png"
     },
     {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable/playrecclean.png",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable/playrecclean.png"
+    },
+    {
         "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
         "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable/common_google_signin_btn_text_light.xml"
     },
@@ -126,6 +130,10 @@
     {
         "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable/screenloadingup00005.png",
         "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable/screenloadingup00005.png"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable/playrec.png",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable/playrec.png"
     },
     {
         "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable/buttonmenu00001.png",

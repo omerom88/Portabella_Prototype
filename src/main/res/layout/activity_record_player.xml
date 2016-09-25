@@ -1,75 +1,80 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/themeLayout"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Recording.RecordPlayerActivity">
+    android:background="@drawable/playrecclean"
+    android:orientation="horizontal">
 
-    <TextView android:text="@string/music_player"
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:textSize="35sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/stop"
-        android:id="@+id/stopButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/seekBar" />
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pauseButton"
-        android:id="@+id/pauseButton"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/stopButton" />
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:rotation="-90"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/playButton"
-        android:id="@+id/playButton"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/pauseButton" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_weight="0.5"
+                android:rotation="-90"/>
+        </LinearLayout>
 
-    <SeekBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/seekBar"
-        android:layout_above="@+id/stopButton"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_toLeftOf="@+id/textView3" />
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="210dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="189dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/playButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/round_button" />
+
+            <Button
+                android:id="@+id/stopButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/round_button" />
+
+            <Button
+                android:id="@+id/pauseButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/round_button" />
+        </LinearLayout>
+
+    </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
-        android:id="@+id/textView1"
-        android:layout_above="@+id/seekBar"
-        android:layout_toLeftOf="@+id/textView"
-        android:layout_toStartOf="@+id/textView" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
-        android:id="@+id/textView2"
-        android:layout_above="@+id/seekBar"
-        android:layout_toRightOf="@+id/textView" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
         android:id="@+id/textView3"
-        android:layout_above="@+id/stopButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="52dp" />
+        android:layout_width="48dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="194dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginLeft="18dp"
+        android:rotation="-90"/>
 
-</RelativeLayout>
+
+</LinearLayout>
