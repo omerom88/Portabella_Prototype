@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -36,28 +35,7 @@ public class MenuActivityGif extends Activity {
             }
         });
 
-//<<<<<<< HEAD
-//        metroBut.setOnTouchListener(new View.OnTouchListener() {
-//            @Override
-//            public boolean onTouch(View v, MotionEvent event) {
-//                switch (event.getActionMasked()) {
-//                    case MotionEvent.ACTION_DOWN: {
-//                        menuView.setBackground(getResources().getDrawable(R.drawable.menuscreenrecording01));
-//                        try {
-//                            Thread.sleep(1);
-//                        } catch (InterruptedException e) {
-//                            e.printStackTrace();
-//                        }
-//                    }
-//                    case MotionEvent.ACTION_UP:{
-//                        Intent intent = new Intent(MenuActivityGif.this, MetronomActivity.class);
-//                        int res = 2;
-//                        startActivityForResult(intent,res);
-//                        finish();
-//                    }
-//                }
-//                return true;
-//=======
+
         metroBut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

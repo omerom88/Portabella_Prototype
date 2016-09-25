@@ -2,8 +2,6 @@ package ioio.examples.hello_service.GuitarActivity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -51,7 +49,7 @@ public class ChooseTheme extends Activity {
 
     }
 
-    private void changeTheme(int drawable, int[] notes) {
+    static public void changeTheme(int drawable, int[] notes) {
         GuitarActivity.baseGuitarLayout.setBackground(getResources().getDrawable(drawable));
         CordManager.setNewCords(notes);
     }

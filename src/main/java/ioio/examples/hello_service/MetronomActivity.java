@@ -12,10 +12,11 @@ import android.widget.Button;
 
 public class MetronomActivity extends Activity {
 
-    private double bpm = 0;
-    private int beats = 0;
+    public static double bpm = 0;
+    public static int beats = 0;
     private boolean bpmPressed = false;
     private boolean beatsPressed = false;
+    private boolean playPressed = false;
     Metronome metronome;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MetronomActivity extends Activity {
         Button beats_4 = (Button)findViewById(R.id.beats1);
         Button beats_8 = (Button)findViewById(R.id.beats2);
         Button stop = (Button)findViewById(R.id.stop);
+        Button play = (Button)findViewById(R.id.play);
 
         metronome = new Metronome();
 
@@ -36,9 +38,6 @@ public class MetronomActivity extends Activity {
             public void onClick(View v) {
                 bpmPressed = true;
                 bpm = 70;
-                if (bpmPressed && beatsPressed) {
-                    playPublic(bpm,beats);
-                }
             }
         });
 
@@ -47,9 +46,6 @@ public class MetronomActivity extends Activity {
             public void onClick(View v) {
                 bpmPressed = true;
                 bpm = 90;
-                if (bpmPressed && beatsPressed) {
-                    playPublic(bpm,beats);
-                }
             }
         });
 
@@ -58,9 +54,6 @@ public class MetronomActivity extends Activity {
             public void onClick(View v) {
                 bpmPressed = true;
                 bpm = 120;
-                if (bpmPressed && beatsPressed) {
-                    playPublic(bpm,beats);
-                }
             }
         });
 
@@ -69,9 +62,6 @@ public class MetronomActivity extends Activity {
             public void onClick(View v) {
                 beatsPressed = true;
                 beats = 4;
-                if (bpmPressed && beatsPressed) {
-                    playPublic(bpm,beats);
-                }
             }
         });
 
@@ -80,21 +70,29 @@ public class MetronomActivity extends Activity {
             public void onClick(View v) {
                 beatsPressed = true;
                 beats = 8;
-                if (bpmPressed && beatsPressed) {
-                    playPublic(bpm,beats);
-                }
             }
         });
 
         stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (bpmPressed && beatsPressed) {
+                if (playPressed) {
+                    playPressed = false;
                     bpmPressed = false;
                     beatsPressed = false;
                     metronome.stop();
                 }
 
+            }
+        });
+
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (bpmPressed && beatsPressed) {
+                    playPressed = true;
+                    playPublic(bpm,beats);
+                }
             }
         });
 
