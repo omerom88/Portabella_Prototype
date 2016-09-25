@@ -77,21 +77,24 @@ public class settingActivity extends Activity {
         roll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ChooseTheme.changeTheme(R.drawable.guitarscreenroll, GuitarActivity.ROCK_NOTES);
+                GuitarActivity.initNotes = GuitarActivity.ROCK_NOTES;
+//                ChooseTheme.changeTheme(R.drawable.guitarscreenroll, GuitarActivity.ROCK_NOTES);
             }
         });
 
         blues.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ChooseTheme.changeTheme(R.drawable.guitarscreenblues, GuitarActivity.BLUES_NOTES);
+                GuitarActivity.initNotes = GuitarActivity.BLUES_NOTES;
+//                ChooseTheme.changeTheme(R.drawable.guitarscreenblues, GuitarActivity.BLUES_NOTES);
             }
         });
 
-        calm.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ChooseTheme.changeTheme(R.drawable.guitarscreenbase, GuitarActivity.REG_NOTES);
+                calm.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                GuitarActivity.initNotes = GuitarActivity.REG_NOTES;
+//                ChooseTheme.changeTheme(R.drawable.guitarscreenbase, GuitarActivity.REG_NOTES);
             }
         });
 

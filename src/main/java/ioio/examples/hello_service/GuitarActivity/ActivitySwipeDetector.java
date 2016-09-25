@@ -317,4 +317,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
         return (meitar.getRight() + meitar.getLeft()) / 2;
     }
 
+    public void clear() {
+        multiPointerTouch.clear();
+    }
 }

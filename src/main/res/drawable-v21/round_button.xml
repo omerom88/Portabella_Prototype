@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ripple xmlns:android="http://schemas.android.com/apk/res/android"
-    android:color="#00FFFFFF">
-    <item>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
         <shape android:shape="oval">
             <solid android:color="#00FFFFFF"/>
         </shape>
     </item>
-</ripple>
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="#00FFFFFF"/>
+        </shape>
+    </item>
+</selector>
