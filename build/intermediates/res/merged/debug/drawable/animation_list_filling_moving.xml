@@ -25,12 +25,15 @@
     <item
         android:duration="62"
         android:drawable="@drawable/screenloadingloop00005"/>
+
     <item
         android:duration="62"
         android:drawable="@drawable/screenloadingloop00006"/>
+
     <item
         android:duration="62"
         android:drawable="@drawable/screenloadingloop00007"/>
+
     <item
         android:duration="62"
         android:drawable="@drawable/screenloadingloop00000"/>

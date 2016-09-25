@@ -20,7 +20,7 @@ public class MenuActivityGif extends Activity {
         setContentView(R.layout.menu_layout_gif);
 
         final View menuView = findViewById(R.id.menu_layout);
-        Button recBut = (Button)findViewById(R.id.button);
+        Button metroBut = (Button)findViewById(R.id.button);
         Button settingBut = (Button)findViewById(R.id.button2);
         Button themeBut = (Button)findViewById(R.id.button3);
 
@@ -50,7 +50,7 @@ public class MenuActivityGif extends Activity {
 
         });
 
-        recBut.setOnTouchListener(new View.OnTouchListener() {
+        metroBut.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getActionMasked()) {
@@ -63,7 +63,10 @@ public class MenuActivityGif extends Activity {
                         }
                     }
                     case MotionEvent.ACTION_UP:{
-
+                        Intent intent = new Intent(MenuActivityGif.this, MetronomActivity.class);
+                        int res = 2;
+                        startActivityForResult(intent,res);
+                        finish();
                     }
                 }
                 return true;

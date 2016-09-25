@@ -53,6 +53,12 @@ public class ChooseTheme extends Activity {
                     }
                     case MotionEvent.ACTION_UP: {
                         GuitarActivity.baseGuitarLayout.setBackground(getResources().getDrawable(R.drawable.guitarscreenblues));
+                        GuitarActivity.NOTES[0] = R.raw.elowstringblues;
+                        GuitarActivity.NOTES[1] = R.raw.astringblues;
+                        GuitarActivity.NOTES[2] = R.raw.dstringblues;
+                        GuitarActivity.NOTES[3] = R.raw.gstringblues;
+                        GuitarActivity.NOTES[4] = R.raw.bstringblues;
+                        GuitarActivity.NOTES[5] = R.raw.ehighstringblues;
                         finish();
                     }
                 }
