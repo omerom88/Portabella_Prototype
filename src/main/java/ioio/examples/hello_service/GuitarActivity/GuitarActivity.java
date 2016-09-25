@@ -8,12 +8,14 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
 import android.graphics.Point;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.InputType;
 import android.util.Log;
 import android.view.Display;
@@ -24,6 +26,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 import ioio.examples.hello_service.AnimationClass;
 import ioio.examples.hello_service.HelloIOIOService2;
@@ -55,7 +59,12 @@ public class GuitarActivity extends Activity {
             R.raw.gstring, R.raw.bstring, R.raw.estringhi};
     public static final int[] BLUES_NOTES = {R.raw.elowstringblues, R.raw.astringblues, R.raw.dstringblues,
             R.raw.gstringblues, R.raw.bstringblues, R.raw.ehighstringblues};
-    public static int[] initNotes = REG_NOTES;
+    public static final List<int[]> ALL_NOTES = new ArrayList<int[]>(){{
+        add(REG_NOTES);
+        add(BLUES_NOTES);
+        add(ROCK_NOTES);
+    }};
+
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -78,7 +87,8 @@ public class GuitarActivity extends Activity {
             layouts[i] = (LinearLayout) findViewById(NOTES_LAYOUTS[i]);
         }
         //////////////// the gesture  /////////////////
-        CordManager.init(this, getApplicationContext(), initNotes);
+        SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        CordManager.init(this, getApplicationContext(), ALL_NOTES.get(SP.getInt(getString(R.string.GuitarActivity_initNotes), 0)));
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
@@ -170,7 +180,6 @@ public class GuitarActivity extends Activity {
 
     public void openSaveFileDialog() {
         CordManager.pauseAllTasks();
-        Log.e("Screen Orientation: ", "" + getResources().getConfiguration().orientation);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("How would you like to name your new recording?");
 
@@ -197,17 +206,7 @@ public class GuitarActivity extends Activity {
             }
         });
 
-//        builder.show();
-
-
-        Dialog dialog = builder.setView(new View(this)).create();
-        // (That new View is just there to have something inside the dialog that can grow big enough to cover the whole screen.)
-
-//        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.requestWindowFeature(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-//        Window window = dialog.getWindow();
-//        window.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        dialog.show();
+        builder.show();
     }
 
     private void openPlaySongDialog(final String recordName) {

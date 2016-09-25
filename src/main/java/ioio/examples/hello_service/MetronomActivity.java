@@ -1,7 +1,10 @@
 package ioio.examples.hello_service;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -14,8 +17,6 @@ public class MetronomActivity extends Activity {
 
     public static double bpm = 0;
     public static int beats = 0;
-    private boolean bpmPressed = false;
-    private boolean beatsPressed = false;
     private boolean playPressed = false;
     Metronome metronome;
     @Override
@@ -33,10 +34,15 @@ public class MetronomActivity extends Activity {
 
         metronome = new Metronome();
 
+        SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+
+        bpm = SP.getInt(getString(R.string.MetronomActivity_bpm), 0);
+        beats = SP.getInt(getString(R.string.MetronomActivity_beats), 0);
+        Log.e("bpm: ", "" + bpm);
+        Log.e("beats", "" + beats);
         bmp_70.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpmPressed = true;
                 bpm = 70;
             }
         });
@@ -44,7 +50,6 @@ public class MetronomActivity extends Activity {
         bmp_90.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpmPressed = true;
                 bpm = 90;
             }
         });
@@ -52,7 +57,6 @@ public class MetronomActivity extends Activity {
         bmp_120.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bpmPressed = true;
                 bpm = 120;
             }
         });
@@ -60,7 +64,6 @@ public class MetronomActivity extends Activity {
         beats_4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                beatsPressed = true;
                 beats = 4;
             }
         });
@@ -68,7 +71,6 @@ public class MetronomActivity extends Activity {
         beats_8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                beatsPressed = true;
                 beats = 8;
             }
         });
@@ -78,8 +80,6 @@ public class MetronomActivity extends Activity {
             public void onClick(View v) {
                 if (playPressed) {
                     playPressed = false;
-                    bpmPressed = false;
-                    beatsPressed = false;
                     metronome.stop();
                 }
 
@@ -89,7 +89,7 @@ public class MetronomActivity extends Activity {
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (bpmPressed && beatsPressed) {
+                if (bpm != 0 && beats != 0) {
                     playPressed = true;
                     playPublic(bpm,beats);
                 }
@@ -116,5 +116,13 @@ public class MetronomActivity extends Activity {
     protected void onDestroy() {
         setResult(2);
         super.onDestroy();
+    }
+
+    @Override
+    public void onBackPressed() {
+        // When the user hits the back button set the resultCode
+        // to Activity.RESULT_CANCELED to indicate a failure
+        metronome.stop();
+        super.onBackPressed();
     }
 }

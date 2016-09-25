@@ -9,4 +9,7 @@
     <string name="stop">stop</string>
     <string name="playButton"><![CDATA[<]]></string>
     <string name="pauseButton">||</string>
+    <string name="MetronomActivity.bpm">MetronomActivity.bpm</string>
+    <string name="MetronomActivity.beats">MetronomActivity.beats</string>
+    <string name="GuitarActivity.initNotes">GuitarActivity.initNotes</string>
 </resources>

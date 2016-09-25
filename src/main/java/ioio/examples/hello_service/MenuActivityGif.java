@@ -7,7 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import ioio.examples.hello_service.GuitarActivity.chooseTheme;
+import ioio.examples.hello_service.GuitarActivity.ChooseTheme;
 
 /**
  * Created by omerrom on 17/09/16.
@@ -27,7 +27,7 @@ public class MenuActivityGif extends Activity {
             @Override
             public void onClick(View v) {
                 menuView.setBackground(getResources().getDrawable(R.drawable.menuscreencolor03));
-                Intent intent = new Intent(MenuActivityGif.this, chooseTheme.class);
+                Intent intent = new Intent(MenuActivityGif.this, ChooseTheme.class);
                 Log.e("setOnTouchListener: ", "ACTION_UP");
                 int res = 2;
                 startActivityForResult(intent, res);
@@ -52,6 +52,10 @@ public class MenuActivityGif extends Activity {
             @Override
             public void onClick(View v) {
                 menuView.setBackground(getResources().getDrawable(R.drawable.menuscreensettings02));
+                Intent intent = new Intent(MenuActivityGif.this, SettingActivity.class);
+                int res = 2;
+                startActivityForResult(intent,res);
+                finish();
                 Log.e("setOnClickListener: ", "settingBut");
             }
         });
