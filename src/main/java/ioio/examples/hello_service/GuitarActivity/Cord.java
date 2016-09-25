@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.util.Arrays;
 
 /**
  * Created by omerrom on 12/07/16.
@@ -23,18 +24,20 @@ public class Cord implements Runnable {
     protected short[] sample, revSample;
     private AudioTrack audioTrack;
     private Equalizer equalizer;
-    final static int DEFAULT_RATE = 44100;
+    public final static int DEFAULT_RATE = 44100;
     private static final int MILI_CONVERTOR = 1000;
     public static final int MAX_FREQ = 400 * MILI_CONVERTOR;
     private static final double PERCENTAGE_PART_ONE = 1;
-    private static final double PERCENTAGE_PART_TWO = 0;
     private int bufferAddPerIteration = 0;
-    private int partOne;//, partTwo;
+    private int partOne, numOfIterations = CordManager.NUM_OF_ITERATIONS;
     private short minEQLevel, maxEQLevel, bandNumMaxFreq;
+    private boolean init;
 
+    private static Context context;
     private static final float[] RATE_ARRAY = new float[13];
     private static final int PRESSURE_CONST = 4000;
     private static final float MIN_PRESSURE = 0.001f;
+    private static final int HEADER_SIZE = 44;
 
     static {
         for (int i = 0; i < RATE_ARRAY.length; i++) {
@@ -43,7 +46,9 @@ public class Cord implements Runnable {
         }
     }
 
+
     public Cord(int index, Context context, int wav, int numOfIterations) {
+        Cord.context = context;
         this.task = new Task();
         this.index = index;
         this.partOne = (int)((double)numOfIterations * PERCENTAGE_PART_ONE);
@@ -52,28 +57,8 @@ public class Cord implements Runnable {
         this.audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, DEFAULT_RATE,
                 AudioFormat.CHANNEL_OUT_STEREO, AudioFormat.ENCODING_PCM_16BIT, minBufferSize,
                 AudioTrack.MODE_STREAM);
-        InputStream in1 = context.getResources().openRawResource(wav);
-        byte[] array = new byte[0];
-        try {
-            array = convertStreamToByteArray(in1);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        sample = new short[array.length / 2];
-        ByteBuffer.wrap(array).order(ByteOrder.LITTLE_ENDIAN).asShortBuffer().get(sample);
-        revSample = new short[sample.length];
-        System.arraycopy(sample, 0, revSample, 0, sample.length);
-        for (int i = 0 ; i < sample.length; i++) {
-            revSample[i] = sample[sample.length - i - 1];
-        }
-        this.bufferAddPerIteration = sample.length / numOfIterations;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
-            this.equalizer = new Equalizer(0, audioTrack.getAudioSessionId());
-            this.equalizer.setEnabled(true);
-            this.minEQLevel = equalizer.getBandLevelRange()[0];
-            this.maxEQLevel = equalizer.getBandLevelRange()[1];
-            this.bandNumMaxFreq = (short) Math.max((int) equalizer.getBand(MAX_FREQ), 0);
-        }
+        setCord(wav);
+//        task.setAndStart(0, 0, 0);
     }
 
     public float calcVolume(float currVolume, float pressure, boolean withIOIO) {
@@ -122,16 +107,23 @@ public class Cord implements Runnable {
 
     public void stopTrack() {
         if (audioTrack.getPlayState() == AudioTrack.PLAYSTATE_PLAYING) {
-            audioTrack.stop();
+//            audioTrack.stop();
+            setVolume(0);
         }
     }
 
-    public void playIteration(int currIndex, int curSarig, float currVolume) {
-        audioTrack.setPlaybackRate(Cord.calcPitch(GuitarActivity.retSrigim[curSarig] + 1));
+    private void playIteration(int currIndex, int curSarig, float currVolume) {
+        int playbackRate = Cord.calcPitch(GuitarActivity.retSrigim[curSarig] + 1);
+        audioTrack.setPlaybackRate(playbackRate);
 //       check the 10* ___, its something with the equlizer.
-        audioTrack.setStereoVolume(10*currVolume, 10*currVolume);
+        audioTrack.setStereoVolume(currVolume, currVolume);
 //                setVolume(audioTrack, currVolume);
         play(currIndex);
+        if (CordManager.isRecording()) {
+//            Log.e("currIndex: ", "" + currIndex);
+//            Log.e("currIndex + bufferAdd: ", "" + currIndex + bufferAddPerIteration);
+            new RecordCord(sample, currIndex, currIndex + bufferAddPerIteration, playbackRate, currVolume).run();
+        }
     }
 
     public int getBufferAddPerIteration() {
@@ -139,12 +131,10 @@ public class Cord implements Runnable {
     }
 
     private void play(int start) {
-        audioTrack.play();
         int writeSize =  audioTrack.write(sample, start, bufferAddPerIteration);
     }
 
     private void play(short[] music, int start, int end) {
-        audioTrack.play();
         int writeSize =  audioTrack.write(music, start, end);
     }
 
@@ -173,20 +163,83 @@ public class Cord implements Runnable {
         task.setAndStart(pressure, velocityX, yPos);
     }
 
+    private static byte[] removeHeaders(byte[] array) {
+        byte[] tempBytes = array.clone();
+        array = new byte[tempBytes.length - HEADER_SIZE];
+        System.arraycopy(tempBytes, HEADER_SIZE, array, 0, tempBytes.length - HEADER_SIZE);
+        return array;
+    }
+
+    public void setCord(int wav) {
+        InputStream in = context.getResources().openRawResource(wav);
+        sample = readSampleInShort(in, true);
+        revSample = new short[sample.length];
+        System.arraycopy(sample, 0, revSample, 0, sample.length);
+        for (int i = 0 ; i < sample.length; i++) {
+            revSample[i] = sample[sample.length - i - 1];
+        }
+        this.bufferAddPerIteration = sample.length / numOfIterations;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
+            this.equalizer = new Equalizer(0, audioTrack.getAudioSessionId());
+            this.equalizer.setEnabled(true);
+            this.minEQLevel = equalizer.getBandLevelRange()[0];
+            this.maxEQLevel = equalizer.getBandLevelRange()[1];
+            this.bandNumMaxFreq = (short) Math.max((int) equalizer.getBand(MAX_FREQ), 0);
+        }
+        init = true;
+    }
+
+    public static short[] readSampleInShort(InputStream in, boolean removeHeaders) {
+        byte[] array = new byte[0];
+        try {
+            array = convertStreamToByteArray(in);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        if(removeHeaders) {
+            removeHeaders(array);
+        }
+        short[] shortSample = new short[array.length / 2];
+        ByteBuffer.wrap(array).order(ByteOrder.LITTLE_ENDIAN).asShortBuffer().get(shortSample);
+        return shortSample;
+    }
+
     @Override
     public void run() {
         task.start();
+    }
+
+    public short[] getSample() {
+        return sample;
+    }
+
+    public void cancelTask() {
+        try {
+            task.cancelTask();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void restartTask() {
+        task.restartThread();
+    }
+
+    public boolean isInit() {
+        return init;
     }
 
     public class Task extends Thread {
         private float pressure = 0f;
         private float velocityX;
         private float yPos;
-        private volatile boolean running = true;
-        private volatile boolean new_task = false;
+        private volatile boolean running;
+        private volatile boolean playing;
+        private volatile boolean new_task;
         private float startVolume;
         private int eqFreq;
         public int counter = 0;
+        private long lastTimeRunMillis;
 
         private static final float MIN_VELOCITY = 0;
         private static final int VELOCITY_NORMALIZE_CONSTANT = 10000;
@@ -198,21 +251,48 @@ public class Cord implements Runnable {
 
         public Task() {
             running = true;
+            playing = true;
+            new_task = true;
         }
 
         @Override
         public void run() {
-            while(true) {
+            while(running) {
+                audioTrack.play();
                 synchronized(this) {
-                    while(!running) {
+                    while(!playing) {
                         try {
+                            if(CordManager.isRecording()) {
+//                                if (!new_task) {
+                                    long nowTime = System.currentTimeMillis();
+                                    short[] emptySound;
+                                    try {
+                                        emptySound = new short[calcShortsPerTime((int) (nowTime - lastTimeRunMillis))];
+                                    } catch (NegativeArraySizeException e) {
+                                        synchronized (this) {
+                                            e.printStackTrace();
+                                            Log.e("run(): ", "" + (int) (nowTime - lastTimeRunMillis));
+                                            Log.e("nowTime(): ", "" + nowTime);
+                                            Log.e("lastTimeRunMillis(): ", "" + lastTimeRunMillis);
+                                            Log.e("index(): ", "" + index);
+                                            Log.e("isRecording(): ", "" + CordManager.isRecording());
+                                            lastTimeRunMillis = nowTime;
+                                            break;
+                                        }
+                                    }
+                                    new RecordCord(emptySound, 0, emptySound.length, DEFAULT_RATE, 0).run();
+//                                } else {
+//                                    new_task = false;
+//                                }
+                            }
+//                            lastTimeRunMillis = System.currentTimeMillis();
                             wait(500);
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
                     }
                 }
-                if (running) {
+                if (playing) {
                     new_task = false;
                     stopTrack();
                     int currIndex = 0;
@@ -221,26 +301,34 @@ public class Cord implements Runnable {
                         float currVolume = startVolume;
 //                        Log.e("getStartVolume: ", "" + currVolume);
                         for (int i = 0; i < getPartOne(); i++) {
-                            if (!running || new_task) {
+                            if (!playing || new_task) {
+                                lastTimeRunMillis = System.currentTimeMillis();
                                 break;
                             }
 
-                            playIteration(currIndex, index, currVolume);
+                            playIteration(currIndex, index, currVolume * 10);
                             currIndex += getBufferAddPerIteration();
                             currVolume = calcVolume(currVolume, GuitarActivity.retMeitar[index], true);
                             float presh = GuitarActivity.retMeitar[index];
 
 //                            Log.e("presh_before:        ", presh + "");
                             if (!BridgPressure(presh, index)) {
+                                lastTimeRunMillis = System.currentTimeMillis();
                                 break;
                             }
 
                         }
                     }
                     if (!new_task) {
-                        running = false;
+                        playing = false;
                     }
+                    lastTimeRunMillis = System.currentTimeMillis();
                 }
+            }
+            try {
+                wait(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
 
@@ -298,14 +386,14 @@ public class Cord implements Runnable {
             }
         }
 
-        private void setVolume(AudioTrack audioTrack, float volume) {
-            audioTrack.setStereoVolume(volume, volume);
-        }
-
         public void pauseTask() throws InterruptedException {
             stopTrack();
+            this.playing = false;
+        }
+
+        public void cancelTask() throws InterruptedException {
+            pauseTask();
             this.running = false;
-            this.new_task = false;
         }
 
         /**
@@ -319,17 +407,45 @@ public class Cord implements Runnable {
             return (int) (2 * Cord.MAX_FREQ * Math.abs((CordManager.getHeight() / 2) - currY) / CordManager.getHeight());
         }
 
-        public boolean isRunning() {
-            return running;
+        synchronized void resumeThread() {
+            playing = true;
+            lastTimeRunMillis = System.currentTimeMillis();
+            notify();
         }
 
-        synchronized void resumeThread() {
+        private void restartThread() {
             running = true;
             notify();
         }
 
-        public void setRunning(boolean running) {
-            this.running = running;
+        private int calcShortsPerTime(int timeInMillis) {
+            return CordManager.calcShortsPerTime(index, timeInMillis, sample);
+        }
+    }
+
+    private void setVolume(float volume) {
+        audioTrack.setStereoVolume(volume, volume);
+    }
+
+    private class RecordCord implements Runnable {
+        short[] audioSample;
+        int start;
+        int end;
+        int playbackRate;
+        float currVolume;
+
+        public RecordCord(short[] audioSample, int start, int end, int playbackRate, float currVolume) {
+            this.audioSample = audioSample;
+            this.start = start;
+            this.end = end;
+            this.playbackRate = playbackRate;
+            this.currVolume = currVolume;
+        }
+
+        @Override
+        public void run() {
+                CordManager.writeToBuffer(index, Arrays.copyOfRange(audioSample, start, end), playbackRate, currVolume);
+                CordManager.writeToFile(index);
         }
     }
 }

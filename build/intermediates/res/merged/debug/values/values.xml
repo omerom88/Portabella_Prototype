@@ -64,6 +64,10 @@
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="guitar_activity">GuitarActivity</string>
     <string name="hello">Hello World!</string>
+    <string name="music_player">Music Player</string>
+    <string name="pauseButton">||</string>
+    <string name="playButton">&lt;</string>
     <string name="playButtonText">Play Some Guitar!!!</string>
+    <string name="stop">stop</string>
     <string name="string_description"/>
 </resources>

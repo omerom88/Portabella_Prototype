@@ -5,4 +5,8 @@
     <string name="guitar_activity">GuitarActivity</string>
     <string name="playButtonText">Play Some Guitar!!!</string>
     <string name="string_description" />
+    <string name="music_player">Music Player</string>
+    <string name="stop">stop</string>
+    <string name="playButton"><![CDATA[<]]></string>
+    <string name="pauseButton">||</string>
 </resources>

@@ -1,8 +1,10 @@
 package ioio.examples.hello_service.GuitarActivity;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Resources;
@@ -11,37 +13,46 @@ import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.InputType;
 import android.util.Log;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import java.io.File;
 
 import ioio.examples.hello_service.HelloIOIOService2;
 import ioio.examples.hello_service.MenuActivityGif;
 import ioio.examples.hello_service.R;
+import ioio.examples.hello_service.Recording.RecordPlayerActivity;
 
 /**
  * Created by Tomer on 21/08/2016.
  */
 public class GuitarActivity extends Activity {
 
-    private static final int[] BUTTONS = {R.id.E_LOW, R.id.A, R.id.D, R.id.G, R.id.B, R.id.E_HIGH};
-    private static CordManager cordManager;
-    private IntentFilter mIntentFilter;
-    private String LOG_TAG = null;
-    public static final String mBroadcastStringAction = "com.truiton.broadcast.string";
     public static float[] retMeitar = {0f,0f,0f,0f,0f,0f};
     public static int[] retSrigim = {-1,-1,-1,-1,-1,-1};
-    public static float retVelBridge = 0f;
-    public static int clickCounter = 0;
-    static public boolean animationFleg = false;
-    static public LinearLayout baseGuitarLayout;
-    public static AnimationDrawable animationDrawableRec;
-    public static AnimationDrawable animationDrawableMenu;
+    public static LinearLayout baseGuitarLayout;
+    public static File recordOutput;
 
-    public static int[] NOTES = {R.raw.estringlow,R.raw.astring,R.raw.dstring,R.raw.gstring,R.raw.bstring,R.raw.estringhi};
+    private IntentFilter mIntentFilter;
+    private String LOG_TAG = null;
+    private static String fileName;
+    private static final String mBroadcastStringAction = "com.truiton.broadcast.string";
+    private static AnimationClass animationDrawableStartRec;
+    private static AnimationClass animationDrawableMenu;
+
+    public static final int[] NOTES_LAYOUTS = {R.id.E_LOW, R.id.A, R.id.D, R.id.G, R.id.B, R.id.E_HIGH};
+    public static final int[] ROCK_NOTES = {R.raw.e_string_low, R.raw.a_string, R.raw.d_string,
+            R.raw.gstring, R.raw.b_string, R.raw.e_string_hi};
+    public static final int[] REG_NOTES = {R.raw.estringlow, R.raw.astring, R.raw.dstring,
+            R.raw.gstring, R.raw.bstring, R.raw.estringhi};
+    public static final int[] BLUES_NOTES = {R.raw.elowstringblues, R.raw.astringblues, R.raw.dstringblues,
+            R.raw.gstringblues, R.raw.bstringblues, R.raw.ehighstringblues};
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -56,16 +67,15 @@ public class GuitarActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.guitar_layout);
-
         baseGuitarLayout = (LinearLayout) findViewById(R.id.guitarLayout);
 
         LOG_TAG = this.getClass().getSimpleName();
         LinearLayout[] layouts = new LinearLayout[CordManager.NUM_OF_MEITARS];
             for (int i = 0; i < layouts.length; i++) {
-            layouts[i] = (LinearLayout) findViewById(BUTTONS[i]);
+            layouts[i] = (LinearLayout) findViewById(NOTES_LAYOUTS[i]);
         }
         //////////////// the gesture  /////////////////
-        CordManager.init(getApplicationContext(), NOTES);
+        CordManager.init(this, getApplicationContext(), REG_NOTES);
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
@@ -82,21 +92,32 @@ public class GuitarActivity extends Activity {
 
         // rec button animation
         final ImageView mImageViewRecording = (ImageView) findViewById(R.id.imageview_animated_recording);
-        animationDrawableRec = (AnimationDrawable)mImageViewRecording.getBackground();
+        animationDrawableStartRec = new AnimationClass((AnimationDrawable)mImageViewRecording.getBackground());
         mImageViewRecording.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getActionMasked()) {
                     case MotionEvent.ACTION_DOWN: {
-                        animationDrawableRec.start();
-//                        checkIfAnimationDone(animationDrawableRec);
-                        return true;
+                        Log.e("START ACTION_DOWN", "!!");
+                        if (!CordManager.isRecording()) {
+                            animationDrawableStartRec.start();
+                            animationDrawableStartRec.checkIfAnimationDone();
+                            return true;
+                        }
                     }
                     case MotionEvent.ACTION_UP: {
-//                        if (animationFleg) {
-//                            animationFleg = false;
-                            Log.e("START RECORDING", "!!");
-//                        }
+                        if (!CordManager.isRecording()) {
+                            if (animationDrawableStartRec.isAnimationFlag()) {
+                                animationDrawableStartRec.setAnimationFlag(false);
+                                CordManager.startRecording();
+                            } else {
+                                animationDrawableStartRec.restartAnimation();
+                            }
+                        } else {
+                            animationDrawableStartRec.restartAnimation();
+                            CordManager.stopRecording();
+                            openSaveFileDialog();
+                        }
                         //TODO: when leave button
                     }
                     return false;
@@ -108,31 +129,33 @@ public class GuitarActivity extends Activity {
 
         // menu button animation
         final ImageView mImageViewMenu = (ImageView) findViewById(R.id.imageview_animated_menu);
-        animationDrawableMenu = (AnimationDrawable)mImageViewMenu.getBackground();
+        animationDrawableMenu = new AnimationClass((AnimationDrawable)mImageViewMenu.getBackground());
         mImageViewMenu.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getActionMasked()) {
                     case MotionEvent.ACTION_DOWN: {
+                        Log.e("START ACTION_DOWN", "!!");
                         animationDrawableMenu.start();
-//                        checkIfAnimationDone(animationDrawableMenu);
+                        animationDrawableMenu.checkIfAnimationDone();
                         return true;
                     }
                     case MotionEvent.ACTION_UP: {
-//                        if (animationFleg) {
-//                            animationFleg = false;
+                        Log.e("START ACTION_UP", "!!");
+                        if (animationDrawableMenu.isAnimationFlag()) {
+                            Log.e("START isAnimationFlag", "!!");
+                            animationDrawableMenu.setAnimationFlag(false);
                             Intent intent = new Intent(GuitarActivity.this, MenuActivityGif.class);
                             int res = 2;
                             startActivityForResult(intent, res);
-//                        }
-                        return true;
+                        }
+                        animationDrawableMenu.restartAnimation();
                     }
+                    return false;
                 }
                 return false;
             }
         });
-
-
 
         //////// start ioio activity //////////
         mIntentFilter = new IntentFilter();
@@ -141,20 +164,132 @@ public class GuitarActivity extends Activity {
         startService(intent);
     }
 
-    private void checkIfAnimationDone(AnimationDrawable anim){
-        final AnimationDrawable a = anim;
-        int timeBetweenChecks = 300;
-        Handler h = new Handler();
-        h.postDelayed(new Runnable() {
-            public void run() {
-                if (a.getCurrent() != a.getFrame(a.getNumberOfFrames() - 1)) {
-                    checkIfAnimationDone(a);
-                } else {
-                    animationFleg = true;
+    private class AnimationClass extends AnimationDrawable {
+        private boolean animationFlag = false;
+        private boolean animationRunning = false;
+        private AnimationDrawable animation;
+
+        public AnimationClass(AnimationDrawable animation) {
+            this.animation = animation;
+        }
+
+        public boolean isAnimationFlag() {
+            return animationFlag;
+        }
+
+        public void setAnimationFlag(boolean animationFlag) {
+            this.animationFlag = animationFlag;
+        }
+
+        public AnimationDrawable getAnimation() {
+            return animation;
+        }
+
+        public void setAnimation(AnimationDrawable animation) {
+            this.animation = animation;
+        }
+
+        public boolean isAnimationRunning() {
+            return animationRunning;
+        }
+
+        public void setAnimationRunning(boolean animationRunning) {
+            this.animationRunning = animationRunning;
+        }
+
+        @Override
+        public void start() {
+            animation.start();
+            animationRunning = true;
+        }
+
+        @Override
+        public void stop() {
+            animation.stop();
+            animationRunning = false;
+        }
+
+        @Override
+        public boolean selectDrawable(int idx) {
+            return animation.selectDrawable(idx);
+        }
+
+        public void checkIfAnimationDone(){
+            int timeBetweenChecks = 300;
+            Handler h = new Handler();
+            h.postDelayed(new Runnable() {
+                public void run() {
+                    if (animation.getCurrent() != animation.getFrame(animation.getNumberOfFrames() - 1)) {
+                        Log.e("checkIfAnimationDone", "not done");
+                        if (isAnimationRunning()) {
+                            checkIfAnimationDone();
+                        }
+                    } else {
+                        Log.e("checkIfAnimationDone", "done");
+                        animationFlag = true;
+                    }
                 }
-            }
-        }, timeBetweenChecks);
+            }, timeBetweenChecks);
+        }
+
+        public void restartAnimation() {
+            animation.selectDrawable(0);
+            animation.stop();
+        }
     }
+
+    public void openSaveFileDialog() {
+        CordManager.pauseAllTasks();
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("How would you like to name your new recording?");
+
+        // Set up the input
+        final EditText input = new EditText(this);
+        // Specify the type of input expected; this, for example, sets the input as a password, and will mask the text
+        input.setInputType(InputType.TYPE_CLASS_TEXT);
+        builder.setView(input);
+
+        // Set up the buttons
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                fileName = input.getText().toString();
+                recordOutput = CordManager.saveFile(fileName);
+                openPlaySongDialog(fileName);
+            }
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                CordManager.cancelRecord();
+                dialog.cancel();
+            }
+        });
+
+        builder.show();
+    }
+
+    private void openPlaySongDialog(final String recordName) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Do you want to play it now?");
+        // Set up the buttons
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent = new Intent(GuitarActivity.this, RecordPlayerActivity.class);
+                intent.putExtra("recordName", recordName);
+                startActivity(intent);
+            }
+        });
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        builder.show();
+    }
+
 
     private void finishRec(){
         //open the box that said what to do with it - save listen or share
@@ -174,10 +309,10 @@ public class GuitarActivity extends Activity {
                     String strB = "Velbridge" + Integer.toString(i);
                     retMeitar[i] = intent.getFloatExtra(strM, 0);
                     retSrigim[i] = intent.getIntExtra(strS, -1);
-                    retVelBridge = intent.getFloatExtra(strB, 0);
+                    float retVelBridge = intent.getFloatExtra(strB, 0);
 //                    Log.e("____retVel____", Float.toString(retVelBridge));
                     if (retVelBridge != 0f & lastSarig[i] != retSrigim[i]){
-                        CordManager.restartTask(i, 1, retVelBridge*10000, retSrigim[i]);
+                        CordManager.restartTask(i, 1, retVelBridge *10000, retSrigim[i]);
                     }
                     lastSarig[i] = retSrigim[i];
                 }
@@ -187,22 +322,24 @@ public class GuitarActivity extends Activity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(resultCode==2){
-        }
+        super.onActivityResult(requestCode, resultCode, data);
+        Log.d("onActivityResult: ", "" + requestCode);
     }
 
     @Override
     public void onResume() {
         super.onResume();
         registerReceiver(mReceiver, mIntentFilter);
-        animationDrawableMenu.setVisible(false, true);
-        animationDrawableRec.setVisible(false,true);
+        animationDrawableMenu.selectDrawable(0);
+        animationDrawableStartRec.selectDrawable(0);
+//        animationDrawableMenu.setVisible(false, false);
+//        animationDrawableStartRec.setVisible(false, false);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        CordManager.cancelAllTasks();
+        CordManager.pauseAllTasks();
         unregisterReceiver(mReceiver);
         Log.d("", "The onPause() event");
     }

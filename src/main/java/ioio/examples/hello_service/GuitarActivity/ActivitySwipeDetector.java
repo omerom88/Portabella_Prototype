@@ -1,6 +1,7 @@
 package ioio.examples.hello_service.GuitarActivity;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
@@ -22,8 +23,8 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     // the one side of the layout to the second one (left to right or right to left).
     private static LinearLayout[] mietarsLayouts = new LinearLayout[CordManager.NUM_OF_MEITARS];
     private SortedSet<MultiPointerTouch> multiPointerTouch;
-    float downXmenu, downYmenu, upXmenu, upYmenu;
-    private Context context;
+//    float downXmenu, downYmenu, upXmenu, upYmenu;
+//    private Context context;
 
     /**
      * This inner class represent a Pointer on the screen. each pointer has a unique id and contains
@@ -33,7 +34,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
         private int id;
         private LinkedList<PointerTouch> pointerList;
         private VelocityTracker velocityTracker = null;
-        private boolean isStrumming = false;
+//        private boolean isStrumming = false;
 
         public MultiPointerTouch(int id) {
             this.id = id;
@@ -71,14 +72,10 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                 pointerList.addLast(new PointerTouch(layout, velocityTracker.getXVelocity(), pressure, y));
             } else {
                 if (pointerList.getLast().getLayoutId() != layout) {
-                    velocityTracker.computeCurrentVelocity(500);
+                    velocityTracker.computeCurrentVelocity(100);
                     pointerList.addLast(new PointerTouch(layout, velocityTracker.getXVelocity(), pressure, y));
-                    long startTime = System.currentTimeMillis();
+//                    long startTime = System.currentTimeMillis();
                     run();
-//                    Log.e("time for onRightSwipe: ", "" + (System.currentTimeMillis() - startTime));
-                    if (!isStrumming) {
-                        isStrumming = true;
-                    }
                 }
             }
         }
@@ -113,7 +110,6 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                 }
                 this.removeStrumming();
             }
-            this.isStrumming = false;
         }
 
         /**
@@ -167,7 +163,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
      */
     public ActivitySwipeDetector(LinearLayout[] mietarsLayouts, Context context){
         ActivitySwipeDetector.mietarsLayouts = mietarsLayouts;
-        this.context = context;
+//        this.context = context;
         this.multiPointerTouch = new TreeSet<MultiPointerTouch>();
     }
 
@@ -194,11 +190,11 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
      */
     private static void playMeitar(int index, float pressure, float velocity, float y) {
         try {
+            CordManager.restartTask(index, pressure, velocity, y);
             TimeUnit.MILLISECONDS.sleep(10);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        CordManager.restartTask(index, pressure, velocity, y);
     }
 
     /**

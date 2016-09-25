@@ -9,21 +9,21 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/stop"
         android:layout_weight="0.34"
         android:background="#00ffffff" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button2"
+        android:id="@+id/pauseButton"
         android:layout_weight="0.34"
         android:background="#00ffffff" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button3"
+        android:id="@+id/playButton"
         android:layout_weight="0.33"
         android:background="#00ffffff" />
 
