@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import ioio.examples.hello_service.GuitarActivity.ChooseTheme;
 import ioio.examples.hello_service.GuitarActivity.GuitarActivity;
 
 /**
@@ -78,7 +77,7 @@ public class settingActivity extends Activity {
             @Override
             public void onClick(View v) {
                 GuitarActivity.initNotes = GuitarActivity.ROCK_NOTES;
-//                ChooseTheme.changeTheme(R.drawable.guitarscreenroll, GuitarActivity.ROCK_NOTES);
+
             }
         });
 
@@ -86,15 +85,14 @@ public class settingActivity extends Activity {
             @Override
             public void onClick(View v) {
                 GuitarActivity.initNotes = GuitarActivity.BLUES_NOTES;
-//                ChooseTheme.changeTheme(R.drawable.guitarscreenblues, GuitarActivity.BLUES_NOTES);
             }
         });
 
-                calm.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
+
+        calm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 GuitarActivity.initNotes = GuitarActivity.REG_NOTES;
-//                ChooseTheme.changeTheme(R.drawable.guitarscreenbase, GuitarActivity.REG_NOTES);
             }
         });
 
