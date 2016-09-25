@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import ioio.examples.hello_service.GuitarActivity.GuitarActivity;
+
 /**
  * Created by omerrom on 25/09/16.
  */
@@ -74,21 +76,23 @@ public class settingActivity extends Activity {
         roll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                ChooseTheme.changeTheme(R.drawable.guitarscreenroll, GuitarActivity.ROCK_NOTES);
+                GuitarActivity.initNotes = GuitarActivity.ROCK_NOTES;
+
             }
         });
 
         blues.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                ChooseTheme.changeTheme(R.drawable.guitarscreenblues, GuitarActivity.BLUES_NOTES);
+                GuitarActivity.initNotes = GuitarActivity.BLUES_NOTES;
             }
         });
+
 
         calm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                ChooseTheme.changeTheme(R.drawable.guitarscreenbase, GuitarActivity.REG_NOTES);
+                GuitarActivity.initNotes = GuitarActivity.REG_NOTES;
             }
         });
 

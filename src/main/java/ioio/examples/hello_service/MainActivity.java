@@ -13,10 +13,9 @@ import ioio.examples.hello_service.Recording.RecordPlayerActivity;
 
 public class MainActivity extends Activity {
 
-    private static final int[] BUTTONS = {R.id.E_LOW, R.id.A, R.id.D, R.id.G, R.id.B, R.id.E_HIGH};
+    private static final int LOADING_REQUEST_CODE = 123456789;
     public static final String mBroadcastStringAction = "com.truiton.broadcast.string";
     SlidingMenu s;
-    int loadingMoveCounter = 0;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -34,8 +33,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
-//        Intent intent = new Intent(MainActivity.this, GuitarActivity.class);
-        startActivity(intent);
+        startActivityForResult(intent, LOADING_REQUEST_CODE);
 //        final ImageView mImageViewMoving = (ImageView) findViewById(R.id.imageview_animated_moving);
 //        mImageViewMoving.setVisibility(View.INVISIBLE);
 //        final ImageView mImageViewOpening = (ImageView) findViewById(R.id.imageview_animated_opening);
@@ -87,6 +85,12 @@ public class MainActivity extends Activity {
 
 
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        Intent intent = new Intent(MainActivity.this, GuitarActivity.class);
+        startActivity(intent);
+    }
 
     public void playGuitar(View view) {
         Intent intent = new Intent(this, GuitarActivity.class);

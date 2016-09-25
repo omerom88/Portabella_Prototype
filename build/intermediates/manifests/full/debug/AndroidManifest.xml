@@ -44,7 +44,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="ioio.examples.hello_service.GuitarActivity.ChooseTheme"
+            android:name="ioio.examples.hello_service.GuitarActivity.chooseTheme"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >

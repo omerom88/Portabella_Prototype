@@ -10,7 +10,7 @@ import ioio.examples.hello_service.R;
 /**
  * Created by omerrom on 18/09/16.
  */
-public class ChooseTheme extends Activity {
+public class chooseTheme extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -98,7 +98,7 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:18:5-65
 	android:name
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:18:15-62
-activity#ioio.examples.hello_service.GuitarActivity.ChooseTheme
+activity#ioio.examples.hello_service.GuitarActivity.chooseTheme
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:22:3-25:14
 	android:screenOrientation
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:24:4-41

@@ -76,7 +76,7 @@ public class Record {
             List<ArrayList<Short>> tempSamples = new ArrayList<ArrayList<Short>>();
             int maxSize = 0;
             short[] shortArray = new short[1];
-            for (int i = 0; i < CordManager.NUM_OF_MEITARS; i++) {
+            for (int i = 0; i < 6; i++) {
                 shortArray = Cord.readSampleInShort(new FileInputStream(buffer[i].getOutPutFile()), false);
                 ArrayList<Short> shorts = new ArrayList<Short>();
                 for (short value : shortArray) {

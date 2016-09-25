@@ -21,15 +21,14 @@ import java.util.Arrays;
 public class Cord implements Runnable {
     private Task task;
     private int index;
-    protected short[] sample, revSample;
+    protected short[] sample;
     private AudioTrack audioTrack;
     private Equalizer equalizer;
     public final static int DEFAULT_RATE = 44100;
     private static final int MILI_CONVERTOR = 1000;
     public static final int MAX_FREQ = 400 * MILI_CONVERTOR;
-    private static final double PERCENTAGE_PART_ONE = 1;
     private int bufferAddPerIteration = 0;
-    private int partOne, numOfIterations = CordManager.NUM_OF_ITERATIONS;
+    private int numOfIterations = CordManager.NUM_OF_ITERATIONS;
     private short minEQLevel, maxEQLevel, bandNumMaxFreq;
     private boolean init;
 
@@ -51,7 +50,7 @@ public class Cord implements Runnable {
         Cord.context = context;
         this.task = new Task();
         this.index = index;
-        this.partOne = (int)((double)numOfIterations * PERCENTAGE_PART_ONE);
+        this.numOfIterations = (int)((double)numOfIterations);
         int minBufferSize = AudioTrack.getMinBufferSize(DEFAULT_RATE,
                 AudioFormat.CHANNEL_OUT_STEREO, AudioFormat.ENCODING_PCM_16BIT);
         this.audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC, DEFAULT_RATE,
@@ -101,10 +100,6 @@ public class Cord implements Runnable {
         return Math.min(2 * percentage, 1);
     }
 
-    public int getPartOne() {
-        return partOne;
-    }
-
     public void stopTrack() {
         if (audioTrack.getPlayState() == AudioTrack.PLAYSTATE_PLAYING) {
 //            audioTrack.stop();
@@ -140,7 +135,7 @@ public class Cord implements Runnable {
 
     private static byte[] convertStreamToByteArray(InputStream is) throws IOException {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        final int BUFFER_SIZE = 4096;
+        final int BUFFER_SIZE = 8192;
         byte[] buff = new byte[BUFFER_SIZE];
         int i;
         while ((i = is.read(buff, 0, buff.length)) > 0) {
@@ -173,11 +168,6 @@ public class Cord implements Runnable {
     public void setCord(int wav) {
         InputStream in = context.getResources().openRawResource(wav);
         sample = readSampleInShort(in, true);
-        revSample = new short[sample.length];
-        System.arraycopy(sample, 0, revSample, 0, sample.length);
-        for (int i = 0 ; i < sample.length; i++) {
-            revSample[i] = sample[sample.length - i - 1];
-        }
         this.bufferAddPerIteration = sample.length / numOfIterations;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
             this.equalizer = new Equalizer(0, audioTrack.getAudioSessionId());
@@ -267,6 +257,8 @@ public class Cord implements Runnable {
                                     long nowTime = System.currentTimeMillis();
                                     short[] emptySound;
                                     try {
+                                        Log.e("run(): ", "" + (int) (nowTime - lastTimeRunMillis));
+                                        Log.e("calcShortsPerTime", "" + calcShortsPerTime((int) (nowTime - lastTimeRunMillis)));
                                         emptySound = new short[calcShortsPerTime((int) (nowTime - lastTimeRunMillis))];
                                     } catch (NegativeArraySizeException e) {
                                         synchronized (this) {
@@ -300,7 +292,7 @@ public class Cord implements Runnable {
                         initEqualizer(eqFreq);
                         float currVolume = startVolume;
 //                        Log.e("getStartVolume: ", "" + currVolume);
-                        for (int i = 0; i < getPartOne(); i++) {
+                        for (int i = 0; i < numOfIterations; i++) {
                             if (!playing || new_task) {
                                 lastTimeRunMillis = System.currentTimeMillis();
                                 break;

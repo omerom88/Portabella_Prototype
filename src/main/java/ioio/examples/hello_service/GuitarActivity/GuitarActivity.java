@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
 import android.graphics.Point;
 import android.graphics.drawable.AnimationDrawable;
@@ -24,6 +25,7 @@ import android.widget.LinearLayout;
 
 import java.io.File;
 
+import ioio.examples.hello_service.AnimationClass;
 import ioio.examples.hello_service.HelloIOIOService2;
 import ioio.examples.hello_service.MenuActivityGif;
 import ioio.examples.hello_service.R;
@@ -53,6 +55,7 @@ public class GuitarActivity extends Activity {
             R.raw.gstring, R.raw.bstring, R.raw.estringhi};
     public static final int[] BLUES_NOTES = {R.raw.elowstringblues, R.raw.astringblues, R.raw.dstringblues,
             R.raw.gstringblues, R.raw.bstringblues, R.raw.ehighstringblues};
+    public static int[] initNotes = REG_NOTES;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -75,7 +78,7 @@ public class GuitarActivity extends Activity {
             layouts[i] = (LinearLayout) findViewById(NOTES_LAYOUTS[i]);
         }
         //////////////// the gesture  /////////////////
-        CordManager.init(this, getApplicationContext(), REG_NOTES);
+        CordManager.init(this, getApplicationContext(), initNotes);
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
@@ -86,7 +89,7 @@ public class GuitarActivity extends Activity {
         }
         /////////////// string layouts  ///////////////
 
-        ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(layouts, this);
+        final ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(layouts, this);
         baseGuitarLayout.setOnTouchListener(activitySwipeDetector);
 
 
@@ -116,6 +119,7 @@ public class GuitarActivity extends Activity {
                         } else {
                             animationDrawableStartRec.restartAnimation();
                             CordManager.stopRecording();
+                            activitySwipeDetector.clear();
                             openSaveFileDialog();
                         }
                         //TODO: when leave button
@@ -164,82 +168,9 @@ public class GuitarActivity extends Activity {
         startService(intent);
     }
 
-    private class AnimationClass extends AnimationDrawable {
-        private boolean animationFlag = false;
-        private boolean animationRunning = false;
-        private AnimationDrawable animation;
-
-        public AnimationClass(AnimationDrawable animation) {
-            this.animation = animation;
-        }
-
-        public boolean isAnimationFlag() {
-            return animationFlag;
-        }
-
-        public void setAnimationFlag(boolean animationFlag) {
-            this.animationFlag = animationFlag;
-        }
-
-        public AnimationDrawable getAnimation() {
-            return animation;
-        }
-
-        public void setAnimation(AnimationDrawable animation) {
-            this.animation = animation;
-        }
-
-        public boolean isAnimationRunning() {
-            return animationRunning;
-        }
-
-        public void setAnimationRunning(boolean animationRunning) {
-            this.animationRunning = animationRunning;
-        }
-
-        @Override
-        public void start() {
-            animation.start();
-            animationRunning = true;
-        }
-
-        @Override
-        public void stop() {
-            animation.stop();
-            animationRunning = false;
-        }
-
-        @Override
-        public boolean selectDrawable(int idx) {
-            return animation.selectDrawable(idx);
-        }
-
-        public void checkIfAnimationDone(){
-            int timeBetweenChecks = 300;
-            Handler h = new Handler();
-            h.postDelayed(new Runnable() {
-                public void run() {
-                    if (animation.getCurrent() != animation.getFrame(animation.getNumberOfFrames() - 1)) {
-                        Log.e("checkIfAnimationDone", "not done");
-                        if (isAnimationRunning()) {
-                            checkIfAnimationDone();
-                        }
-                    } else {
-                        Log.e("checkIfAnimationDone", "done");
-                        animationFlag = true;
-                    }
-                }
-            }, timeBetweenChecks);
-        }
-
-        public void restartAnimation() {
-            animation.selectDrawable(0);
-            animation.stop();
-        }
-    }
-
     public void openSaveFileDialog() {
         CordManager.pauseAllTasks();
+        Log.e("Screen Orientation: ", "" + getResources().getConfiguration().orientation);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("How would you like to name your new recording?");
 

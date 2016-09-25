@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -19,6 +20,8 @@ public class LoadingActivity extends Activity
     public AnimationDrawable animationDrawableMove;
     public ImageView mImageViewMoving;
 
+    private static final int MOVE_LOOP_NUM = 3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +32,6 @@ public class LoadingActivity extends Activity
         final ImageView mImageViewOpening = (ImageView) findViewById(R.id.imageview_animated_opening);
         animationDrawableOpen = (AnimationDrawable)mImageViewOpening.getBackground();
         animationDrawableMove = (AnimationDrawable)mImageViewMoving.getBackground();
-
     }
 
     @Override
@@ -37,23 +39,21 @@ public class LoadingActivity extends Activity
     {
         super.onStart();
         animationDrawableOpen.start();
-        checkIfAnimationOpenDone(animationDrawableOpen, animationDrawableMove, mImageViewMoving);
+        checkIfAnimationOpenDone(animationDrawableOpen, this);
     }
 
-    private void checkIfAnimationOpenDone(AnimationDrawable anim, final AnimationDrawable animationDrawableMove, final ImageView mImageViewMoving){
+    private void checkIfAnimationOpenDone(AnimationDrawable anim, final Activity activity){
         final AnimationDrawable a = anim;
-//        final AnimationDrawable b = animationDrawableMove;
         int timeBetweenChecks = 300;
         Handler h = new Handler();
         h.postDelayed(new Runnable() {
             public void run() {
                 if (a.getCurrent() != a.getFrame(a.getNumberOfFrames() - 1)) {
-                    checkIfAnimationOpenDone(a, animationDrawableMove, mImageViewMoving);
+                    checkIfAnimationOpenDone(a, activity);
                 } else {
-//                    Toast.makeText(getApplicationContext(), "ANIMATION DONE!", Toast.LENGTH_SHORT).show();
                     mImageViewMoving.setVisibility(View.VISIBLE);
                     animationDrawableMove.start();
-                    checkIfAnimationMoveDone(animationDrawableMove);
+                    checkIfAnimationMoveDone(animationDrawableMove, MOVE_LOOP_NUM, activity);
                 }
             }
         }, timeBetweenChecks);
@@ -62,28 +62,33 @@ public class LoadingActivity extends Activity
 //        while (loadingMoveCounter)
 //    }
 
-    private void checkIfAnimationMoveDone(AnimationDrawable anim){
-
+    private void checkIfAnimationMoveDone(AnimationDrawable anim, final int loopNum, final Activity activity){
         final AnimationDrawable a = anim;
         int timeBetweenChecks = 300;
         Handler h = new Handler();
         h.postDelayed(new Runnable() {
             public void run() {
                 if (a.getCurrent() != a.getFrame(a.getNumberOfFrames() - 1)) {
-                    checkIfAnimationMoveDone(a);
+                    checkIfAnimationMoveDone(a, loopNum, activity);
                 } else {
+                    Log.d("else: ", "loopNum" );
+                    int tempLoopNum = loopNum;
+                    tempLoopNum--;
+                    if (tempLoopNum == 0) {
 //                    Toast.makeText(getApplicationContext(), "ANIMATION DONE!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(LoadingActivity.this, GuitarActivity.class);
-                    startActivity(intent);
+//                        Intent intent = new Intent(LoadingActivity.this, GuitarActivity.class);
+//                        startActivity(intent);
+                        activity.setResult(Activity.RESULT_OK);
+                        Log.d("finish: ", "finish" );
+                        activity.finish();
+                    } else {
+                        a.selectDrawable(0);
+                        a.stop();
+                        a.start();
+                        checkIfAnimationMoveDone(a, tempLoopNum, activity);
+                    }
                 }
             }
         }, timeBetweenChecks);
     }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        onStart();
-    }
-
 }

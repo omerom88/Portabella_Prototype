@@ -19,7 +19,7 @@
 			</intent-filter>
 		</activity>
 
-		<activity android:label="@string/app_name" android:name=".GuitarActivity.ChooseTheme"
+		<activity android:label="@string/app_name" android:name=".GuitarActivity.chooseTheme"
 			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
 			android:screenOrientation="landscape">
 		</activity>
