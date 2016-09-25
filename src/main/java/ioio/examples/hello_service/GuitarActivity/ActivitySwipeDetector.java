@@ -58,9 +58,9 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
          * if if LayoutId == -1, than the pointer makes a new strumming.
          * @param layout The layout that the event took place.
          * @param pressure the pressure of the pointer on the screen.
-         * @param y The y coordinate of the pointer.
+         * @param x The x coordinate of the pointer.
          */
-        public void addStrumming(int layout, float pressure, float y) {
+        public void addStrumming(int layout, float pressure, float x) {
             if (pointerList.size() == 0) {
                 if (velocityTracker == null) {
                     // Retrieve a new VelocityTracker object to watch the velocity of a motion.
@@ -69,11 +69,11 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                     // Reset the velocity tracker back to its initial state.
                     clearVelocityTracker();
                 }
-                pointerList.addLast(new PointerTouch(layout, velocityTracker.getXVelocity(), pressure, y));
+                pointerList.addLast(new PointerTouch(layout, velocityTracker.getYVelocity(), pressure, x));
             } else {
                 if (pointerList.getLast().getLayoutId() != layout) {
                     velocityTracker.computeCurrentVelocity(100);
-                    pointerList.addLast(new PointerTouch(layout, velocityTracker.getXVelocity(), pressure, y));
+                    pointerList.addLast(new PointerTouch(layout, velocityTracker.getYVelocity(), pressure, x));
 //                    long startTime = System.currentTimeMillis();
                     run();
                 }
@@ -100,12 +100,12 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                         // Down swipe.
                         int start = getMeitarBorder(firstLayoutId);
                         int end = getMeitarBorder(secondLayoutId);
-                        onDownSwipe(second.getVelocity(), second.getPressure(), second.getY(), start, end);
+                        onDownSwipe(second.getVelocity(), second.getPressure(), second.getX(), start, end);
                     } else if ((firstLayoutId + secondLayoutId) % 4 == 1 || firstLayoutId > secondLayoutId + 1) {
                         // up swipe.
                         int start = getMeitarBorder(firstLayoutId);
                         int end = getMeitarBorder(secondLayoutId);
-                        onUpSwipe(second.getVelocity(), second.getPressure(), second.getY(), start, end);
+                        onUpSwipe(second.getVelocity(), second.getPressure(), second.getX(), start, end);
                     }
                 }
                 this.removeStrumming();
@@ -170,20 +170,22 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     /**
      * Makes a strumming from bottom to top on the start to end meitar's
      */
-    private static void onUpSwipe(float velocity, float pressure, float y, int start, int end) {
+    private static void onUpSwipe(float velocity, float pressure, float x, int start, int end) {
         Log.e("onUpSwipe", "onUpSwipe");
+        Log.e("start: ", "" + start);
+        Log.e("start: ", "" + end);
         for (int i = start - 1; i >= end; i--) {
-            playMeitar(i, pressure, velocity, y);
+            playMeitar(i, pressure, velocity, x);
         }
     }
 
     /**
      * Makes a strumming from top to bottom on the start to end meitar's
      */
-    private static void onDownSwipe(float velocity, float pressure, float y, int start, int end) {
+    private static void onDownSwipe(float velocity, float pressure, float x, int start, int end) {
         Log.e("onDownSwipe", "onDownSwipe");
         for (int i = start; i < end; i++) {
-            playMeitar(i, pressure, velocity, y);
+            playMeitar(i, pressure, velocity, x);
         }
     }
 
@@ -214,7 +216,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
         switch (event.getActionMasked()) {
             case MotionEvent.ACTION_DOWN:
 //                downXmenu = event.getX();
-//                downYmenu = event.getY();
+//                downYmenu = event.getX();
             case MotionEvent.ACTION_POINTER_DOWN: {
 //                Log.e("ACTION_POINTER_DOWN", "ACTION_POINTER_DOWN");
                 multiPointerTouch.add(new MultiPointerTouch(pointerId));
@@ -252,7 +254,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
 
             case MotionEvent.ACTION_UP:
 //                upXmenu = event.getX();
-//                upYmenu = event.getY();
+//                upYmenu = event.getX();
 ////                Log.e("downX", downXmenu + "");
 ////                Log.e("downY", downYmenu + "");
 ////                Log.e("upX", upXmenu + "");

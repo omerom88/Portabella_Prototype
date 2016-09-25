@@ -8,13 +8,13 @@ public class PointerTouch {
     private int layoutId;
     private float velocity;
     private float pressure;
-    private float y;
+    private float x;
 
-    public PointerTouch(int layoutId, float velocity, float pressure, float y) {
+    public PointerTouch(int layoutId, float velocity, float pressure, float x) {
         this.layoutId = layoutId;
         this.velocity = velocity;
         this.pressure = pressure;
-        this.y = y;
+        this.x = x;
     }
 
     public float getVelocity() {
@@ -33,8 +33,8 @@ public class PointerTouch {
         this.layoutId = layoutId;
     }
 
-    public float getY() {
-        return y;
+    public float getX() {
+        return x;
     }
 
     public float getPressure() {

@@ -58,5 +58,4 @@ public class AudioGenerator {
             audioTrack.release();
         }
     }
-
 }
