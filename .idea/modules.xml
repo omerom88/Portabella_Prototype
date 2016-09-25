@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Portabelo_New.iml" filepath="$PROJECT_DIR$/Portabelo_New.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Portabelo_Git.iml" filepath="$PROJECT_DIR$/Portabelo_Git.iml" />
       <module fileurl="file://$PROJECT_DIR$/Portabelo_New312.iml" filepath="$PROJECT_DIR$/Portabelo_New312.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/SlidingMenu/library/menuLibrary.iml" filepath="$PROJECT_DIR$/libs/SlidingMenu/library/menuLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/SlidingMenu/library/menuLibrary.iml" filepath="$PROJECT_DIR$/libs/SlidingMenu/library/menuLibrary.iml" />
     </modules>
   </component>

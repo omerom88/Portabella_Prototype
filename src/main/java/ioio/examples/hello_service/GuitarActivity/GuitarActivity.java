@@ -2,6 +2,7 @@ package ioio.examples.hello_service.GuitarActivity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -13,7 +14,6 @@ import android.graphics.Point;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.text.InputType;
 import android.util.Log;
 import android.view.Display;
@@ -83,9 +83,9 @@ public class GuitarActivity extends Activity {
         Point size = new Point();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
             display.getSize(size);
-            CordManager.setHeight(size.y);
+            CordManager.setWidth(size.x);
         } else {
-            CordManager.setHeight(Resources.getSystem().getDisplayMetrics().heightPixels);
+            CordManager.setWidth(Resources.getSystem().getDisplayMetrics().widthPixels);
         }
         /////////////// string layouts  ///////////////
 
@@ -197,7 +197,17 @@ public class GuitarActivity extends Activity {
             }
         });
 
-        builder.show();
+//        builder.show();
+
+
+        Dialog dialog = builder.setView(new View(this)).create();
+        // (That new View is just there to have something inside the dialog that can grow big enough to cover the whole screen.)
+
+//        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.requestWindowFeature(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+//        Window window = dialog.getWindow();
+//        window.setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.show();
     }
 
     private void openPlaySongDialog(final String recordName) {

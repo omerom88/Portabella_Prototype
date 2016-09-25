@@ -15,7 +15,7 @@ public class CordManager {
     public static final int NUM_OF_MEITARS = 6;
     public static Cord[] cords = new Cord[NUM_OF_MEITARS];
 //    public static int[] REG_NOTES = {0,0,0,0,0,0};
-    private static float height;
+    private static float width;
     private static Record record;
     private static GuitarActivity guitarActivity;
 
@@ -32,8 +32,8 @@ public class CordManager {
         }
     }
 
-    public static float getHeight() {
-        return height;
+    public static float getWidth() {
+        return width;
     }
 
     public static void pauseAllTasks() {
@@ -44,13 +44,13 @@ public class CordManager {
         }
     }
 
-    public static void restartTask(int index, float pressure, float velocityX, float yPos) {
+    public static void restartTask(int index, float pressure, float velocityY, float xPos) {
         cords[index].pauseTask();
-        cords[index].resume(pressure, velocityX, yPos);
+        cords[index].resume(pressure, velocityY, xPos);
     }
 
-    public static void setHeight(float heightLayout) {
-        height = heightLayout;
+    public static void setWidth(float widthLayout) {
+        width = widthLayout;
     }
 
     public static void setNewCords(int[] notesArray) {

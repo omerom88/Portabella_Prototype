@@ -154,8 +154,8 @@ public class Cord implements Runnable {
         }
     }
 
-    synchronized void resume(float pressure, float velocityX, float yPos) {
-        task.setAndStart(pressure, velocityX, yPos);
+    synchronized void resume(float pressure, float velocityY, float xPos) {
+        task.setAndStart(pressure, velocityY, xPos);
     }
 
     private static byte[] removeHeaders(byte[] array) {
@@ -221,8 +221,8 @@ public class Cord implements Runnable {
 
     public class Task extends Thread {
         private float pressure = 0f;
-        private float velocityX;
-        private float yPos;
+        private float velocityY;
+        private float xPos;
         private volatile boolean running;
         private volatile boolean playing;
         private volatile boolean new_task;
@@ -354,22 +354,22 @@ public class Cord implements Runnable {
             return true;
         }
 
-        public void setAndStart(float pressure, float velocityX, float yPos) {
+        public void setAndStart(float pressure, float velocityY, float xPos) {
             this.pressure = pressure;
-            this.velocityX = velocityX;
-            this.yPos = yPos;
+            this.velocityY = velocityY;
+            this.xPos = xPos;
             this.new_task = true;
             resumeThread();
         }
 
         private boolean setProperties() {
-            float normVelocity = Math.abs(velocityX / VELOCITY_NORMALIZE_CONSTANT);
+            float normVelocity = Math.abs(velocityY / VELOCITY_NORMALIZE_CONSTANT);
             if (normVelocity > MIN_VELOCITY) {
 //                Log.e("pressure", "" + pressure);
                 float normPressure = MIN_PRESSURE + (MAX_PRESSURE - MIN_PRESSURE) * pressure;
 //                Log.e("normPressure", "" + normPressure);
                 this.startVolume = normVelocity * normPressure;
-                this.eqFreq = calcEqFreq(yPos);
+                this.eqFreq = calcEqFreq(xPos);
 //                Log.e("true in", "setProperties");
                 return true;
             } else {
@@ -389,14 +389,14 @@ public class Cord implements Runnable {
         }
 
         /**
-         * calculating the wanted equalizer freq using the distance of the Y axis event from
+         * calculating the wanted equalizer freq using the distance of the X axis event from
          * the middle of the screen (reltive distance from the middle).
-         * @param currY the Y axis of the touch event.
+         * @param currX the X axis of the touch event.
          * @return
          */
-        private int calcEqFreq(float currY) {
-//        Log.e("in", "onFling, e1.getY(): " + (int) (Cord.MAX_FREQ * Math.abs((height / 2) - currY) / height));
-            return (int) (2 * Cord.MAX_FREQ * Math.abs((CordManager.getHeight() / 2) - currY) / CordManager.getHeight());
+        private int calcEqFreq(float currX) {
+//        Log.e("in", "onFling, e1.getX(): " + (int) (Cord.MAX_FREQ * Math.abs((height / 2) - currX) / height));
+            return (int) (2 * Cord.MAX_FREQ * Math.abs((CordManager.getWidth() / 2) - currX) / CordManager.getWidth());
         }
 
         synchronized void resumeThread() {

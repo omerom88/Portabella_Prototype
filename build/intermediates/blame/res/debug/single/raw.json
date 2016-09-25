@@ -1,78 +1,78 @@
 [
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/dstringblues.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/dstringblues.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\d_string.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\d_string.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/estringlow.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/estringlow.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\e_string_low.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\e_string_low.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/gstringblues.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/gstringblues.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\g_string.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\g_string.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/ehighstringblues.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/ehighstringblues.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\elowstringblues.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\elowstringblues.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/g_string.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/g_string.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\stringstrdecayover10.gif",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\stringstrdecayover10.gif"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/gstring.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/gstring.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\dstring.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\dstring.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/d_string.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/d_string.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\e_string_hi.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\e_string_hi.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/elowstringblues.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/elowstringblues.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\bstring.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\bstring.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/astring.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/astring.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\bstringblues.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\bstringblues.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/e_string_low.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/e_string_low.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\estringlow.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\estringlow.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/stringstrdecayover10.gif",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/stringstrdecayover10.gif"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\ehighstringblues.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\ehighstringblues.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/bstringblues.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/bstringblues.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\estringhi.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\estringhi.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/estringhi.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/estringhi.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\a_string.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\a_string.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/dstring.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/dstring.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\astringblues.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\astringblues.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/e_string_hi.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/e_string_hi.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\gstring.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\gstring.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/astringblues.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/astringblues.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\b_string.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\b_string.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/bstring.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/bstring.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\astring.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\astring.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/b_string.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/b_string.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\gstringblues.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\gstringblues.wav"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/raw/a_string.wav",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/raw/a_string.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\build\\intermediates\\res\\merged\\debug\\raw\\dstringblues.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Portabelo_Git\\src\\main\\res\\raw\\dstringblues.wav"
     }
 ]

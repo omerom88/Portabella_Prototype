@@ -171,6 +171,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
      * Makes a strumming from left to right on the start to end meitar's
      */
     private static void onRightSwipe(float velocity, float pressure, float y, int start, int end) {
+        Log.e("onRightSwipe", "onRightSwipe");
         for (int i = start - 1; i >= end; i--) {
             playMeitar(i, pressure, velocity, y);
         }
@@ -180,6 +181,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
      * Makes a strumming from right to left on the start to end meitar's
      */
     private static void onLeftSwipe(float velocity, float pressure, float y, int start, int end) {
+        Log.e("onLeftSwipe", "onLeftSwipe");
         for (int i = start; i < end; i++) {
             playMeitar(i, pressure, velocity, y);
         }
@@ -188,9 +190,9 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     /**
      * plays the meitar with the given index and with the given params.
      */
-    private static void playMeitar(int index, float pressure, float velocity, float y) {
+    private static void playMeitar(int index, float pressure, float velocity, float x) {
         try {
-            CordManager.restartTask(index, pressure, velocity, y);
+            CordManager.restartTask(index, pressure, velocity, x);
             TimeUnit.MILLISECONDS.sleep(10);
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -214,23 +216,25 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
 //                downXmenu = event.getX();
 //                downYmenu = event.getY();
             case MotionEvent.ACTION_POINTER_DOWN: {
-//                Log.e("ACTION_POINTER_DOWN", "ACTION_POINTER_DOWN");
+                Log.e("ACTION_POINTER_DOWN", "ACTION_POINTER_DOWN");
                 multiPointerTouch.add(new MultiPointerTouch(pointerId));
                 MultiPointerTouch mpt = getPointer(pointerId);
                 if (mpt != null && pointerId < event.getPointerCount()) {
-                    float downX = event.getX(pointerId);
-                    mpt.addStrumming(computeLayout(downX), event.getPressure(pointerId), event.getY(pointerId));
+                    float downY = event.getY(pointerId);
+                    Log.e("computeLayout", "" + computeLayout(downY));
+                    mpt.addStrumming(computeLayout(downY), event.getPressure(pointerId), event.getY(pointerId));
                 }
                 return true;
             }
             case MotionEvent.ACTION_MOVE: {
-//                Log.e("ACTION_MOVE", "ACTION_MOVE");
+                Log.e("ACTION_MOVE", "ACTION_MOVE");
                 for (int i = 0; i < event.getPointerCount(); i++) {
                     MultiPointerTouch mpt = getPointer(i);
                     if (mpt != null) {
-                        float downX = event.getX(i);
+                        float downY = event.getY(i);
                         mpt.addMovement(event);
-                        mpt.addStrumming(computeLayout(downX), event.getPressure(i), event.getY(i));
+                        Log.e("computeLayout", "" + computeLayout(downY));
+                        mpt.addStrumming(computeLayout(downY), event.getPressure(i), event.getY(i));
                     } else {
                         multiPointerTouch.add(new MultiPointerTouch(i));
                     }
@@ -238,7 +242,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                 return true;
             }
             case MotionEvent.ACTION_POINTER_UP: {
-//                Log.e("ACTION_POINTER_UP", "ACTION_POINTER_UP");
+                Log.e("ACTION_POINTER_UP", "ACTION_POINTER_UP");
                 MultiPointerTouch mpt = getPointer(pointerId);
                 if (mpt != null) {
                     mpt.addStrumming(-1, 0, 0);
@@ -285,11 +289,13 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     /**
      * returns the proper layout (out of 12 mietarsLayouts) from the given position x.
      */
-    private static int computeLayout(float x) {
-        int meitar = getMeitarByPosition(x);
+    private static int computeLayout(float y) {
+        int meitar = getMeitarByPosition(y);
+        Log.e("meitar: ", "" + meitar);
         int tempMeitar = meitar;
         meitar *= 2;
-        if (x > getMiddleOfLayout(mietarsLayouts[tempMeitar])) {
+        Log.e("getMiddleOfLayout: ", "" + getMiddleOfLayout(mietarsLayouts[tempMeitar]));
+        if (y > getMiddleOfLayout(mietarsLayouts[tempMeitar])) {
             meitar++;
         }
         return meitar;
@@ -298,13 +304,16 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     /**
      * returns the proper meitar's number, by the given position.
      */
-    private static int getMeitarByPosition(float x) {
+    private static int getMeitarByPosition(float y) {
         for (int i = 0; i < mietarsLayouts.length; i++) {
-            if (x >= mietarsLayouts[i].getLeft() && x <= mietarsLayouts[i].getRight()) {
+            Log.e("getBottom: ", "" + mietarsLayouts[i].getBottom());
+            Log.e("getBottom: ", "" + mietarsLayouts[i].getTop());
+            Log.e("y: ", "" + y);
+            if (y >= mietarsLayouts[i].getBottom() && y <= mietarsLayouts[i].getTop()) {
                 return i;
             }
         }
-        if (x >= mietarsLayouts[mietarsLayouts.length - 1].getRight()) {
+        if (y >= mietarsLayouts[mietarsLayouts.length - 1].getTop()) {
             return mietarsLayouts.length - 1;
         } else
             return 0;
@@ -314,7 +323,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
      * returns the position of the middle of the given meitar
      */
     private static float getMiddleOfLayout(LinearLayout meitar) {
-        return (meitar.getRight() + meitar.getLeft()) / 2;
+        return (meitar.getBottom() + meitar.getTop()) / 2;
     }
 
     public void clear() {

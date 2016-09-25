@@ -11,105 +11,104 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <LinearLayout
+            android:id="@+id/topMargin"
+            android:layout_height="wrap_content"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_gravity="bottom">
-
-            <LinearLayout
-                android:id="@+id/leftMargin"
-                android:orientation="horizontal"
-                android:layout_height="fill_parent"
-                android:layout_width="wrap_content"
-                android:background="#00ffffff"
-                android:layout_weight="0.08">
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/E_LOW"
-                android:orientation="horizontal"
-                android:layout_height="fill_parent"
-                android:layout_width="wrap_content"
-                android:background="#00ffffff"
-                android:layout_weight="0.14">
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_height="fill_parent"
-                android:layout_width="wrap_content"
-                android:background="#00ffffff"
-                android:id="@+id/A"
-                android:layout_weight="0.14">
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_height="fill_parent"
-                android:layout_width="wrap_content"
-                android:background="#00ffffff"
-                android:id="@+id/D"
-                android:layout_weight="0.14">
-            </LinearLayout>
-
-
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_height="fill_parent"
-                android:layout_width="wrap_content"
-                android:background="#00ffffff"
-                android:id="@+id/G"
-                android:layout_weight="0.14">
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_height="fill_parent"
-                android:layout_width="wrap_content"
-                android:background="#00ffffff"
-                android:id="@+id/B"
-                android:layout_weight="0.14">
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_height="fill_parent"
-                android:layout_width="wrap_content"
-                android:background="#00ffffff"
-                android:id="@+id/E_HIGH"
-                android:layout_weight="0.14">
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/rightMargin"
-                android:orientation="horizontal"
-                android:layout_height="fill_parent"
-                android:layout_width="wrap_content"
-                android:background="#00ffffff"
-                android:layout_weight="0.08">
-            </LinearLayout>
-
+            android:orientation="vertical"
+            android:background="#00ffffff"
+            android:layout_weight="8">
         </LinearLayout>
-        <ImageView
-            android:id="@+id/imageview_animated_recording"
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:id="@+id/E_LOW"
+            android:orientation="vertical"
             android:layout_height="wrap_content"
-            android:background="@drawable/animation_list_filling_rec"
-            android:layout_gravity="right" />
+            android:layout_width="fill_parent"
+            android:background="#00ffffff"
+            android:layout_weight="14">
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="#00ffffff"
+            android:id="@+id/A"
+            android:layout_weight="14">
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="#00ffffff"
+            android:id="@+id/D"
+            android:layout_weight="14">
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="#00ffffff"
+            android:id="@+id/G"
+            android:layout_weight="14">
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="#00ffffff"
+            android:id="@+id/B"
+            android:layout_weight="14">
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="#00ffffff"
+            android:id="@+id/E_HIGH"
+            android:layout_weight="14">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rightMargin"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="#00ffffff"
+            android:layout_weight="8">
+        </LinearLayout>
+
+    </LinearLayout>
+        <ImageView
+        android:id="@+id/imageview_animated_recording"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/animation_list_filling_rec"
+        android:layout_gravity="bottom|right" />
 
         <ImageView
-            android:id="@+id/imageview_animated_menu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/animation_list_filling_menu"
-            android:layout_gravity="bottom|right" />
+        android:id="@+id/imageview_animated_menu"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/animation_list_filling_menu"
+        android:layout_gravity="left|bottom" />
+
 
     </FrameLayout>
 
 
 </LinearLayout>
-
 <!--<Button-->
 <!--android:layout_width="34dp"-->
 <!--android:layout_height="29dp"-->
