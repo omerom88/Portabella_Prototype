@@ -2,109 +2,116 @@
 <items version="2" >
 
     <item
-        jar="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="3627eacd7f7cafb5e8ae683992e7b2f9b7dcab1a">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.2.1_757edde14fa4b25d9720190fe1024a52e584a17b.jar" />
-    </item>
-    <item
-        jar="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/libs/internal_impl-24.1.1.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/internal_impl-24.1.1_3d31358230cf51bea774f4323f147003c5e8587a.jar" />
-    </item>
-    <item
-        jar="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidBluetooth/5.07/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="86d0c1118daa9f0f67304864c4603d1c55092461">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/com.github.ytai.ioio-IOIOLibAndroidBluetooth-5.07_4a0c57528b2d81d8f5f8ac89a6a015e399d410d9.jar" />
-    </item>
-    <item
-        jar="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.2.1_f54603fc6b8d7a36ec2b3c4a8caf46c688c76f31.jar" />
-    </item>
-    <item
-        jar="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidDevice/5.07/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="9ad262bc3131b4f369d6c13240ec9cfac6278732">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/com.github.ytai.ioio-IOIOLibAndroidDevice-5.07_7c22c43d05a200e1c4ab314aabdcef0d9485b70c.jar" />
-    </item>
-    <item
-        jar="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.1/jars/classes.jar"
-        jumboMode="false"
+        jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.2.1\jars\classes.jar"
+        jumboMode="true"
         revision="23.0.3"
         sha1="ee19e33a798d11a5cf309a40155b8223fadcdeea">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-9.2.1_1bea5e51f841743985931bf715795670f184100b.jar" />
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-9.2.1_8b147ba30df17a4564676f5645a4ee998a63d9ef\classes.dex" />
     </item>
     <item
-        jar="/Users/omerrom/.gradle/caches/modules-2/files-2.1/com.github.ytai.ioio/IOIOLibCore/5.07/34f07b578c6819579415ddbfc6c418c6008f7ef2/IOIOLibCore-5.07.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="34f07b578c6819579415ddbfc6c418c6008f7ef2">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/IOIOLibCore-5.07_e8f00394d32adbf78ecb90a0593c47e8946fac0d.jar" />
-    </item>
-    <item
-        jar="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/Portabelo_New/menuLibrary/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="8d5304f37bd6960900faa6b7226639af2719aa36">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/Portabelo_New-menuLibrary-unspecified_b96c3d8f99e9afac49addd1ada0b9f487dd9fb9f.jar" />
-    </item>
-    <item
-        jar="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/jars/classes.jar"
-        jumboMode="false"
+        jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.1\jars\classes.jar"
+        jumboMode="true"
         revision="23.0.3"
         sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.2.1_36ceba9b2a90b8306d20aa9b5bfaae64ac346cce.jar" />
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.2.1_e303c2391270d72f77d28159d461d5825dea2c9e\classes.dex" />
     </item>
     <item
-        jar="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidAccessory/5.07/jars/classes.jar"
-        jumboMode="false"
+        jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="2e70120231d632313bd764c5ac45da1d87c6acd7">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/com.github.ytai.ioio-IOIOLibAndroidAccessory-5.07_a4fe7cb54e1b45d707b4f487da69c3db9cb6ce22.jar" />
+        sha1="7ceef141ebf8b7e96ebbe44e7b2c4fd6fb17edc2">
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d4899bd78bc2673a28e0df7cdfb18372c29772fe\classes.dex" />
     </item>
     <item
-        jar="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroid/5.07/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="560f73c668e2dc95526f06d9a684fad99867f01b">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/com.github.ytai.ioio-IOIOLibAndroid-5.07_ff7328c9baa27ac05781495773a5ca3b6236af5b.jar" />
-    </item>
-    <item
-        jar="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.1/jars/classes.jar"
-        jumboMode="false"
+        jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.1\jars\classes.jar"
+        jumboMode="true"
         revision="23.0.3"
         sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.2.1_cfb8754329bb22ad0e2670ffb896a56bd0801a1a.jar" />
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.2.1_16ae971b32cdc4eb699729e0a2b0533e5cc3ba04\classes.dex" />
     </item>
     <item
-        jar="/Users/omerrom/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.0.0/3a10b25b6820e19102e118711afe6a66c0bae123/butterknife-6.0.0.jar"
-        jumboMode="false"
+        jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="3a10b25b6820e19102e118711afe6a66c0bae123">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/butterknife-6.0.0_504c707576880d782a463d7cb59ea2bf58a270ed.jar" />
+        sha1="ce37ac87e188c03fc6c479222ef8aabe4d19f514">
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_eaa1e41214033a171a58316da8f2d0ede23d3b47\classes.dex" />
     </item>
     <item
-        jar="/Users/omerrom/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.1.1/support-annotations-24.1.1.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/support-annotations-24.1.1_9b21e021b0a2dababd5ffb19730045080bb6fddf.jar" />
-    </item>
-    <item
-        jar="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.android.support/support-v4/24.1.1/jars/classes.jar"
-        jumboMode="false"
+        jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\classes.jar"
+        jumboMode="true"
         revision="23.0.3"
         sha1="6d7d803871e3203465f71a163e7af104f807b446">
-        <dex dex="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.1.1_4f4919cc904fb1b9d40dd090bb9688140b59091e.jar" />
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.1.1_aab0324f260491ac7393aadf6927d4c45f4a1678\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\exploded-aar\com.github.ytai.ioio\IOIOLibAndroid\5.07\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="560f73c668e2dc95526f06d9a684fad99867f01b">
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.ytai.ioio-IOIOLibAndroid-5.07_2c2f66e501e42ca40dc3e5ffc7a1ccd08b2e52ca\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.1.1_e39b9b5ce59efcedc0b7924b1824819def0bfb9e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\exploded-aar\com.github.ytai.ioio\IOIOLibAndroidBluetooth\5.07\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="86d0c1118daa9f0f67304864c4603d1c55092461">
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.ytai.ioio-IOIOLibAndroidBluetooth-5.07_ac38f292dc4d6496564dc036bfaac1c482c1cad1\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tomer\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\6.0.0\3a10b25b6820e19102e118711afe6a66c0bae123\butterknife-6.0.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3a10b25b6820e19102e118711afe6a66c0bae123">
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-6.0.0_ef605cb1e5260a8b27d1ded974bcff404e6e3da0\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\exploded-aar\com.github.ytai.ioio\IOIOLibAndroidAccessory\5.07\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="2e70120231d632313bd764c5ac45da1d87c6acd7">
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.ytai.ioio-IOIOLibAndroidAccessory-5.07_0edb22c43f94f28938a33cd38441ff2bb1e65d5e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tomer\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.1.1_3915f8002df7fa619b4c0b3912cee2b481a8b4d8\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3627eacd7f7cafb5e8ae683992e7b2f9b7dcab1a">
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.2.1_d999e8ac687ec3401b94992cc4784cd4b283acf5\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\exploded-aar\com.github.ytai.ioio\IOIOLibAndroidDevice\5.07\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="9ad262bc3131b4f369d6c13240ec9cfac6278732">
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.ytai.ioio-IOIOLibAndroidDevice-5.07_8380f30db09ee5fe6ccb45a7f861b5f5570b3000\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.2.1_3f38df536187cc618d0738967f923acb04209b75\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Tomer\.gradle\caches\modules-2\files-2.1\com.github.ytai.ioio\IOIOLibCore\5.07\34f07b578c6819579415ddbfc6c418c6008f7ef2\IOIOLibCore-5.07.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="34f07b578c6819579415ddbfc6c418c6008f7ef2">
+        <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\IOIOLibCore-5.07_f349b9ecb0829f76168dfedf52e6763ed8bbfc3c\classes.dex" />
     </item>
 
 </items>
