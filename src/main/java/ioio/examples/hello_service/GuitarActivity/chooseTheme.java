@@ -1,6 +1,7 @@
 package ioio.examples.hello_service.GuitarActivity;
 
 import android.app.Activity;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,7 +24,7 @@ public class ChooseTheme extends Activity {
         rollTheme.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeTheme(R.drawable.guitarscreenroll, GuitarActivity.ROCK_NOTES);
+                setTheme(R.drawable.guitarscreenroll, GuitarActivity.ROCK_NOTES, getResources());
                 setResult(Activity.RESULT_OK);
                 finish();
             }
@@ -32,7 +33,7 @@ public class ChooseTheme extends Activity {
         bluesTheme.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeTheme(R.drawable.guitarscreenblues, GuitarActivity.BLUES_NOTES);
+                setTheme(R.drawable.guitarscreenblues, GuitarActivity.BLUES_NOTES, getResources());
                 setResult(Activity.RESULT_OK);
                 finish();
             }
@@ -41,7 +42,7 @@ public class ChooseTheme extends Activity {
         calmTheme.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                changeTheme(R.drawable.guitarscreenbase, GuitarActivity.REG_NOTES);
+                setTheme(R.drawable.guitarscreenbase, GuitarActivity.REG_NOTES, getResources());
                 setResult(Activity.RESULT_OK);
                 finish();
             }
@@ -49,8 +50,8 @@ public class ChooseTheme extends Activity {
 
     }
 
-    private void changeTheme(int drawable, int[] notes) {
-        GuitarActivity.baseGuitarLayout.setBackground(getResources().getDrawable(drawable));
+    public static void setTheme(int drawable, int[] notes, Resources res) {
+        GuitarActivity.baseGuitarLayout.setBackground(res.getDrawable(drawable));
         CordManager.setNewCords(notes);
     }
 

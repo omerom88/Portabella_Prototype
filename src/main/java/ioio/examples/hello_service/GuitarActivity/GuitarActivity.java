@@ -2,14 +2,12 @@ package ioio.examples.hello_service.GuitarActivity;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
 import android.graphics.Point;
 import android.graphics.drawable.AnimationDrawable;
@@ -34,6 +32,7 @@ import ioio.examples.hello_service.HelloIOIOService2;
 import ioio.examples.hello_service.MenuActivityGif;
 import ioio.examples.hello_service.R;
 import ioio.examples.hello_service.Recording.RecordPlayerActivity;
+import ioio.examples.hello_service.SettingActivity;
 
 /**
  * Created by Tomer on 21/08/2016.
@@ -88,7 +87,9 @@ public class GuitarActivity extends Activity {
         }
         //////////////// the gesture  /////////////////
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        CordManager.init(this, getApplicationContext(), ALL_NOTES.get(SP.getInt(getString(R.string.GuitarActivity_initNotes), 0)));
+        int defTheme = SP.getInt(getString(R.string.GuitarActivity_initNotes), 0);
+        CordManager.init(this, getApplicationContext(), ALL_NOTES.get(defTheme));
+        ChooseTheme.setTheme(getBackground(defTheme), ALL_NOTES.get(defTheme), getResources());
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2) {
@@ -230,11 +231,16 @@ public class GuitarActivity extends Activity {
         builder.show();
     }
 
-
-    private void finishRec(){
-        //open the box that said what to do with it - save listen or share
-        //to see how we can rich this function in case record time is done
-        //to decide what heppend when the rec is done - default and user choice in the menu
+    public static int getBackground(int value) {
+        switch (value) {
+            case 0:
+                return R.drawable.guitarscreenbase;
+            case 1:
+                return R.drawable.guitarscreenblues;
+            case 2:
+                return R.drawable.guitarscreenroll;
+        }
+        return R.drawable.guitarscreenbase;
     }
 
     private BroadcastReceiver mReceiver = new BroadcastReceiver() {
@@ -269,6 +275,7 @@ public class GuitarActivity extends Activity {
     @Override
     public void onResume() {
         super.onResume();
+        Log.d("", "The onResume() event");
         registerReceiver(mReceiver, mIntentFilter);
         animationDrawableMenu.selectDrawable(0);
         animationDrawableStartRec.selectDrawable(0);
@@ -282,23 +289,6 @@ public class GuitarActivity extends Activity {
         CordManager.pauseAllTasks();
         unregisterReceiver(mReceiver);
         Log.d("", "The onPause() event");
-    }
-
-    /**
-     * Called when the activity is no longer visible.
-     */
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
-    /**
-     * Called just before the activity is destroyed.
-     */
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        Log.d("", "The onDestroy() event");
     }
 }
 

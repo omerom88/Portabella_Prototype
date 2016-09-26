@@ -113,7 +113,6 @@ public class SettingActivity extends Activity {
 
     }
 
-
     private void changeSettingsInt(String name, int value) {
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt(name, value);

@@ -53,7 +53,7 @@ public class AudioGenerator {
     }
 
     public void destroyAudioTrack() {
-        if (audioTrack != null) {
+        if (audioTrack != null && audioTrack.getPlayState() == AudioTrack.PLAYSTATE_PLAYING) {
             audioTrack.stop();
             audioTrack.release();
         }

@@ -14,8 +14,11 @@ import ioio.examples.hello_service.Recording.RecordPlayerActivity;
 public class MainActivity extends Activity {
 
     private static final int LOADING_REQUEST_CODE = 123456789;
+    private static final int GUITAR_REQUEST_CODE = 7436862;
     public static final String mBroadcastStringAction = "com.truiton.broadcast.string";
     SlidingMenu s;
+    public static final int RESULT_EXIT = 12345;
+    public static final int RESULT_NEXT = 54321;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -34,103 +37,23 @@ public class MainActivity extends Activity {
 
         Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
         startActivityForResult(intent, LOADING_REQUEST_CODE);
-//        final ImageView mImageViewMoving = (ImageView) findViewById(R.id.imageview_animated_moving);
-//        mImageViewMoving.setVisibility(View.INVISIBLE);
-//        final ImageView mImageViewOpening = (ImageView) findViewById(R.id.imageview_animated_opening);
-//        AnimationDrawable animationDrawableOpen = (AnimationDrawable)mImageViewOpening.getBackground();
-//        AnimationDrawable animationDrawableMove = (AnimationDrawable)mImageViewMoving.getBackground();
-//        animationDrawableOpen.start();
-//        checkIfAnimationOpenDone(animationDrawableOpen, animationDrawableMove, mImageViewMoving);
 
     }
-//    private void checkIfAnimationOpenDone(AnimationDrawable anim, final AnimationDrawable animationDrawableMove, final ImageView mImageViewMoving){
-//        final AnimationDrawable a = anim;
-////        final AnimationDrawable b = animationDrawableMove;
-//        int timeBetweenChecks = 300;
-//        Handler h = new Handler();
-//        h.postDelayed(new Runnable() {
-//            public void run() {
-//                if (a.getCurrent() != a.getFrame(a.getNumberOfFrames() - 1)) {
-//                    checkIfAnimationOpenDone(a, animationDrawableMove, mImageViewMoving);
-//                } else {
-////                    Toast.makeText(getApplicationContext(), "ANIMATION DONE!", Toast.LENGTH_SHORT).show();
-//                    mImageViewMoving.setVisibility(View.VISIBLE);
-//                    animationDrawableMove.start();
-//                    checkIfAnimationMoveDone(animationDrawableMove);
-//                }
-//            }
-//        }, timeBetweenChecks);
-//    }
-////    private void getOutOfit(){
-////        while (loadingMoveCounter)
-////    }
-//
-//    private void checkIfAnimationMoveDone(AnimationDrawable anim){
-//
-//        final AnimationDrawable a = anim;
-//        int timeBetweenChecks = 300;
-//        Handler h = new Handler();
-//        h.postDelayed(new Runnable(){
-//            public void run(){
-////                Toast.makeText(getApplicationContext(), "COUNTER: " + loadingMoveCounter, Toast.LENGTH_SHORT).show();
-//                if (a.getCurrent() != a.getFrame(a.getNumberOfFrames() - 1)){
-//                    checkIfAnimationMoveDone(a);
-//                } else{
-//                    Intent intent = new Intent(MainActivity.this, GuitarActivity.class);
-//                    startActivity(intent);
-//                }
-//            }
-//        }, timeBetweenChecks);
-//    }
-
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Intent intent = new Intent(MainActivity.this, GuitarActivity.class);
-        startActivity(intent);
-    }
+        Log.d("requestCode", "" + resultCode);
+        switch (resultCode) {
+            case RESULT_OK:
+                Log.d("", "The RESULT_NEXT");
+                Intent intent = new Intent(MainActivity.this, GuitarActivity.class);
+                startActivityForResult(intent, GUITAR_REQUEST_CODE);
+                break;
 
-    public void playGuitar(View view) {
-        Intent intent = new Intent(this, GuitarActivity.class);
-        startActivity(intent);
-    }
-
-    public void startRecActivity(View view) {
-        Intent intent = new Intent(this, RecordPlayerActivity.class);
-        startActivity(intent);
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-
-//        registerReceiver(mReceiver, mIntentFilter);
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-//        cordManager.pauseAllTasks();
-//        unregisterReceiver(mReceiver);
-        Log.d("", "The onPause() event");
-    }
-
-    /**
-     * Called when the activity is no longer visible.
-     */
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
-    /**
-     * Called just before the activity is destroyed.
-     */
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        Log.d("", "The onDestroy() event");
+            case RESULT_CANCELED:
+                Log.d("", "The RESULT_EXIT");
+                finish();
+        }
     }
 }

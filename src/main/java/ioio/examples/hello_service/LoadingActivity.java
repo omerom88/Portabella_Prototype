@@ -78,8 +78,8 @@ public class LoadingActivity extends Activity
 //                    Toast.makeText(getApplicationContext(), "ANIMATION DONE!", Toast.LENGTH_SHORT).show();
 //                        Intent intent = new Intent(LoadingActivity.this, GuitarActivity.class);
 //                        startActivity(intent);
-                        activity.setResult(Activity.RESULT_OK);
-                        Log.d("finish: ", "finish" );
+                        activity.setResult(MainActivity.RESULT_OK);
+                        Log.d("finish: ", "finish123456" );
                         activity.finish();
                     } else {
                         a.selectDrawable(0);
