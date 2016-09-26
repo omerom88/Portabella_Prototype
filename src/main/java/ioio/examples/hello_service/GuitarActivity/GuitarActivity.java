@@ -32,7 +32,6 @@ import ioio.examples.hello_service.HelloIOIOService2;
 import ioio.examples.hello_service.MenuActivityGif;
 import ioio.examples.hello_service.R;
 import ioio.examples.hello_service.Recording.RecordPlayerActivity;
-import ioio.examples.hello_service.SettingActivity;
 
 /**
  * Created by Tomer on 21/08/2016.
@@ -275,7 +274,6 @@ public class GuitarActivity extends Activity {
     @Override
     public void onResume() {
         super.onResume();
-        Log.d("", "The onResume() event");
         registerReceiver(mReceiver, mIntentFilter);
         animationDrawableMenu.selectDrawable(0);
         animationDrawableStartRec.selectDrawable(0);
@@ -288,7 +286,6 @@ public class GuitarActivity extends Activity {
         super.onPause();
         CordManager.pauseAllTasks();
         unregisterReceiver(mReceiver);
-        Log.d("", "The onPause() event");
     }
 }
 
