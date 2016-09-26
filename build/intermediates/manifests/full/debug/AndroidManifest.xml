@@ -103,7 +103,7 @@
         <activity
             android:name="ioio.examples.hello_service.Recording.RecordPlayerActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait"
+            android:screenOrientation="reverseLandscape"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
         </activity>
         <!--

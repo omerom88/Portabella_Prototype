@@ -4,12 +4,12 @@
         "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable-v21/animation_list_emptying.xml"
     },
     {
-        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable-v21/screenloadingup00001.png",
-        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable-v21/screenloadingup00001.png"
-    },
-    {
         "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable-v21/screenloadingloop00004.png",
         "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable-v21/screenloadingloop00004.png"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable-v21/screenloadingup00001.png",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable-v21/screenloadingup00001.png"
     },
     {
         "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable-v21/screenloadingup00007.png",
@@ -86,6 +86,10 @@
     {
         "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable-v21/menuscreencolor03.png",
         "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable-v21/menuscreencolor03.png"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable-v21/playrecclean.png",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable-v21/playrecclean.png"
     },
     {
         "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable-v21/screenloadingloop00003.png",

@@ -78,12 +78,12 @@ public class RecordPlayerActivity extends Activity {
                     finalTime = mediaPlayer.getDuration();
                     startTime = mediaPlayer.getCurrentPosition();
 
-                    tx2.setText(String.format("%d sec",
+                    tx2.setText(String.format("/  %d",
                             TimeUnit.MILLISECONDS.toSeconds((long) finalTime) -
                                     TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes((long) finalTime)))
                     );
 
-                    tx1.setText(String.format("%d sec",
+                    tx1.setText(String.format("%d",
                             TimeUnit.MILLISECONDS.toSeconds((long) startTime) -
                                     TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes((long) startTime)))
                     );
@@ -127,7 +127,7 @@ public class RecordPlayerActivity extends Activity {
         public void run() {
             if (mediaPlayerInit) {
                 startTime = mediaPlayer.getCurrentPosition();
-                tx1.setText(String.format("%d sec",
+                tx1.setText(String.format("%d",
                         TimeUnit.MILLISECONDS.toSeconds((long) startTime) -
                                 TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.
                                         toMinutes((long) startTime)))

@@ -195,7 +195,7 @@ ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/
 activity#ioio.examples.hello_service.Recording.RecordPlayerActivity
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:66:3-70:14
 	android:screenOrientation
-		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:68:13-49
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:68:13-57
 	android:label
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:66:13-45
 	android:theme

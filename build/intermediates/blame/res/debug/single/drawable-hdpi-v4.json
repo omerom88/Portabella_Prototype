@@ -24,6 +24,10 @@
         "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable-hdpi/screenloadingup00006.png"
     },
     {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable-hdpi-v4/playrecclean.png",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable-hdpi/playrecclean.png"
+    },
+    {
         "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_disabled.9.png",
         "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.1/res/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_disabled.9.png"
     },

@@ -100,6 +100,10 @@
         "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable-mdpi/menuscreencolor03.png"
     },
     {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable-mdpi-v4/playrecclean.png",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable-mdpi/playrecclean.png"
+    },
+    {
         "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/debug/drawable-mdpi-v4/guitarscreenblues.png",
         "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/drawable-mdpi/guitarscreenblues.png"
     },
