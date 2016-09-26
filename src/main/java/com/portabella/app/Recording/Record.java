@@ -6,16 +6,15 @@ import android.util.Log;
 import com.portabella.app.GuitarActivity.Cord;
 import com.portabella.app.GuitarActivity.CordManager;
 import com.portabella.app.GuitarActivity.GuitarActivity;
+import com.portabella.app.GuitarActivity.PlayingGuitarBuffer;
 import com.portabella.app.Recording.AudioFormat.AudioFormat;
+import com.portabella.app.Recording.AudioFormat.WavFileFormat;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.portabella.app.GuitarActivity.PlayingGuitarBuffer;
-import com.portabella.app.Recording.AudioFormat.WavFileFormat;
 
 /**
  * Created by Tomer on 02/09/2016.

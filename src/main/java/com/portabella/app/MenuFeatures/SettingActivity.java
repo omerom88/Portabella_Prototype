@@ -7,6 +7,7 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 
+import com.portabella.app.GuitarActivity.GuitarActivity;
 import com.portabella.app.R;
 
 /**
@@ -105,7 +106,8 @@ public class SettingActivity extends Activity {
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                GuitarActivity.mImageViewRecording.setVisibility(View.INVISIBLE);
+                GuitarActivity.mImageViewMenu.setVisibility(View.INVISIBLE);
             }
         });
 

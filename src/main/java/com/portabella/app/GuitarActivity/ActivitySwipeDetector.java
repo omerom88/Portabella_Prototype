@@ -23,7 +23,7 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     // the one side of the layout to the second one (top to bottom or n=bottom to top).
     private static LinearLayout[] mietarsLayouts = new LinearLayout[CordManager.NUM_OF_MEITARS];
     private SortedSet<MultiPointerTouch> multiPointerTouch;
-//    float downXmenu, downYmenu, upXmenu, upYmenu;
+    float downXmenu, downYmenu, upXmenu, upYmenu;
 //    private Context context;
 
     /**
@@ -217,8 +217,8 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
 //        CordManager.pauseUnRunningTasks();
         switch (event.getActionMasked()) {
             case MotionEvent.ACTION_DOWN:
-//                downXmenu = event.getX();
-//                downYmenu = event.getX();
+                downXmenu = event.getX();
+                downYmenu = event.getY();
             case MotionEvent.ACTION_POINTER_DOWN: {
 //                Log.e("ACTION_POINTER_DOWN", "ACTION_POINTER_DOWN");
                 multiPointerTouch.add(new MultiPointerTouch(pointerId));
@@ -255,20 +255,20 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
             }
 
             case MotionEvent.ACTION_UP:
-//                upXmenu = event.getX();
-//                upYmenu = event.getX();
-////                Log.e("downX", downXmenu + "");
-////                Log.e("downY", downYmenu + "");
-////                Log.e("upX", upXmenu + "");
-////                Log.e("upY", upYmenu + "");
-//                if (Math.abs(downXmenu - upXmenu) < 5 && (downYmenu - upYmenu) < 300 && (downYmenu - upYmenu) > 100)
-//                {
-//                    Intent intent  = new Intent(this.context, MenuActivityGif.class);
-//                    context.startActivity(intent);
-//                    return true;
-//                }
+                upXmenu = event.getX();
+                upYmenu = event.getY();
+                Log.e("downX", downXmenu + "");
+                Log.e("downY", downYmenu + "");
+                Log.e("upX", upXmenu + "");
+                Log.e("upY", upYmenu + "");
+                if (Math.abs(downXmenu - upXmenu) > 1100 && (downYmenu - upYmenu) < 20 &&
+                        GuitarActivity.mImageViewRecording.getVisibility() == View.INVISIBLE) {
+                    GuitarActivity.mImageViewRecording.setVisibility(View.VISIBLE);
+                    GuitarActivity.mImageViewMenu.setVisibility(View.VISIBLE);
+                }
+
+
             case MotionEvent.ACTION_CANCEL: {
-//                Log.e("ACTION: ", "ACTION_CANCEL \\ ACTION_UP");
                 for (MultiPointerTouch element : multiPointerTouch) {
                     element.addStrumming(-1, 0 , 0);
                 }

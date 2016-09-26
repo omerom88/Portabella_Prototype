@@ -25,7 +25,9 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.portabella.app.AnimationClass;
+import com.portabella.app.Hardware.HelloIOIOService2;
 import com.portabella.app.MenuFeatures.ChooseTheme;
+import com.portabella.app.MenuFeatures.MenuActivityGif;
 import com.portabella.app.R;
 import com.portabella.app.Recording.RecordPlayerActivity;
 
@@ -33,8 +35,12 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.portabella.app.Hardware.HelloIOIOService2;
-import com.portabella.app.MenuFeatures.MenuActivityGif;
+//import ioio.examples.hello_service.AnimationClass;
+//import ioio.examples.hello_service.HelloIOIOService2;
+//import ioio.examples.hello_service.MenuActivityGif;
+//import ioio.examples.hello_service.R;
+//import ioio.examples.hello_service.Recording.RecordPlayerActivity;
+
 
 /**
  * Created by Tomer on 21/08/2016.
@@ -45,6 +51,8 @@ public class GuitarActivity extends Activity {
     public static int[] retSrigim = {-1,-1,-1,-1,-1,-1};
     public static LinearLayout baseGuitarLayout;
     public static File recordOutput;
+    public static ImageView mImageViewRecording;
+    public static ImageView mImageViewMenu;
 
     private IntentFilter mIntentFilter;
     private String LOG_TAG = null;
@@ -52,6 +60,7 @@ public class GuitarActivity extends Activity {
     private static final String mBroadcastStringAction = "com.truiton.broadcast.string";
     private static AnimationClass animationDrawableStartRec;
     private static AnimationClass animationDrawableMenu;
+
 
     public static final int[] NOTES_LAYOUTS = {R.id.E_LOW, R.id.A, R.id.D, R.id.G, R.id.B, R.id.E_HIGH};
     public static final int[] ROCK_NOTES = {R.raw.e_string_low, R.raw.a_string, R.raw.d_string,
@@ -100,14 +109,14 @@ public class GuitarActivity extends Activity {
         } else {
             CordManager.setWidth(Resources.getSystem().getDisplayMetrics().widthPixels);
         }
-        /////////////// string layouts  ///////////////
 
+        ////////    string layouts detector   ///////////
         final ActivitySwipeDetector activitySwipeDetector = new ActivitySwipeDetector(layouts, this);
         baseGuitarLayout.setOnTouchListener(activitySwipeDetector);
 
 
-        // rec button animation
-        final ImageView mImageViewRecording = (ImageView) findViewById(R.id.imageview_animated_recording);
+        ///////      rec button     ////////////
+        mImageViewRecording = (ImageView) findViewById(R.id.imageview_animated_recording);
         animationDrawableStartRec = new AnimationClass((AnimationDrawable)mImageViewRecording.getBackground());
         mImageViewRecording.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -144,8 +153,8 @@ public class GuitarActivity extends Activity {
         });
 
 
-        // menu button animation
-        final ImageView mImageViewMenu = (ImageView) findViewById(R.id.imageview_animated_menu);
+        //////////      menu button     /////////
+        mImageViewMenu = (ImageView) findViewById(R.id.imageview_animated_menu);
         animationDrawableMenu = new AnimationClass((AnimationDrawable)mImageViewMenu.getBackground());
         mImageViewMenu.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -285,7 +294,6 @@ public class GuitarActivity extends Activity {
     @Override
     public void onResume() {
         super.onResume();
-        Log.d("", "The onResume() event");
         registerReceiver(mReceiver, mIntentFilter);
         animationDrawableMenu.selectDrawable(0);
         animationDrawableStartRec.selectDrawable(0);
@@ -298,7 +306,6 @@ public class GuitarActivity extends Activity {
         super.onPause();
         CordManager.pauseAllTasks();
         unregisterReceiver(mReceiver);
-        Log.d("", "The onPause() event");
     }
 }
 
