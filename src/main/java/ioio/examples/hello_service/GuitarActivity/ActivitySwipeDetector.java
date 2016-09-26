@@ -100,12 +100,12 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                         // Down swipe.
                         int start = getMeitarBorder(firstLayoutId);
                         int end = getMeitarBorder(secondLayoutId);
-                        onDownSwipe(second.getVelocity(), second.getPressure(), second.getX(), start, end);
+                        onUpSwipe(second.getVelocity(), second.getPressure(), second.getX(), start, end);
                     } else if ((firstLayoutId + secondLayoutId) % 4 == 1 || firstLayoutId > secondLayoutId + 1) {
                         // up swipe.
                         int start = getMeitarBorder(firstLayoutId);
                         int end = getMeitarBorder(secondLayoutId);
-                        onUpSwipe(second.getVelocity(), second.getPressure(), second.getX(), start, end);
+                        onDownSwipe(second.getVelocity(), second.getPressure(), second.getX(), start, end);
                     }
                 }
                 this.removeStrumming();
@@ -170,10 +170,10 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     /**
      * Makes a strumming from bottom to top on the start to end meitar's
      */
-    private static void onUpSwipe(float velocity, float pressure, float x, int start, int end) {
-        Log.e("onUpSwipe", "onUpSwipe");
+    private static void onDownSwipe(float velocity, float pressure, float x, int start, int end) {
+        Log.e("onDownSwipe", "onDownSwipe");
         Log.e("start: ", "" + start);
-        Log.e("start: ", "" + end);
+        Log.e("end: ", "" + end);
         for (int i = start - 1; i >= end; i--) {
             playMeitar(i, pressure, velocity, x);
         }
@@ -182,8 +182,10 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
     /**
      * Makes a strumming from top to bottom on the start to end meitar's
      */
-    private static void onDownSwipe(float velocity, float pressure, float x, int start, int end) {
-        Log.e("onDownSwipe", "onDownSwipe");
+    private static void onUpSwipe(float velocity, float pressure, float x, int start, int end) {
+        Log.e("onUpSwipe", "onUpSwipe");
+        Log.e("start: ", "" + start);
+        Log.e("end: ", "" + end);
         for (int i = start; i < end; i++) {
             playMeitar(i, pressure, velocity, x);
         }
@@ -311,9 +313,9 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
             }
         }
         if (y <= mietarsLayouts[mietarsLayouts.length - 1].getTop()) {
-            return 0;
-        } else
             return mietarsLayouts.length - 1;
+        } else
+            return 0;
     }
 
     /**
