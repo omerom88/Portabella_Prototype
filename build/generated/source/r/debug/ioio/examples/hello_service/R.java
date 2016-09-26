@@ -591,13 +591,13 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int thememenu003=0x7f020062;
     }
     public static final class id {
-        public static final int A=0x7f080052;
-        public static final int B=0x7f08004f;
-        public static final int D=0x7f080051;
-        public static final int E_HIGH=0x7f08004e;
-        public static final int E_LOW=0x7f080053;
+        public static final int A=0x7f08004f;
+        public static final int B=0x7f080052;
+        public static final int D=0x7f080050;
+        public static final int E_HIGH=0x7f080053;
+        public static final int E_LOW=0x7f08004e;
         public static final int EffeButton=0x7f08002d;
-        public static final int G=0x7f080050;
+        public static final int G=0x7f080051;
         public static final int InstrumentButton=0x7f08002c;
         public static final int adjust_height=0x7f08000e;
         public static final int adjust_width=0x7f08000f;
