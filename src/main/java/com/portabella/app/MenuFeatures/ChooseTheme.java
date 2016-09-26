@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.portabella.app.GuitarActivity.CordManager;
 import com.portabella.app.GuitarActivity.GuitarActivity;
+import com.portabella.app.R;
 
 /**
  * Created by omerrom on 18/09/16.
@@ -17,15 +18,15 @@ public class ChooseTheme extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.lib.app.R.layout.activity_theme);
-        Button rollTheme = (Button)findViewById(com.lib.app.R.id.rollBut);
-        Button bluesTheme = (Button)findViewById(com.lib.app.R.id.bluesBut);
-        Button calmTheme = (Button)findViewById(com.lib.app.R.id.calmBut);
+        setContentView(R.layout.activity_theme);
+        Button rollTheme = (Button)findViewById(R.id.rollBut);
+        Button bluesTheme = (Button)findViewById(R.id.bluesBut);
+        Button calmTheme = (Button)findViewById(R.id.calmBut);
 
         rollTheme.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTheme(com.lib.app.R.drawable.guitarscreenroll, GuitarActivity.ROCK_NOTES, getResources());
+                setTheme(R.drawable.guitarscreenroll, GuitarActivity.ROCK_NOTES, getResources());
                 setResult(Activity.RESULT_OK);
                 finish();
             }
@@ -34,7 +35,7 @@ public class ChooseTheme extends Activity {
         bluesTheme.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTheme(com.lib.app.R.drawable.guitarscreenblues, GuitarActivity.BLUES_NOTES, getResources());
+                setTheme(R.drawable.guitarscreenblues, GuitarActivity.BLUES_NOTES, getResources());
                 setResult(Activity.RESULT_OK);
                 finish();
             }
@@ -43,7 +44,7 @@ public class ChooseTheme extends Activity {
         calmTheme.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setTheme(com.lib.app.R.drawable.guitarscreenbase, GuitarActivity.REG_NOTES, getResources());
+                setTheme(R.drawable.guitarscreenbase, GuitarActivity.REG_NOTES, getResources());
                 setResult(Activity.RESULT_OK);
                 finish();
             }

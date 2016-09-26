@@ -7,6 +7,8 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 
+import com.portabella.app.R;
+
 /**
  * Created by omerrom on 25/09/16.
  */

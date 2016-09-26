@@ -8,6 +8,8 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.portabella.app.R;
+
 /**
  * Created by omerrom on 28/07/16.
  */
@@ -25,7 +27,7 @@ public class ioioActivity extends Activity {
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.lib.app.R.layout.activity_ioio_ne);
+        setContentView(R.layout.activity_ioio_ne);
         LOG_TAG = this.getClass().getSimpleName();
 
 

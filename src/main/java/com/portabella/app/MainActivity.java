@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.lib.app.R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
         Intent intent = new Intent(MainActivity.this, LoadingActivity.class);
         startActivityForResult(intent, LOADING_REQUEST_CODE);

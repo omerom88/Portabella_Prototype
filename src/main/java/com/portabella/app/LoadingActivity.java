@@ -22,11 +22,11 @@ public class LoadingActivity extends Activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.lib.app.R.layout.activity_loading);
+        setContentView(R.layout.activity_loading);
 
-        mImageViewMoving = (ImageView) findViewById(com.lib.app.R.id.imageview_animated_moving);
+        mImageViewMoving = (ImageView) findViewById(R.id.imageview_animated_moving);
         mImageViewMoving.setVisibility(View.INVISIBLE);
-        final ImageView mImageViewOpening = (ImageView) findViewById(com.lib.app.R.id.imageview_animated_opening);
+        final ImageView mImageViewOpening = (ImageView) findViewById(R.id.imageview_animated_opening);
         animationDrawableOpen = (AnimationDrawable)mImageViewOpening.getBackground();
         animationDrawableMove = (AnimationDrawable)mImageViewMoving.getBackground();
     }

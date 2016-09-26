@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.portabella.app.R;
+
 /**
  * Created by omerrom on 24/09/16.
  */
@@ -22,23 +24,23 @@ public class MetronomActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.lib.app.R.layout.activity_metronom);
+        setContentView(R.layout.activity_metronom);
 
 
-        Button bmp_70 = (Button)findViewById(com.lib.app.R.id.bpm1);
-        Button bmp_90 = (Button)findViewById(com.lib.app.R.id.bpm2);
-        Button bmp_120 = (Button)findViewById(com.lib.app.R.id.bpm3);
-        Button beats_4 = (Button)findViewById(com.lib.app.R.id.beats1);
-        Button beats_8 = (Button)findViewById(com.lib.app.R.id.beats2);
-        Button stop = (Button)findViewById(com.lib.app.R.id.stop);
-        Button play = (Button)findViewById(com.lib.app.R.id.play);
+        Button bmp_70 = (Button)findViewById(R.id.bpm1);
+        Button bmp_90 = (Button)findViewById(R.id.bpm2);
+        Button bmp_120 = (Button)findViewById(R.id.bpm3);
+        Button beats_4 = (Button)findViewById(R.id.beats1);
+        Button beats_8 = (Button)findViewById(R.id.beats2);
+        Button stop = (Button)findViewById(R.id.stop);
+        Button play = (Button)findViewById(R.id.play);
 
         metronome = new Metronome();
 
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
 
-        bpm = SP.getInt(getString(com.lib.app.R.string.MetronomActivity_bpm), 0);
-        beats = SP.getInt(getString(com.lib.app.R.string.MetronomActivity_beats), 0);
+        bpm = SP.getInt(getString(R.string.MetronomActivity_bpm), 0);
+        beats = SP.getInt(getString(R.string.MetronomActivity_beats), 0);
         Log.e("bpm: ", "" + bpm);
         Log.e("beats", "" + beats);
 

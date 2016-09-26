@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import com.portabella.app.GuitarActivity.GuitarActivity;
-import com.lib.app.R;
+import com.portabella.app.R;
 
 /**
  * Created by Tomer on 02/09/2016.

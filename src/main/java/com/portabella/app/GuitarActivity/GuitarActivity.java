@@ -25,6 +25,7 @@ import android.widget.LinearLayout;
 
 import com.portabella.app.AnimationClass;
 import com.portabella.app.MenuFeatures.ChooseTheme;
+import com.portabella.app.R;
 import com.portabella.app.Recording.RecordPlayerActivity;
 
 import java.io.File;
@@ -51,13 +52,13 @@ public class GuitarActivity extends Activity {
     private static AnimationClass animationDrawableStartRec;
     private static AnimationClass animationDrawableMenu;
 
-    public static final int[] NOTES_LAYOUTS = {com.lib.app.R.id.E_LOW, com.lib.app.R.id.A, com.lib.app.R.id.D, com.lib.app.R.id.G, com.lib.app.R.id.B, com.lib.app.R.id.E_HIGH};
-    public static final int[] ROCK_NOTES = {com.lib.app.R.raw.e_string_low, com.lib.app.R.raw.a_string, com.lib.app.R.raw.d_string,
-            com.lib.app.R.raw.gstring, com.lib.app.R.raw.b_string, com.lib.app.R.raw.e_string_hi};
-    public static final int[] REG_NOTES = {com.lib.app.R.raw.estringlow, com.lib.app.R.raw.astring, com.lib.app.R.raw.dstring,
-            com.lib.app.R.raw.gstring, com.lib.app.R.raw.bstring, com.lib.app.R.raw.estringhi};
-    public static final int[] BLUES_NOTES = {com.lib.app.R.raw.elowstringblues, com.lib.app.R.raw.astringblues, com.lib.app.R.raw.dstringblues,
-            com.lib.app.R.raw.gstringblues, com.lib.app.R.raw.bstringblues, com.lib.app.R.raw.ehighstringblues};
+    public static final int[] NOTES_LAYOUTS = {R.id.E_LOW, R.id.A, R.id.D, R.id.G, R.id.B, R.id.E_HIGH};
+    public static final int[] ROCK_NOTES = {R.raw.e_string_low, R.raw.a_string, R.raw.d_string,
+            R.raw.gstring, R.raw.b_string, R.raw.e_string_hi};
+    public static final int[] REG_NOTES = {R.raw.estringlow, R.raw.astring, R.raw.dstring,
+            R.raw.gstring, R.raw.bstring, R.raw.estringhi};
+    public static final int[] BLUES_NOTES = {R.raw.elowstringblues, R.raw.astringblues, R.raw.dstringblues,
+            R.raw.gstringblues, R.raw.bstringblues, R.raw.ehighstringblues};
     public static final List<int[]> ALL_NOTES = new ArrayList<int[]>(){{
         add(REG_NOTES);
         add(BLUES_NOTES);
@@ -77,8 +78,8 @@ public class GuitarActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.lib.app.R.layout.guitar_layout);
-        baseGuitarLayout = (LinearLayout) findViewById(com.lib.app.R.id.guitarLayout);
+        setContentView(R.layout.guitar_layout);
+        baseGuitarLayout = (LinearLayout) findViewById(R.id.guitarLayout);
 
         LOG_TAG = this.getClass().getSimpleName();
         LinearLayout[] layouts = new LinearLayout[CordManager.NUM_OF_MEITARS];
@@ -87,7 +88,7 @@ public class GuitarActivity extends Activity {
         }
         //////////////// the gesture  /////////////////
         SharedPreferences SP = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-        int defTheme = SP.getInt(getString(com.lib.app.R.string.GuitarActivity_initNotes), 0);
+        int defTheme = SP.getInt(getString(R.string.GuitarActivity_initNotes), 0);
         CordManager.init(this, getApplicationContext(), ALL_NOTES.get(defTheme));
         ChooseTheme.setTheme(getBackground(defTheme), ALL_NOTES.get(defTheme), getResources());
         Display display = getWindowManager().getDefaultDisplay();
@@ -105,7 +106,7 @@ public class GuitarActivity extends Activity {
 
 
         // rec button animation
-        final ImageView mImageViewRecording = (ImageView) findViewById(com.lib.app.R.id.imageview_animated_recording);
+        final ImageView mImageViewRecording = (ImageView) findViewById(R.id.imageview_animated_recording);
         animationDrawableStartRec = new AnimationClass((AnimationDrawable)mImageViewRecording.getBackground());
         mImageViewRecording.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -143,7 +144,7 @@ public class GuitarActivity extends Activity {
 
 
         // menu button animation
-        final ImageView mImageViewMenu = (ImageView) findViewById(com.lib.app.R.id.imageview_animated_menu);
+        final ImageView mImageViewMenu = (ImageView) findViewById(R.id.imageview_animated_menu);
         animationDrawableMenu = new AnimationClass((AnimationDrawable)mImageViewMenu.getBackground());
         mImageViewMenu.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -234,13 +235,13 @@ public class GuitarActivity extends Activity {
     public static int getBackground(int value) {
         switch (value) {
             case 0:
-                return com.lib.app.R.drawable.guitarscreenbase;
+                return R.drawable.guitarscreenbase;
             case 1:
-                return com.lib.app.R.drawable.guitarscreenblues;
+                return R.drawable.guitarscreenblues;
             case 2:
-                return com.lib.app.R.drawable.guitarscreenroll;
+                return R.drawable.guitarscreenroll;
         }
-        return com.lib.app.R.drawable.guitarscreenbase;
+        return R.drawable.guitarscreenbase;
     }
 
     private BroadcastReceiver mReceiver = new BroadcastReceiver() {
