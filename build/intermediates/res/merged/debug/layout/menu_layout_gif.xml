@@ -31,7 +31,7 @@
     <fragment
         android:layout_height="0dp"
         android:layout_width="0dp"
-        class="ioio.examples.hello_service.GuitarActivity.ChooseThemeFreg"
+        class="com.portabella.app.MenuFeatures.ChooseThemeFreg"
         android:id="@+id/fragment"
         />
 </LinearLayout>
