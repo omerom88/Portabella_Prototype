@@ -69,7 +69,7 @@ MERGED from [com.android.support:support-v4:24.1.1] /Users/omerrom/AndroidStudio
 	android:allowBackup
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:7:3-29
 	android:icon
-		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:6:15-51
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:6:15-47
 	android:largeHeap
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:8:3-27
 uses-library#com.android.future.usb.accessory

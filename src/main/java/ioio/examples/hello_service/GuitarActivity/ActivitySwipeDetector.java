@@ -313,9 +313,9 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
             }
         }
         if (y <= mietarsLayouts[mietarsLayouts.length - 1].getTop()) {
-            return mietarsLayouts.length - 1;
-        } else
             return 0;
+        }
+        return mietarsLayouts.length - 1;
     }
 
     /**
