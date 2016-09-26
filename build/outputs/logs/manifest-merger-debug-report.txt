@@ -101,7 +101,7 @@ ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/
 activity#ioio.examples.hello_service.GuitarActivity.ChooseTheme
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:22:3-25:14
 	android:screenOrientation
-		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:24:4-41
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:24:4-48
 	android:label
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:22:13-45
 	android:theme
@@ -111,7 +111,7 @@ ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/
 activity#ioio.examples.hello_service.SettingActivity
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:27:3-30:14
 	android:screenOrientation
-		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:29:4-41
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:29:4-48
 	android:label
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:27:13-45
 	android:theme
@@ -121,7 +121,7 @@ ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/
 activity#ioio.examples.hello_service.MetronomActivity
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:32:3-35:14
 	android:screenOrientation
-		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:34:4-41
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:34:4-48
 	android:label
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:32:13-45
 	android:theme
@@ -131,7 +131,7 @@ ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/
 activity#ioio.examples.hello_service.MenuActivityGif
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:37:9-40:20
 	android:screenOrientation
-		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:39:13-50
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:39:13-57
 	android:label
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:37:19-51
 	android:theme

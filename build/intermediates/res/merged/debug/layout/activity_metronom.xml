@@ -1,51 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="70bpm"
-        android:id="@+id/bpm1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.5">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="90bpm"
-        android:id="@+id/bpm2" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BPM:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="120bpm"
-        android:id="@+id/bpm3"
-        android:singleLine="false" />
+        <Button
+            android:id="@+id/bpm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="70bpm" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1/4"
-        android:id="@+id/beats1" />
+        <Button
+            android:id="@+id/bpm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90bpm" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1/8"
-        android:id="@+id/beats2" />
+        <Button
+            android:id="@+id/bpm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:text="120bpm" />
+    </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="play"
-        android:id="@+id/play"
-        android:layout_gravity="bottom" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="stop"
-        android:id="@+id/stop"
-        android:layout_gravity="bottom" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BEATS:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/beats1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/4" />
+
+        <Button
+            android:id="@+id/beats2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/8" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="play" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="stop" />
+    </LinearLayout>
 
 </LinearLayout>

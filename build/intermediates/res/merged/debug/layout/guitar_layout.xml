@@ -23,14 +23,24 @@
             android:orientation="vertical"
             android:background="#00ffffff"
             android:layout_weight="8">
+
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/E_LOW"
             android:orientation="vertical"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
             android:background="#00ffffff"
+            android:id="@+id/E_HIGH"
+            android:layout_weight="14">
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="#00ffffff"
+            android:id="@+id/B"
             android:layout_weight="14">
         </LinearLayout>
 
@@ -40,7 +50,7 @@
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
             android:background="#00ffffff"
-            android:id="@+id/A"
+            android:id="@+id/G"
             android:layout_weight="14">
         </LinearLayout>
 
@@ -58,25 +68,17 @@
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
             android:background="#00ffffff"
-            android:id="@+id/G"
+            android:id="@+id/A"
             android:layout_weight="14">
         </LinearLayout>
 
+
         <LinearLayout
+            android:id="@+id/E_LOW"
             android:orientation="vertical"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
             android:background="#00ffffff"
-            android:id="@+id/B"
-            android:layout_weight="14">
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:background="#00ffffff"
-            android:id="@+id/E_HIGH"
             android:layout_weight="14">
         </LinearLayout>
 
@@ -89,7 +91,9 @@
             android:layout_weight="8">
         </LinearLayout>
 
-    </LinearLayout>
+        </LinearLayout>
+
+
         <ImageView
         android:id="@+id/imageview_animated_recording"
         android:layout_width="56dp"
