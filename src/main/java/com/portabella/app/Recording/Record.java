@@ -6,16 +6,15 @@ import android.util.Log;
 import com.portabella.app.GuitarActivity.Cord;
 import com.portabella.app.GuitarActivity.CordManager;
 import com.portabella.app.GuitarActivity.GuitarActivity;
+import com.portabella.app.GuitarActivity.PlayingGuitarBuffer;
 import com.portabella.app.Recording.AudioFormat.AudioFormat;
+import com.portabella.app.Recording.AudioFormat.WavFileFormat;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.portabella.app.GuitarActivity.PlayingGuitarBuffer;
-import com.portabella.app.Recording.AudioFormat.WavFileFormat;
 
 /**
  * Created by Tomer on 02/09/2016.
@@ -70,13 +69,13 @@ public class Record {
         countDownTimer.cancelRec();
     }
 
-    public File saveFile(String fileName) {
+    public File saveFile(String fileName) throws OutOfMemoryError{
         AudioFormat outPutAudioFormat = null;
         try {
             List<ArrayList<Short>> tempSamples = new ArrayList<ArrayList<Short>>();
             int maxSize = 0;
             short[] shortArray = new short[1];
-            for (int i = 0; i < 6; i++) {
+            for (int i = 0; i < CordManager.NUM_OF_MEITARS; i++) {
                 shortArray = Cord.readSampleInShort(new FileInputStream(buffer[i].getOutPutFile()), false);
                 ArrayList<Short> shorts = new ArrayList<Short>();
                 for (short value : shortArray) {
@@ -108,6 +107,10 @@ public class Record {
 //            out.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        } catch (OutOfMemoryError e) {
+            e.printStackTrace();
+            cancel();
+            throw e;
         }
         return outPutAudioFormat != null ? outPutAudioFormat.getFile() : null;
     }

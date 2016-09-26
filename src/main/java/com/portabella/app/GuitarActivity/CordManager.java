@@ -95,7 +95,7 @@ public class CordManager {
         record.cancel();
     }
 
-    public static File saveFile(String fileName) {
+    public static File saveFile(String fileName) throws OutOfMemoryError{
         return record.saveFile(fileName);
     }
 

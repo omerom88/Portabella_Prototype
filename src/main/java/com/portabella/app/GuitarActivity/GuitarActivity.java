@@ -22,6 +22,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.portabella.app.AnimationClass;
 import com.portabella.app.Hardware.HelloIOIOService2;
@@ -171,8 +172,7 @@ public class GuitarActivity extends Activity {
                             Log.e("START isAnimationFlag", "!!");
                             animationDrawableMenu.setAnimationFlag(false);
                             Intent intent = new Intent(GuitarActivity.this, MenuActivityGif.class);
-                            int res = 2;
-                            startActivityForResult(intent, res);
+                            startActivity(intent);
                         }
                         animationDrawableMenu.restartAnimation();
                     }
@@ -204,9 +204,24 @@ public class GuitarActivity extends Activity {
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                fileName = input.getText().toString();
-                recordOutput = CordManager.saveFile(fileName);
-                openPlaySongDialog(fileName);
+                try {
+                    fileName = input.getText().toString();
+                    Log.e("saveFile", "!!");
+                    recordOutput = CordManager.saveFile(fileName);
+                    Log.e("savedFile", "!!");
+                    openPlaySongDialog(fileName);
+                } catch (OutOfMemoryError e) {
+                    Log.e("OutOfMemoryError", "!!");
+                    AlertDialog.Builder builder = new AlertDialog.Builder(GuitarActivity.this);
+                    builder.setTitle("Problem is saving record");
+                    builder.setMessage("your record was too long. try to minimize the record duration");
+                    builder.setPositiveButton("Get Back", new DialogInterface.OnClickListener(){
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }});
+                    builder.show();
+                }
             }
         });
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -275,12 +290,6 @@ public class GuitarActivity extends Activity {
             }
         }
     };
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        Log.d("onActivityResult: ", "" + requestCode);
-    }
 
     @Override
     public void onResume() {

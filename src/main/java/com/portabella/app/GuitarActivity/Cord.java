@@ -211,6 +211,7 @@ public class Cord implements Runnable {
         }
     }
 
+
     public void restartTask() {
         task.restartThread();
     }
@@ -254,25 +255,8 @@ public class Cord implements Runnable {
                         try {
                             if(CordManager.isRecording()) {
 //                                if (!new_task) {
-                                    long nowTime = System.currentTimeMillis();
-                                    short[] emptySound;
-                                    try {
-                                        Log.e("run(): ", "" + (int) (nowTime - lastTimeRunMillis));
-                                        Log.e("calcShortsPerTime", "" + calcShortsPerTime((int) (nowTime - lastTimeRunMillis)));
-                                        emptySound = new short[calcShortsPerTime((int) (nowTime - lastTimeRunMillis))];
-                                    } catch (NegativeArraySizeException e) {
-                                        synchronized (this) {
-                                            e.printStackTrace();
-                                            Log.e("run(): ", "" + (int) (nowTime - lastTimeRunMillis));
-                                            Log.e("nowTime(): ", "" + nowTime);
-                                            Log.e("lastTimeRunMillis(): ", "" + lastTimeRunMillis);
-                                            Log.e("index(): ", "" + index);
-                                            Log.e("isRecording(): ", "" + CordManager.isRecording());
-                                            lastTimeRunMillis = nowTime;
-                                            break;
-                                        }
-                                    }
-                                    new RecordCord(emptySound, 0, emptySound.length, DEFAULT_RATE, 0).run();
+
+                                lastTimeRunMillis = recordEmptySound(lastTimeRunMillis);
 //                                } else {
 //                                    new_task = false;
 //                                }
@@ -286,6 +270,7 @@ public class Cord implements Runnable {
                 }
                 if (playing) {
                     new_task = false;
+                    lastTimeRunMillis = recordEmptySound(lastTimeRunMillis);
                     stopTrack();
                     int currIndex = 0;
                     if (setProperties()) {
@@ -408,6 +393,16 @@ public class Cord implements Runnable {
         private void restartThread() {
             running = true;
             notify();
+        }
+
+        private long recordEmptySound(long startTime) {
+            long nowTime = System.currentTimeMillis();
+            short[] emptySound;
+            Log.e("run(): ", "" + (int) (nowTime - startTime));
+            Log.e("calcShortsPerTime", "" + calcShortsPerTime((int) (nowTime - startTime)));
+            emptySound = new short[calcShortsPerTime((int) (nowTime - startTime))];
+            new RecordCord(emptySound, 0, emptySound.length, DEFAULT_RATE, 0).run();
+            return nowTime;
         }
 
         private int calcShortsPerTime(int timeInMillis) {
