@@ -216,7 +216,6 @@ int id intent_data_id 0x7f080005
 int id intent_extra_data 0x7f080006
 int id large_icon_uri 0x7f080007
 int id left 0x7f080021
-int id leftMargin 0x7f08004c
 int id light 0x7f080020
 int id mainLayout 0x7f080028
 int id margin 0x7f080024
@@ -255,6 +254,7 @@ int id textView5 0x7f080027
 int id textView6 0x7f080025
 int id themeLayout 0x7f080035
 int id thing_proto 0x7f08000a
+int id topMargin 0x7f08004c
 int id url 0x7f080014
 int id wide 0x7f08001d
 int integer google_play_services_version 0x7f090000
@@ -289,7 +289,10 @@ int raw g_string 0x7f05000f
 int raw gstring 0x7f050010
 int raw gstringblues 0x7f050011
 int raw stringstrdecayover10 0x7f050012
-int string app_name 0x7f06001f
+int string GuitarActivity_initNotes 0x7f06001f
+int string MetronomActivity_beats 0x7f060020
+int string MetronomActivity_bpm 0x7f060021
+int string app_name 0x7f060022
 int string common_google_play_services_api_unavailable_text 0x7f060000
 int string common_google_play_services_enable_button 0x7f060001
 int string common_google_play_services_enable_text 0x7f060002
@@ -321,14 +324,14 @@ int string common_google_play_services_wear_update_text 0x7f06001b
 int string common_open_on_phone 0x7f06001c
 int string common_signin_button_text 0x7f06001d
 int string common_signin_button_text_long 0x7f06001e
-int string guitar_activity 0x7f060020
-int string hello 0x7f060021
-int string music_player 0x7f060022
-int string pauseButton 0x7f060023
-int string playButton 0x7f060024
-int string playButtonText 0x7f060025
-int string stop 0x7f060026
-int string string_description 0x7f060027
+int string guitar_activity 0x7f060023
+int string hello 0x7f060024
+int string music_player 0x7f060025
+int string pauseButton 0x7f060026
+int string playButton 0x7f060027
+int string playButtonText 0x7f060028
+int string stop 0x7f060029
+int string string_description 0x7f06002a
 int[] styleable AppDataSearch { }
 int[] styleable Corpus { 0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006 }
 int styleable Corpus_contentProviderUri 2

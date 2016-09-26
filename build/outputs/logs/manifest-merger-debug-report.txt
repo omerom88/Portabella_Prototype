@@ -98,7 +98,7 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:18:5-65
 	android:name
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:18:15-62
-activity#ioio.examples.hello_service.GuitarActivity.chooseTheme
+activity#ioio.examples.hello_service.GuitarActivity.ChooseTheme
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:22:3-25:14
 	android:screenOrientation
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:24:4-41
@@ -108,7 +108,7 @@ ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:23:4-68
 	android:name
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:22:46-88
-activity#ioio.examples.hello_service.settingActivity
+activity#ioio.examples.hello_service.SettingActivity
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:27:3-30:14
 	android:screenOrientation
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:29:4-41
@@ -151,7 +151,7 @@ ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/
 activity#ioio.examples.hello_service.GuitarActivity.GuitarActivity
 ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:47:3-64:14
 	android:screenOrientation
-		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:49:4-40
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:49:4-41
 	android:label
 		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/AndroidManifest.xml:47:13-45
 	android:theme

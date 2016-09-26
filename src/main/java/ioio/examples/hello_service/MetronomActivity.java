@@ -24,6 +24,7 @@ public class MetronomActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_metronom);
 
+
         Button bmp_70 = (Button)findViewById(R.id.bpm1);
         Button bmp_90 = (Button)findViewById(R.id.bpm2);
         Button bmp_120 = (Button)findViewById(R.id.bpm3);
@@ -40,6 +41,7 @@ public class MetronomActivity extends Activity {
         beats = SP.getInt(getString(R.string.MetronomActivity_beats), 0);
         Log.e("bpm: ", "" + bpm);
         Log.e("beats", "" + beats);
+
         bmp_70.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

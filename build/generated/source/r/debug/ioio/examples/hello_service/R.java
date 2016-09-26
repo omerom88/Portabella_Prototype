@@ -638,7 +638,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int intent_extra_data=0x7f080006;
         public static final int large_icon_uri=0x7f080007;
         public static final int left=0x7f080021;
-        public static final int leftMargin=0x7f08004c;
         public static final int light=0x7f080020;
         public static final int mainLayout=0x7f080028;
         public static final int margin=0x7f080024;
@@ -677,6 +676,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int textView6=0x7f080025;
         public static final int themeLayout=0x7f080035;
         public static final int thing_proto=0x7f08000a;
+        public static final int topMargin=0x7f08004c;
         public static final int url=0x7f080014;
         public static final int wide=0x7f08001d;
     }
@@ -719,7 +719,10 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int stringstrdecayover10=0x7f050012;
     }
     public static final class string {
-        public static final int app_name=0x7f06001f;
+        public static final int GuitarActivity_initNotes=0x7f06001f;
+        public static final int MetronomActivity_beats=0x7f060020;
+        public static final int MetronomActivity_bpm=0x7f060021;
+        public static final int app_name=0x7f060022;
         public static final int common_google_play_services_api_unavailable_text=0x7f060000;
         public static final int common_google_play_services_enable_button=0x7f060001;
         public static final int common_google_play_services_enable_text=0x7f060002;
@@ -751,14 +754,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int common_open_on_phone=0x7f06001c;
         public static final int common_signin_button_text=0x7f06001d;
         public static final int common_signin_button_text_long=0x7f06001e;
-        public static final int guitar_activity=0x7f060020;
-        public static final int hello=0x7f060021;
-        public static final int music_player=0x7f060022;
-        public static final int pauseButton=0x7f060023;
-        public static final int playButton=0x7f060024;
-        public static final int playButtonText=0x7f060025;
-        public static final int stop=0x7f060026;
-        public static final int string_description=0x7f060027;
+        public static final int guitar_activity=0x7f060023;
+        public static final int hello=0x7f060024;
+        public static final int music_player=0x7f060025;
+        public static final int pauseButton=0x7f060026;
+        public static final int playButton=0x7f060027;
+        public static final int playButtonText=0x7f060028;
+        public static final int stop=0x7f060029;
+        public static final int string_description=0x7f06002a;
     }
     public static final class xml {
         public static final int accessory_filter=0x7f040000;
