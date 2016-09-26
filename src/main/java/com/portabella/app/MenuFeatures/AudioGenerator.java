@@ -1,4 +1,4 @@
-package com.portabella.app;
+package com.portabella.app.MenuFeatures;
 
 /**
  * Created by omerrom on 24/09/16.

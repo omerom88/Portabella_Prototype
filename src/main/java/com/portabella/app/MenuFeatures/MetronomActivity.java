@@ -1,4 +1,4 @@
-package com.portabella.app;
+package com.portabella.app.MenuFeatures;
 
 import android.app.Activity;
 import android.content.SharedPreferences;

@@ -24,14 +24,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.portabella.app.AnimationClass;
+import com.portabella.app.MenuFeatures.ChooseTheme;
 import com.portabella.app.Recording.RecordPlayerActivity;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.portabella.app.HelloIOIOService2;
-import com.portabella.app.MenuActivityGif;
+import com.portabella.app.Hardware.HelloIOIOService2;
+import com.portabella.app.MenuFeatures.MenuActivityGif;
 
 /**
  * Created by Tomer on 21/08/2016.

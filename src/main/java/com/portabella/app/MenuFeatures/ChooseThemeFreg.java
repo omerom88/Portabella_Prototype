@@ -1,4 +1,4 @@
-package com.portabella.app.GuitarActivity;
+package com.portabella.app.MenuFeatures;
 
 import android.app.Fragment;
 import android.os.Bundle;

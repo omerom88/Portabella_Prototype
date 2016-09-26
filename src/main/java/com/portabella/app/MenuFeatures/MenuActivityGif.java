@@ -1,4 +1,4 @@
-package com.portabella.app;
+package com.portabella.app.MenuFeatures;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-
-import com.portabella.app.GuitarActivity.ChooseTheme;
 
 /**
  * Created by omerrom on 17/09/16.

@@ -1,10 +1,13 @@
-package com.portabella.app.GuitarActivity;
+package com.portabella.app.MenuFeatures;
 
 import android.app.Activity;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.portabella.app.GuitarActivity.CordManager;
+import com.portabella.app.GuitarActivity.GuitarActivity;
 
 /**
  * Created by omerrom on 18/09/16.

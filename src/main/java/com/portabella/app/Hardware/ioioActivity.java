@@ -1,4 +1,4 @@
-package com.portabella.app;
+package com.portabella.app.Hardware;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;

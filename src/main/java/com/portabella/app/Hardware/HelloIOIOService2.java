@@ -1,10 +1,11 @@
-package com.portabella.app;
+package com.portabella.app.Hardware;
 
 import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
 
 import com.portabella.app.GuitarActivity.CordManager;
+import com.portabella.app.MainActivity;
 
 import ioio.lib.api.AnalogInput;
 import ioio.lib.api.DigitalOutput;

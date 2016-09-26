@@ -1,4 +1,4 @@
-package com.portabella.app;
+package com.portabella.app.Hardware;
 
 import android.content.Intent;
 import android.os.IBinder;
