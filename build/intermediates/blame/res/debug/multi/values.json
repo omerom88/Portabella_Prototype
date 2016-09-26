@@ -11,7 +11,14 @@
                     "endOffset": 190
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 261,
+                        "endColumn": 89,
+                        "endOffset": 346
+                    }
                 }
             },
             {
@@ -23,7 +30,14 @@
                     "endOffset": 270
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 351,
+                        "endColumn": 79,
+                        "endOffset": 426
+                    }
                 }
             },
             {
@@ -35,7 +49,14 @@
                     "endOffset": 360
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 431,
+                        "endColumn": 89,
+                        "endOffset": 516
+                    }
                 }
             },
             {
@@ -47,7 +68,14 @@
                     "endOffset": 450
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 521,
+                        "endColumn": 89,
+                        "endOffset": 606
+                    }
                 }
             },
             {
@@ -59,7 +87,14 @@
                     "endOffset": 530
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 611,
+                        "endColumn": 79,
+                        "endOffset": 686
+                    }
                 }
             },
             {
@@ -71,7 +106,14 @@
                     "endOffset": 611
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 691,
+                        "endColumn": 80,
+                        "endOffset": 767
+                    }
                 }
             },
             {
@@ -83,7 +125,14 @@
                     "endOffset": 691
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 772,
+                        "endColumn": 79,
+                        "endOffset": 847
+                    }
                 }
             },
             {
@@ -95,7 +144,14 @@
                     "endOffset": 771
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 852,
+                        "endColumn": 79,
+                        "endOffset": 927
+                    }
                 }
             },
             {
@@ -107,7 +163,14 @@
                     "endOffset": 859
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 932,
+                        "endColumn": 87,
+                        "endOffset": 1015
+                    }
                 }
             },
             {
@@ -119,7 +182,14 @@
                     "endOffset": 937
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1020,
+                        "endColumn": 77,
+                        "endOffset": 1093
+                    }
                 }
             },
             {
@@ -131,7 +201,14 @@
                     "endOffset": 1025
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1098,
+                        "endColumn": 87,
+                        "endOffset": 1181
+                    }
                 }
             },
             {
@@ -143,7 +220,14 @@
                     "endOffset": 1113
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1186,
+                        "endColumn": 87,
+                        "endOffset": 1269
+                    }
                 }
             },
             {
@@ -155,7 +239,14 @@
                     "endOffset": 1191
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1274,
+                        "endColumn": 77,
+                        "endOffset": 1347
+                    }
                 }
             },
             {
@@ -167,7 +258,14 @@
                     "endOffset": 1270
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1352,
+                        "endColumn": 78,
+                        "endOffset": 1426
+                    }
                 }
             },
             {
@@ -179,7 +277,14 @@
                     "endOffset": 1348
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1431,
+                        "endColumn": 77,
+                        "endOffset": 1504
+                    }
                 }
             },
             {
@@ -191,7 +296,14 @@
                     "endOffset": 1426
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1509,
+                        "endColumn": 77,
+                        "endOffset": 1582
+                    }
                 }
             },
             {
@@ -203,7 +315,14 @@
                     "endOffset": 6051
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\Porta\\menuLibrary\\unspecified\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\Porta\\menuLibrary\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 961,
+                        "endColumn": 42,
+                        "endOffset": 999
+                    }
                 }
             },
             {
@@ -215,7 +334,14 @@
                     "endOffset": 6118
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 638,
+                        "endColumn": 66,
+                        "endOffset": 700
+                    }
                 }
             },
             {
@@ -227,7 +353,14 @@
                     "endOffset": 6196
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 658,
+                        "endColumn": 77,
+                        "endOffset": 731
+                    }
                 }
             },
             {
@@ -239,7 +372,14 @@
                     "endOffset": 6270
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 583,
+                        "endColumn": 73,
+                        "endOffset": 652
+                    }
                 }
             },
             {
@@ -251,7 +391,14 @@
                     "endOffset": 6340
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 512,
+                        "endColumn": 69,
+                        "endOffset": 577
+                    }
                 }
             },
             {
@@ -282,7 +429,14 @@
                     "endOffset": 6620
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 2153,
+                        "endColumn": 231,
+                        "endOffset": 2380
+                    }
                 }
             },
             {
@@ -294,7 +448,14 @@
                     "endOffset": 6746
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 2385,
+                        "endColumn": 125,
+                        "endOffset": 2506
+                    }
                 }
             },
             {
@@ -306,7 +467,14 @@
                     "endOffset": 6927
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 2511,
+                        "endColumn": 180,
+                        "endOffset": 2687
+                    }
                 }
             },
             {
@@ -318,7 +486,14 @@
                     "endOffset": 7052
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 2692,
+                        "endColumn": 124,
+                        "endOffset": 2812
+                    }
                 }
             },
             {
@@ -330,7 +505,14 @@
                     "endOffset": 7176
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 2817,
+                        "endColumn": 123,
+                        "endOffset": 2936
+                    }
                 }
             },
             {
@@ -342,7 +524,14 @@
                     "endOffset": 7389
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 2941,
+                        "endColumn": 212,
+                        "endOffset": 3149
+                    }
                 }
             },
             {
@@ -354,7 +543,14 @@
                     "endOffset": 7604
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 3154,
+                        "endColumn": 214,
+                        "endOffset": 3364
+                    }
                 }
             },
             {
@@ -366,7 +562,14 @@
                     "endOffset": 7727
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 3369,
+                        "endColumn": 122,
+                        "endOffset": 3487
+                    }
                 }
             },
             {
@@ -378,7 +581,14 @@
                     "endOffset": 7892
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 3492,
+                        "endColumn": 164,
+                        "endOffset": 3652
+                    }
                 }
             },
             {
@@ -390,7 +600,14 @@
                     "endOffset": 7986
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 3657,
+                        "endColumn": 93,
+                        "endOffset": 3746
+                    }
                 }
             },
             {
@@ -402,7 +619,14 @@
                     "endOffset": 8127
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 3751,
+                        "endColumn": 140,
+                        "endOffset": 3887
+                    }
                 }
             },
             {
@@ -414,7 +638,14 @@
                     "endOffset": 8217
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 3892,
+                        "endColumn": 89,
+                        "endOffset": 3977
+                    }
                 }
             },
             {
@@ -426,7 +657,14 @@
                     "endOffset": 8320
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 3982,
+                        "endColumn": 102,
+                        "endOffset": 4080
+                    }
                 }
             },
             {
@@ -438,7 +676,14 @@
                     "endOffset": 8471
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 4085,
+                        "endColumn": 150,
+                        "endOffset": 4231
+                    }
                 }
             },
             {
@@ -450,7 +695,14 @@
                     "endOffset": 8593
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 4,
+                        "startOffset": 4236,
+                        "endColumn": 121,
+                        "endOffset": 4353
+                    }
                 }
             },
             {
@@ -462,7 +714,14 @@
                     "endOffset": 8736
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 4358,
+                        "endColumn": 142,
+                        "endOffset": 4496
+                    }
                 }
             },
             {
@@ -474,7 +733,14 @@
                     "endOffset": 8836
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 4,
+                        "startOffset": 4501,
+                        "endColumn": 99,
+                        "endOffset": 4596
+                    }
                 }
             },
             {
@@ -486,7 +752,14 @@
                     "endOffset": 8987
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 4,
+                        "startOffset": 4601,
+                        "endColumn": 150,
+                        "endOffset": 4747
+                    }
                 }
             },
             {
@@ -498,7 +771,14 @@
                     "endOffset": 9079
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 4,
+                        "startOffset": 4752,
+                        "endColumn": 91,
+                        "endOffset": 4839
+                    }
                 }
             },
             {
@@ -510,7 +790,14 @@
                     "endOffset": 9298
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 863,
+                        "endColumn": 218,
+                        "endOffset": 1077
+                    }
                 }
             },
             {
@@ -522,7 +809,14 @@
                     "endOffset": 9517
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 4,
+                        "startOffset": 4844,
+                        "endColumn": 218,
+                        "endOffset": 5058
+                    }
                 }
             },
             {
@@ -534,7 +828,14 @@
                     "endOffset": 9612
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 4,
+                        "startOffset": 5063,
+                        "endColumn": 94,
+                        "endOffset": 5153
+                    }
                 }
             },
             {
@@ -546,7 +847,14 @@
                     "endOffset": 9717
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 4,
+                        "startOffset": 5158,
+                        "endColumn": 104,
+                        "endOffset": 5258
+                    }
                 }
             },
             {
@@ -558,7 +866,14 @@
                     "endOffset": 9898
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 5263,
+                        "endColumn": 180,
+                        "endOffset": 5439
+                    }
                 }
             },
             {
@@ -570,7 +885,14 @@
                     "endOffset": 10023
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 46,
+                        "startColumn": 4,
+                        "startOffset": 5444,
+                        "endColumn": 124,
+                        "endOffset": 5564
+                    }
                 }
             },
             {
@@ -582,7 +904,14 @@
                     "endOffset": 10198
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 5569,
+                        "endColumn": 174,
+                        "endOffset": 5739
+                    }
                 }
             },
             {
@@ -594,7 +923,14 @@
                     "endOffset": 10303
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 48,
+                        "startColumn": 4,
+                        "startOffset": 5744,
+                        "endColumn": 104,
+                        "endOffset": 5844
+                    }
                 }
             },
             {
@@ -606,7 +942,14 @@
                     "endOffset": 10451
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 49,
+                        "startColumn": 4,
+                        "startOffset": 5849,
+                        "endColumn": 147,
+                        "endOffset": 5992
+                    }
                 }
             },
             {
@@ -618,7 +961,14 @@
                     "endOffset": 10514
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 50,
+                        "startColumn": 4,
+                        "startOffset": 5997,
+                        "endColumn": 62,
+                        "endOffset": 6055
+                    }
                 }
             },
             {
@@ -630,7 +980,14 @@
                     "endOffset": 10576
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 4,
+                        "startOffset": 6060,
+                        "endColumn": 61,
+                        "endOffset": 6117
+                    }
                 }
             },
             {
@@ -642,7 +999,14 @@
                     "endOffset": 10655
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 4,
+                        "startOffset": 6122,
+                        "endColumn": 78,
+                        "endOffset": 6196
+                    }
                 }
             },
             {
@@ -654,7 +1018,14 @@
                     "endOffset": 10714
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 154,
+                        "endColumn": 58,
+                        "endOffset": 208
+                    }
                 }
             },
             {
@@ -666,7 +1037,14 @@
                     "endOffset": 10761
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 46,
+                        "endOffset": 99
+                    }
                 }
             },
             {
@@ -678,7 +1056,14 @@
                     "endOffset": 10815
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 320,
+                        "endColumn": 53,
+                        "endOffset": 369
+                    }
                 }
             },
             {
@@ -690,7 +1075,14 @@
                     "endOffset": 10858
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 468,
+                        "endColumn": 42,
+                        "endOffset": 506
+                    }
                 }
             },
             {
@@ -702,7 +1094,14 @@
                     "endOffset": 10902
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 414,
+                        "endColumn": 52,
+                        "endOffset": 462
+                    }
                 }
             },
             {
@@ -714,7 +1113,14 @@
                     "endOffset": 10965
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 214,
+                        "endColumn": 62,
+                        "endOffset": 272
+                    }
                 }
             },
             {
@@ -726,7 +1132,14 @@
                     "endOffset": 11003
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 375,
+                        "endColumn": 37,
+                        "endOffset": 408
+                    }
                 }
             },
             {
@@ -738,7 +1151,14 @@
                     "endOffset": 11043
                 },
                 "from": {
-                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml"
+                    "file": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 278,
+                        "endColumn": 40,
+                        "endOffset": 314
+                    }
                 }
             }
         ]

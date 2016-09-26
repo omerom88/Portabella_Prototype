@@ -19,7 +19,7 @@
         jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="7ceef141ebf8b7e96ebbe44e7b2c4fd6fb17edc2">
+        sha1="cad6ebb757439be7ce89ec807db56a81a13db5ab">
         <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d4899bd78bc2673a28e0df7cdfb18372c29772fe\classes.dex" />
     </item>
     <item
@@ -33,7 +33,7 @@
         jar="C:\Users\Tomer\Workspace\Porta\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="ce37ac87e188c03fc6c479222ef8aabe4d19f514">
+        sha1="0436e7be76a3bd960a3e6d08a7ee402fe0f0eb8a">
         <dex dex="C:\Users\Tomer\Workspace\Porta\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_eaa1e41214033a171a58316da8f2d0ede23d3b47\classes.dex" />
     </item>
     <item

@@ -42,7 +42,6 @@ public class RecordPlayerActivity extends Activity {
         tx2=(TextView)findViewById(R.id.textView2);
         tx3=(TextView)findViewById(R.id.textView3);
         File song = GuitarActivity.recordOutput;
-        Log.e("song: ", song.length() + "");
         tx3.setText(getIntent().getStringExtra("recordName"));
 
         mediaPlayer = new MediaPlayer();
@@ -57,7 +56,6 @@ public class RecordPlayerActivity extends Activity {
             // so using file descriptor instead
             FileInputStream fis = new FileInputStream(song);
             mediaPlayer.setDataSource(fis.getFD());
-            Log.e("getFD: ", fis.getFD() + "");
             mediaPlayer.prepare();
             mediaPlayerInit = true;
         } catch (IOException e) {
@@ -72,9 +70,9 @@ public class RecordPlayerActivity extends Activity {
             @Override
             public void onClick(View v) {
                 if (mediaPlayerInit) {
-//                Toast.makeText(getApplicationContext(), "Playing sound",Toast.LENGTH_SHORT).show();
                     mediaPlayer.start();
 
+//                    Log.e("getDuration: ", mediaPlayer.getDuration() + "");
                     finalTime = mediaPlayer.getDuration();
                     startTime = mediaPlayer.getCurrentPosition();
 
@@ -99,7 +97,6 @@ public class RecordPlayerActivity extends Activity {
         pauseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Toast.makeText(getApplicationContext(), "Pausing sound",Toast.LENGTH_SHORT).show();
                 if (mediaPlayerInit) {
                     mediaPlayer.pause();
                     pauseButton.setEnabled(false);
@@ -112,7 +109,6 @@ public class RecordPlayerActivity extends Activity {
             @Override
             public void onClick(View v) {
                 if (mediaPlayerInit) {
-//                Toast.makeText(getApplicationContext(), "Stopping sound",Toast.LENGTH_SHORT).show();
                     stopButton.setEnabled(false);
                     pauseButton.setEnabled(false);
                     playButton.setEnabled(true);
@@ -143,7 +139,6 @@ public class RecordPlayerActivity extends Activity {
         mediaPlayerInit = false;
         mediaPlayer.stop();
         mediaPlayer.release();
-        setResult(2);
         super.onBackPressed();  // optional depending on your needs
     }
 }

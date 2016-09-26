@@ -32,12 +32,12 @@
         "source": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\raw\\e_string_low.wav"
     },
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\res\\merged\\debug\\raw\\estringlow.wav",
-        "source": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\raw\\estringlow.wav"
-    },
-    {
         "merged": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\res\\merged\\debug\\raw\\bstring.wav",
         "source": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\raw\\bstring.wav"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\res\\merged\\debug\\raw\\estringlow.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\raw\\estringlow.wav"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\res\\merged\\debug\\raw\\a_string.wav",
