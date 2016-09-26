@@ -52,20 +52,16 @@
         "source": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\raw\\gstring.wav"
     },
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\res\\merged\\debug\\raw\\astringblues.wav",
-        "source": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\raw\\astringblues.wav"
-    },
-    {
         "merged": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\res\\merged\\debug\\raw\\elowstringblues.wav",
         "source": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\raw\\elowstringblues.wav"
     },
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\res\\merged\\debug\\raw\\astring.wav",
-        "source": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\raw\\astring.wav"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\res\\merged\\debug\\raw\\astringblues.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\raw\\astringblues.wav"
     },
     {
-        "merged": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\res\\merged\\debug\\raw\\stringstrdecayover10.gif",
-        "source": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\raw\\stringstrdecayover10.gif"
+        "merged": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\res\\merged\\debug\\raw\\astring.wav",
+        "source": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\raw\\astring.wav"
     },
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\res\\merged\\debug\\raw\\e_string_hi.wav",
@@ -74,5 +70,9 @@
     {
         "merged": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\res\\merged\\debug\\raw\\dstringblues.wav",
         "source": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\raw\\dstringblues.wav"
+    },
+    {
+        "merged": "C:\\Users\\Tomer\\Workspace\\Porta\\build\\intermediates\\res\\merged\\debug\\raw\\stringstrdecayover10.gif",
+        "source": "C:\\Users\\Tomer\\Workspace\\Porta\\src\\main\\res\\raw\\stringstrdecayover10.gif"
     }
 ]

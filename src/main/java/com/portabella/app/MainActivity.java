@@ -3,7 +3,6 @@ package com.portabella.app;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 
 import com.portabella.app.GuitarActivity.GuitarActivity;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
@@ -40,16 +39,13 @@ public class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.d("requestCode", "" + resultCode);
         switch (resultCode) {
             case RESULT_OK:
-                Log.d("", "The RESULT_NEXT");
                 Intent intent = new Intent(MainActivity.this, GuitarActivity.class);
                 startActivityForResult(intent, GUITAR_REQUEST_CODE);
                 break;
 
             case RESULT_CANCELED:
-                Log.d("", "The RESULT_EXIT");
                 finish();
         }
     }

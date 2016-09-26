@@ -2,7 +2,6 @@ package com.portabella.app.Hardware;
 
 import android.content.Intent;
 import android.os.IBinder;
-import android.util.Log;
 
 import ioio.lib.api.AnalogInput;
 import ioio.lib.api.exception.ConnectionLostException;
@@ -34,7 +33,6 @@ public class HelloIOIOService extends IOIOService {
     public void onCreate() {
         super.onCreate();
         LOG_TAG = this.getClass().getSimpleName();
-        Log.i(LOG_TAG, "In onCreate");
     }
 
     @Override
@@ -190,7 +188,6 @@ public class HelloIOIOService extends IOIOService {
 
 	@Override
 	public IBinder onBind(Intent arg0) {
-        Log.i(LOG_TAG, "In onBind");
         return null;
 	}
 }

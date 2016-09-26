@@ -1,7 +1,5 @@
 package com.portabella.app.Recording.AudioFormat;
 
-import android.util.Log;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -160,20 +158,15 @@ public class Mp3FileFormat extends AudioFormat {
     @Override
     public void writeFile(PlayingGuitarBuffer buffer) {
         File file = new File(".mp3");
-        Log.e("writeFile: ", "" + file.getAbsolutePath());
         FileOutputStream fos = null;
         try {
             fos = new FileOutputStream(file, true);
             fos.write(DEFAULT_HEADER);
             for (PlayingGuitarBuffer.PlayingSegment seg : buffer.readFromBuffer()) {
                 byte[] bytes = new byte[seg.getShortArray().length * 2];
-                Log.e("bytes length: ", "" + bytes.length);
-                Log.e("short array length: ", "" + seg.getShortArray().length);
                 ByteBuffer byteBuf = ByteBuffer.allocate(2 * seg.getShortArray().length);
                 int i = 0;
-                Log.e("getShortArray: ", "" + seg.getShortArray()[i]);
                 while (seg.getShortArray().length > i) {
-                    Log.e("getShortArray: ", "" + seg.getShortArray()[i]);
                     byteBuf.putShort(seg.getShortArray()[i]);
                     i++;
                 }

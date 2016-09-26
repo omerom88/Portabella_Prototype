@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -41,8 +40,6 @@ public class MetronomActivity extends Activity {
 
         bpm = SP.getInt(getString(R.string.MetronomActivity_bpm), 0);
         beats = SP.getInt(getString(R.string.MetronomActivity_beats), 0);
-        Log.e("bpm: ", "" + bpm);
-        Log.e("beats", "" + beats);
 
         bmp_70.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -68,15 +67,10 @@ public class LoadingActivity extends Activity
                 if (a.getCurrent() != a.getFrame(a.getNumberOfFrames() - 1)) {
                     checkIfAnimationMoveDone(a, loopNum, activity);
                 } else {
-                    Log.d("else: ", "loopNum" );
                     int tempLoopNum = loopNum;
                     tempLoopNum--;
                     if (tempLoopNum == 0) {
-//                    Toast.makeText(getApplicationContext(), "ANIMATION DONE!", Toast.LENGTH_SHORT).show();
-//                        Intent intent = new Intent(LoadingActivity.this, GuitarActivity.class);
-//                        startActivity(intent);
                         activity.setResult(MainActivity.RESULT_OK);
-                        Log.d("finish: ", "finish123456" );
                         activity.finish();
                     } else {
                         a.selectDrawable(0);

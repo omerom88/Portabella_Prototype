@@ -15,7 +15,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.InputType;
-import android.util.Log;
 import android.view.Display;
 import android.view.MotionEvent;
 import android.view.View;
@@ -35,12 +34,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-//import ioio.examples.hello_service.AnimationClass;
-//import ioio.examples.hello_service.HelloIOIOService2;
-//import ioio.examples.hello_service.MenuActivityGif;
-//import ioio.examples.hello_service.R;
-//import ioio.examples.hello_service.Recording.RecordPlayerActivity;
-
 
 /**
  * Created by Tomer on 21/08/2016.
@@ -55,7 +48,6 @@ public class GuitarActivity extends Activity {
     public static ImageView mImageViewMenu;
 
     private IntentFilter mIntentFilter;
-    private String LOG_TAG = null;
     private static String fileName;
     private static final String mBroadcastStringAction = "com.truiton.broadcast.string";
     private static AnimationClass animationDrawableStartRec;
@@ -91,7 +83,6 @@ public class GuitarActivity extends Activity {
         setContentView(R.layout.guitar_layout);
         baseGuitarLayout = (LinearLayout) findViewById(R.id.guitarLayout);
 
-        LOG_TAG = this.getClass().getSimpleName();
         LinearLayout[] layouts = new LinearLayout[CordManager.NUM_OF_MEITARS];
             for (int i = 0; i < layouts.length; i++) {
             layouts[i] = (LinearLayout) findViewById(NOTES_LAYOUTS[i]);
@@ -123,7 +114,6 @@ public class GuitarActivity extends Activity {
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getActionMasked()) {
                     case MotionEvent.ACTION_DOWN: {
-                        Log.e("START ACTION_DOWN", "!!");
                         if (!CordManager.isRecording()) {
                             animationDrawableStartRec.start();
                             animationDrawableStartRec.checkIfAnimationDone();
@@ -161,15 +151,12 @@ public class GuitarActivity extends Activity {
             public boolean onTouch(View v, MotionEvent event) {
                 switch (event.getActionMasked()) {
                     case MotionEvent.ACTION_DOWN: {
-                        Log.e("START ACTION_DOWN", "!!");
                         animationDrawableMenu.start();
                         animationDrawableMenu.checkIfAnimationDone();
                         return true;
                     }
                     case MotionEvent.ACTION_UP: {
-                        Log.e("START ACTION_UP", "!!");
                         if (animationDrawableMenu.isAnimationFlag()) {
-                            Log.e("START isAnimationFlag", "!!");
                             animationDrawableMenu.setAnimationFlag(false);
                             Intent intent = new Intent(GuitarActivity.this, MenuActivityGif.class);
                             startActivity(intent);
@@ -206,12 +193,9 @@ public class GuitarActivity extends Activity {
             public void onClick(DialogInterface dialog, int which) {
                 try {
                     fileName = input.getText().toString();
-                    Log.e("saveFile", "!!");
                     recordOutput = CordManager.saveFile(fileName);
-                    Log.e("savedFile", "!!");
                     openPlaySongDialog(fileName);
                 } catch (OutOfMemoryError e) {
-                    Log.e("OutOfMemoryError", "!!");
                     AlertDialog.Builder builder = new AlertDialog.Builder(GuitarActivity.this);
                     builder.setTitle("Problem is saving record");
                     builder.setMessage("your record was too long. try to minimize the record duration");
@@ -281,7 +265,6 @@ public class GuitarActivity extends Activity {
                     retMeitar[i] = intent.getFloatExtra(strM, 0);
                     retSrigim[i] = intent.getIntExtra(strS, -1);
                     float retVelBridge = intent.getFloatExtra(strB, 0);
-//                    Log.e("____retVel____", Float.toString(retVelBridge));
                     if (retVelBridge != 0f & lastSarig[i] != retSrigim[i]){
                         CordManager.restartTask(i, 1, retVelBridge *10000, retSrigim[i]);
                     }

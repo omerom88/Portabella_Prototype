@@ -2,7 +2,6 @@ package com.portabella.app;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Handler;
-import android.util.Log;
 
 /**
  * Created by Tomer on 24/09/2016.
@@ -63,12 +62,10 @@ public class AnimationClass extends AnimationDrawable {
         h.postDelayed(new Runnable() {
             public void run() {
                 if (animation.getCurrent() != animation.getFrame(animation.getNumberOfFrames() - 1)) {
-                    Log.e("checkIfAnimationDone", "not done");
                     if (isAnimationRunning()) {
                         checkIfAnimationDone();
                     }
                 } else {
-                    Log.e("checkIfAnimationDone", "done");
                     animationFlag = true;
                 }
             }

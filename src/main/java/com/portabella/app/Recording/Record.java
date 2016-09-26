@@ -1,7 +1,6 @@
 package com.portabella.app.Recording;
 
 import android.os.CountDownTimer;
-import android.util.Log;
 
 import com.portabella.app.GuitarActivity.Cord;
 import com.portabella.app.GuitarActivity.CordManager;
@@ -61,7 +60,6 @@ public class Record {
     }
 
     public void cancel() {
-        Log.e("Record: ", "cancel");
         for (PlayingGuitarBuffer pgb : buffer) {
             pgb.readFromBuffer();
             pgb.deleteFile();
@@ -82,29 +80,20 @@ public class Record {
                     shorts.add(value);
                 }
                 tempSamples.add(shorts);
-                Log.e("outputArray size: ", "" + shorts.size());
                 if (maxSize < shorts.size()) {
                     maxSize = shorts.size();
                 }
             }
-
-
-//            File outputFile = createNewFile(fileName);
-//            OutputStream out = new FileOutputStream(outputFile);
             short[] output = new short[maxSize];
             for(int j = 0; j < output.length; j++){
                 output[j] = mixSounds(getColumn(tempSamples, j));
             }
-            Log.e("outputArray size: ", "" + output.length);
             byte[] outputArray = WavFileFormat.shortArrayToBytesArray(output, 1);
             String path = activity.getFilesDir().getPath();
             outPutAudioFormat = new WavFileFormat(fileName, path, shortArray);
             outPutAudioFormat.writeDataToFile(outputArray);
             outPutAudioFormat.reWriteHeaders();
-            Log.e("outputArray size: ", "" + outputArray.length);
             cancel();
-//            out.write(outputArray);
-//            out.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (OutOfMemoryError e) {
@@ -176,12 +165,10 @@ public class Record {
     }
 
     public boolean start(long duration, int numOfLoops){
-        Log.e("onStart: ", "" + duration);
         if (hasInit) {
             countDownTimer = new customCountDownTimer(duration * SEC_TO_MILLIS,
                     new RecOptions(duration * SEC_TO_MILLIS, numOfLoops));
             countDownTimer.start();
-            Log.e("onStart: ", "setRecording");
             countDownTimer.setRecording(true);
             return true;
         }
@@ -240,18 +227,15 @@ public class Record {
         @Override
         public void onTick(long millisUntilFinished) {
             millisRemaining = millisUntilFinished;
-            Log.e("onTick: ", "" + millisUntilFinished);
         }
 
         @Override
         public void onFinish() {
             if(op.getNumOfLoops() > 1) {
-                Log.e("onFinish: ", "still going");
                 op.setNumOfLoops(op.getNumOfLoops() - 1);
                 countDownTimer = new customCountDownTimer(op);
                 this.start();
             } else {
-                Log.e("onFinish: ", "Finished :)");
                 countDownTimer.setRecording(false);
                 activity.openSaveFileDialog();
             }
@@ -264,7 +248,6 @@ public class Record {
         }
 
         public void pause() {
-            Log.e("pause: ", isRecording + "");
             if (hasInit) {
                 if (isRecording) {
                     countDownTimer.cancel();
@@ -294,5 +277,4 @@ public class Record {
             isRecording = recording;
         }
     }
-
 }

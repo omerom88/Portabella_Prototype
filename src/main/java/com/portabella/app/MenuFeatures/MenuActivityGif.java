@@ -3,7 +3,6 @@ package com.portabella.app.MenuFeatures;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -28,7 +27,6 @@ public class MenuActivityGif extends Activity {
             public void onClick(View v) {
                 menuView.setBackground(getResources().getDrawable(R.drawable.menuscreencolor03));
                 Intent intent = new Intent(MenuActivityGif.this, ChooseTheme.class);
-                Log.e("setOnTouchListener: ", "ACTION_UP");
                 int res = 2;
                 startActivityForResult(intent, res);
                 finish();
@@ -56,7 +54,6 @@ public class MenuActivityGif extends Activity {
                 int res = 2;
                 startActivityForResult(intent,res);
                 finish();
-                Log.e("setOnClickListener: ", "settingBut");
             }
         });
     }
@@ -64,9 +61,7 @@ public class MenuActivityGif extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.e("onActivityResult: ", "Finish");
         if(resultCode == Activity.RESULT_OK){
-            Log.e("onActivityResult: ", "Finish");
             setResult(Activity.RESULT_OK);
             finish();
         }
