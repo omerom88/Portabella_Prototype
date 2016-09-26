@@ -270,7 +270,9 @@ public class Cord implements Runnable {
                 }
                 if (playing) {
                     new_task = false;
-                    lastTimeRunMillis = recordEmptySound(lastTimeRunMillis);
+                    if(CordManager.isRecording()) {
+                        lastTimeRunMillis = recordEmptySound(lastTimeRunMillis);
+                    }
                     stopTrack();
                     int currIndex = 0;
                     if (setProperties()) {
