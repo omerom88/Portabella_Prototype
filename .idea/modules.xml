@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Porta.iml" filepath="$PROJECT_DIR$/Porta.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Portabelo_New.iml" filepath="$PROJECT_DIR$/Portabelo_New.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Portabella.iml" filepath="$PROJECT_DIR$/Portabella.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/SlidingMenu/library/menuLibrary.iml" filepath="$PROJECT_DIR$/libs/SlidingMenu/library/menuLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/libs/SlidingMenu/library/menuLibrary.iml" filepath="$PROJECT_DIR$/libs/SlidingMenu/library/menuLibrary.iml" />
     </modules>
   </component>
