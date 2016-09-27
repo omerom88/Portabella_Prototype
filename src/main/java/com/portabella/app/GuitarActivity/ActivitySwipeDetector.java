@@ -1,7 +1,6 @@
 package com.portabella.app.GuitarActivity;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
@@ -171,9 +170,6 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
      * Makes a strumming from bottom to top on the start to end meitar's
      */
     private static void onDownSwipe(float velocity, float pressure, float x, int start, int end) {
-        Log.e("onDownSwipe", "onDownSwipe");
-        Log.e("start: ", "" + start);
-        Log.e("end: ", "" + end);
         for (int i = start - 1; i >= end; i--) {
             playMeitar(i, pressure, velocity, x);
         }
@@ -183,9 +179,6 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
      * Makes a strumming from top to bottom on the start to end meitar's
      */
     private static void onUpSwipe(float velocity, float pressure, float x, int start, int end) {
-        Log.e("onUpSwipe", "onUpSwipe");
-        Log.e("start: ", "" + start);
-        Log.e("end: ", "" + end);
         for (int i = start; i < end; i++) {
             playMeitar(i, pressure, velocity, x);
         }
@@ -220,24 +213,20 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                 downXmenu = event.getX();
                 downYmenu = event.getY();
             case MotionEvent.ACTION_POINTER_DOWN: {
-//                Log.e("ACTION_POINTER_DOWN", "ACTION_POINTER_DOWN");
                 multiPointerTouch.add(new MultiPointerTouch(pointerId));
                 MultiPointerTouch mpt = getPointer(pointerId);
                 if (mpt != null && pointerId < event.getPointerCount()) {
                     float downY = event.getY(pointerId);
-//                    Log.e("computeLayout", "" + computeLayout(downY));
                     mpt.addStrumming(computeLayout(downY), event.getPressure(pointerId), event.getY(pointerId));
                 }
                 return true;
             }
             case MotionEvent.ACTION_MOVE: {
-//                Log.e("ACTION_MOVE", "ACTION_MOVE");
                 for (int i = 0; i < event.getPointerCount(); i++) {
                     MultiPointerTouch mpt = getPointer(i);
                     if (mpt != null) {
                         float downY = event.getY(i);
                         mpt.addMovement(event);
-//                        Log.e("computeLayout", "" + computeLayout(downY));
                         mpt.addStrumming(computeLayout(downY), event.getPressure(i), event.getY(i));
                     } else {
                         multiPointerTouch.add(new MultiPointerTouch(i));
@@ -246,7 +235,6 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
                 return true;
             }
             case MotionEvent.ACTION_POINTER_UP: {
-//                Log.e("ACTION_POINTER_UP", "ACTION_POINTER_UP");
                 MultiPointerTouch mpt = getPointer(pointerId);
                 if (mpt != null) {
                     mpt.addStrumming(-1, 0, 0);
@@ -257,10 +245,6 @@ public class ActivitySwipeDetector implements View.OnTouchListener {
             case MotionEvent.ACTION_UP:
                 upXmenu = event.getX();
                 upYmenu = event.getY();
-                Log.e("downX", downXmenu + "");
-                Log.e("downY", downYmenu + "");
-                Log.e("upX", upXmenu + "");
-                Log.e("upY", upYmenu + "");
                 if (Math.abs(downXmenu - upXmenu) > 1100 && (downYmenu - upYmenu) < 20 &&
                         GuitarActivity.mImageViewRecording.getVisibility() == View.INVISIBLE) {
                     GuitarActivity.mImageViewRecording.setVisibility(View.VISIBLE);

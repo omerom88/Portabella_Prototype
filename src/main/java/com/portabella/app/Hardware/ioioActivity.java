@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.util.Log;
 
 import com.portabella.app.R;
 
@@ -66,33 +65,27 @@ public class ioioActivity extends Activity {
                 if (meitar0 != 0) {
                     retleftX = srigim0;
                     retPresure = meitar0;
-//                    Log.i(LOG_TAG, "retPresure:   "+srigim0 + Float.toString(retPresure));
                 }
 
                 if (meitar1 != 0) {
                     retleftX = srigim1;
                     retPresure = meitar1;
-                    Log.i(LOG_TAG, "retPresure:   "+srigim1 + Float.toString(retPresure));
                 }
                 if (meitar2 != 0) {
                     retleftX = srigim2;
                     retPresure = meitar2;
-//                    Log.i(LOG_TAG, "retPresure:   "+srigim2 + Float.toString(retPresure));
                 }
                 if (meitar3 != 0) {
                     retleftX = srigim3;
                     retPresure = meitar3;
-//                    Log.i(LOG_TAG, "retPresure:   "+srigim3 + Float.toString(retPresure));
                 }
                 if (meitar4 != 0) {
                     retleftX = srigim4;
                     retPresure = meitar4;
-//                    Log.i(LOG_TAG, "retPresure:   "+srigim4 + Float.toString(retPresure));
                 }
                 if (meitar5 != 0) {
                     retleftX = srigim5;
                     retPresure = meitar5;
-//                    Log.i(LOG_TAG, "retPresure:   "+srigim5 + Float.toString(retPresure));
                 }
 
             }

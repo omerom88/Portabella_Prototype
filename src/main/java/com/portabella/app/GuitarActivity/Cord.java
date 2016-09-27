@@ -6,7 +6,6 @@ import android.media.AudioManager;
 import android.media.AudioTrack;
 import android.media.audiofx.Equalizer;
 import android.os.Build;
-import android.util.Log;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -41,7 +40,6 @@ public class Cord implements Runnable {
     static {
         for (int i = 0; i < RATE_ARRAY.length; i++) {
             RATE_ARRAY[i] = (float) Math.pow(2, i / (float) 12);
-            Log.e("RATE_ARRAY" + i + ": ", "" + RATE_ARRAY[i]);
         }
     }
 
@@ -85,8 +83,6 @@ public class Cord implements Runnable {
             for (short i = 0; i < equalizer.getNumberOfBands(); i++) {
                 if (i <= bandNumMaxFreq) {
                     double mult = getBandPrecentage(i + 1, bandNumMaxFreq + 1, eqFreq);
-//                    Log.e("properties: eqFreq", "" + eqFreq);
-//                    Log.e("prop: setBandLevel", "" + (short)(minEQLevel + ((maxEQLevel - minEQLevel) * mult)));
                     equalizer.setBandLevel(i, (short)(minEQLevel + ((maxEQLevel - minEQLevel) * mult)));
                 } else {
                     equalizer.setBandLevel(i, maxEQLevel);
@@ -115,8 +111,6 @@ public class Cord implements Runnable {
 //                setVolume(audioTrack, currVolume);
         play(currIndex);
         if (CordManager.isRecording()) {
-//            Log.e("currIndex: ", "" + currIndex);
-//            Log.e("currIndex + bufferAdd: ", "" + currIndex + bufferAddPerIteration);
             new RecordCord(sample, currIndex, currIndex + bufferAddPerIteration, playbackRate, currVolume).run();
         }
     }
@@ -278,7 +272,6 @@ public class Cord implements Runnable {
                     if (setProperties()) {
                         initEqualizer(eqFreq);
                         float currVolume = startVolume;
-//                        Log.e("getStartVolume: ", "" + currVolume);
                         for (int i = 0; i < numOfIterations; i++) {
                             if (!playing || new_task) {
                                 lastTimeRunMillis = System.currentTimeMillis();
@@ -289,8 +282,6 @@ public class Cord implements Runnable {
                             currIndex += getBufferAddPerIteration();
                             currVolume = calcVolume(currVolume, GuitarActivity.retMeitar[index], true);
                             float presh = GuitarActivity.retMeitar[index];
-
-//                            Log.e("presh_before:        ", presh + "");
                             if (!BridgPressure(presh, index)) {
                                 lastTimeRunMillis = System.currentTimeMillis();
                                 break;
@@ -312,8 +303,6 @@ public class Cord implements Runnable {
         }
 
         public Boolean BridgPressure(float presh, int index){
-//            Log.e("presh_before:        ", presh + "");
-
             if (presh == 0.0){
                 presh = 1000;
             }
@@ -321,7 +310,6 @@ public class Cord implements Runnable {
                 presh = 8;
             }
             else{
-//                Log.e("INDEX",index + "");
                 if (index == 100)
                 {
                     presh = (float)(((MAX_BRIDG_PRESSURE - MIN_BRIDG_PRESSURE) * (presh - 0.01) / (0.4 - 0.01)) + MIN_BRIDG_PRESSURE);
@@ -329,7 +317,6 @@ public class Cord implements Runnable {
                 else {
                     presh = (float) (((MAX_BRIDG_PRESSURE - MIN_BRIDG_PRESSURE) * (presh - 0.01) / (0.6 - 0.01)) + MIN_BRIDG_PRESSURE);
                 }
-//                Log.e("presh:  ", Float.toString(presh));
             }
 
             if (counter > presh){
@@ -352,15 +339,11 @@ public class Cord implements Runnable {
         private boolean setProperties() {
             float normVelocity = Math.abs(velocityY / VELOCITY_NORMALIZE_CONSTANT);
             if (normVelocity > MIN_VELOCITY) {
-//                Log.e("pressure", "" + pressure);
                 float normPressure = MIN_PRESSURE + (MAX_PRESSURE - MIN_PRESSURE) * pressure;
-//                Log.e("normPressure", "" + normPressure);
                 this.startVolume = normVelocity * normPressure;
                 this.eqFreq = calcEqFreq(xPos);
-//                Log.e("true in", "setProperties");
                 return true;
             } else {
-//                Log.e("false in", "setProperties");
                 return false;
             }
         }
@@ -382,7 +365,6 @@ public class Cord implements Runnable {
          * @return
          */
         private int calcEqFreq(float currX) {
-//        Log.e("in", "onFling, e1.getX(): " + (int) (Cord.MAX_FREQ * Math.abs((height / 2) - currX) / height));
             return (int) (2 * Cord.MAX_FREQ * Math.abs((CordManager.getWidth() / 2) - currX) / CordManager.getWidth());
         }
 
@@ -400,8 +382,6 @@ public class Cord implements Runnable {
         private long recordEmptySound(long startTime) {
             long nowTime = System.currentTimeMillis();
             short[] emptySound;
-            Log.e("run(): ", "" + (int) (nowTime - startTime));
-            Log.e("calcShortsPerTime", "" + calcShortsPerTime((int) (nowTime - startTime)));
             emptySound = new short[calcShortsPerTime((int) (nowTime - startTime))];
             new RecordCord(emptySound, 0, emptySound.length, DEFAULT_RATE, 0).run();
             return nowTime;

@@ -2,7 +2,6 @@ package com.portabella.app.Hardware;
 
 import android.content.Intent;
 import android.os.IBinder;
-import android.util.Log;
 
 import com.portabella.app.GuitarActivity.CordManager;
 import com.portabella.app.MainActivity;
@@ -20,7 +19,6 @@ import ioio.lib.util.android.IOIOService;
  * notification bar, enabling the user to stop the service.
  */
 public class HelloIOIOService2 extends IOIOService {
-    private String LOG_TAG = null;
 
     private int[] analogPinsArry = {31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42};
     private int[] digitalsPinsArry = {11, 13, 10, 7, 4, 14}; //{22, 21, 20, 19, 18, 17,
@@ -55,8 +53,6 @@ public class HelloIOIOService2 extends IOIOService {
     @Override
     public void onCreate() {
         super.onCreate();
-        LOG_TAG = this.getClass().getSimpleName();
-        Log.i(LOG_TAG, "In onCreate");
     }
 
     @Override
@@ -100,8 +96,6 @@ public class HelloIOIOService2 extends IOIOService {
 //                        if (i >= 0 && i <= 5) {
                         if (SensorValue[n] > 0.08) {
                             SensorValue[n] = SensorValue[n] + (float)(i*0.04);
-                            //                            String msg = "n: " + n + "  i: " + i + "    sen:   " + SensorValue[n];
-                            Log.e("Meitar: ", i + "  sarig :" + n + " ---" + SensorValue[n]);
                             broadcastIntent.putExtra("meitar" + i, SensorValue[n]);
                             broadcastIntent.putExtra("srigim" + i, n);
                             broadcastIntent.putExtra("Velbridge" + i, playBridge2(pressureBuffer[i], SensorValue[n]));
@@ -122,10 +116,8 @@ public class HelloIOIOService2 extends IOIOService {
 
             public float playBridge2(PressureBuffer buffer, float press) {
                 if (!buffer.isValueReturned() && press == 0) {
-                    Log.e("1", "press:  " + press);
                     buffer.setValueReturned(true);
                 } else if (press > 0.2 + buffer.getLastValue() && buffer.isValueReturned()) {
-                    Log.e("2", "press:  " + press);
                     buffer.setValueReturned(false);
                     return press;
                 }
@@ -145,7 +137,6 @@ public class HelloIOIOService2 extends IOIOService {
 
     @Override
     public IBinder onBind(Intent arg0) {
-        Log.i(LOG_TAG, "In onBind");
         return null;
     }
 }

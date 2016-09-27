@@ -3,7 +3,6 @@ package com.portabella.app.MenuFeatures;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -26,9 +25,8 @@ public class MenuActivityGif extends Activity {
         themeBut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                menuView.setBackground(getResources().getDrawable(R.drawable.menuscreencolor03));
+                menuView.setBackground(getResources().getDrawable(R.drawable.menu0004));
                 Intent intent = new Intent(MenuActivityGif.this, ChooseTheme.class);
-                Log.e("setOnTouchListener: ", "ACTION_UP");
                 int res = 2;
                 startActivityForResult(intent, res);
                 finish();
@@ -39,7 +37,7 @@ public class MenuActivityGif extends Activity {
         metroBut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                menuView.setBackground(getResources().getDrawable(R.drawable.menuscreenrecording01));
+                menuView.setBackground(getResources().getDrawable(R.drawable.menu0002));
                 Intent intent = new Intent(MenuActivityGif.this, MetronomActivity.class);
                 int res = 2;
                 startActivityForResult(intent,res);
@@ -51,12 +49,11 @@ public class MenuActivityGif extends Activity {
         settingBut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                menuView.setBackground(getResources().getDrawable(R.drawable.menuscreensettings02));
+                menuView.setBackground(getResources().getDrawable(R.drawable.menu0003));
                 Intent intent = new Intent(MenuActivityGif.this, SettingActivity.class);
                 int res = 2;
                 startActivityForResult(intent,res);
                 finish();
-                Log.e("setOnClickListener: ", "settingBut");
             }
         });
     }
@@ -64,9 +61,7 @@ public class MenuActivityGif extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        Log.e("onActivityResult: ", "Finish");
         if(resultCode == Activity.RESULT_OK){
-            Log.e("onActivityResult: ", "Finish");
             setResult(Activity.RESULT_OK);
             finish();
         }

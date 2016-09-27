@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/settings0000"
     android:orientation="horizontal">
 
     <LinearLayout
@@ -10,54 +11,72 @@
         android:layout_weight="0.5"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/setBpm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Choose default Bmp:"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
 
-        <Button
-            android:id="@+id/bpm70"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="70bpm" />
+            <Button
+                android:id="@+id/bpm70"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="58dp"
+                android:layout_marginTop="122dp"
+                android:background="#7ca0bf"
+                android:text="70"
+                android:textColor="#ffffff" />
 
-        <Button
-            android:id="@+id/bpm90"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="90bpm" />
+            <Button
+                android:id="@+id/bpm90"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="122dp"
+                android:background="#7ca0bf"
+                android:text="90"
+                android:textColor="#ffffff" />
 
-        <Button
-            android:id="@+id/bpm120"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="120bpm" />
+            <Button
+                android:id="@+id/bpm120"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="122dp"
+                android:background="#7ca0bf"
+                android:text="120"
+                android:textColor="#ffffff" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/setBeats"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Choose default Beats:"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
 
-        <Button
-            android:id="@+id/beats4"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1/4" />
+            <Button
+                android:id="@+id/beats4"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="55dp"
+                android:background="#7ca0bf"
+                android:textColor="#ffffff"
+                android:text="1/4" />
 
-        <Button
-            android:id="@+id/beats8"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1/8" />
+            <Button
+                android:id="@+id/beats8"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="60dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="55dp"
+                android:background="#7ca0bf"
+                android:text="1/8"
+                android:textColor="#ffffff" />
+        </LinearLayout>
 
 
     </LinearLayout>
@@ -66,42 +85,58 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.5"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:weightSum="1">
 
-        <TextView
-            android:id="@+id/setTheme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Choose default Theme:"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:layout_weight="0.18">
 
-        <Button
-            android:id="@+id/setRoll"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Roll" />
+            <Button
+                android:id="@+id/setCalm"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="57dp"
+                android:layout_height="33dp"
+                android:background="#7ca0bf"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="174dp"
+                android:text="CALM"
+                android:textColor="#ffffff" />
 
-        <Button
-            android:id="@+id/setBlues"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Blues" />
+            <Button
+                android:id="@+id/setBlues"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="58dp"
+                android:layout_height="33dp"
+                android:background="#7ca0bf"
+                android:layout_marginTop="174dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ffffff"
+                android:text="BLUES" />
 
-        <Button
-            android:id="@+id/setCalm"
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Calm" />
+            <Button
+                android:id="@+id/setRoll"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="58dp"
+                android:layout_height="33dp"
+                android:background="#7ca0bf"
+                android:layout_marginTop="174dp"
+                android:layout_marginLeft="16dp"
+                android:text="ROLL"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/cleanScreen"
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
-            android:text="Do you wanna clean screen?" />
+            android:layout_width="100dp"
+            android:layout_height="33dp"
+            android:text="clear buttons"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="120dp"
+            android:background="#7ca0bf"
+            android:textColor="#ffffff" />
     </LinearLayout>
 </LinearLayout>

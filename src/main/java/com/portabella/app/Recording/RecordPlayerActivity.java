@@ -4,18 +4,17 @@ import android.app.Activity;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.portabella.app.GuitarActivity.GuitarActivity;
+import com.portabella.app.R;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-import com.portabella.app.GuitarActivity.GuitarActivity;
-import com.portabella.app.R;
 
 /**
  * Created by Tomer on 02/09/2016.
@@ -37,6 +36,7 @@ public class RecordPlayerActivity extends Activity {
         stopButton = (Button) findViewById(R.id.stopButton);
         pauseButton = (Button) findViewById(R.id.pauseButton);
         playButton = (Button)findViewById(R.id.playButton);
+        final View themeLayout = findViewById(R.id.themeLayout);
 
         tx1=(TextView)findViewById(R.id.textView1);
         tx2=(TextView)findViewById(R.id.textView2);
@@ -69,6 +69,7 @@ public class RecordPlayerActivity extends Activity {
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                themeLayout.setBackground(getResources().getDrawable(R.drawable.popupfull0001));
                 if (mediaPlayerInit) {
                     mediaPlayer.start();
 
@@ -97,6 +98,7 @@ public class RecordPlayerActivity extends Activity {
         pauseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                themeLayout.setBackground(getResources().getDrawable(R.drawable.popupfull0002));
                 if (mediaPlayerInit) {
                     mediaPlayer.pause();
                     pauseButton.setEnabled(false);
@@ -108,6 +110,7 @@ public class RecordPlayerActivity extends Activity {
         stopButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                themeLayout.setBackground(getResources().getDrawable(R.drawable.popupfull0003));
                 if (mediaPlayerInit) {
                     stopButton.setEnabled(false);
                     pauseButton.setEnabled(false);
