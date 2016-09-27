@@ -11,12 +11,34 @@ buildscript {
 }
 
 android {
-
+  signingConfigs {
+    config {
+      keyAlias 'MyAndroidKeystore'
+      keyPassword 'v6776ste'
+      storeFile file('C:/Users/Tomer/.android/portabella-keystore.jks')
+      storePassword 'portabella'
+    }
+  }
   defaultConfig {
     applicationId "ioio.examples.hello_service"
   }
   buildToolsVersion "23.0.3"
   compileSdkVersion 19
+  buildTypes {
+    release {
+      signingConfig signingConfigs.config
+      minifyEnabled true
+      debuggable false
+      versionNameSuffix '1.0'
+    }
+  }
+  productFlavors {
+    free {
+      minSdkVersion 19
+      signingConfig signingConfigs.config
+      targetSdkVersion 19
+    }
+  }
 }
 
 dependencies {
