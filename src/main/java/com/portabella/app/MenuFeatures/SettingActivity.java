@@ -19,6 +19,7 @@ import com.portabella.app.R;
 public class SettingActivity extends Activity {
 
     private SharedPreferences sharedPref;
+    private int clearCounter = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,21 +133,21 @@ public class SettingActivity extends Activity {
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                GuitarActivity.mImageViewRecording.setVisibility(View.INVISIBLE);
-                GuitarActivity.mImageViewMenu.setVisibility(View.INVISIBLE);
-                clear.setBackgroundColor(Color.parseColor("#edb3a6"));
-                Toast toast = Toast.makeText(getApplicationContext(), "to bring them back - swipe your finger from side to side",Toast.LENGTH_SHORT);
-                toast.setGravity(Gravity.BOTTOM,0,0);
-                toast.show();
-                clear.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        clear.setBackgroundColor(Color.parseColor("#7ca0bf"));
-                        GuitarActivity.mImageViewRecording.setVisibility(View.VISIBLE);
-                        GuitarActivity.mImageViewMenu.setVisibility(View.VISIBLE);
-
-                    }
-                });
+                clearCounter++;
+                if (clearCounter % 2 == 1) {
+                    GuitarActivity.mImageViewRecording.setVisibility(View.INVISIBLE);
+                    GuitarActivity.mImageViewMenu.setVisibility(View.INVISIBLE);
+                    clear.setBackgroundColor(Color.parseColor("#edb3a6"));
+                    Toast toast = Toast.makeText(getApplicationContext(), "to bring them back - swipe your finger from side to side", Toast.LENGTH_LONG);
+                    toast.setGravity(Gravity.BOTTOM, 0, 0);
+                    toast.show();
+                }
+                else
+                {
+                    clear.setBackgroundColor(Color.parseColor("#7ca0bf"));
+                    GuitarActivity.mImageViewRecording.setVisibility(View.VISIBLE);
+                    GuitarActivity.mImageViewMenu.setVisibility(View.VISIBLE);
+                }
             }
         });
 
