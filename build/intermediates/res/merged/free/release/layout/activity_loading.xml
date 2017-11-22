@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainLayout">
+
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/playButtonText"-->
+    <!--android:id="@+id/playButton"-->
+    <!--android:onClick="playGuitar" />-->
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="10sp"-->
+    <!--android:text="go to record activity"-->
+    <!--android:id="@+id/recordButton"-->
+    <!--android:onClick="startRecActivity"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_toRightOf="@+id/playButton" />-->
+
+    <ImageView
+        android:id="@+id/imageview_animated_opening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/animation_list_filling_open"
+        />
+    <ImageView
+        android:id="@+id/imageview_animated_moving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/animation_list_filling_moving"
+        />
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <Button
+        android:layout_width="283dp"
+        android:layout_height="200dp"
+        android:id="@+id/EffeButton"
+        android:alpha="0" />
+
+    <Button
+        android:layout_width="281dp"
+        android:layout_height="195dp"
+        android:id="@+id/InstrumentButton"
+        android:alpha="0" />
+
+    <Button
+        android:layout_width="284dp"
+        android:layout_height="match_parent"
+        android:id="@+id/settinButton"
+        android:alpha="0" />
+
+</LinearLayout>

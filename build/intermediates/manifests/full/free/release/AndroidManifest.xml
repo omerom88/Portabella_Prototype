@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ioio.examples.hello_service"
+    android:versionCode="1"
+    android:versionName="1.01.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <uses-feature android:name="android.hardware.usb.host" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-feature
+        android:name="android.hardware.usb.accessory"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pb_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true" >
+        <uses-library
+            android:name="com.android.future.usb.accessory"
+            android:required="false" />
+
+        <activity
+            android:name="com.portabella.app.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- <activity android:label="@string/app_name" android:name=".MenuFeatures.ChooseTheme" -->
+        <!-- android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" -->
+        <!-- android:screenOrientation="reverseLandscape"> -->
+        <!-- </activity> -->
+
+
+        <!-- <activity android:label="@string/app_name" android:name=".MenuFeatures.SettingActivity" -->
+        <!-- android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" -->
+        <!-- android:screenOrientation="reverseLandscape"> -->
+        <!-- </activity> -->
+
+
+        <!-- <activity android:label="@string/app_name" android:name=".MenuFeatures.MetronomActivity" -->
+        <!-- android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" -->
+        <!-- android:screenOrientation="reverseLandscape"> -->
+        <!-- </activity> -->
+
+
+        <!-- <activity android:label="@string/app_name" android:name=".MenuFeatures.MenuActivityGif" -->
+        <!-- android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" -->
+        <!-- android:screenOrientation="reverseLandscape"> -->
+        <!-- </activity> -->
+
+        <activity
+            android:name="com.portabella.app.LoadingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.portabella.app.Hardware.Arduino_micro"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.portabella.app.Hardware.SerialConsoleActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.portabella.app.Hardware.DeviceListActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.portabella.app.GuitarActivity.GuitarActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            
+            <intent-filter>
+                
+                <action android:name=".GuitarActivity.GuitarActivity" />
+                
+                <category android:name="android.intent.category.DEFAULT" />
+            
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_DETACHED"
+                android:resource="@xml/device_filter" />
+            <meta-data
+                android:name="com.google.android.apps.drive.APP_ID"
+                android:value="747262479409-3isjkbgjvp1el2o6pgfrjqt4aarj059m.apps.googleusercontent.com" />
+
+            <intent-filter>
+                <action android:name="com.google.android.apps.drive.DRIVE_OPEN" />
+
+                <data android:mimeType="application/vnd.google-apps.drive-sdk.747262479409-3isjkbgjvp1el2o6pgfrjqt4aarj059m.apps.googleusercontent.com" />
+                <data android:mimeType="image/png" />
+                <data android:mimeType="image/jpeg" />
+                <data android:mimeType="image/jpg" />
+            </intent-filter>
+        </activity>
+
+        <!-- <activity android:label="@string/app_name" android:name=".Recording.RecordPlayerActivity" -->
+        <!-- android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" -->
+        <!-- android:screenOrientation="reverseLandscape"> -->
+        <!-- </activity> -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- <activity android:name=".Hardware.ioioActivity"/> -->
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="ioio.examples.hello_service.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+    </application>
+
+</manifest>

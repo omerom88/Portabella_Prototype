@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/free/debug/xml/device_filter.xml",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/src/main/res/xml/device_filter.xml"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/build/intermediates/res/merged/free/debug/xml/accessory_filter.xml",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidAccessory/5.07/res/xml/accessory_filter.xml"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/build/intermediates/res/merged/free/debug/xml/device_filter.xml",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/res/xml/device_filter.xml"
+    },
+    {
+        "merged": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/res/merged/free/debug/xml/accessory_filter.xml",
+        "source": "/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Portabelo_New/build/intermediates/exploded-aar/com.github.ytai.ioio/IOIOLibAndroidAccessory/5.07/res/xml/accessory_filter.xml"
+    }
+]

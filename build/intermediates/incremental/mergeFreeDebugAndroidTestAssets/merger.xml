@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/androidTest/assets"/><source path="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/build/generated/assets/shaders/androidTest/free/debug"/></dataSet><dataSet config="free"><source path="/Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/androidTestFree/assets"/></dataSet></merger>
