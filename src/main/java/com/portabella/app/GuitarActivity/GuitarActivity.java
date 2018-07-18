@@ -193,6 +193,7 @@ public class GuitarActivity extends Activity {
         }
     }
 
+
     @Subscribe
     public void writeDataFromArduino(WritingEvent event) {
         textFromArduino.setText(event.getText());
