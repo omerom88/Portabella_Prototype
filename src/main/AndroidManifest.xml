@@ -28,36 +28,11 @@
 			</intent-filter>
 		</activity>
 
-		<!--<activity android:label="@string/app_name" android:name=".MenuFeatures.ChooseTheme"-->
-			<!--android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"-->
-			<!--android:screenOrientation="reverseLandscape">-->
-		<!--</activity>-->
-
-		<!--<activity android:label="@string/app_name" android:name=".MenuFeatures.SettingActivity"-->
-			<!--android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"-->
-			<!--android:screenOrientation="reverseLandscape">-->
-		<!--</activity>-->
-
-		<!--<activity android:label="@string/app_name" android:name=".MenuFeatures.MetronomActivity"-->
-			<!--android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"-->
-			<!--android:screenOrientation="reverseLandscape">-->
-		<!--</activity>-->
-
-        <!--<activity android:label="@string/app_name" android:name=".MenuFeatures.MenuActivityGif"-->
-            <!--android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"-->
-            <!--android:screenOrientation="reverseLandscape">-->
-        <!--</activity>-->
-
         <activity android:label="@string/app_name" android:name=".LoadingActivity"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
             android:screenOrientation="portrait">
         </activity>
 
-
-		<activity android:label="@string/app_name" android:name=".Hardware.Arduino_micro"
-			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
-			android:screenOrientation="portrait">
-		</activity>
 
 		<activity
 			android:name=".Hardware.SerialConsoleActivity"
@@ -93,7 +68,8 @@
 
             <meta-data android:name="com.google.android.apps.drive.APP_ID"
                 android:value="747262479409-3isjkbgjvp1el2o6pgfrjqt4aarj059m.apps.googleusercontent.com" />
-            <intent-filter>
+
+			<intent-filter>
                 <action android:name="com.google.android.apps.drive.DRIVE_OPEN" />
                 <data android:mimeType="application/vnd.google-apps.drive-sdk.747262479409-3isjkbgjvp1el2o6pgfrjqt4aarj059m.apps.googleusercontent.com" />
                 <data android:mimeType="image/png" />
@@ -102,14 +78,9 @@
             </intent-filter>
 		</activity>
 
-		<!--<activity android:label="@string/app_name" android:name=".Recording.RecordPlayerActivity"-->
-            <!--android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"-->
-            <!--android:screenOrientation="reverseLandscape">-->
-		<!--</activity>-->
 		<meta-data
 			android:name="com.google.android.gms.version"
 			android:value="@integer/google_play_services_version" />
-        <!--<activity android:name=".Hardware.ioioActivity"/>-->
 
     </application>
 </manifest>
