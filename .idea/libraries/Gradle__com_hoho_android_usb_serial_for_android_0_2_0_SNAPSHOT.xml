@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.hoho.android:usb-serial-for-android-0.2.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/usb-serial-for-android-0.2.0-SNAPSHOT.aar/52526a857f4acd650bd11bc1deacbf9d/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/usb-serial-for-android-0.2.0-SNAPSHOT.aar/52526a857f4acd650bd11bc1deacbf9d/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

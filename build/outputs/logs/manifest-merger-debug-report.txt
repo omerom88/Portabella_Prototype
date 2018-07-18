@@ -1,0 +1,280 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:2:1-86:12
+INJECTED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:2:1-86:12
+INJECTED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:2:1-86:12
+INJECTED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:2:1-86:12
+MERGED from [com.github.felHR85:UsbSerial:4.5] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/UsbSerial-4.5.aar/6b43c106d0cf60dd11c55583fa5ee9a1/AndroidManifest.xml:2:1-10:12
+MERGED from [com.hoho.android:usb-serial-for-android:0.2.0-SNAPSHOT] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/usb-serial-for-android-0.2.0-SNAPSHOT.aar/52526a857f4acd650bd11bc1deacbf9d/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/design-23.4.0.aar/b8a0dadfe271d1c199bf99f0ab55cc32/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/53a163c3e6cdb79526ccea617580148b/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.firebase:firebase-appindexing:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-10.2.1.aar/c88a0cf3670ca777a581753f064127d3/AndroidManifest.xml:16:1-19:12
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/5c82e029582db77fdc1531e73928193d/AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/5cbfeba7d84874415f627da26ffbbdb2/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/6e405c4c071300b883d993b8267a8319/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:recyclerview-v7:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.4.0.aar/57c44a1362f93ef46b196f5a469ef6a5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/42b37a28105d08bd7494b3b9ce482485/AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.firebase:firebase-common:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-common-10.2.1.aar/a5a99dd655287577d8a2514641fee0f7/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.2.1.aar/7f023ab6dbd6f18011f47c1c1c6e3f1e/AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/9d0e5ad1e2fff1ec4a1deabc270e4314/AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:24.0.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/f018b1ea2e994dc2bc2ce9e6a2ae15fc/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:25.3.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/e67449e8e5068eae9df8742d8f5c060d/AndroidManifest.xml:17:1-31:12
+INJECTED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:2:1-86:12
+INJECTED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:2:1-86:12
+INJECTED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:2:1-86:12
+	package
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:3:2-30
+		INJECTED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml
+		INJECTED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:4:2-27
+		INJECTED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml
+		INJECTED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:3:31-54
+		INJECTED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml
+		INJECTED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml
+uses-sdk
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:5:2-41
+MERGED from [com.github.felHR85:UsbSerial:4.5] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/UsbSerial-4.5.aar/6b43c106d0cf60dd11c55583fa5ee9a1/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.felHR85:UsbSerial:4.5] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/UsbSerial-4.5.aar/6b43c106d0cf60dd11c55583fa5ee9a1/AndroidManifest.xml:6:5-8:41
+MERGED from [com.hoho.android:usb-serial-for-android:0.2.0-SNAPSHOT] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/usb-serial-for-android-0.2.0-SNAPSHOT.aar/52526a857f4acd650bd11bc1deacbf9d/AndroidManifest.xml:7:5-9:41
+MERGED from [com.hoho.android:usb-serial-for-android:0.2.0-SNAPSHOT] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/usb-serial-for-android-0.2.0-SNAPSHOT.aar/52526a857f4acd650bd11bc1deacbf9d/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/design-23.4.0.aar/b8a0dadfe271d1c199bf99f0ab55cc32/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/design-23.4.0.aar/b8a0dadfe271d1c199bf99f0ab55cc32/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/53a163c3e6cdb79526ccea617580148b/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/53a163c3e6cdb79526ccea617580148b/AndroidManifest.xml:21:5-23:78
+MERGED from [com.google.firebase:firebase-appindexing:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-10.2.1.aar/c88a0cf3670ca777a581753f064127d3/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-appindexing:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-10.2.1.aar/c88a0cf3670ca777a581753f064127d3/AndroidManifest.xml:17:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/5c82e029582db77fdc1531e73928193d/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/5c82e029582db77fdc1531e73928193d/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/5cbfeba7d84874415f627da26ffbbdb2/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/5cbfeba7d84874415f627da26ffbbdb2/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/6e405c4c071300b883d993b8267a8319/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/6e405c4c071300b883d993b8267a8319/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.4.0.aar/57c44a1362f93ef46b196f5a469ef6a5/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.4.0.aar/57c44a1362f93ef46b196f5a469ef6a5/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/42b37a28105d08bd7494b3b9ce482485/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/42b37a28105d08bd7494b3b9ce482485/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-common:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-common-10.2.1.aar/a5a99dd655287577d8a2514641fee0f7/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-common-10.2.1.aar/a5a99dd655287577d8a2514641fee0f7/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.2.1.aar/7f023ab6dbd6f18011f47c1c1c6e3f1e/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.2.1.aar/7f023ab6dbd6f18011f47c1c1c6e3f1e/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/9d0e5ad1e2fff1ec4a1deabc270e4314/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/9d0e5ad1e2fff1ec4a1deabc270e4314/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:24.0.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/f018b1ea2e994dc2bc2ce9e6a2ae15fc/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.0.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/f018b1ea2e994dc2bc2ce9e6a2ae15fc/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-compat:25.3.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/e67449e8e5068eae9df8742d8f5c060d/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/e67449e8e5068eae9df8742d8f5c060d/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/53a163c3e6cdb79526ccea617580148b/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from [com.github.felHR85:UsbSerial:4.5] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/UsbSerial-4.5.aar/6b43c106d0cf60dd11c55583fa5ee9a1/AndroidManifest.xml:8:9-38
+	android:minSdkVersion
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:5:12-38
+uses-feature#android.hardware.usb.host
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:6:5-62
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:6:19-59
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:7:2-68
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:7:19-65
+uses-permission#android.permission.INTERNET
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:8:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:9:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:11:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:12:22-78
+application
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:14:5-85:19
+MERGED from [com.android.support:design:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/design-23.4.0.aar/b8a0dadfe271d1c199bf99f0ab55cc32/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/design-23.4.0.aar/b8a0dadfe271d1c199bf99f0ab55cc32/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/53a163c3e6cdb79526ccea617580148b/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/53a163c3e6cdb79526ccea617580148b/AndroidManifest.xml:25:5-20
+MERGED from [com.google.firebase:firebase-appindexing:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-10.2.1.aar/c88a0cf3670ca777a581753f064127d3/AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-appindexing:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-appindexing-10.2.1.aar/c88a0cf3670ca777a581753f064127d3/AndroidManifest.xml:18:5-19
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/5cbfeba7d84874415f627da26ffbbdb2/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/5cbfeba7d84874415f627da26ffbbdb2/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/6e405c4c071300b883d993b8267a8319/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/6e405c4c071300b883d993b8267a8319/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/42b37a28105d08bd7494b3b9ce482485/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/42b37a28105d08bd7494b3b9ce482485/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-common:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-common-10.2.1.aar/a5a99dd655287577d8a2514641fee0f7/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-common-10.2.1.aar/a5a99dd655287577d8a2514641fee0f7/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.2.1.aar/7f023ab6dbd6f18011f47c1c1c6e3f1e/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.2.1.aar/7f023ab6dbd6f18011f47c1c1c6e3f1e/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/9d0e5ad1e2fff1ec4a1deabc270e4314/AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/9d0e5ad1e2fff1ec4a1deabc270e4314/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:24.0.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/f018b1ea2e994dc2bc2ce9e6a2ae15fc/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.0.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-v4-24.0.0.aar/f018b1ea2e994dc2bc2ce9e6a2ae15fc/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.3.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/e67449e8e5068eae9df8742d8f5c060d/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/e67449e8e5068eae9df8742d8f5c060d/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:17:3-35
+	android:largeHeap
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:16:3-27
+	android:icon
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:14:18-50
+	android:allowBackup
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:15:3-29
+uses-library#com.android.future.usb.accessory
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:18:3-19:31
+	android:required
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:19:4-28
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:18:17-64
+activity#com.portabella.app.MainActivity
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:21:3-29:14
+	android:screenOrientation
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:24:13-49
+	android:label
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:21:13-45
+	android:theme
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:22:13-77
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:21:46-74
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:25:4-28:20
+action#android.intent.action.MAIN
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:26:5-57
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:26:13-54
+category#android.intent.category.LAUNCHER
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:27:5-65
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:27:15-62
+activity#com.portabella.app.LoadingActivity
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:31:9-34:20
+	android:screenOrientation
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:33:13-49
+	android:label
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:31:19-51
+	android:theme
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:32:13-77
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:31:52-83
+activity#com.portabella.app.Hardware.SerialConsoleActivity
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:37:3-41:14
+	android:label
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:39:4-36
+	android:theme
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:40:4-68
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:38:4-50
+activity#com.portabella.app.Hardware.DeviceListActivity
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:43:3-47:14
+	android:label
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:45:4-36
+	android:theme
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:46:4-68
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:44:4-47
+activity#com.portabella.app.GuitarActivity.GuitarActivity
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:49:3-79:14
+	android:screenOrientation
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:51:4-40
+	android:label
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:49:13-45
+	android:theme
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:50:4-68
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:49:46-91
+intent-filter#action:name:.GuitarActivity.GuitarActivity+category:name:android.intent.category.DEFAULT
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:52:13-55:29
+action#com.portabella.app.GuitarActivity.GuitarActivity
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:53:17-73
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:53:25-70
+category#android.intent.category.DEFAULT
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:54:17-76
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:54:27-73
+intent-filter#action:name:android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:56:13-58:20
+action#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:57:5-78
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:57:13-75
+intent-filter#action:name:android.hardware.usb.action.USB_DEVICE_DETACHED
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:59:13-61:29
+action#android.hardware.usb.action.USB_DEVICE_DETACHED
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:60:17-90
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:60:25-87
+meta-data#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:62:4-64:45
+	android:resource
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:64:5-42
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:63:5-67
+meta-data#android.hardware.usb.action.USB_DEVICE_DETACHED
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:65:4-67:45
+	android:resource
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:67:5-42
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:66:5-67
+meta-data#com.google.android.apps.drive.APP_ID
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:69:13-70:108
+	android:value
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:70:17-105
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:69:24-75
+intent-filter#action:name:com.google.android.apps.drive.DRIVE_OPEN+data:mimeType:application/vnd.google-apps.drive-sdk.747262479409-3isjkbgjvp1el2o6pgfrjqt4aarj059m.apps.googleusercontent.com+data:mimeType:image/jpeg+data:mimeType:image/jpg+data:mimeType:image/png
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:72:4-78:29
+action#com.google.android.apps.drive.DRIVE_OPEN
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:73:17-83
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:73:25-80
+data
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:74:17-155
+	android:mimeType
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:74:23-152
+meta-data#com.google.android.gms.version
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:81:3-83:60
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/9d0e5ad1e2fff1ec4a1deabc270e4314/AndroidManifest.xml:20:9-121
+MERGED from [com.google.android.gms:play-services-basement:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.1.aar/9d0e5ad1e2fff1ec4a1deabc270e4314/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:83:4-57
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:82:4-49
+action#ioio.examples.hello_service.GuitarActivity.GuitarActivity
+ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:53:17-73
+	android:name
+		ADDED from /Users/omerrom/AndroidStudioProjects/Portabelo_dir/Prototype/src/main/AndroidManifest.xml:53:25-70
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/42b37a28105d08bd7494b3b9ce482485/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/42b37a28105d08bd7494b3b9ce482485/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/42b37a28105d08bd7494b3b9ce482485/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.1.aar/42b37a28105d08bd7494b3b9ce482485/AndroidManifest.xml:19:19-85
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-common-10.2.1.aar/a5a99dd655287577d8a2514641fee0f7/AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-common-10.2.1.aar/a5a99dd655287577d8a2514641fee0f7/AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-common-10.2.1.aar/a5a99dd655287577d8a2514641fee0f7/AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-common-10.2.1.aar/a5a99dd655287577d8a2514641fee0f7/AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:10.2.1] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/firebase-common-10.2.1.aar/a5a99dd655287577d8a2514641fee0f7/AndroidManifest.xml:6:79-143
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-compat:25.3.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/e67449e8e5068eae9df8742d8f5c060d/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:support-compat:25.3.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/e67449e8e5068eae9df8742d8f5c060d/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:support-compat:25.3.0] /Users/omerrom/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.0.aar/e67449e8e5068eae9df8742d8f5c060d/AndroidManifest.xml:26:9-47
